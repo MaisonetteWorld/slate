@@ -1,239 +1,520 @@
 ---
-title: API Reference
-
-language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
-
-toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
-
-includes:
-  - errors
-
-search: true
+title: API Documentation
+language_tabs:
+  - json: JSON
+  - shell: cURL
 ---
 
-# Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+# Product Management
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-# Authentication
+## Get products
 
-> To authorize, use this code:
 
-```ruby
-require 'kittn'
+### Request
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+#### Endpoint
+
+```plaintext
+GET /api/products
+Host: example.org
+Cookie: 
 ```
 
-```python
-import kittn
+`GET /api/products`
 
-api = kittn.authorize('meowmeowmeow')
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Date: Wed, 08 May 2019 21:47:18 GMT
+Surrogate-Control: max-age=900
+Content-Type: application/json; charset=utf-8
+Cache-Control: max-age=900, public
+ETag: W/&quot;b6f2279c407e188829526db042a51f18&quot;
+X-Request-Id: 503fe037-6a9c-41ec-ac61-61be652ba6b8
+X-Runtime: 0.495013
+Content-Length: 856
+200 OK
 ```
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+
+```json
+{
+  "count": 1,
+  "total_count": 1,
+  "current_page": 1,
+  "pages": 1,
+  "per_page": 25,
+  "products": [
+    {
+      "id": 13,
+      "name": "Product #1 - 9678",
+      "description": "As seen on TV!",
+      "price": "19.99",
+      "display_price": "$19.99",
+      "available_on": "2018-05-08T21:47:17.452Z",
+      "slug": "product-1-9678",
+      "meta_description": null,
+      "meta_keywords": null,
+      "shipping_category_id": 13,
+      "taxon_ids": [
+
+      ],
+      "total_on_hand": 0,
+      "meta_title": null,
+      "has_variants": false,
+      "master": {
+        "id": 25,
+        "name": "Product #1 - 9678",
+        "sku": "SKU-1",
+        "price": "19.99",
+        "weight": "0.0",
+        "height": null,
+        "width": null,
+        "depth": null,
+        "is_master": true,
+        "slug": "product-1-9678",
+        "description": "As seen on TV!",
+        "track_inventory": true,
+        "display_price": "$19.99",
+        "options_text": "",
+        "in_stock": false,
+        "is_backorderable": true,
+        "total_on_hand": 0,
+        "is_destroyed": false,
+        "option_values": [
+
+        ],
+        "images": [
+
+        ]
+      },
+      "variants": [
+
+      ],
+      "option_types": [
+
+      ],
+      "product_properties": [
+
+      ],
+      "classifications": [
+
+      ]
+    }
+  ]
+}
 ```
 
-```javascript
-const kittn = require('kittn');
 
-let api = kittn.authorize('meowmeowmeow');
+
+## Return a product
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/products/product-2-4630
+Host: example.org
+Cookie: 
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+`GET /api/products/:id`
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+#### Parameters
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+None known.
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
 
-# Kittens
+### Response
 
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Date: Wed, 08 May 2019 21:47:18 GMT
+Surrogate-Control: max-age=900
+Surrogate-Key: product_id=1
+Content-Type: application/json; charset=utf-8
+Cache-Control: max-age=900, public
+ETag: W/&quot;12af0a6100e6756e71f7d1788b8a69de&quot;
+X-Request-Id: aab6792f-d43a-4983-a72b-3a6f8dedfac9
+X-Runtime: 0.062982
+Content-Length: 774
+200 OK
 ```
 
-```python
-import kittn
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+```json
+{
+  "id": 14,
+  "name": "Product #2 - 4630",
+  "description": "As seen on TV!",
+  "price": "19.99",
+  "display_price": "$19.99",
+  "available_on": "2018-05-08T21:47:18.632Z",
+  "slug": "product-2-4630",
+  "meta_description": null,
+  "meta_keywords": null,
+  "shipping_category_id": 14,
+  "taxon_ids": [
+
+  ],
+  "total_on_hand": 0,
+  "meta_title": null,
+  "has_variants": false,
+  "master": {
+    "id": 26,
+    "name": "Product #2 - 4630",
+    "sku": "SKU-2",
+    "price": "19.99",
+    "weight": "0.0",
+    "height": null,
+    "width": null,
+    "depth": null,
+    "is_master": true,
+    "slug": "product-2-4630",
+    "description": "As seen on TV!",
+    "track_inventory": true,
+    "display_price": "$19.99",
+    "options_text": "",
+    "in_stock": false,
+    "is_backorderable": true,
+    "total_on_hand": 0,
+    "is_destroyed": false,
+    "option_values": [
+
+    ],
+    "images": [
+
+    ]
+  },
+  "variants": [
+
+  ],
+  "option_types": [
+
+  ],
+  "product_properties": [
+
+  ],
+  "classifications": [
+
+  ]
+}
 ```
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+
+
+## does not return a product
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/products/invalid
+Host: example.org
+Cookie: 
 ```
 
-```javascript
-const kittn = require('kittn');
+`GET /api/products/:id`
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+Cache-Control: no-cache
+X-Request-Id: 0adee0b1-3fbf-40c6-bef7-280130ae1f0a
+X-Runtime: 0.032163
+Content-Length: 65
+404 Not Found
 ```
 
-> The above command returns JSON structured like this:
+
+```json
+{
+  "error": "The resource you were looking for could not be found."
+}
+```
+
+
+
+# Taxon Endpoint For Navigation
+
+
+
+## Does not return taxons with hidden ancestor
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/taxons/nav
+Host: example.org
+Cookie: 
+```
+
+`GET /api/taxons/nav`
+
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;7bddc4ba2f31686aefe0eeb91029ad5e&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: bb42a6cb-e3e4-42c0-a460-62a09a6fd798
+X-Runtime: 0.011210
+Content-Length: 189
+200 OK
+```
+
 
 ```json
 [
   {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
+    "id": 8,
+    "name": "Kids",
+    "permalink": "category/kids",
+    "parent_id": 6,
+    "depth": 1,
+    "position": 0,
+    "brand_taxon?": false,
+    "brand_all": false,
+    "brand_discover": false,
+    "highlight": false,
+    "header_link": false
   }
 ]
 ```
 
-This endpoint retrieves all kittens.
 
-### HTTP Request
 
-`GET http://example.com/api/kittens`
+## Get taxons
 
-### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+### Request
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+#### Endpoint
 
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+```plaintext
+GET /api/taxons/nav
+Host: example.org
+Cookie: 
 ```
 
-```python
-import kittn
+`GET /api/taxons/nav`
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: fab059a7-cbd6-45e1-af44-87a59cd8f601
+X-Runtime: 0.005937
+Content-Length: 2
+200 OK
 ```
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
-
-> The above command returns JSON structured like this:
 
 ```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
+[
+
+]
 ```
 
-This endpoint retrieves a specific kitten.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
-### HTTP Request
+## Returns only brand taxons with brand_all or brand_discover
 
-`GET http://example.com/kittens/<ID>`
 
-### URL Parameters
+### Request
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
+#### Endpoint
 
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
+```plaintext
+GET /api/taxons/nav
+Host: example.org
+Cookie: 
 ```
 
-```python
-import kittn
+`GET /api/taxons/nav`
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;76f65cd16fe8490bcce4a3afa64be96a&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: d99dff85-ae3f-4e56-b034-a8cc9099d1b3
+X-Runtime: 0.012006
+Content-Length: 403
+200 OK
 ```
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
 
 ```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
+[
+  {
+    "id": 2,
+    "name": "Ruby on Rails",
+    "permalink": "brand/ruby-on-rails",
+    "parent_id": 1,
+    "depth": 1,
+    "position": 0,
+    "brand_taxon?": true,
+    "brand_all": true,
+    "brand_discover": false,
+    "highlight": false,
+    "header_link": false
+  },
+  {
+    "id": 3,
+    "name": "Ruby on Rails",
+    "permalink": "brand/ruby-on-rails",
+    "parent_id": 1,
+    "depth": 1,
+    "position": 0,
+    "brand_taxon?": true,
+    "brand_all": false,
+    "brand_discover": true,
+    "highlight": false,
+    "header_link": false
+  }
+]
 ```
 
-This endpoint deletes a specific kitten.
 
-### HTTP Request
 
-`DELETE http://example.com/kittens/<ID>`
+## Taxons contain all nav attributes
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/taxons/nav
+Host: example.org
+Cookie: 
+```
+
+`GET /api/taxons/nav`
+
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;0dcd996b29cf393354e7f44ac825681d&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 22ac71bc-a844-4331-89c5-c813732dea67
+X-Runtime: 0.010020
+Content-Length: 209
+200 OK
+```
+
+
+```json
+[
+  {
+    "id": 12,
+    "name": "Ruby on Rails",
+    "permalink": "category/ruby-on-rails",
+    "parent_id": 11,
+    "depth": 1,
+    "position": 0,
+    "brand_taxon?": false,
+    "brand_all": false,
+    "brand_discover": false,
+    "highlight": false,
+    "header_link": false
+  }
+]
+```
+
+
 
