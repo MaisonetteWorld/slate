@@ -18,9 +18,9 @@ As a guest user
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/R997776937/addresses/103
+PUT /api/orders/R474546656/addresses/103
 Accept: application/json
-X-Spree-Order-Token: Pxqhu1ias4kSXr7uFc4ieg
+X-Spree-Order-Token: 7n0yPWO5Zv083BnJ75tnYg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -70,8 +70,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;0ab72b4e1bbaee53949e3a74b3415385&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c479e06f-fb1e-4e0e-b2f8-99c9de45c865
-X-Runtime: 0.057435
+X-Request-Id: 82c864e3-7d2c-45c0-b2b8-6f65d421b0b2
+X-Runtime: 0.045101
 Content-Length: 513
 200 OK
 ```
@@ -126,9 +126,9 @@ Representation of a single cart item for a specific variant with price of vendor
 #### Endpoint
 
 ```plaintext
-POST /api/orders/R638200801/line_items
+POST /api/orders/R970377180/line_items
 Accept: application/json
-X-Spree-Order-Token: 3-66i9YsIyJt5UnLENcrxA
+X-Spree-Order-Token: irEtf7JScZDDy91db0Kg3A
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -140,7 +140,7 @@ Cookie:
 
 
 ```json
-line_item[variant_id]=148&line_item[options][vendor_id]=185
+line_item[variant_id]=150&line_item[options][vendor_id]=311
 ```
 
 
@@ -162,10 +162,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;8fe481a8383c50deafd5449bcc057ee8&quot;
+ETag: W/&quot;ac5b288518932d875e9b60845cda3fae&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 80d9047d-0ea5-408b-858b-2d3b7b33f09a
-X-Runtime: 0.076165
+X-Request-Id: 1eeb721e-e4fb-403c-b18a-00f400de6073
+X-Runtime: 0.078535
 Content-Length: 699
 201 Created
 ```
@@ -173,25 +173,25 @@ Content-Length: 699
 
 ```json
 {
-  "id": 28,
+  "id": 27,
   "quantity": 1,
   "price": "19.99",
-  "variant_id": 148,
-  "vendor_id": 185,
+  "variant_id": 150,
+  "vendor_id": 311,
   "single_display_amount": "$19.99",
   "display_amount": "$19.99",
   "total": "19.99",
   "variant": {
-    "id": 148,
-    "name": "Product #4 - 7228",
-    "sku": "SKU-4",
+    "id": 150,
+    "name": "Product #6 - 8059",
+    "sku": "SKU-6",
     "price": "19.99",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": false,
-    "slug": "product-4-7228",
+    "slug": "product-6-8059",
     "description": "As seen on TV!",
     "track_inventory": true,
     "display_price": "$19.99",
@@ -213,7 +213,7 @@ Content-Length: 699
     "images": [
 
     ],
-    "product_id": 96
+    "product_id": 98
   },
   "adjustments": [
 
@@ -231,9 +231,9 @@ Content-Length: 699
 #### Endpoint
 
 ```plaintext
-DELETE /api/orders/R379410519/line_items/25
+DELETE /api/orders/R610658053/line_items/28
 Accept: application/json
-X-Spree-Order-Token: 74mtBCvR6fIC7VN2iOUHYQ
+X-Spree-Order-Token: icYhWACqx97LMkG3MklaeQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -257,8 +257,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 85e2aa59-ef25-435c-b0c7-b3c124227d7d
-X-Runtime: 0.250215
+X-Request-Id: 1665dae9-c761-4396-8f49-451ab5e10368
+X-Runtime: 0.054663
 204 No Content
 ```
 
@@ -273,9 +273,9 @@ X-Runtime: 0.250215
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/R344629721/line_items/26
+PUT /api/orders/R124102076/line_items/25
 Accept: application/json
-X-Spree-Order-Token: sYNi3rlu59SsnU32I_SrPQ
+X-Spree-Order-Token: 057gO8lL7vNnTRy3FwXEuQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -308,10 +308,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;b918d28fea0c3f85c1a25d4178444f0c&quot;
+ETag: W/&quot;60ccb253d9944655b52b2e2613295f51&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 04e722a9-6a32-4090-95b8-7b743258917e
-X-Runtime: 0.118902
+X-Request-Id: c82f7f6f-d9cb-422e-a58f-b7473b0c1d60
+X-Runtime: 0.138333
 Content-Length: 559
 200 OK
 ```
@@ -319,25 +319,25 @@ Content-Length: 559
 
 ```json
 {
-  "id": 26,
+  "id": 25,
   "quantity": 2,
   "price": "10.0",
-  "variant_id": 145,
-  "vendor_id": 184,
+  "variant_id": 147,
+  "vendor_id": 310,
   "single_display_amount": "$10.00",
   "display_amount": "$20.00",
   "total": "20.0",
   "variant": {
-    "id": 145,
-    "name": "Product #2 - 6865",
-    "sku": "SKU-2",
+    "id": 147,
+    "name": "Product #4 - 4250",
+    "sku": "SKU-4",
     "price": "19.99",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": true,
-    "slug": "product-2-6865",
+    "slug": "product-4-4250",
     "description": "As seen on TV!",
     "track_inventory": true,
     "display_price": "$19.99",
@@ -352,7 +352,7 @@ Content-Length: 559
     "images": [
 
     ],
-    "product_id": 94
+    "product_id": 96
   },
   "adjustments": [
 
@@ -364,7 +364,7 @@ Content-Length: 559
 
 # Product Management
 
-get product by slug
+
 
 ## Get products
 
@@ -396,13 +396,13 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Mon, 13 May 2019 17:37:12 GMT
+Date: Tue, 14 May 2019 10:58:23 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;66f75fb322978ed2a7f9700350aabfc0&quot;
-X-Request-Id: d1562904-e57e-4be9-b2b6-8494436b2b5f
-X-Runtime: 0.047862
+ETag: W/&quot;3e60f81dce5ee99334442af5fb61e92a&quot;
+X-Request-Id: cb49dd84-9456-472f-b8bc-da2ad6fb0538
+X-Runtime: 0.257155
 Content-Length: 857
 200 OK
 ```
@@ -417,16 +417,16 @@ Content-Length: 857
   "per_page": 25,
   "products": [
     {
-      "id": 99,
-      "name": "Product #7 - 1683",
+      "id": 93,
+      "name": "Product #1 - 1795",
       "description": "As seen on TV!",
       "price": "19.99",
       "display_price": "$19.99",
-      "available_on": "2018-05-13T17:37:12.429Z",
-      "slug": "product-7-1683",
+      "available_on": "2018-05-14T10:58:23.104Z",
+      "slug": "product-1-1795",
       "meta_description": null,
       "meta_keywords": null,
-      "shipping_category_id": 86,
+      "shipping_category_id": 81,
       "taxon_ids": [
 
       ],
@@ -434,16 +434,16 @@ Content-Length: 857
       "meta_title": null,
       "has_variants": false,
       "master": {
-        "id": 151,
-        "name": "Product #7 - 1683",
-        "sku": "SKU-8",
+        "id": 144,
+        "name": "Product #1 - 1795",
+        "sku": "SKU-1",
         "price": "19.99",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-7-1683",
+        "slug": "product-1-1795",
         "description": "As seen on TV!",
         "track_inventory": true,
         "display_price": "$19.99",
@@ -486,7 +486,7 @@ Content-Length: 857
 #### Endpoint
 
 ```plaintext
-GET /api/products/product-5-5406
+GET /api/products/product-2-3838
 Host: example.org
 Cookie: 
 ```
@@ -508,14 +508,14 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Mon, 13 May 2019 17:37:12 GMT
+Date: Tue, 14 May 2019 10:58:23 GMT
 Surrogate-Control: max-age=900
 Surrogate-Key: product_id=1
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;d91953bf4fea8b30ed49f130ac6fbb78&quot;
-X-Request-Id: 00e9557c-7932-49e3-8c4d-829154f9e0f6
-X-Runtime: 0.078313
+ETag: W/&quot;c9bc07b58f86f643a119daaa506dc3a2&quot;
+X-Request-Id: bd8fc32c-df30-47a0-8a2e-c35c6eeb55a4
+X-Runtime: 0.040949
 Content-Length: 775
 200 OK
 ```
@@ -523,16 +523,16 @@ Content-Length: 775
 
 ```json
 {
-  "id": 97,
-  "name": "Product #5 - 5406",
+  "id": 94,
+  "name": "Product #2 - 3838",
   "description": "As seen on TV!",
   "price": "19.99",
   "display_price": "$19.99",
-  "available_on": "2018-05-13T17:37:12.145Z",
-  "slug": "product-5-5406",
+  "available_on": "2018-05-14T10:58:23.706Z",
+  "slug": "product-2-3838",
   "meta_description": null,
   "meta_keywords": null,
-  "shipping_category_id": 84,
+  "shipping_category_id": 82,
   "taxon_ids": [
 
   ],
@@ -540,16 +540,16 @@ Content-Length: 775
   "meta_title": null,
   "has_variants": false,
   "master": {
-    "id": 149,
-    "name": "Product #5 - 5406",
-    "sku": "SKU-6",
+    "id": 145,
+    "name": "Product #2 - 3838",
+    "sku": "SKU-2",
     "price": "19.99",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": true,
-    "slug": "product-5-5406",
+    "slug": "product-2-3838",
     "description": "As seen on TV!",
     "track_inventory": true,
     "display_price": "$19.99",
@@ -614,8 +614,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 555a720e-2861-448a-9eb7-1a067427d441
-X-Runtime: 0.023654
+X-Request-Id: d95d8528-fdf8-4912-b240-9960e67d81b7
+X-Runtime: 0.014043
 Content-Length: 65
 404 Not Found
 ```
@@ -664,10 +664,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;cb0eec7557e93c5520d8350775e60afb&quot;
+ETag: W/&quot;66b7845b2b63850dbdff4b5b7245a612&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 62604a34-b34c-4ff6-8fa2-df986e8f96d9
-X-Runtime: 0.012122
+X-Request-Id: b59f10dc-c86a-4b86-938b-8c5346616f6f
+X-Runtime: 0.012451
 Content-Length: 193
 200 OK
 ```
@@ -676,10 +676,10 @@ Content-Length: 193
 ```json
 [
   {
-    "id": 213,
+    "id": 465,
     "name": "Kids",
     "permalink": "category/kids",
-    "parent_id": 211,
+    "parent_id": 463,
     "depth": 1,
     "position": 0,
     "brand_taxon?": false,
@@ -726,8 +726,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d68c6e50-2a8d-422b-932b-a22e66623ef6
-X-Runtime: 0.006922
+X-Request-Id: a645ad62-7898-4387-95cc-9493d695fccd
+X-Runtime: 0.005412
 Content-Length: 2
 200 OK
 ```
@@ -772,10 +772,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;8f15df1cf3b2dad782182b15b2fee3b4&quot;
+ETag: W/&quot;39ceac48f201420ceeaaf8008f6655e0&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 26af9304-f8db-4a0e-a8b8-b976c27d66f0
-X-Runtime: 0.011253
+X-Request-Id: 0d062823-ddec-468f-852b-6cdebd763540
+X-Runtime: 0.009374
 Content-Length: 411
 200 OK
 ```
@@ -784,10 +784,10 @@ Content-Length: 411
 ```json
 [
   {
-    "id": 217,
+    "id": 469,
     "name": "Ruby on Rails",
     "permalink": "brand/ruby-on-rails",
-    "parent_id": 216,
+    "parent_id": 468,
     "depth": 1,
     "position": 0,
     "brand_taxon?": true,
@@ -797,10 +797,10 @@ Content-Length: 411
     "header_link": false
   },
   {
-    "id": 218,
+    "id": 470,
     "name": "Ruby on Rails",
     "permalink": "brand/ruby-on-rails",
-    "parent_id": 216,
+    "parent_id": 468,
     "depth": 1,
     "position": 0,
     "brand_taxon?": true,
@@ -845,10 +845,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;cab30ab7c42c34ce6cd0e06d9b3d6f57&quot;
+ETag: W/&quot;366cd88aa00c92d3dda39ea1c9d94f0f&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 265d9b82-adf3-4a89-9017-ef09228eff0d
-X-Runtime: 0.012233
+X-Request-Id: b00cae92-6c58-4ebd-b3c1-6f17e5d73ddd
+X-Runtime: 0.008426
 Content-Length: 211
 200 OK
 ```
@@ -857,10 +857,10 @@ Content-Length: 211
 ```json
 [
   {
-    "id": 222,
+    "id": 474,
     "name": "Ruby on Rails",
     "permalink": "category/ruby-on-rails",
-    "parent_id": 221,
+    "parent_id": 473,
     "depth": 1,
     "position": 0,
     "brand_taxon?": false,
