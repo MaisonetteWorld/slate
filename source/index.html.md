@@ -18,9 +18,9 @@ As a guest user
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/R288566823/addresses/103
+PUT /api/orders/R658258984/addresses/103
 Accept: application/json
-X-Spree-Order-Token: 9ZmsSYgDAQ9SJE4eT0VqLg
+X-Spree-Order-Token: mKYmarWd6eZZfvgbYCcbkg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -68,10 +68,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;751e3c0b0ef18c124073817af9fefaf1&quot;
+ETag: W/&quot;73479b89451760f42ba319a705d8d712&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b5da90d4-5f35-4205-95bb-402b69c5337c
-X-Runtime: 0.041464
+X-Request-Id: f4dffc15-f702-4bf2-be5c-b669ebe223a4
+X-Runtime: 0.080624
 Content-Length: 513
 200 OK
 ```
@@ -90,13 +90,13 @@ Content-Length: 513
   "phone": "555-555-0199",
   "company": "Company",
   "alternative_phone": "555-555-0199",
-  "country_id": 125,
+  "country_id": 122,
   "country_iso": "US",
-  "state_id": 120,
+  "state_id": 117,
   "state_name": null,
   "state_text": "AL",
   "country": {
-    "id": 125,
+    "id": 122,
     "iso_name": "UNITED STATES",
     "iso": "US",
     "iso3": "USA",
@@ -104,10 +104,10 @@ Content-Length: 513
     "numcode": 840
   },
   "state": {
-    "id": 120,
+    "id": 117,
     "name": "Alabama",
     "abbr": "AL",
-    "country_id": 125
+    "country_id": 122
   }
 }
 ```
@@ -126,9 +126,9 @@ Representation of a single cart item for a specific variant with price of vendor
 #### Endpoint
 
 ```plaintext
-POST /api/orders/R696855993/line_items
+POST /api/orders/R692885291/line_items
 Accept: application/json
-X-Spree-Order-Token: jVDN8kybG_M03EEe231G8g
+X-Spree-Order-Token: v7QzmexAzQWbt_uYjvigqQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -140,7 +140,7 @@ Cookie:
 
 
 ```json
-line_item[variant_id]=154&line_item[options][vendor_id]=439
+line_item[variant_id]=153&line_item[options][vendor_id]=437
 ```
 
 
@@ -162,36 +162,36 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;31ac1c990be058f20398997572b4406c&quot;
+ETag: W/&quot;c605d6b4d1e97ca1dca0872b73f2b075&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: cbd3e702-c584-4725-9797-3fc5ec91318d
-X-Runtime: 0.066741
-Content-Length: 699
+X-Request-Id: aafb7b50-12ba-4ca5-8379-9d5c5386aa47
+X-Runtime: 0.143703
+Content-Length: 697
 201 Created
 ```
 
 
 ```json
 {
-  "id": 28,
+  "id": 27,
   "quantity": 1,
   "price": "19.99",
-  "variant_id": 154,
-  "vendor_id": 439,
+  "variant_id": 153,
+  "vendor_id": 437,
   "single_display_amount": "$19.99",
   "display_amount": "$19.99",
   "total": "19.99",
   "variant": {
-    "id": 154,
-    "name": "Product #4 - 3610",
-    "sku": "SKU-4",
+    "id": 153,
+    "name": "Product #3 - 474",
+    "sku": "SKU-3",
     "price": "19.99",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": false,
-    "slug": "product-4-3610",
+    "slug": "product-3-474",
     "description": "As seen on TV!",
     "track_inventory": true,
     "display_price": "$19.99",
@@ -213,7 +213,7 @@ Content-Length: 699
     "images": [
 
     ],
-    "product_id": 99
+    "product_id": 98
   },
   "adjustments": [
 
@@ -231,9 +231,9 @@ Content-Length: 699
 #### Endpoint
 
 ```plaintext
-DELETE /api/orders/R452211476/line_items/25
+DELETE /api/orders/R458036201/line_items/25
 Accept: application/json
-X-Spree-Order-Token: y1uQIBX-k5i6IUKkPYk9_Q
+X-Spree-Order-Token: FxNqU7sP37bmtmUt_FOPrw
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -257,8 +257,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: a050ebc7-dc43-4d07-b017-e1e8418a1172
-X-Runtime: 0.129419
+X-Request-Id: fa2da170-d732-4dc1-b503-fecdfb0bf0f5
+X-Runtime: 0.180416
 204 No Content
 ```
 
@@ -273,9 +273,9 @@ X-Runtime: 0.129419
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/R203258490/line_items/26
+PUT /api/orders/R445730872/line_items/28
 Accept: application/json
-X-Spree-Order-Token: HWYSSKktfIQx1pIoVcmcwA
+X-Spree-Order-Token: 3rt0-PTIr2aIyNeWr22COg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -308,10 +308,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0ca52dcb91fef262324bc4d87a30b951&quot;
+ETag: W/&quot;b8e50f55140e60f2380641619b1d601a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8401a081-3fb2-49ae-b034-0ccbe4afa1b3
-X-Runtime: 0.118427
+X-Request-Id: a2ea12ad-14a1-4736-8eec-76d279af08d5
+X-Runtime: 0.121466
 Content-Length: 559
 200 OK
 ```
@@ -319,25 +319,25 @@ Content-Length: 559
 
 ```json
 {
-  "id": 26,
+  "id": 28,
   "quantity": 2,
   "price": "10.0",
-  "variant_id": 151,
-  "vendor_id": 437,
+  "variant_id": 154,
+  "vendor_id": 439,
   "single_display_amount": "$10.00",
   "display_amount": "$20.00",
   "total": "20.0",
   "variant": {
-    "id": 151,
-    "name": "Product #2 - 8346",
-    "sku": "SKU-2",
+    "id": 154,
+    "name": "Product #4 - 4251",
+    "sku": "SKU-5",
     "price": "19.99",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": true,
-    "slug": "product-2-8346",
+    "slug": "product-4-4251",
     "description": "As seen on TV!",
     "track_inventory": true,
     "display_price": "$19.99",
@@ -352,7 +352,7 @@ Content-Length: 559
     "images": [
 
     ],
-    "product_id": 97
+    "product_id": 99
   },
   "adjustments": [
 
@@ -396,14 +396,14 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Fri, 17 May 2019 15:48:53 GMT
+Date: Fri, 17 May 2019 20:16:05 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;a03e5f491d1658916f0380ee0d880e9f&quot;
-X-Request-Id: a184a609-74e8-48c8-a06f-8de031ec2632
-X-Runtime: 0.051475
-Content-Length: 858
+ETag: W/&quot;9003c8ccdf8bee3449e6cb0be1b9579a&quot;
+X-Request-Id: 0f6c6eea-2324-460e-bf83-0e2c673b4646
+X-Runtime: 0.087115
+Content-Length: 859
 200 OK
 ```
 
@@ -417,16 +417,16 @@ Content-Length: 858
   "per_page": 25,
   "products": [
     {
-      "id": 102,
-      "name": "Product #7 - 5693",
+      "id": 103,
+      "name": "Product #8 - 5009",
       "description": "As seen on TV!",
       "price": "19.99",
       "display_price": "$19.99",
-      "available_on": "2018-05-17T15:48:53.117Z",
-      "slug": "product-7-5693",
+      "available_on": "2018-05-17T20:16:05.130Z",
+      "slug": "product-8-5009",
       "meta_description": null,
       "meta_keywords": null,
-      "shipping_category_id": 89,
+      "shipping_category_id": 90,
       "taxon_ids": [
 
       ],
@@ -434,16 +434,16 @@ Content-Length: 858
       "meta_title": null,
       "has_variants": false,
       "master": {
-        "id": 157,
-        "name": "Product #7 - 5693",
-        "sku": "SKU-8",
+        "id": 159,
+        "name": "Product #8 - 5009",
+        "sku": "SKU-10",
         "price": "19.99",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-7-5693",
+        "slug": "product-8-5009",
         "description": "As seen on TV!",
         "track_inventory": true,
         "display_price": "$19.99",
@@ -486,7 +486,7 @@ Content-Length: 858
 #### Endpoint
 
 ```plaintext
-GET /api/products/product-5-5791
+GET /api/products/product-6-2702
 Host: example.org
 Cookie: 
 ```
@@ -508,14 +508,14 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Fri, 17 May 2019 15:48:53 GMT
+Date: Fri, 17 May 2019 20:16:04 GMT
 Surrogate-Control: max-age=900
 Surrogate-Key: product_id=1
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;d645f92c811abd19cbc86ca48c5f046e&quot;
-X-Request-Id: 0107ec22-b6f2-4580-b1f0-d65b717f9b0c
-X-Runtime: 0.064728
+ETag: W/&quot;9a9aa19c0bf72465246c3567c771ee39&quot;
+X-Request-Id: c24a8cf7-6e32-4154-9683-b7122ffb59ee
+X-Runtime: 0.122803
 Content-Length: 776
 200 OK
 ```
@@ -523,16 +523,16 @@ Content-Length: 776
 
 ```json
 {
-  "id": 100,
-  "name": "Product #5 - 5791",
+  "id": 101,
+  "name": "Product #6 - 2702",
   "description": "As seen on TV!",
   "price": "19.99",
   "display_price": "$19.99",
-  "available_on": "2018-05-17T15:48:52.891Z",
-  "slug": "product-5-5791",
+  "available_on": "2018-05-17T20:16:04.758Z",
+  "slug": "product-6-2702",
   "meta_description": null,
   "meta_keywords": null,
-  "shipping_category_id": 87,
+  "shipping_category_id": 88,
   "taxon_ids": [
 
   ],
@@ -540,16 +540,16 @@ Content-Length: 776
   "meta_title": null,
   "has_variants": false,
   "master": {
-    "id": 155,
-    "name": "Product #5 - 5791",
-    "sku": "SKU-6",
+    "id": 157,
+    "name": "Product #6 - 2702",
+    "sku": "SKU-8",
     "price": "19.99",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": true,
-    "slug": "product-5-5791",
+    "slug": "product-6-2702",
     "description": "As seen on TV!",
     "track_inventory": true,
     "display_price": "$19.99",
@@ -614,8 +614,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: dd97fd1b-e7a8-4e49-a275-d9250fc7e32f
-X-Runtime: 0.015031
+X-Request-Id: 67ccf31a-7720-4977-8a57-6032e73b1ab4
+X-Runtime: 0.021780
 Content-Length: 65
 404 Not Found
 ```
@@ -666,8 +666,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;66b7845b2b63850dbdff4b5b7245a612&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d7410420-9b74-42a5-9399-25f90f17b9e4
-X-Runtime: 0.124813
+X-Request-Id: 6584bf90-051f-4698-af6f-cf04b90750b3
+X-Runtime: 0.014271
 Content-Length: 193
 200 OK
 ```
@@ -726,8 +726,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 121507a1-1223-4f1e-ba02-721302830587
-X-Runtime: 0.005404
+X-Request-Id: cda19eb3-7c69-440e-85e6-bf32d9249306
+X-Runtime: 0.168739
 Content-Length: 2
 200 OK
 ```
@@ -772,10 +772,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;e9d5a36eb1105d6fbf152f460165a636&quot;
+ETag: W/&quot;39ceac48f201420ceeaaf8008f6655e0&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: dfa7ccbd-e227-4211-b1fb-41b2a558f438
-X-Runtime: 0.008415
+X-Request-Id: 54e83d13-d8c1-42dc-bfd9-0bd0983bcc14
+X-Runtime: 0.010491
 Content-Length: 411
 200 OK
 ```
@@ -784,10 +784,10 @@ Content-Length: 411
 ```json
 [
   {
-    "id": 471,
+    "id": 469,
     "name": "Ruby on Rails",
     "permalink": "brand/ruby-on-rails",
-    "parent_id": 470,
+    "parent_id": 468,
     "depth": 1,
     "position": 0,
     "brand_taxon?": true,
@@ -797,10 +797,10 @@ Content-Length: 411
     "header_link": false
   },
   {
-    "id": 472,
+    "id": 470,
     "name": "Ruby on Rails",
     "permalink": "brand/ruby-on-rails",
-    "parent_id": 470,
+    "parent_id": 468,
     "depth": 1,
     "position": 0,
     "brand_taxon?": true,
@@ -845,10 +845,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;40d3ce7b8715c34d4734fcd31f4361aa&quot;
+ETag: W/&quot;366cd88aa00c92d3dda39ea1c9d94f0f&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 591ad0a0-ae0e-4fde-9857-a591e5b97ae0
-X-Runtime: 0.008946
+X-Request-Id: f530f042-9252-488b-90c0-c39784b7b1c1
+X-Runtime: 0.011548
 Content-Length: 211
 200 OK
 ```
@@ -857,10 +857,10 @@ Content-Length: 211
 ```json
 [
   {
-    "id": 469,
+    "id": 474,
     "name": "Ruby on Rails",
     "permalink": "category/ruby-on-rails",
-    "parent_id": 468,
+    "parent_id": 473,
     "depth": 1,
     "position": 0,
     "brand_taxon?": false,
@@ -886,7 +886,7 @@ Content-Length: 211
 #### Endpoint
 
 ```plaintext
-GET /api/variants/159
+GET /api/variants/156
 Host: example.org
 Cookie: 
 ```
@@ -909,10 +909,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;61e97080f763381c828ca49f3a44d1ce&quot;
+ETag: W/&quot;564706762f5763dffa80312aeffab186&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 245d7bf7-97c0-4650-99f6-7b7ebb2044fe
-X-Runtime: 0.070885
+X-Request-Id: 201fb453-b115-4046-86f3-350144b4cd00
+X-Runtime: 0.083235
 Content-Length: 1371
 200 OK
 ```
@@ -920,16 +920,16 @@ Content-Length: 1371
 
 ```json
 {
-  "id": 159,
-  "name": "Product #8 - 9349",
-  "sku": "SKU-9",
+  "id": 156,
+  "name": "Product #5 - 5243",
+  "sku": "SKU-6",
   "price": "10.0",
   "weight": "0.0",
   "height": null,
   "width": null,
   "depth": null,
   "is_master": false,
-  "slug": "product-8-9349",
+  "slug": "product-5-5243",
   "description": "As seen on TV!",
   "track_inventory": true,
   "display_price": "$10.00",
@@ -955,16 +955,16 @@ Content-Length: 1371
       "attachment_content_type": "image/jpeg",
       "attachment_file_name": "thinking-cat.jpg",
       "type": "Spree::Image",
-      "attachment_updated_at": "2019-05-17T15:48:53.412Z",
+      "attachment_updated_at": "2019-05-17T20:16:03.927Z",
       "attachment_width": 489,
       "attachment_height": 490,
       "alt": null,
       "viewable_type": "Spree::Variant",
-      "viewable_id": 159,
-      "mini_url": "/spree/products/2/mini/thinking-cat.jpg?1558108133",
-      "small_url": "/spree/products/2/small/thinking-cat.jpg?1558108133",
-      "product_url": "/spree/products/2/product/thinking-cat.jpg?1558108133",
-      "large_url": "/spree/products/2/large/thinking-cat.jpg?1558108133"
+      "viewable_id": 156,
+      "mini_url": "/spree/products/2/mini/thinking-cat.jpg?1558124163",
+      "small_url": "/spree/products/2/small/thinking-cat.jpg?1558124163",
+      "product_url": "/spree/products/2/product/thinking-cat.jpg?1558124163",
+      "large_url": "/spree/products/2/large/thinking-cat.jpg?1558124163"
     }
   ],
   "variant_properties": [
@@ -972,9 +972,9 @@ Content-Length: 1371
   ],
   "stock_items": [
     {
-      "id": 159,
+      "id": 156,
       "count_on_hand": 0,
-      "stock_location_id": 112,
+      "stock_location_id": 109,
       "backorderable": true,
       "available": true,
       "stock_location_name": "NY Warehouse"
@@ -982,15 +982,15 @@ Content-Length: 1371
   ],
   "prices": [
     {
-      "id": 219,
+      "id": 216,
       "price": "10.0",
-      "vendor_id": 448,
+      "vendor_id": 442,
       "display_price": "$10.00"
     },
     {
-      "id": 220,
+      "id": 217,
       "price": "20.0",
-      "vendor_id": 449,
+      "vendor_id": 443,
       "display_price": "$20.00"
     }
   ]
