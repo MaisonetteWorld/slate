@@ -29,115 +29,6 @@
     "application/xml"
   ],
   "paths": {
-    "/api/taxons/nav": {
-      "get": {
-        "tags": [
-          "Navigation"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-
-        ],
-        "responses": {
-          "200": {
-            "description": "Returns navigation taxons",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"b4f00fd4b89d93adb5daaabd97603d99\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "cce9ecfe-a620-4e08-8c1f-d3cd2c2b9b12"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.090881"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "134"
-              }
-            },
-            "examples": {
-              "application/json": [
-                {
-                  "id": 625,
-                  "name": "Kids",
-                  "navigation_url": "/navigation/kids",
-                  "parent_id": 624,
-                  "lft": 2,
-                  "depth": 1,
-                  "highlight": false,
-                  "header_link": false
-                }
-              ]
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
     "/api/orders/mine": {
       "get": {
         "tags": [
@@ -225,12 +116,12 @@
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "f99c5b7c-4bd9-491b-9c73-176c21c2c56d"
+                "x-example-value": "2e30f8e0-e8b0-4037-87eb-5e339d627eae"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.058096"
+                "x-example-value": "0.137073"
               },
               "Content-Length": {
                 "description": "",
@@ -248,6 +139,189 @@
                 "current_page": 1,
                 "pages": 0,
                 "per_page": 25
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/variants/{variant_id}": {
+      "get": {
+        "tags": [
+          "Variant"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "variant_id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fetching a variant",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"8029e413ae74144d6ece8162d01d85ba\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "040d8c63-5067-4a28-9042-ef241381fbbf"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.117826"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1453"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "id": 723,
+                "name": "Product #1 - 7062",
+                "sku": "SKU-1",
+                "price": "10.0",
+                "weight": "0.0",
+                "height": null,
+                "width": null,
+                "depth": null,
+                "is_master": false,
+                "slug": "product-1-7062",
+                "description": "As seen on TV!",
+                "track_inventory": true,
+                "lead_time": 2,
+                "display_price": "$10.00",
+                "options_text": "Size: S",
+                "in_stock": false,
+                "is_backorderable": false,
+                "total_on_hand": 0,
+                "is_destroyed": false,
+                "option_values": [
+                  {
+                    "id": 226,
+                    "name": "Size-1",
+                    "presentation": "S",
+                    "option_type_name": "foo-size-1",
+                    "option_type_id": 226,
+                    "option_type_presentation": "Size"
+                  }
+                ],
+                "images": [
+                  {
+                    "id": 2,
+                    "position": 1,
+                    "attachment_content_type": "image/jpeg",
+                    "attachment_file_name": "thinking-cat.jpg",
+                    "type": "Spree::Image",
+                    "attachment_updated_at": "2019-07-18T15:50:48.064Z",
+                    "attachment_width": 489,
+                    "attachment_height": 490,
+                    "alt": null,
+                    "viewable_type": "Spree::Variant",
+                    "viewable_id": 723,
+                    "mini_url": "/spree/products/2/mini/thinking-cat.jpg?1563465048",
+                    "small_url": "/spree/products/2/small/thinking-cat.jpg?1563465048",
+                    "product_url": "/spree/products/2/product/thinking-cat.jpg?1563465048",
+                    "large_url": "/spree/products/2/large/thinking-cat.jpg?1563465048"
+                  }
+                ],
+                "variant_properties": [
+
+                ],
+                "stock_items": [
+
+                ],
+                "prices": [
+                  {
+                    "id": 1404,
+                    "vendor_id": 2373,
+                    "price": "10.0",
+                    "original_price": "10.0",
+                    "discount_percent": 0.0,
+                    "total_on_hand": 0,
+                    "country_iso": null,
+                    "final_sale": false,
+                    "on_sale": false
+                  },
+                  {
+                    "id": 1405,
+                    "vendor_id": 2374,
+                    "price": "20.0",
+                    "original_price": "20.0",
+                    "discount_percent": 0.0,
+                    "total_on_hand": 0,
+                    "country_iso": null,
+                    "final_sale": false,
+                    "on_sale": false
+                  }
+                ]
               }
             }
           }
@@ -381,7 +455,7 @@
               "ETag": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "W/\"21c35a59be6e61c3b0ba2a0e1037d7f2\""
+                "x-example-value": "W/\"e73a8544f89a4123f59482ca5ff56f5f\""
               },
               "Cache-Control": {
                 "description": "",
@@ -391,12 +465,12 @@
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "6a7d0d6d-3f02-49ff-aa2a-eaa46ec7c6ba"
+                "x-example-value": "8d2f83dd-0b2b-4bde-987c-776d08bad760"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.281334"
+                "x-example-value": "0.172713"
               },
               "Content-Length": {
                 "description": "",
@@ -407,15 +481,15 @@
             "examples": {
               "application/json": {
                 "id": 282,
-                "number": "R724222559",
+                "number": "R387218056",
                 "item_total": "10.0",
                 "total": "110.0",
                 "ship_total": "100.0",
                 "state": "confirm",
                 "adjustment_total": "0.0",
-                "user_id": 323,
-                "created_at": "2019-07-18T15:45:55.901Z",
-                "updated_at": "2019-07-18T15:45:56.700Z",
+                "user_id": 324,
+                "created_at": "2019-07-18T15:50:48.782Z",
+                "updated_at": "2019-07-18T15:50:49.366Z",
                 "completed_at": null,
                 "payment_total": "0.0",
                 "shipment_state": null,
@@ -442,7 +516,7 @@
                 "display_total": "$110.00",
                 "display_ship_total": "$100.00",
                 "display_tax_total": "$0.00",
-                "token": "Obn1tkk1TNyrKmfA-KU7xw",
+                "token": "ExX-WPniOIlmWYjCFVGZlg",
                 "checkout_steps": [
                   "address",
                   "delivery",
@@ -470,13 +544,13 @@
                   "phone": "555-555-0199",
                   "company": "Company",
                   "alternative_phone": "555-555-0199",
-                  "country_id": 354,
+                  "country_id": 355,
                   "country_iso": "US",
-                  "state_id": 343,
+                  "state_id": 344,
                   "state_name": null,
                   "state_text": "AL",
                   "country": {
-                    "id": 354,
+                    "id": 355,
                     "iso_name": "UNITED STATES",
                     "iso": "US",
                     "iso3": "USA",
@@ -484,10 +558,10 @@
                     "numcode": 840
                   },
                   "state": {
-                    "id": 343,
+                    "id": 344,
                     "name": "Alabama",
                     "abbr": "AL",
-                    "country_id": 354
+                    "country_id": 355
                   }
                 },
                 "ship_address": {
@@ -502,13 +576,13 @@
                   "phone": "555-555-0199",
                   "company": "Company",
                   "alternative_phone": "555-555-0199",
-                  "country_id": 354,
+                  "country_id": 355,
                   "country_iso": "US",
-                  "state_id": 343,
+                  "state_id": 344,
                   "state_name": null,
                   "state_text": "AL",
                   "country": {
-                    "id": 354,
+                    "id": 355,
                     "iso_name": "UNITED STATES",
                     "iso": "US",
                     "iso3": "USA",
@@ -516,10 +590,10 @@
                     "numcode": 840
                   },
                   "state": {
-                    "id": 343,
+                    "id": 344,
                     "name": "Alabama",
                     "abbr": "AL",
-                    "country_id": 354
+                    "country_id": 355
                   }
                 },
                 "line_items": [
@@ -527,22 +601,22 @@
                     "id": 278,
                     "quantity": 1,
                     "price": "10.0",
-                    "variant_id": 723,
-                    "vendor_id": 2370,
+                    "variant_id": 725,
+                    "vendor_id": 2378,
                     "single_display_amount": "$10.00",
                     "display_amount": "$10.00",
                     "total": "10.0",
                     "variant": {
-                      "id": 723,
-                      "name": "Product #1 - 6394",
-                      "sku": "SKU-1",
+                      "id": 725,
+                      "name": "Product #2 - 1258",
+                      "sku": "SKU-3",
                       "price": "10.0",
                       "weight": "0.0",
                       "height": null,
                       "width": null,
                       "depth": null,
                       "is_master": false,
-                      "slug": "product-1-6394",
+                      "slug": "product-2-1258",
                       "description": "As seen on TV!",
                       "track_inventory": true,
                       "display_price": "$10.00",
@@ -553,20 +627,20 @@
                       "is_destroyed": false,
                       "option_values": [
                         {
-                          "id": 226,
-                          "name": "Size-1",
+                          "id": 227,
+                          "name": "Size-2",
                           "presentation": "S",
-                          "option_type_name": "foo-size-1",
-                          "option_type_id": 226,
+                          "option_type_name": "foo-size-2",
+                          "option_type_id": 227,
                           "option_type_presentation": "Size"
                         }
                       ],
                       "images": [
 
                       ],
-                      "product_id": 509
+                      "product_id": 510
                     },
-                    "vendor_name": "Vendor #2",
+                    "vendor_name": "Vendor #9",
                     "adjustments": [
 
                     ]
@@ -580,11 +654,11 @@
                     "id": 232,
                     "tracking": null,
                     "tracking_url": null,
-                    "number": "H10430721126",
+                    "number": "H73810458700",
                     "cost": "100.0",
                     "shipped_at": null,
                     "state": "pending",
-                    "order_id": "R724222559",
+                    "order_id": "R387218056",
                     "stock_location_name": "NY Warehouse",
                     "shipping_rates": [
                       {
@@ -620,15 +694,15 @@
                         ],
                         "shipping_categories": [
                           {
-                            "id": 306,
-                            "name": "ShippingCategory #1"
+                            "id": 307,
+                            "name": "ShippingCategory #2"
                           }
                         ]
                       }
                     ],
                     "manifest": [
                       {
-                        "variant_id": 723,
+                        "variant_id": 725,
                         "quantity": 1,
                         "states": {
                           "on_hand": 1
@@ -649,6 +723,459 @@
                 "credit_cards": [
 
                 ]
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/orders/{order_number}/line_items": {
+      "post": {
+        "tags": [
+          "LineItem"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "order_number",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "required": false,
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+                "line_item": {
+                  "type": "object",
+                  "properties": {
+                    "variant_id": {
+                      "type": "integer",
+                      "description": "Line item variant"
+                    },
+                    "options": {
+                      "type": "object",
+                      "description": "Hash containing the vendor_id. It's used to set the price based on vendor"
+                    },
+                    "quantity": {
+                      "type": "string",
+                      "description": "default value when not provided is 1"
+                    }
+                  },
+                  "required": [
+                    "variant_id"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Creating a line item",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"d2fa7880cf9ee5381b891ea057cc9064\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "a50dd5fd-7921-4131-a668-1ad9396f8332"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.090113"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "735"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "id": 285,
+                "quantity": 1,
+                "price": "19.99",
+                "variant_id": 740,
+                "vendor_id": 2419,
+                "single_display_amount": "$19.99",
+                "display_amount": "$19.99",
+                "total": "19.99",
+                "variant": {
+                  "id": 740,
+                  "name": "Product #10 - 5003",
+                  "sku": "SKU-18",
+                  "price": "19.99",
+                  "weight": "0.0",
+                  "height": null,
+                  "width": null,
+                  "depth": null,
+                  "is_master": false,
+                  "slug": "product-10-5003",
+                  "description": "As seen on TV!",
+                  "track_inventory": true,
+                  "display_price": "$19.99",
+                  "options_text": "Size: S",
+                  "in_stock": false,
+                  "is_backorderable": false,
+                  "total_on_hand": 0,
+                  "is_destroyed": false,
+                  "option_values": [
+                    {
+                      "id": 234,
+                      "name": "Size-9",
+                      "presentation": "S",
+                      "option_type_name": "foo-size-9",
+                      "option_type_id": 234,
+                      "option_type_presentation": "Size"
+                    }
+                  ],
+                  "images": [
+
+                  ],
+                  "product_id": 518
+                },
+                "vendor_name": "Vendor #43",
+                "adjustments": [
+
+                ]
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/orders/{order_number}/line_items/{line_item_id}": {
+      "put": {
+        "tags": [
+          "LineItem"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "order_number",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "line_item_id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "required": false,
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+                "line_item": {
+                  "type": "object",
+                  "properties": {
+                    "options": {
+                      "type": "string",
+                      "description": "Hash containing the vendor_id"
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "description": "Line item quantity"
+                    }
+                  },
+                  "required": [
+                    "quantity"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Updating a line item",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"772e86d33026edda8c9bb66483e964e0\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "825ac44a-47cf-42ea-9288-8641d2d4ab4e"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.063732"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "593"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "id": 286,
+                "quantity": 2,
+                "price": "10.0",
+                "variant_id": 741,
+                "vendor_id": 2425,
+                "single_display_amount": "$10.00",
+                "display_amount": "$20.00",
+                "total": "20.0",
+                "variant": {
+                  "id": 741,
+                  "name": "Product #11 - 2135",
+                  "sku": "SKU-20",
+                  "price": "19.99",
+                  "weight": "0.0",
+                  "height": null,
+                  "width": null,
+                  "depth": null,
+                  "is_master": true,
+                  "slug": "product-11-2135",
+                  "description": "As seen on TV!",
+                  "track_inventory": true,
+                  "display_price": "$19.99",
+                  "options_text": "",
+                  "in_stock": false,
+                  "is_backorderable": false,
+                  "total_on_hand": 0,
+                  "is_destroyed": false,
+                  "option_values": [
+
+                  ],
+                  "images": [
+
+                  ],
+                  "product_id": 519
+                },
+                "vendor_name": "Vendor #48",
+                "adjustments": [
+
+                ]
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      },
+      "delete": {
+        "tags": [
+          "LineItem"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+
+        ],
+        "parameters": [
+          {
+            "name": "order_number",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "line_item_id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Deleting a line item",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "no-cache"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "b50a4ffa-a63a-4c62-937b-2f7ea340c429"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.052590"
               }
             }
           }
@@ -723,7 +1250,7 @@
               "ETag": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "W/\"cf7afc8154d803dad1342e09e582af5e\""
+                "x-example-value": "W/\"e4fa5dc10ae23219f4285ec9e13e583d\""
               },
               "Cache-Control": {
                 "description": "",
@@ -733,12 +1260,12 @@
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "ac35fb22-8ce9-4b1a-9d9f-dbff8b32af73"
+                "x-example-value": "95d4b7f2-3488-44e7-aba3-d90bd5860b2f"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.036380"
+                "x-example-value": "0.029883"
               },
               "Content-Length": {
                 "description": "",
@@ -753,7 +1280,7 @@
                     "amount": "150.0",
                     "amount_used": "0.0",
                     "category": "Exchange",
-                    "created_at": "2019-07-18T15:45:59.415Z"
+                    "created_at": "2019-07-18T15:50:52.749Z"
                   }
                 ],
                 "current_balance": "150.0",
@@ -762,1322 +1289,6 @@
                 "current_page": 1,
                 "pages": 1,
                 "per_page": 25
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/variants/{variant_id}": {
-      "get": {
-        "tags": [
-          "Variant"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "variant_id",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Fetching a variant",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"8bfe1123e455c2d99cf262e42519e6c8\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "2259a878-f515-42e1-9629-a03f72837031"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.086769"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1454"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "id": 735,
-                "name": "Product #7 - 3455",
-                "sku": "SKU-13",
-                "price": "10.0",
-                "weight": "0.0",
-                "height": null,
-                "width": null,
-                "depth": null,
-                "is_master": false,
-                "slug": "product-7-3455",
-                "description": "As seen on TV!",
-                "track_inventory": true,
-                "lead_time": 2,
-                "display_price": "$10.00",
-                "options_text": "Size: S",
-                "in_stock": false,
-                "is_backorderable": false,
-                "total_on_hand": 0,
-                "is_destroyed": false,
-                "option_values": [
-                  {
-                    "id": 232,
-                    "name": "Size-7",
-                    "presentation": "S",
-                    "option_type_name": "foo-size-7",
-                    "option_type_id": 232,
-                    "option_type_presentation": "Size"
-                  }
-                ],
-                "images": [
-                  {
-                    "id": 2,
-                    "position": 1,
-                    "attachment_content_type": "image/jpeg",
-                    "attachment_file_name": "thinking-cat.jpg",
-                    "type": "Spree::Image",
-                    "attachment_updated_at": "2019-07-18T15:45:59.690Z",
-                    "attachment_width": 489,
-                    "attachment_height": 490,
-                    "alt": null,
-                    "viewable_type": "Spree::Variant",
-                    "viewable_id": 735,
-                    "mini_url": "/spree/products/2/mini/thinking-cat.jpg?1563464759",
-                    "small_url": "/spree/products/2/small/thinking-cat.jpg?1563464759",
-                    "product_url": "/spree/products/2/product/thinking-cat.jpg?1563464759",
-                    "large_url": "/spree/products/2/large/thinking-cat.jpg?1563464759"
-                  }
-                ],
-                "variant_properties": [
-
-                ],
-                "stock_items": [
-
-                ],
-                "prices": [
-                  {
-                    "id": 1428,
-                    "vendor_id": 2409,
-                    "price": "10.0",
-                    "original_price": "10.0",
-                    "discount_percent": 0.0,
-                    "total_on_hand": 0,
-                    "country_iso": null,
-                    "final_sale": false,
-                    "on_sale": false
-                  },
-                  {
-                    "id": 1429,
-                    "vendor_id": 2410,
-                    "price": "20.0",
-                    "original_price": "20.0",
-                    "discount_percent": 0.0,
-                    "total_on_hand": 0,
-                    "country_iso": null,
-                    "final_sale": false,
-                    "on_sale": false
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/returns/mine": {
-      "get": {
-        "tags": [
-          "Return Authorizations"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-
-        ],
-        "responses": {
-          "200": {
-            "description": "Gets the user's return authorizations",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"985923112f65e92fe62dd54c4f1b019f\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "4c99150e-c608-40e2-b584-ad06ff1b5749"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.014575"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "28"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "return_authorizations": [
-
-                ]
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/taxons/products": {
-      "get": {
-        "tags": [
-          "Product Management"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "permalink",
-            "in": "query",
-            "description": " permalink",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "id",
-            "in": "query",
-            "description": " id",
-            "required": false,
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "returns associated products",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"23d61c5534bd5d1e447da66ca6c7857b\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "2c7536d6-bcaf-4a1d-a9ee-3c8a0eabb7c9"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.053707"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1090"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "count": 1,
-                "total_count": 1,
-                "current_page": 1,
-                "pages": 1,
-                "per_page": 500,
-                "products": [
-                  {
-                    "id": 517,
-                    "name": "Product #9 - 1915",
-                    "description": "As seen on TV!",
-                    "price": "19.99",
-                    "display_price": "$19.99",
-                    "available_on": "2018-07-18T15:46:00.459Z",
-                    "slug": "product-9-1915",
-                    "meta_description": null,
-                    "meta_keywords": null,
-                    "shipping_category_id": 314,
-                    "taxon_ids": [
-                      627
-                    ],
-                    "total_on_hand": 0,
-                    "meta_title": null,
-                    "trends": [
-
-                    ],
-                    "brand": "Ruby on Rails",
-                    "brand_description": null,
-                    "has_variants": false,
-                    "master": {
-                      "id": 737,
-                      "name": "Product #9 - 1915",
-                      "sku": "SKU-16",
-                      "price": "19.99",
-                      "weight": "0.0",
-                      "height": null,
-                      "width": null,
-                      "depth": null,
-                      "is_master": true,
-                      "slug": "product-9-1915",
-                      "description": "As seen on TV!",
-                      "track_inventory": true,
-                      "display_price": "$19.99",
-                      "options_text": "",
-                      "in_stock": false,
-                      "is_backorderable": false,
-                      "total_on_hand": 0,
-                      "is_destroyed": false,
-                      "option_values": [
-
-                      ],
-                      "images": [
-
-                      ]
-                    },
-                    "variants": [
-
-                    ],
-                    "option_types": [
-
-                    ],
-                    "product_properties": [
-
-                    ],
-                    "classifications": [
-                      {
-                        "taxon_id": 627,
-                        "position": 1,
-                        "taxon": {
-                          "id": 627,
-                          "name": "Ruby on Rails",
-                          "pretty_name": "Ruby on Rails",
-                          "permalink": "ruby-on-rails",
-                          "parent_id": null,
-                          "taxonomy_id": 213
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/products": {
-      "get": {
-        "tags": [
-          "Product Management"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-
-        ],
-        "responses": {
-          "200": {
-            "description": "Get products",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Date": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "Thu, 18 Jul 2019 15:46:01 GMT"
-              },
-              "Surrogate-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=900"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=900, public"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"e7da055ea174726bfdf7ed8bca92f950\""
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "5dbe029e-70ed-4b15-a5df-a5bd9c3a840e"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.062183"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "915"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "count": 1,
-                "total_count": 1,
-                "current_page": 1,
-                "pages": 1,
-                "per_page": 25,
-                "products": [
-                  {
-                    "id": 521,
-                    "name": "Product #13 - 6889",
-                    "description": "As seen on TV!",
-                    "price": "19.99",
-                    "display_price": "$19.99",
-                    "available_on": "2018-07-18T15:46:01.007Z",
-                    "slug": "product-13-6889",
-                    "meta_description": null,
-                    "meta_keywords": null,
-                    "shipping_category_id": 316,
-                    "taxon_ids": [
-
-                    ],
-                    "total_on_hand": 0,
-                    "meta_title": null,
-                    "trends": [
-
-                    ],
-                    "brand": null,
-                    "brand_description": null,
-                    "has_variants": false,
-                    "master": {
-                      "id": 741,
-                      "name": "Product #13 - 6889",
-                      "sku": "SKU-20",
-                      "price": "19.99",
-                      "weight": "0.0",
-                      "height": null,
-                      "width": null,
-                      "depth": null,
-                      "is_master": true,
-                      "slug": "product-13-6889",
-                      "description": "As seen on TV!",
-                      "track_inventory": true,
-                      "display_price": "$19.99",
-                      "options_text": "",
-                      "in_stock": false,
-                      "is_backorderable": false,
-                      "total_on_hand": 0,
-                      "is_destroyed": false,
-                      "option_values": [
-
-                      ],
-                      "images": [
-
-                      ]
-                    },
-                    "variants": [
-
-                    ],
-                    "option_types": [
-
-                    ],
-                    "product_properties": [
-
-                    ],
-                    "classifications": [
-
-                    ]
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/products/{id}": {
-      "get": {
-        "tags": [
-          "Product Management"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Return a product",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Date": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "Thu, 18 Jul 2019 15:46:01 GMT"
-              },
-              "Surrogate-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=900"
-              },
-              "Surrogate-Key": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "product_id=1"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=900, public"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"07d6f938f47fc10a63f855bd8c9a692e\""
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "7bdf0918-6ccc-4a1e-9c22-c65ba239ef1e"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.041926"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "833"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "id": 522,
-                "name": "Product #14 - 1100",
-                "description": "As seen on TV!",
-                "price": "19.99",
-                "display_price": "$19.99",
-                "available_on": "2018-07-18T15:46:01.157Z",
-                "slug": "product-14-1100",
-                "meta_description": null,
-                "meta_keywords": null,
-                "shipping_category_id": 317,
-                "taxon_ids": [
-
-                ],
-                "total_on_hand": 0,
-                "meta_title": null,
-                "trends": [
-
-                ],
-                "brand": null,
-                "brand_description": null,
-                "has_variants": false,
-                "master": {
-                  "id": 742,
-                  "name": "Product #14 - 1100",
-                  "sku": "SKU-21",
-                  "price": "19.99",
-                  "weight": "0.0",
-                  "height": null,
-                  "width": null,
-                  "depth": null,
-                  "is_master": true,
-                  "slug": "product-14-1100",
-                  "description": "As seen on TV!",
-                  "track_inventory": true,
-                  "display_price": "$19.99",
-                  "options_text": "",
-                  "in_stock": false,
-                  "is_backorderable": false,
-                  "total_on_hand": 0,
-                  "is_destroyed": false,
-                  "option_values": [
-
-                  ],
-                  "images": [
-
-                  ]
-                },
-                "variants": [
-
-                ],
-                "option_types": [
-
-                ],
-                "product_properties": [
-
-                ],
-                "classifications": [
-
-                ]
-              }
-            }
-          },
-          "404": {
-            "description": "does not return a product",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "no-cache"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "7bd8a524-49dc-495d-a0d0-db7e46f2d5f7"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.042175"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "65"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "error": "The resource you were looking for could not be found."
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/users/login": {
-      "post": {
-        "tags": [
-          "Users"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-          "application/x-www-form-urlencoded"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "description": "",
-            "required": false,
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-                "user": {
-                  "type": "object",
-                  "properties": {
-                    "email": {
-                      "type": "string",
-                      "description": "User email"
-                    },
-                    "password": {
-                      "type": "string",
-                      "description": "User password"
-                    }
-                  },
-                  "required": [
-                    "email"
-                  ]
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Login",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "X-Spree-Token": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "b913a999d237fde59214a5c2d62b20f3241f15ca19dfd512"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"dd3c07a060a6de22b115648a7796de81\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "9b6d9d5b-17f3-4f50-afdd-74a0406a1afd"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.009298"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "553"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "id": 332,
-                "email": "email11@example.com",
-                "persistence_token": null,
-                "perishable_token": null,
-                "last_request_at": null,
-                "login": "email11@example.com",
-                "ship_address_id": null,
-                "bill_address_id": null,
-                "created_at": "2019-07-18T15:46:01.427Z",
-                "updated_at": "2019-07-18T15:46:01.432Z",
-                "spree_api_key": "b913a999d237fde59214a5c2d62b20f3241f15ca19dfd512",
-                "authentication_token": null,
-                "deleted_at": null,
-                "first_name": null,
-                "last_name": null,
-                "receive_emails_agree": false,
-                "exemption_number": null,
-                "vat_id": null,
-                "avalara_entity_use_code_id": null,
-                "default_payment_method_token": null
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/users": {
-      "post": {
-        "tags": [
-          "Users"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-          "application/x-www-form-urlencoded"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "description": "",
-            "required": false,
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-                "user": {
-                  "type": "object",
-                  "properties": {
-                    "email": {
-                      "type": "string",
-                      "description": "User email"
-                    },
-                    "password": {
-                      "type": "string",
-                      "description": "User password"
-                    },
-                    "password_confirmation": {
-                      "type": "string",
-                      "description": "User password confirmation"
-                    },
-                    "first_name": {
-                      "type": "string",
-                      "description": "User first name"
-                    },
-                    "last_name": {
-                      "type": "string",
-                      "description": "User last name"
-                    }
-                  },
-                  "required": [
-                    "email"
-                  ]
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Signup",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "X-Spree-Token": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "8c184ac9279cc10ace1073a5a706dfb3041f7e172360c3f0"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"b3c27e8536053504b89c3bceb31aa656\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "e6c8dad4-bfff-467d-9fcb-4d3d757cb5e4"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.030440"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "157"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "id": 333,
-                "email": "test@example.com",
-                "created_at": "2019-07-18T15:46:01.455Z",
-                "updated_at": "2019-07-18T15:46:01.458Z",
-                "bill_address": null,
-                "ship_address": null
-              }
-            }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      }
-    },
-    "/api/users/mine": {
-      "get": {
-        "tags": [
-          "Users"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-
-        ],
-        "responses": {
-          "200": {
-            "description": "Gets the user account information",
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-              }
-            },
-            "headers": {
-              "X-Frame-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "SAMEORIGIN"
-              },
-              "X-XSS-Protection": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1; mode=block"
-              },
-              "X-Content-Type-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "nosniff"
-              },
-              "X-Download-Options": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "noopen"
-              },
-              "X-Permitted-Cross-Domain-Policies": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "none"
-              },
-              "Referrer-Policy": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "strict-origin-when-cross-origin"
-              },
-              "Content-Type": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "application/json; charset=utf-8"
-              },
-              "X-Spree-Token": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "1c3cc86fcc547c1a97da2bfb304f402fc90f742c327aa93b"
-              },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"863033c0e7985125e75f9af192012eb0\""
-              },
-              "Cache-Control": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
-              },
-              "X-Request-Id": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "53a692ef-870d-4049-bb93-04f0d5ecca60"
-              },
-              "X-Runtime": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "0.010202"
-              },
-              "Content-Length": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "98"
-              }
-            },
-            "examples": {
-              "application/json": {
-                "email": "email12@example.com",
-                "full_name": null,
-                "subscribed": null,
-                "addresses": [
-
-                ],
-                "creditcards": [
-
-                ]
               }
             }
           }
@@ -2253,7 +1464,7 @@
               "ETag": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "W/\"291082226568f7f5658556531007234a\""
+                "x-example-value": "W/\"c7adc0ab55e2b4ca0a466a201376d194\""
               },
               "Cache-Control": {
                 "description": "",
@@ -2263,12 +1474,12 @@
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "2f68e722-85a5-4b51-b691-b3657fc52db8"
+                "x-example-value": "db01ea21-0089-45ba-90c4-b5ab603729bd"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.046030"
+                "x-example-value": "0.039855"
               },
               "Content-Length": {
                 "description": "",
@@ -2278,24 +1489,24 @@
             },
             "examples": {
               "application/json": {
-                "id": 593,
+                "id": 597,
                 "firstname": "John the Tester",
                 "lastname": null,
                 "full_name": "John the Tester",
                 "address1": "A Different Road",
                 "address2": "Northwest",
                 "city": "Herndon",
-                "zipcode": "10016",
+                "zipcode": "10020",
                 "phone": "555-555-0199",
                 "company": "Company",
                 "alternative_phone": "555-555-0199",
-                "country_id": 367,
+                "country_id": 364,
                 "country_iso": "US",
-                "state_id": 356,
+                "state_id": 353,
                 "state_name": null,
                 "state_text": "AL",
                 "country": {
-                  "id": 367,
+                  "id": 364,
                   "iso_name": "UNITED STATES",
                   "iso": "US",
                   "iso3": "USA",
@@ -2303,10 +1514,10 @@
                   "numcode": 840
                 },
                 "state": {
-                  "id": 356,
+                  "id": 353,
                   "name": "Alabama",
                   "abbr": "AL",
-                  "country_id": 367
+                  "country_id": 364
                 }
               }
             }
@@ -2318,66 +1529,25 @@
         ]
       }
     },
-    "/api/orders/{order_number}/line_items/{line_item_id}": {
-      "put": {
+    "/api/products": {
+      "get": {
         "tags": [
-          "LineItem"
+          "Product Management"
         ],
         "summary": "",
         "description": "",
         "consumes": [
-          "application/x-www-form-urlencoded"
+
         ],
         "produces": [
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "order_number",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "line_item_id",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "description": "",
-            "required": false,
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-                "line_item": {
-                  "type": "object",
-                  "properties": {
-                    "options": {
-                      "type": "string",
-                      "description": "Hash containing the vendor_id"
-                    },
-                    "quantity": {
-                      "type": "integer",
-                      "description": "Line item quantity"
-                    }
-                  },
-                  "required": [
-                    "quantity"
-                  ]
-                }
-              }
-            }
-          }
+
         ],
         "responses": {
           "200": {
-            "description": "Updating a line item",
+            "description": "Get products",
             "schema": {
               "description": "",
               "type": "object",
@@ -2415,50 +1585,261 @@
                 "type": "string",
                 "x-example-value": "strict-origin-when-cross-origin"
               },
+              "Date": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "Thu, 18 Jul 2019 15:50:52 GMT"
+              },
+              "Surrogate-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=900"
+              },
               "Content-Type": {
                 "description": "",
                 "type": "string",
                 "x-example-value": "application/json; charset=utf-8"
               },
-              "ETag": {
-                "description": "",
-                "type": "string",
-                "x-example-value": "W/\"22865f4e5a2b94b71b7dae3ff51668b0\""
-              },
               "Cache-Control": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "max-age=0, private, must-revalidate"
+                "x-example-value": "max-age=900, public"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"0463186a0687c63d0629326f8df92fe9\""
               },
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "2668f923-4c74-4f6a-a842-9ef7a6d3111e"
+                "x-example-value": "fa506f54-89d7-4cb6-9368-5462d5746464"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.092510"
+                "x-example-value": "0.075950"
               },
               "Content-Length": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "593"
+                "x-example-value": "915"
               }
             },
             "examples": {
               "application/json": {
-                "id": 285,
-                "quantity": 2,
-                "price": "10.0",
-                "variant_id": 744,
-                "vendor_id": 2444,
-                "single_display_amount": "$10.00",
-                "display_amount": "$20.00",
-                "total": "20.0",
-                "variant": {
+                "count": 1,
+                "total_count": 1,
+                "current_page": 1,
+                "pages": 1,
+                "per_page": 25,
+                "products": [
+                  {
+                    "id": 521,
+                    "name": "Product #13 - 2420",
+                    "description": "As seen on TV!",
+                    "price": "19.99",
+                    "display_price": "$19.99",
+                    "available_on": "2018-07-18T15:50:52.876Z",
+                    "slug": "product-13-2420",
+                    "meta_description": null,
+                    "meta_keywords": null,
+                    "shipping_category_id": 316,
+                    "taxon_ids": [
+
+                    ],
+                    "total_on_hand": 0,
+                    "meta_title": null,
+                    "trends": [
+
+                    ],
+                    "brand": null,
+                    "brand_description": null,
+                    "has_variants": false,
+                    "master": {
+                      "id": 743,
+                      "name": "Product #13 - 2420",
+                      "sku": "SKU-22",
+                      "price": "19.99",
+                      "weight": "0.0",
+                      "height": null,
+                      "width": null,
+                      "depth": null,
+                      "is_master": true,
+                      "slug": "product-13-2420",
+                      "description": "As seen on TV!",
+                      "track_inventory": true,
+                      "display_price": "$19.99",
+                      "options_text": "",
+                      "in_stock": false,
+                      "is_backorderable": false,
+                      "total_on_hand": 0,
+                      "is_destroyed": false,
+                      "option_values": [
+
+                      ],
+                      "images": [
+
+                      ]
+                    },
+                    "variants": [
+
+                    ],
+                    "option_types": [
+
+                    ],
+                    "product_properties": [
+
+                    ],
+                    "classifications": [
+
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/products/{id}": {
+      "get": {
+        "tags": [
+          "Product Management"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return a product",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Date": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "Thu, 18 Jul 2019 15:50:53 GMT"
+              },
+              "Surrogate-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=900"
+              },
+              "Surrogate-Key": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "product_id=1"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=900, public"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"54f84acb5ada555948cb8d9efa7d018a\""
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "712e2d8e-2544-4274-854e-52781995bb15"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.038313"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "833"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "id": 522,
+                "name": "Product #14 - 2106",
+                "description": "As seen on TV!",
+                "price": "19.99",
+                "display_price": "$19.99",
+                "available_on": "2018-07-18T15:50:53.029Z",
+                "slug": "product-14-2106",
+                "meta_description": null,
+                "meta_keywords": null,
+                "shipping_category_id": 317,
+                "taxon_ids": [
+
+                ],
+                "total_on_hand": 0,
+                "meta_title": null,
+                "trends": [
+
+                ],
+                "brand": null,
+                "brand_description": null,
+                "has_variants": false,
+                "master": {
                   "id": 744,
-                  "name": "Product #16 - 7090",
+                  "name": "Product #14 - 2106",
                   "sku": "SKU-23",
                   "price": "19.99",
                   "weight": "0.0",
@@ -2466,7 +1847,7 @@
                   "width": null,
                   "depth": null,
                   "is_master": true,
-                  "slug": "product-16-7090",
+                  "slug": "product-14-2106",
                   "description": "As seen on TV!",
                   "track_inventory": true,
                   "display_price": "$19.99",
@@ -2480,53 +1861,25 @@
                   ],
                   "images": [
 
-                  ],
-                  "product_id": 524
+                  ]
                 },
-                "vendor_name": "Vendor #62",
-                "adjustments": [
+                "variants": [
+
+                ],
+                "option_types": [
+
+                ],
+                "product_properties": [
+
+                ],
+                "classifications": [
 
                 ]
               }
             }
-          }
-        },
-        "deprecated": false,
-        "security": [
-
-        ]
-      },
-      "delete": {
-        "tags": [
-          "LineItem"
-        ],
-        "summary": "",
-        "description": "",
-        "consumes": [
-          "application/x-www-form-urlencoded"
-        ],
-        "produces": [
-
-        ],
-        "parameters": [
-          {
-            "name": "order_number",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "string"
           },
-          {
-            "name": "line_item_id",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "Deleting a line item",
+          "404": {
+            "description": "does not return a product",
             "schema": {
               "description": "",
               "type": "object",
@@ -2564,6 +1917,11 @@
                 "type": "string",
                 "x-example-value": "strict-origin-when-cross-origin"
               },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
               "Cache-Control": {
                 "description": "",
                 "type": "string",
@@ -2572,12 +1930,22 @@
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "31b07c99-df97-4a53-ae97-1638f91f1475"
+                "x-example-value": "bffe0614-e724-47b9-b5e6-c951e2f6c562"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.058677"
+                "x-example-value": "0.016398"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "65"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "error": "The resource you were looking for could not be found."
               }
             }
           }
@@ -2588,63 +1956,38 @@
         ]
       }
     },
-    "/api/orders/{order_number}/line_items": {
-      "post": {
+    "/api/taxons/products": {
+      "get": {
         "tags": [
-          "LineItem"
+          "Product Management"
         ],
         "summary": "",
         "description": "",
         "consumes": [
-          "application/x-www-form-urlencoded"
+
         ],
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
-            "name": "order_number",
-            "in": "path",
-            "description": "",
-            "required": true,
+            "name": "permalink",
+            "in": "query",
+            "description": " permalink",
+            "required": false,
             "type": "string"
           },
           {
-            "name": "body",
-            "in": "body",
-            "description": "",
+            "name": "id",
+            "in": "query",
+            "description": " id",
             "required": false,
-            "schema": {
-              "description": "",
-              "type": "object",
-              "properties": {
-                "line_item": {
-                  "type": "object",
-                  "properties": {
-                    "variant_id": {
-                      "type": "integer",
-                      "description": "Line item variant"
-                    },
-                    "options": {
-                      "type": "object",
-                      "description": "Hash containing the vendor_id. It's used to set the price based on vendor"
-                    },
-                    "quantity": {
-                      "type": "string",
-                      "description": "default value when not provided is 1"
-                    }
-                  },
-                  "required": [
-                    "variant_id"
-                  ]
-                }
-              }
-            }
+            "type": "string"
           }
         ],
         "responses": {
-          "201": {
-            "description": "Creating a line item",
+          "200": {
+            "description": "returns associated products",
             "schema": {
               "description": "",
               "type": "object",
@@ -2690,7 +2033,7 @@
               "ETag": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "W/\"989879f7f66f4691c51704ea5f8eb32f\""
+                "x-example-value": "W/\"b3af618c65b9aaca23e8b4476684222a\""
               },
               "Cache-Control": {
                 "description": "",
@@ -2700,68 +2043,725 @@
               "X-Request-Id": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "1a6e488f-2a6e-4f55-b3bb-f6fb8c40e779"
+                "x-example-value": "fa6cd35b-5b76-4242-83bb-e900dfa93516"
               },
               "X-Runtime": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "0.084449"
+                "x-example-value": "0.044616"
               },
               "Content-Length": {
                 "description": "",
                 "type": "string",
-                "x-example-value": "735"
+                "x-example-value": "1094"
               }
             },
             "examples": {
               "application/json": {
-                "id": 288,
-                "quantity": 1,
-                "price": "19.99",
-                "variant_id": 750,
-                "vendor_id": 2456,
-                "single_display_amount": "$19.99",
-                "display_amount": "$19.99",
-                "total": "19.99",
-                "variant": {
-                  "id": 750,
-                  "name": "Product #20 - 5268",
-                  "sku": "SKU-28",
-                  "price": "19.99",
-                  "weight": "0.0",
-                  "height": null,
-                  "width": null,
-                  "depth": null,
-                  "is_master": false,
-                  "slug": "product-20-5268",
-                  "description": "As seen on TV!",
-                  "track_inventory": true,
-                  "display_price": "$19.99",
-                  "options_text": "Size: S",
-                  "in_stock": false,
-                  "is_backorderable": false,
-                  "total_on_hand": 0,
-                  "is_destroyed": false,
-                  "option_values": [
-                    {
-                      "id": 234,
-                      "name": "Size-9",
-                      "presentation": "S",
-                      "option_type_name": "foo-size-9",
-                      "option_type_id": 234,
-                      "option_type_presentation": "Size"
-                    }
-                  ],
-                  "images": [
+                "count": 1,
+                "total_count": 1,
+                "current_page": 1,
+                "pages": 1,
+                "per_page": 500,
+                "products": [
+                  {
+                    "id": 524,
+                    "name": "Product #16 - 5930",
+                    "description": "As seen on TV!",
+                    "price": "19.99",
+                    "display_price": "$19.99",
+                    "available_on": "2018-07-18T15:50:53.288Z",
+                    "slug": "product-16-5930",
+                    "meta_description": null,
+                    "meta_keywords": null,
+                    "shipping_category_id": 319,
+                    "taxon_ids": [
+                      625
+                    ],
+                    "total_on_hand": 0,
+                    "meta_title": null,
+                    "trends": [
 
-                  ],
-                  "product_id": 528
-                },
-                "vendor_name": "Vendor #72",
-                "adjustments": [
+                    ],
+                    "brand": "Ruby on Rails",
+                    "brand_description": null,
+                    "has_variants": false,
+                    "master": {
+                      "id": 746,
+                      "name": "Product #16 - 5930",
+                      "sku": "SKU-25",
+                      "price": "19.99",
+                      "weight": "0.0",
+                      "height": null,
+                      "width": null,
+                      "depth": null,
+                      "is_master": true,
+                      "slug": "product-16-5930",
+                      "description": "As seen on TV!",
+                      "track_inventory": true,
+                      "display_price": "$19.99",
+                      "options_text": "",
+                      "in_stock": false,
+                      "is_backorderable": false,
+                      "total_on_hand": 0,
+                      "is_destroyed": false,
+                      "option_values": [
+
+                      ],
+                      "images": [
+
+                      ]
+                    },
+                    "variants": [
+
+                    ],
+                    "option_types": [
+
+                    ],
+                    "product_properties": [
+
+                    ],
+                    "classifications": [
+                      {
+                        "taxon_id": 625,
+                        "position": 1,
+                        "taxon": {
+                          "id": 625,
+                          "name": "Ruby on Rails",
+                          "pretty_name": "Ruby on Rails",
+                          "permalink": "ruby-on-rails",
+                          "parent_id": null,
+                          "taxonomy_id": 212
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "required": false,
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "description": "User email"
+                    },
+                    "password": {
+                      "type": "string",
+                      "description": "User password"
+                    },
+                    "password_confirmation": {
+                      "type": "string",
+                      "description": "User password confirmation"
+                    },
+                    "first_name": {
+                      "type": "string",
+                      "description": "User first name"
+                    },
+                    "last_name": {
+                      "type": "string",
+                      "description": "User last name"
+                    }
+                  },
+                  "required": [
+                    "email"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Signup",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "X-Spree-Token": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "71618dc7c35b0da77d6b45397c3dc891e5e42e76bff16584"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"bbea6a8ad7e2af8ac279cb252fbb99d2\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "a2b63ae5-ae8b-4121-85af-7ffe363ab5a6"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.024974"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "157"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "id": 336,
+                "email": "test@example.com",
+                "created_at": "2019-07-18T15:50:53.802Z",
+                "updated_at": "2019-07-18T15:50:53.804Z",
+                "bill_address": null,
+                "ship_address": null
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/users/mine": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "Gets the user account information",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "X-Spree-Token": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "8456be551a8dc2f85ca7006dfed166f6e2e244c79e8c6888"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"9e475873a6e37e921df5222a233ed522\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "5d4f2b72-90b5-4dab-be56-37c145cef04b"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.008455"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "98"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "email": "email14@example.com",
+                "full_name": null,
+                "subscribed": null,
+                "addresses": [
+
+                ],
+                "creditcards": [
 
                 ]
               }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/users/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "required": false,
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "description": "User email"
+                    },
+                    "password": {
+                      "type": "string",
+                      "description": "User password"
+                    }
+                  },
+                  "required": [
+                    "email"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Login",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "X-Spree-Token": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "7a3bbf2cb08bd2d6aa7184e53f5c0219362a49a32684afa8"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"678895014306f38ed1e39f8feac4ad72\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "ec5dc904-456f-4824-819b-d1b560d14e3e"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.005391"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "553"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "id": 338,
+                "email": "email15@example.com",
+                "persistence_token": null,
+                "perishable_token": null,
+                "last_request_at": null,
+                "login": "email15@example.com",
+                "ship_address_id": null,
+                "bill_address_id": null,
+                "created_at": "2019-07-18T15:50:53.841Z",
+                "updated_at": "2019-07-18T15:50:53.844Z",
+                "spree_api_key": "7a3bbf2cb08bd2d6aa7184e53f5c0219362a49a32684afa8",
+                "authentication_token": null,
+                "deleted_at": null,
+                "first_name": null,
+                "last_name": null,
+                "receive_emails_agree": false,
+                "exemption_number": null,
+                "vat_id": null,
+                "avalara_entity_use_code_id": null,
+                "default_payment_method_token": null
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/returns/mine": {
+      "get": {
+        "tags": [
+          "Return Authorizations"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "Gets the user's return authorizations",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"985923112f65e92fe62dd54c4f1b019f\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "b0ae0fbd-bd63-4ea1-a414-833ad79499c6"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.013702"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "28"
+              }
+            },
+            "examples": {
+              "application/json": {
+                "return_authorizations": [
+
+                ]
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+
+        ]
+      }
+    },
+    "/api/taxons/nav": {
+      "get": {
+        "tags": [
+          "Navigation"
+        ],
+        "summary": "",
+        "description": "",
+        "consumes": [
+
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns navigation taxons",
+            "schema": {
+              "description": "",
+              "type": "object",
+              "properties": {
+              }
+            },
+            "headers": {
+              "X-Frame-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "SAMEORIGIN"
+              },
+              "X-XSS-Protection": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "1; mode=block"
+              },
+              "X-Content-Type-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "nosniff"
+              },
+              "X-Download-Options": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "noopen"
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "none"
+              },
+              "Referrer-Policy": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "strict-origin-when-cross-origin"
+              },
+              "Content-Type": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "application/json; charset=utf-8"
+              },
+              "ETag": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "W/\"a8385ad5ad62d506d2b6bae2659295ee\""
+              },
+              "Cache-Control": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "max-age=0, private, must-revalidate"
+              },
+              "X-Request-Id": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "284ea503-54d6-4841-ab9d-232931685c54"
+              },
+              "X-Runtime": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "0.006529"
+              },
+              "Content-Length": {
+                "description": "",
+                "type": "string",
+                "x-example-value": "134"
+              }
+            },
+            "examples": {
+              "application/json": [
+                {
+                  "id": 633,
+                  "name": "Kids",
+                  "navigation_url": "/navigation/kids",
+                  "parent_id": 632,
+                  "lft": 2,
+                  "depth": 1,
+                  "highlight": false,
+                  "header_link": false
+                }
+              ]
             }
           }
         },
@@ -2774,11 +2774,11 @@
   },
   "tags": [
     {
-      "name": "Navigation",
+      "name": "Orders",
       "description": ""
     },
     {
-      "name": "Orders",
+      "name": "Variant",
       "description": ""
     },
     {
@@ -2786,32 +2786,32 @@
       "description": ""
     },
     {
+      "name": "LineItem",
+      "description": "Representation of a single cart item for a specific variant with price of vendor"
+    },
+    {
       "name": "Store Credits API",
       "description": "Get user store_credits and current account balance for the current user"
-    },
-    {
-      "name": "Variant",
-      "description": ""
-    },
-    {
-      "name": "Return Authorizations",
-      "description": "Get user return authorizations"
-    },
-    {
-      "name": "Product Management",
-      "description": "get products by taxon"
-    },
-    {
-      "name": "Users",
-      "description": "Validate user email and password. Does not handle any session and only return the user"
     },
     {
       "name": "Address",
       "description": "As a guest user"
     },
     {
-      "name": "LineItem",
-      "description": "Representation of a single cart item for a specific variant with price of vendor"
+      "name": "Product Management",
+      "description": "get product by slug"
+    },
+    {
+      "name": "Users",
+      "description": "Create a new user and return a header X-Spree-Token to be used for further user related request"
+    },
+    {
+      "name": "Return Authorizations",
+      "description": "Get user return authorizations"
+    },
+    {
+      "name": "Navigation",
+      "description": ""
     }
   ]
 }
