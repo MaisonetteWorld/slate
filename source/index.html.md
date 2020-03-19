@@ -18,9 +18,9 @@ As a guest user
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/M457820233/addresses/51
+PUT /api/orders/M805688845/addresses/49
 Accept: application/json
-X-Spree-Order-Token: tVGf96t8j2n2vo7SPFtKBw
+X-Spree-Order-Token: Tt-O3DulhPZJXFbW_0DeCQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -68,10 +68,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;a8b85a9237453c1f7d98fa2d84305607&quot;
+ETag: W/&quot;44870a954757e5dbe8f3e79a5407df7a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 694b31cd-2d87-494e-bed8-993c8f61451d
-X-Runtime: 0.061199
+X-Request-Id: d7cd7da9-583c-460e-aba7-b36c14ab8861
+X-Runtime: 0.063177
 Vary: Origin
 Content-Length: 507
 200 OK
@@ -99,7 +99,7 @@ Please do not send billing address attributes at all if there is no billing addr
 ```plaintext
 POST /api/braintree/transactions
 Accept: application/json
-X-Spree-Order-Token: UdfjjBgggmqpCy5-sIDtQw
+X-Spree-Order-Token: -fqznt6mPBdY5om5XQULtQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -111,7 +111,7 @@ Cookie:
 
 
 ```json
-order_id=M499767218&payment_method_id=19&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-paypal-billing-agreement-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10044&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=PayPalAccount&transaction[billing_address_attributes][first_name]=John&transaction[billing_address_attributes][last_name]=Stamm&transaction[billing_address_attributes][address_line_1]=A+Different+Road&transaction[billing_address_attributes][city]=Herndon&transaction[billing_address_attributes][state_code]=AL&transaction[billing_address_attributes][zip]=10044&transaction[billing_address_attributes][country_code]=US
+order_id=M880653342&payment_method_id=22&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-paypal-billing-agreement-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10042&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=PayPalAccount&transaction[billing_address_attributes][first_name]=John&transaction[billing_address_attributes][last_name]=Stamm&transaction[billing_address_attributes][address_line_1]=A+Different+Road&transaction[billing_address_attributes][city]=Herndon&transaction[billing_address_attributes][state_code]=AL&transaction[billing_address_attributes][zip]=10042&transaction[billing_address_attributes][country_code]=US
 ```
 
 
@@ -151,12 +151,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;e2f9175051590791a2a8df33ce7bc2c8&quot;
+ETag: W/&quot;153f7e8d9009e562315423d3cb2cf906&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 16e7dd59-0489-4359-a7d7-d84045f27a9d
-X-Runtime: 0.319933
+X-Request-Id: 9317a564-a255-431d-8cc0-b54970c8b6c4
+X-Runtime: 0.315307
 Vary: Origin
-Content-Length: 5410
+Content-Length: 5408
 200 OK
 ```
 
@@ -177,7 +177,7 @@ Content-Length: 5410
 ```plaintext
 POST /api/braintree/transactions
 Accept: application/json
-X-Spree-Order-Token: 8lWGDALq5JVr1BhQqP3-IA
+X-Spree-Order-Token: q3BE_Hd-ePSmeJC3SBcUZA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -189,7 +189,7 @@ Cookie:
 
 
 ```json
-order_id=M643107341&payment_method_id=18&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-apple-pay-visa-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10042&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=ApplePayCard
+order_id=M141243430&payment_method_id=21&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-apple-pay-visa-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10040&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=ApplePayCard
 ```
 
 
@@ -222,12 +222,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;b15aeb908999713d326726e57a2ae070&quot;
+ETag: W/&quot;225713a2bcbc25c0e9a06a7f37048fb9&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e5e213ce-4aa2-47dc-b01a-77ffa6044487
-X-Runtime: 0.394502
+X-Request-Id: 51c4cd4e-0752-4231-bf2a-e2361de8ba32
+X-Runtime: 0.313815
 Vary: Origin
-Content-Length: 5456
+Content-Length: 5452
 200 OK
 ```
 
@@ -250,9 +250,9 @@ Content-Length: 5456
 #### Endpoint
 
 ```plaintext
-PUT /api/checkouts/M034329145/complete
+PUT /api/checkouts/M089360544/complete
 Accept: application/json
-X-Spree-Order-Token: W7ApLaTbLH-BohPUJ7wvjg
+X-Spree-Order-Token: VEyh85I04zYWIV3mXy9C9g
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -286,12 +286,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;28cdbe3db357587cba55db92379c8643&quot;
+ETag: W/&quot;a71c5d6cd0bea93f3ab32920f322e651&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7624177c-5902-4e86-81a7-253c047d0648
-X-Runtime: 0.529761
+X-Request-Id: 4ad74677-8f1e-4f95-80a5-0a31f092485b
+X-Runtime: 0.536780
 Vary: Origin
-Content-Length: 5571
+Content-Length: 5542
 200 OK
 ```
 
@@ -310,9 +310,9 @@ Content-Length: 5571
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M911394073
+PATCH /api/checkouts/M245374617
 Accept: application/json
-X-Spree-Order-Token: fV_5LZvzjm3wUZgoBdPByA
+X-Spree-Order-Token: TN5aJKvFXU7fb7Ib8FtNSA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -324,7 +324,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=5&order[payment_attributes][][source_attributes][nonce]=fake-apple-pay-visa-nonce&order[payment_attributes][][source_attributes][payment_type]=ApplePayCard&order[payment_attributes][][source_attributes][reusable]=true
+order[payment_attributes][][payment_method_id]=4&order[payment_attributes][][source_attributes][nonce]=fake-apple-pay-visa-nonce&order[payment_attributes][][source_attributes][payment_type]=ApplePayCard&order[payment_attributes][][source_attributes][reusable]=true
 ```
 
 
@@ -348,12 +348,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c6ab648621d7467f6df77ebbae96895b&quot;
+ETag: W/&quot;c60a653cf4fd24deecabb93ab45c4cd0&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c00c83cc-b2e8-4f95-aa80-510ec2b4fc20
-X-Runtime: 0.165628
+X-Request-Id: a0dec834-f42a-4383-ac9e-a18db3a1b65c
+X-Runtime: 0.147854
 Vary: Origin
-Content-Length: 4958
+Content-Length: 4928
 200 OK
 ```
 
@@ -372,9 +372,9 @@ Content-Length: 4958
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M699346800
+PATCH /api/checkouts/M660681620
 Accept: application/json
-X-Spree-Order-Token: naBs_O1Fbh1gvsH1EaoWCg
+X-Spree-Order-Token: NUVxDHmsEH69o8PJYHE4hA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -386,7 +386,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=6&order[payment_attributes][][source_attributes][nonce]=fake-paypal-billing-agreement-nonce&order[payment_attributes][][source_attributes][payment_type]=PayPalAccount&order[payment_attributes][][source_attributes][reusable]=true
+order[payment_attributes][][payment_method_id]=2&order[payment_attributes][][source_attributes][nonce]=fake-paypal-billing-agreement-nonce&order[payment_attributes][][source_attributes][payment_type]=PayPalAccount&order[payment_attributes][][source_attributes][reusable]=true
 ```
 
 
@@ -410,12 +410,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;69e6be026432833d07ee5e6adde2cf70&quot;
+ETag: W/&quot;5941db43457046913e7fbd8c1a6bf900&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: cd2c1043-eb2f-4a90-a274-aa57d96e9981
-X-Runtime: 0.179009
+X-Request-Id: 449a3847-9356-46e8-8f8d-670d57863e8a
+X-Runtime: 0.258187
 Vary: Origin
-Content-Length: 4958
+Content-Length: 4920
 200 OK
 ```
 
@@ -434,9 +434,9 @@ Content-Length: 4958
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M207642944
+PATCH /api/checkouts/M438257329
 Accept: application/json
-X-Spree-Order-Token: pMoSlolwxGSII_LDXf_iTA
+X-Spree-Order-Token: 211zRmIurOJah0ilM-2aLw
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -448,7 +448,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=4&order[payment_attributes][][source_attributes][nonce]=fake-valid-visa-nonce&order[payment_attributes][][source_attributes][payment_type]=CreditCard&order[payment_attributes][][source_attributes][reusable]=true
+order[payment_attributes][][payment_method_id]=3&order[payment_attributes][][source_attributes][nonce]=fake-valid-visa-nonce&order[payment_attributes][][source_attributes][payment_type]=CreditCard&order[payment_attributes][][source_attributes][reusable]=true
 ```
 
 
@@ -472,12 +472,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;49ce819071682cbe154d0181166a55fa&quot;
+ETag: W/&quot;dbd3b8816fb8ea89b7b5ab0e3997ec96&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a7e7ea6f-448e-499c-ad14-65bebe9c083c
-X-Runtime: 0.164536
+X-Request-Id: 88a4b65e-6211-41a4-bafe-de01cabd6ecb
+X-Runtime: 0.336401
 Vary: Origin
-Content-Length: 4958
+Content-Length: 4927
 200 OK
 ```
 
@@ -496,9 +496,9 @@ Content-Length: 4958
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M139390790
+PATCH /api/checkouts/M290149284
 Accept: application/json
-X-Spree-Order-Token: M69xHhKuSKlEHePl0Evjyg
+X-Spree-Order-Token: uWW7DaeOrSD4OSA1LluaGA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -510,7 +510,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=7&order[payment_attributes][][source_attributes][wallet_payment_source_id]=4
+order[payment_attributes][][payment_method_id]=1&order[payment_attributes][][source_attributes][wallet_payment_source_id]=1
 ```
 
 
@@ -533,12 +533,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;e99ce6543893bbc94debf9db9f4bc4f7&quot;
+ETag: W/&quot;c5d8917fa25acc5683760f056ffa9e31&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a61255b7-912b-4ce3-b968-7bc596e2d2db
-X-Runtime: 0.198849
+X-Request-Id: f979e01f-476b-4926-ad0a-afbe903fff0a
+X-Runtime: 0.281472
 Vary: Origin
-Content-Length: 4958
+Content-Length: 4919
 200 OK
 ```
 
@@ -557,9 +557,9 @@ Content-Length: 4958
 #### Endpoint
 
 ```plaintext
-PUT /api/checkouts/M958733243
+PUT /api/checkouts/M646791736
 Accept: application/json
-X-Spree-Order-Token: Gepg7JxWYC1tlDQAdeFiCw
+X-Spree-Order-Token: 2zdxL2cgNERA6C7buZ0Fcg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -571,7 +571,7 @@ Cookie:
 
 
 ```json
-order[ship_address_attributes][id]&order[ship_address_attributes][firstname]=John&order[ship_address_attributes][lastname]&order[ship_address_attributes][address1]=10+Lovely+Street&order[ship_address_attributes][address2]=Northwest&order[ship_address_attributes][city]=Herndon&order[ship_address_attributes][zipcode]=10031&order[ship_address_attributes][phone]=555-555-0199&order[ship_address_attributes][state_name]&order[ship_address_attributes][alternative_phone]=555-555-0199&order[ship_address_attributes][company]=Company&order[ship_address_attributes][state_id]=23&order[ship_address_attributes][country_id]=23&order[ship_address_attributes][created_at]&order[ship_address_attributes][updated_at]&order[use_billing]=true&hold_state=true
+order[ship_address_attributes][id]&order[ship_address_attributes][firstname]=John&order[ship_address_attributes][lastname]&order[ship_address_attributes][address1]=10+Lovely+Street&order[ship_address_attributes][address2]=Northwest&order[ship_address_attributes][city]=Herndon&order[ship_address_attributes][zipcode]=10017&order[ship_address_attributes][phone]=555-555-0199&order[ship_address_attributes][state_name]&order[ship_address_attributes][alternative_phone]=555-555-0199&order[ship_address_attributes][company]=Company&order[ship_address_attributes][state_id]=8&order[ship_address_attributes][country_id]=8&order[ship_address_attributes][created_at]&order[ship_address_attributes][updated_at]&order[use_billing]=true&hold_state=true
 ```
 
 
@@ -595,12 +595,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;31e8efbbc396d4a9b02d4b7b3cdfeced&quot;
+ETag: W/&quot;07d802357de00bac55b7ae10100d0791&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 49c354ad-d39e-42fe-a062-7104c2b762ba
-X-Runtime: 0.226381
+X-Request-Id: cf6c653f-51d8-4c71-b1bd-c55c6c18e618
+X-Runtime: 0.256040
 Vary: Origin
-Content-Length: 4866
+Content-Length: 4840
 200 OK
 ```
 
@@ -623,9 +623,9 @@ Delete giftwrap related to shipment
 #### Endpoint
 
 ```plaintext
-POST /api/shipments/H25462274356/giftwrap
+POST /api/shipments/H15586205812/giftwrap
 Accept: application/json
-X-Spree-Order-Token: KYsdxmPHZD4XJsjG1uMbpg
+X-Spree-Order-Token: bR_LWJUdJWln_QvkFEB0uA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -637,7 +637,7 @@ Cookie:
 
 
 ```json
-order_number=M001494791
+order_number=M130604749
 ```
 
 
@@ -659,8 +659,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;11d45af477139e8881a13a1750caf383&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d0f24abe-0ec0-4acc-b57e-323d2553bea7
-X-Runtime: 0.061106
+X-Request-Id: 244d8da8-2c37-4943-b635-9cf0cc3a6f93
+X-Runtime: 0.057451
 Vary: Origin
 Content-Length: 74
 201 Created
@@ -681,9 +681,9 @@ Content-Length: 74
 #### Endpoint
 
 ```plaintext
-DELETE /api/shipments/H64025802330/giftwrap
+DELETE /api/shipments/H67245567285/giftwrap
 Accept: application/json
-X-Spree-Order-Token: Y9bSgEkJyJrXhnLJmowXcA
+X-Spree-Order-Token: kD-PupbLZ-ZPCuNvlagP8w
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -695,7 +695,7 @@ Cookie:
 
 
 ```json
-order_number=M395912246
+order_number=M835374166
 ```
 
 
@@ -715,8 +715,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 18dadde5-85b3-4a5a-9f82-24b0e9a924dc
-X-Runtime: 0.063787
+X-Request-Id: 728398a8-2069-4e14-a167-85fb82d8e58d
+X-Runtime: 0.189470
 Vary: Origin
 204 No Content
 ```
@@ -736,9 +736,9 @@ Representation of a single cart item for a specific variant with price of vendor
 #### Endpoint
 
 ```plaintext
-POST /api/orders/M164598745/line_items
+POST /api/orders/M972300411/line_items
 Accept: application/json
-X-Spree-Order-Token: FHuXol2QnBLPMR7oDXGfiA
+X-Spree-Order-Token: tO1vU2Lx28TeeTjzIYR54Q
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -750,7 +750,7 @@ Cookie:
 
 
 ```json
-line_item[variant_id]=8&line_item[options][vendor_id]=13
+line_item[variant_id]=58&line_item[options][vendor_id]=115
 ```
 
 
@@ -772,12 +772,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0d582299ce8d8519e9d38c67338cc741&quot;
+ETag: W/&quot;875a4462e64c8a449a2d7973cde72c55&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7573ba68-1a7d-4387-a4a9-9403b7cae0fa
-X-Runtime: 0.183318
+X-Request-Id: 8044991f-3ba1-4385-906c-118a359d2048
+X-Runtime: 0.100179
 Vary: Origin
-Content-Length: 926
+Content-Length: 939
 201 Created
 ```
 
@@ -796,9 +796,9 @@ Content-Length: 926
 #### Endpoint
 
 ```plaintext
-POST /api/orders/M773107589/line_items
+POST /api/orders/M896533340/line_items
 Accept: application/json
-X-Spree-Order-Token: EYaOTYrrJS5WmLDAdgxoeg
+X-Spree-Order-Token: 78vFrinXHd9brbZzauh5VA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -810,7 +810,7 @@ Cookie:
 
 
 ```json
-line_item[variant_id]=14&line_item[options][vendor_id]=26&line_item[options][gift_card_details][recipient_name]=Recipient+John&line_item[options][gift_card_details][recipient_email]=recipient%40email.com&line_item[options][gift_card_details][purchaser_name]=Purchaser+Bob&line_item[options][gift_card_details][gift_message]=Surprise&line_item[options][gift_card_details][send_email_at]=2020-03-19+09%3A42%3A40+-0400
+line_item[variant_id]=64&line_item[options][vendor_id]=128&line_item[options][gift_card_details][recipient_name]=Recipient+John&line_item[options][gift_card_details][recipient_email]=recipient%40email.com&line_item[options][gift_card_details][purchaser_name]=Purchaser+Bob&line_item[options][gift_card_details][gift_message]=Surprise&line_item[options][gift_card_details][send_email_at]=2020-03-19+09%3A58%3A18+-0400
 ```
 
 
@@ -833,12 +833,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;60efa4d58893f75d79f4fba3cb605e00&quot;
+ETag: W/&quot;765cc412946ac174a3921bc9db7c986d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 00f66b9a-54e8-477f-a946-c277ef134d4e
-X-Runtime: 0.318543
+X-Request-Id: 767df396-f2ea-4ec8-ada1-7625512d4dd2
+X-Runtime: 0.216199
 Vary: Origin
-Content-Length: 1063
+Content-Length: 1075
 201 Created
 ```
 
@@ -857,9 +857,9 @@ Content-Length: 1063
 #### Endpoint
 
 ```plaintext
-DELETE /api/orders/M362356481/line_items/1
+DELETE /api/orders/M903877775/line_items/13
 Accept: application/json
-X-Spree-Order-Token: bQilOMz5BDVThVdTuIHBbQ
+X-Spree-Order-Token: yNfai7YBbALXxaGt0jNiDw
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -883,8 +883,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 06f9a8de-e6e1-4219-88f3-cdbd0a572d08
-X-Runtime: 0.183300
+X-Request-Id: f45660ff-989f-479a-877f-49388d04eec3
+X-Runtime: 0.078794
 Vary: Origin
 204 No Content
 ```
@@ -900,9 +900,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/M365546597/line_items/6
+PUT /api/orders/M963382521/line_items/14
 Accept: application/json
-X-Spree-Order-Token: Aq26qF8oZryyGsqmS9-dLw
+X-Spree-Order-Token: XIT2Alsi8qqztMtgGSp3GA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -935,12 +935,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;90974d395be43fd65ff69ff706533bf6&quot;
+ETag: W/&quot;4864b95acd6ccac455de5bb200e801fe&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e2789071-607c-4e4e-9a69-a87141032f6c
-X-Runtime: 0.132572
+X-Request-Id: 9eb9e586-4d95-4286-973d-2404479eaf00
+X-Runtime: 0.152043
 Vary: Origin
-Content-Length: 926
+Content-Length: 936
 200 OK
 ```
 
@@ -953,7 +953,7 @@ Content-Length: 926
 
 # Minis
 
-Get all minis, only accessible to admin users
+Get a single mini, accessible by owner of the mini or admin
 
 ## Create a mini
 
@@ -965,7 +965,7 @@ Get all minis, only accessible to admin users
 ```plaintext
 POST /api/minis
 Accept: application/json
-Authorizat IO N: Bearer 7e799e4992eea14ecacc6a8676d76f03383e77b96b33d0a1
+Authorizat IO N: Bearer 935df6f0d4f5666af360aebfb15117c451f6ef6a5000c7e5
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -977,7 +977,7 @@ Cookie:
 
 
 ```json
-mini[name]=Winny&mini[user_id]=17&mini[birth_year]=2019&mini[birth_month]=1&mini[birth_day]=1
+mini[name]=Winny&mini[user_id]=68&mini[birth_year]=2019&mini[birth_month]=1&mini[birth_day]=1
 ```
 
 
@@ -1003,12 +1003,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;03c6d5040b2c74703771cee275d4fe05&quot;
+ETag: W/&quot;8bcac2bd924199413dc7386f66d6e8d6&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 5cc40a6e-c828-485e-8cf5-30c43d22cdf2
-X-Runtime: 0.022984
+X-Request-Id: 0ceded82-c876-406b-9ee8-634616e43af7
+X-Runtime: 0.013935
 Vary: Origin
-Content-Length: 163
+Content-Length: 162
 201 Created
 ```
 
@@ -1027,9 +1027,9 @@ Content-Length: 163
 #### Endpoint
 
 ```plaintext
-DELETE /api/minis/18
+DELETE /api/minis/7
 Accept: application/json
-Authorizat IO N: Bearer 4d13145492556ceed6c9a88e9cb38bc83df59191dd132cde
+Authorizat IO N: Bearer 4811ef55756e499d4bd0c24463e61ea6bb82ade68ac884c8
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -1053,8 +1053,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 6871522e-12bf-40b0-a9ab-a094382c8ad8
-X-Runtime: 0.009222
+X-Request-Id: 3e2674f3-9d9f-44e3-b37f-9c69babe8897
+X-Runtime: 0.007905
 Vary: Origin
 204 No Content
 ```
@@ -1070,9 +1070,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-GET /api/minis/17
+GET /api/minis/1
 Accept: application/json
-Authorizat IO N: Bearer 81055b6a1336cda35f81117ee116b815da5ed72cd5faf357
+Authorizat IO N: Bearer f1f490704fc6a4a29c80fdb27317a2adc47f6da7aca3163e
 Host: example.org
 Cookie: 
 ```
@@ -1095,12 +1095,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;807c8fc22fd4968a04988c9443b05a9a&quot;
+ETag: W/&quot;3055ed9c3685dc6c03d72da2ab7b74df&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: edec2a09-fdad-4667-a22d-74471f2043c4
-X-Runtime: 0.017177
+X-Request-Id: 9c02fc96-f490-4c05-b61e-6ef44fef9d0a
+X-Runtime: 0.037923
 Vary: Origin
-Content-Length: 163
+Content-Length: 162
 200 OK
 ```
 
@@ -1121,7 +1121,7 @@ Content-Length: 163
 ```plaintext
 GET /api/minis
 Accept: application/json
-Authorizat IO N: Bearer 13bac2abdbc259ed94ed5245bfe3eae77d52496cd7964ffc
+Authorizat IO N: Bearer eac7e1400b11cdd236dc0d530a0d3b5971f122e74fdfe25e
 Host: example.org
 Cookie: 
 ```
@@ -1148,12 +1148,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;73ce2e624dcd6782085dfc28b32e3ca3&quot;
+ETag: W/&quot;246d488abad51440e798b27b921b39f0&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8e7ff596-78d5-4085-ab8a-2df436904ec3
-X-Runtime: 0.243966
+X-Request-Id: bccfc1e9-1536-4e24-9ce5-9ebe28948917
+X-Runtime: 0.041306
 Vary: Origin
-Content-Length: 1702
+Content-Length: 1720
 200 OK
 ```
 
@@ -1174,7 +1174,7 @@ Content-Length: 1702
 ```plaintext
 GET /api/minis/mine
 Accept: application/json
-Authorizat IO N: Bearer 3b32603f5be84fe8a1af6620af17304bb0da2daa75e29319
+Authorizat IO N: Bearer 2bcd24fd64f17cb77a44b099d9c77ba6a8d791c6bf167e56
 Host: example.org
 Cookie: 
 ```
@@ -1201,12 +1201,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0f91ee09eaf3d258fb0e41d3df6fc4c3&quot;
+ETag: W/&quot;8212f32d6fabedc8e7154da9207617f0&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a4f88137-5cb4-436e-91ce-437759c722aa
-X-Runtime: 0.023243
+X-Request-Id: fc76505a-a0b5-4069-b901-ebd8d831f6e5
+X-Runtime: 0.017713
 Vary: Origin
-Content-Length: 406
+Content-Length: 404
 200 OK
 ```
 
@@ -1225,9 +1225,9 @@ Content-Length: 406
 #### Endpoint
 
 ```plaintext
-PATCH /api/minis/11
+PATCH /api/minis/8
 Accept: application/json
-Authorizat IO N: Bearer f7bec35347e609c41c49d18e25232d02abe4ead83b6e6369
+Authorizat IO N: Bearer 1e7fff3d891ddd7db990afb54a4fb7f075f346d6c0972104
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -1265,12 +1265,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;25de5374977d35cd36a49e1e277b11aa&quot;
+ETag: W/&quot;079ecaaa988d561e23a354c7d01d31b4&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ed293cb0-50d5-4fa4-8113-e4dcaef321d9
-X-Runtime: 0.026367
+X-Request-Id: da5f58a9-c9b4-4b76-9dd8-068c430417d5
+X-Runtime: 0.014151
 Vary: Origin
-Content-Length: 164
+Content-Length: 163
 200 OK
 ```
 
@@ -1308,7 +1308,7 @@ Cookie:
 
 
 ```json
-user_id&order_token&line_item[variant_id]=76&line_item[quantity]=1&line_item[vendor_id]=139&line_item[gift_card_details_attributes][recipient_name]=Recipient+John&line_item[gift_card_details_attributes][recipient_email]=recipient%40email.com&line_item[gift_card_details_attributes][purchaser_name]=Purchaser+Bob&line_item[gift_card_details_attributes][gift_message]=Surprise&line_item[gift_card_details_attributes][send_email_at]=2020-03-19
+user_id&order_token&line_item[variant_id]=167&line_item[quantity]=1&line_item[vendor_id]=304&line_item[gift_card_details_attributes][recipient_name]=Recipient+John&line_item[gift_card_details_attributes][recipient_email]=recipient%40email.com&line_item[gift_card_details_attributes][purchaser_name]=Purchaser+Bob&line_item[gift_card_details_attributes][gift_message]=Surprise&line_item[gift_card_details_attributes][send_email_at]=2020-03-19
 ```
 
 
@@ -1333,12 +1333,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;3769ad0fb484868aca158ba25028564d&quot;
+ETag: W/&quot;07a628f55f5b3dc35dee1d84de53e7c6&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8acce900-9fd5-48f2-a1df-e45e1e67affc
-X-Runtime: 0.217567
+X-Request-Id: 0b3d7a8a-9628-43ea-bbeb-eda18f77fa05
+X-Runtime: 0.173652
 Vary: Origin
-Content-Length: 2847
+Content-Length: 2848
 200 OK
 ```
 
@@ -1372,7 +1372,7 @@ Cookie:
 
 
 ```json
-user_id&order_token&line_item[variant_id]=48&line_item[quantity]=2&line_item[vendor_id]=82
+user_id&order_token&line_item[variant_id]=135&line_item[quantity]=2&line_item[vendor_id]=239
 ```
 
 
@@ -1396,12 +1396,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;bf37e75ee594e2bec004dffeb274862b&quot;
+ETag: W/&quot;9bfe24534fa029d9006ff39401f28216&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 365b2fe1-fdcf-454d-b2d4-0ae014e7a7fe
-X-Runtime: 0.161620
+X-Request-Id: e2d1c090-f79b-498c-b3c2-474108f5555d
+X-Runtime: 0.110751
 Vary: Origin
-Content-Length: 2662
+Content-Length: 2668
 200 OK
 ```
 
@@ -1422,7 +1422,7 @@ Content-Length: 2662
 ```plaintext
 POST /api/orders/cart
 Accept: application/json
-Authorizat IO N: 
+Authorizat IO N: Bearer ed83fa91ca9d03b8e7f55c76707bbb855694c822a314612c
 X-Spree-Order-Token: 
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
@@ -1435,72 +1435,7 @@ Cookie:
 
 
 ```json
-user_id&order_token&line_item[variant_id]=52&line_item[quantity]=2&line_item[vendor_id]=90
-```
-
-
-| Name | Description |
-|:-----|:------------|
-| user_id  | Specify the user_id here if there is one. Calls to this endpoint without a user_id will                          create an order with a nil user |
-| order_token  | Spree will look for an order with the order token if it is provided. If an order with                              the specified token is not found, Spree will create a new order with an autogenerated                              guest token that should be stored in cookies and returned with subsequent calls. The                              order token can be passed as a parameter or a header. If passed as both a header and                              parameter, the header will take precedence. |
-| line_item[variant_id] *required* | Specify the variant id |
-| line_item[quantity] *required* | Specify the quantity requested, must be greater than 0 |
-| line_item[vendor_id] *required* | Specify the vendor id, from the price chosen |
-| token  | Specify the spree_api_key here if there is one. Calls to this endpoint without a it will \
-                         create an order with a nil user |
-
-
-
-### Response
-
-```plaintext
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Type: application/json; charset=utf-8
-ETag: W/&quot;62d51c730313b8af28b512fcdc9761d3&quot;
-Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: acff9fc6-444f-49bc-8669-9120fb9a1b97
-X-Runtime: 0.117480
-Vary: Origin
-Content-Length: 2663
-200 OK
-```
-
-
-```json
-[binary data]
-```
-
-
-
-## Add an item to a cart related to the user
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-POST /api/orders/cart
-Accept: application/json
-Authorizat IO N: Bearer d49488db6fbb3ad4ea5cdf980acf29ec47e112fc695fda6e
-X-Spree-Order-Token: 
-Host: example.org
-Content-Type: application/x-www-form-urlencoded
-Cookie: 
-```
-
-`POST /api/orders/cart`
-
-#### Parameters
-
-
-```json
-user_id&order_token&line_item[variant_id]=64&line_item[quantity]=2&line_item[vendor_id]=112&user_token=Bearer+d49488db6fbb3ad4ea5cdf980acf29ec47e112fc695fda6e
+user_id&order_token&line_item[variant_id]=139&line_item[quantity]=2&line_item[vendor_id]=247&user_token=Bearer+ed83fa91ca9d03b8e7f55c76707bbb855694c822a314612c
 ```
 
 
@@ -1526,12 +1461,77 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;df6dd5b2b8e8126320d1521289527ab3&quot;
+ETag: W/&quot;6a6085acd833ec8670a59f28dc759d98&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c0bd4091-7861-47c9-86a0-124d853d94b0
-X-Runtime: 0.155809
+X-Request-Id: f49c5087-393d-4713-9287-b9b529b504a0
+X-Runtime: 0.123016
 Vary: Origin
-Content-Length: 2677
+Content-Length: 2678
+200 OK
+```
+
+
+```json
+[binary data]
+```
+
+
+
+## Add an item to a cart related to the user
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+POST /api/orders/cart
+Accept: application/json
+Authorizat IO N: 
+X-Spree-Order-Token: 
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: 
+```
+
+`POST /api/orders/cart`
+
+#### Parameters
+
+
+```json
+user_id&order_token&line_item[variant_id]=151&line_item[quantity]=2&line_item[vendor_id]=269
+```
+
+
+| Name | Description |
+|:-----|:------------|
+| user_id  | Specify the user_id here if there is one. Calls to this endpoint without a user_id will                          create an order with a nil user |
+| order_token  | Spree will look for an order with the order token if it is provided. If an order with                              the specified token is not found, Spree will create a new order with an autogenerated                              guest token that should be stored in cookies and returned with subsequent calls. The                              order token can be passed as a parameter or a header. If passed as both a header and                              parameter, the header will take precedence. |
+| line_item[variant_id] *required* | Specify the variant id |
+| line_item[quantity] *required* | Specify the quantity requested, must be greater than 0 |
+| line_item[vendor_id] *required* | Specify the vendor id, from the price chosen |
+| token  | Specify the spree_api_key here if there is one. Calls to this endpoint without a it will \
+                         create an order with a nil user |
+
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;f81370724a7340184894c67619de2fca&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 98fe9f68-78a8-4a2b-9421-e22681c1ab3d
+X-Runtime: 0.115755
+Vary: Origin
+Content-Length: 2668
 200 OK
 ```
 
@@ -1553,7 +1553,7 @@ Content-Length: 2677
 POST /api/orders/cart
 Accept: application/json
 Authorizat IO N: 
-X-Spree-Order-Token: kJVKDhu2j4itx2exQdFQdw
+X-Spree-Order-Token: EI07HmbxGO6rXU6nZHUUiA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -1565,7 +1565,7 @@ Cookie:
 
 
 ```json
-user_id&order_token=kJVKDhu2j4itx2exQdFQdw&line_item[variant_id]=60&line_item[quantity]=2&line_item[vendor_id]=106
+user_id&order_token=EI07HmbxGO6rXU6nZHUUiA&line_item[variant_id]=147&line_item[quantity]=2&line_item[vendor_id]=263
 ```
 
 
@@ -1589,12 +1589,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c3efbfdf6bf01bdb733f8dae199d2896&quot;
+ETag: W/&quot;196dadc722ae08a61fc2cd315cd74c2d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 551c2768-4250-41c4-a227-79cd317136f7
-X-Runtime: 0.265728
+X-Request-Id: 337e3f1b-a2ee-4b38-8cbb-6ed6c03150d7
+X-Runtime: 0.226514
 Vary: Origin
-Content-Length: 5512
+Content-Length: 5525
 200 OK
 ```
 
@@ -1615,7 +1615,7 @@ Content-Length: 5512
 ```plaintext
 GET /api/orders/mine
 Accept: application/json
-Authorizat IO N: Bearer ec4d3287008ba1766df4c69aad4ab17d9bdfb4367d8c4d46
+Authorizat IO N: Bearer 7202c800cff2ea0cbce362520e2a1841a835a6dfd7dc26c2
 Host: example.org
 Cookie: 
 ```
@@ -1645,8 +1645,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;bfd93c467923e2902c20109270f7395a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6ef71f93-6234-4542-8eda-e210f4bf1475
-X-Runtime: 0.036146
+X-Request-Id: 651dfea7-791b-40bc-9358-a4466bcc8366
+X-Runtime: 0.018160
 Vary: Origin
 Content-Length: 80
 200 OK
@@ -1667,9 +1667,9 @@ Content-Length: 80
 #### Endpoint
 
 ```plaintext
-GET /api/orders/M893299887
+GET /api/orders/M996031699
 Accept: application/json
-Authorizat IO N: Bearer fe867596925cbf759411f01b0abc91b631382d0ab7f56616
+Authorizat IO N: Bearer 42792da60a5d5f9fe797cce3651888818b4f3eb3ada7bf21
 Host: example.org
 Cookie: 
 ```
@@ -1696,12 +1696,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;68b6f3d09a053db14441059feb8204c4&quot;
+ETag: W/&quot;915d0ab36eb67f080d898c78159f8757&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: f8e6fe95-5422-42a0-80af-0fb6593ef9f1
-X-Runtime: 0.273151
+X-Request-Id: 939aa393-0fe2-4545-b0c4-b02d63d39d5f
+X-Runtime: 0.220229
 Vary: Origin
-Content-Length: 8023
+Content-Length: 8032
 200 OK
 ```
 
@@ -1720,9 +1720,9 @@ Content-Length: 8023
 #### Endpoint
 
 ```plaintext
-GET /api/orders/M244532607
+GET /api/orders/M270206157
 Accept: application/json
-Authorizat IO N: 242a484b7c261b77c7dac05ec887202e12b19e0dc8568212
+Authorizat IO N: d4afb15860375757754443872c3b79dbf7e300ce96607424
 Host: example.org
 Cookie: 
 ```
@@ -1750,8 +1750,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: d94f9e08-0c41-44be-847f-344fe79fe000
-X-Runtime: 0.043649
+X-Request-Id: 8d5607b7-7142-4faf-99b6-9115be308ed2
+X-Runtime: 0.024986
 Vary: Origin
 Content-Length: 58
 401 Unauthorized
@@ -1766,7 +1766,7 @@ Content-Length: 58
 
 # Passwords
 
-Validate user email and password. Does not handle any session and only return the user
+Send an email with password reset instructions
 
 ## Forgot Password
 
@@ -1789,7 +1789,7 @@ Cookie:
 
 
 ```json
-user[email]=email91%40example.com
+user[email]=email43%40example.com
 ```
 
 
@@ -1810,8 +1810,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json
 Cache-Control: no-cache
-X-Request-Id: e0d0146b-050a-46d3-a43c-49f41bf247e1
-X-Runtime: 0.025014
+X-Request-Id: 8728bacd-b8b9-4db6-afab-d3d08078a080
+X-Runtime: 0.023061
 Vary: Origin
 Content-Length: 0
 200 OK
@@ -1841,7 +1841,7 @@ Cookie:
 
 
 ```json
-user[email]=email90%40example.com&user[password]=secret
+user[email]=email44%40example.com&user[password]=secret
 ```
 
 
@@ -1862,11 +1862,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer bb00b0a5180929a550690668c7452eea5164853dd74f1e45
-ETag: W/&quot;14b342b2ba169ef541e812dcd1f3ae9a&quot;
+Authorization: Bearer 06e091a23a0da99fa424251d44c0ae15c4bc8f17047180dd
+ETag: W/&quot;c6af16dceed4edb18f86636110c21442&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a1b1b1d5-d920-4484-b854-0b1bdd199f06
-X-Runtime: 0.016767
+X-Request-Id: 99818ed7-339f-4f38-8e73-5554a82ad542
+X-Runtime: 0.016457
 Vary: Origin
 Content-Length: 562
 200 OK
@@ -1922,8 +1922,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 09c7d7e3-f967-428f-bda9-00898d782b31
-X-Runtime: 0.004034
+X-Request-Id: c3094686-d3cc-48d7-88d7-1f9d97ea689f
+X-Runtime: 0.003286
 Vary: Origin
 204 No Content
 ```
@@ -1933,7 +1933,7 @@ Vary: Origin
 
 # Products
 
-Get products info
+Get all products, queryable by ransack
 
 ## Fetch a single product by id
 
@@ -1943,7 +1943,7 @@ Get products info
 #### Endpoint
 
 ```plaintext
-GET /api/products/product-83-6765
+GET /api/products/product-43-4356
 Host: example.org
 Cookie: 
 ```
@@ -1965,16 +1965,16 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Thu, 19 Mar 2020 13:43:10 GMT
+Date: Thu, 19 Mar 2020 13:58:20 GMT
 Surrogate-Control: max-age=900
 Surrogate-Key: product_id=1
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;b58e676602dcf19c6449fef356a49c0d&quot;
-X-Request-Id: 19738ac7-efb6-4d44-abd0-6669f0fb5fad
-X-Runtime: 0.064929
+ETag: W/&quot;b6ba17fc5d8413d55e8c8cc9ffa3b4fa&quot;
+X-Request-Id: 78fdc57d-29b0-467c-bf7b-19abd8874be6
+X-Runtime: 0.055636
 Vary: Origin
-Content-Length: 1622
+Content-Length: 1620
 200 OK
 ```
 
@@ -2021,15 +2021,15 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Thu, 19 Mar 2020 13:43:09 GMT
+Date: Thu, 19 Mar 2020 13:58:18 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;c0b0e038bd96f5d2f3f5c3638df8d252&quot;
-X-Request-Id: e4ecddc1-7088-4ae7-93e8-9ab7c1874568
-X-Runtime: 0.088142
+ETag: W/&quot;0bd5c6bb4d0acd58992b568271f8a368&quot;
+X-Request-Id: f3c63ee9-668d-4044-838c-965e03800326
+X-Runtime: 0.064590
 Vary: Origin
-Content-Length: 1294
+Content-Length: 1292
 200 OK
 ```
 
@@ -2080,15 +2080,15 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Thu, 19 Mar 2020 13:43:09 GMT
+Date: Thu, 19 Mar 2020 13:58:19 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;f79c5eb472409401a486ecf7fc03c1c6&quot;
-X-Request-Id: 8050bc95-7ea3-4e91-9521-37f974377602
-X-Runtime: 0.043625
+ETag: W/&quot;fcc512b460380cd54519b6cf27da3dd4&quot;
+X-Request-Id: 547d9a3d-18f6-48e5-a4a9-006aa2a78cf6
+X-Runtime: 0.032708
 Vary: Origin
-Content-Length: 376
+Content-Length: 373
 200 OK
 ```
 
@@ -2107,7 +2107,7 @@ Content-Length: 376
 #### Endpoint
 
 ```plaintext
-GET /api/products?ids=79%2C80%2C81
+GET /api/products?ids=35%2C36%2C37
 Host: example.org
 Cookie: 
 ```
@@ -2118,7 +2118,7 @@ Cookie:
 
 
 ```json
-ids: 79,80,81
+ids: 35,36,37
 ```
 
 
@@ -2139,15 +2139,15 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Thu, 19 Mar 2020 13:43:09 GMT
+Date: Thu, 19 Mar 2020 13:58:19 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;af5bd5a104bb600d96faba80e6cfc84b&quot;
-X-Request-Id: 2a6e0056-b326-41bb-8099-2899db230a1b
-X-Runtime: 0.131537
+ETag: W/&quot;b8bf26c29f7f479a206ca1e5c7596bb9&quot;
+X-Request-Id: 028ca406-8dae-44af-ac47-289781a394ea
+X-Runtime: 0.097283
 Vary: Origin
-Content-Length: 2868
+Content-Length: 2862
 200 OK
 ```
 
@@ -2166,7 +2166,7 @@ Content-Length: 2868
 #### Endpoint
 
 ```plaintext
-GET /api/taxons/products?id=51
+GET /api/taxons/products?id=47
 Host: example.org
 Cookie: 
 ```
@@ -2177,7 +2177,7 @@ Cookie:
 
 
 ```json
-id: 51
+id: 47
 ```
 
 
@@ -2198,12 +2198,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;41bbc28860635a7d105798ca9ada2ce5&quot;
+ETag: W/&quot;fc7bc6d4a279cc3ae59fd7b27d97a825&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6b919b84-87fe-449f-b0ba-7cb7e7e86439
-X-Runtime: 0.055163
+X-Request-Id: b72945c8-0787-46e8-9f56-d835f8147f59
+X-Runtime: 0.045571
 Vary: Origin
-Content-Length: 1315
+Content-Length: 1313
 200 OK
 ```
 
@@ -2254,12 +2254,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;590735146b0395a3592861dd8befffc0&quot;
+ETag: W/&quot;66dcdfde0428ee656d20d9f8c81e1d0b&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 96380da9-a901-42bc-9b6c-b5341c0394b6
-X-Runtime: 0.062698
+X-Request-Id: cdc1f3f7-ccc0-4665-bb23-db5e861872e6
+X-Runtime: 0.080919
 Vary: Origin
-Content-Length: 1315
+Content-Length: 1313
 200 OK
 ```
 
@@ -2280,7 +2280,7 @@ Content-Length: 1315
 ```plaintext
 GET /api/sitemap/products
 Accept: application/json
-Authorizat IO N: Bearer b822ccff5b34a5909b9c29b97fd31d9bf05782eaa44e3486
+Authorizat IO N: Bearer 9ab2caf477396a48c58c52ea3441595e9c6198f0dbe43c0a
 Host: example.org
 Cookie: 
 ```
@@ -2305,8 +2305,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4e34b79f-759c-49a8-83ab-f9cc6f82a8cd
-X-Runtime: 0.034682
+X-Request-Id: b1275f57-13a5-47a4-8736-54afe64feb14
+X-Runtime: 0.032306
 Vary: Origin
 Content-Length: 2
 200 OK
@@ -2351,8 +2351,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: f3dac0a7-d7f2-4927-a7f3-839cc9dfa770
-X-Runtime: 0.014109
+X-Request-Id: c987e971-7dab-47e5-8cce-863c2551ff97
+X-Runtime: 0.011610
 Vary: Origin
 Content-Length: 65
 404 Not Found
@@ -2367,7 +2367,7 @@ Content-Length: 65
 
 # Recently Viewed Products
 
-Get all recently viewed products using a session_id
+Store a recently viewed variant with a logged in user or session token
 
 ## Get all recently viewed products
 
@@ -2377,9 +2377,9 @@ Get all recently viewed products using a session_id
 #### Endpoint
 
 ```plaintext
-GET /api/recently_viewed?recently_viewed[session_id]=9rkcap5sbqvh3cwq3fvap4u9bx0rzi6fplkko6lgj2wipm82vlyevj9zchkwpepknq7roy5oj7e6olmysj8pz5bgrpplvk9lufe15f34fz74o1qnbilk0cn16wk0dza4k1osa0jjp7fqo2r9vea9mdrg2b8jfrraq96vh4gop10228wrep9d04qp3n8pt7mw73qmq1eonf2we3pavm9adllokjb9ltu1960dd5arw96sr8kh5p284axsxkch0mm
+GET /api/recently_viewed?recently_viewed[session_id]=cfpwsfbalr0511e8d0bmriz4fyn9fqdbblyhp0cj8xle11k731tmjffntc04o1jvkv18lkymbvmf5n07g8wiqahp1cei7xyobn4djwnrmtpgk0stsuaaif3rfkptm6ik879e0jon4txoplizx6f7d4nsh0i6tyh52lqg1jw22eisbim2bpf6sz5pelscm6t2uxa2o87ssi6428mgl1ghjhzaf4alf407st2w6hzu2lp4l80odxs8uw8bv818fl6
 Accept: application/json
-Authorizat IO N: Bearer 1f23d58b7f22c506f73d479b059894fbbff5fec02d2e7230
+Authorizat IO N: Bearer 0eecadcb46457a8bb09b3687e1d6d185e65e2a75758cb665
 Host: example.org
 Cookie: 
 ```
@@ -2390,7 +2390,7 @@ Cookie:
 
 
 ```json
-recently_viewed: {&quot;session_id&quot;=&gt;&quot;9rkcap5sbqvh3cwq3fvap4u9bx0rzi6fplkko6lgj2wipm82vlyevj9zchkwpepknq7roy5oj7e6olmysj8pz5bgrpplvk9lufe15f34fz74o1qnbilk0cn16wk0dza4k1osa0jjp7fqo2r9vea9mdrg2b8jfrraq96vh4gop10228wrep9d04qp3n8pt7mw73qmq1eonf2we3pavm9adllokjb9ltu1960dd5arw96sr8kh5p284axsxkch0mm&quot;}
+recently_viewed: {&quot;session_id&quot;=&gt;&quot;cfpwsfbalr0511e8d0bmriz4fyn9fqdbblyhp0cj8xle11k731tmjffntc04o1jvkv18lkymbvmf5n07g8wiqahp1cei7xyobn4djwnrmtpgk0stsuaaif3rfkptm6ik879e0jon4txoplizx6f7d4nsh0i6tyh52lqg1jw22eisbim2bpf6sz5pelscm6t2uxa2o87ssi6428mgl1ghjhzaf4alf407st2w6hzu2lp4l80odxs8uw8bv818fl6&quot;}
 ```
 
 
@@ -2410,10 +2410,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;af0bb79381d06e28caee43bdbb7b72f2&quot;
+ETag: W/&quot;58794b6f512c2057a861499ab4a8af46&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 461ff395-b714-43f6-bc38-1a819d6e6370
-X-Runtime: 0.035519
+X-Request-Id: 52772654-c3bd-4144-956c-a963a28bc27e
+X-Runtime: 0.010684
 Vary: Origin
 Content-Length: 119
 200 OK
@@ -2436,7 +2436,7 @@ Content-Length: 119
 ```plaintext
 POST /api/recently_viewed
 Accept: application/json
-Authorizat IO N: Bearer e22b8baa767a93c2d769847ed6ab7ca5ada0bfc54681212d
+Authorizat IO N: Bearer bdb675985ec4bb0dee35c2a2abdbba3bfd4878327df2d3ca
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -2448,7 +2448,7 @@ Cookie:
 
 
 ```json
-recently_viewed[session_id]=yp8rd2rwtnnugtbfwi9sv8kgrhli809hpj3vwpkae3aqbgfn8ekk59v4vjdbgh4kwwks7izg46tmy7l97mjcos0so76pvi61h3wnsrd314s5mn1ma37wxeilwcrdxdatgfwrosqr4br9170fas2m2qwkuvcxvh0h58qqdx9x7th8gkzovuh4alurqrwv02b6y9da4zlahl88qlgm3aihmx2qg5joyzbylllmbzmhu8hhwjejuf7myx0td425ek3&recently_viewed[variant_id]=foo
+recently_viewed[session_id]=xlku3w4jkhigo8ow3cnzjdth9xzd0rv0hlwnn724foi6gddtjv6s3gdjtub1aobvpnmjhpulg9b8m0zs0ptapwhgzqv40f7j69aqsk0sfgvfezc0vfp2qh3p2aipy1h8cx4q26skaiu9egv85qcp76sc810tbeofz5wj92sa25v8ywojhtai5dhazm5un9vq2jqenvk0gt7cs31dpyt69x4vbahmamoa6d3nhtw4wtjxtnyiokgzyi2jashvs6v&recently_viewed[variant_id]=foo
 ```
 
 
@@ -2469,8 +2469,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 9748ee40-2f52-4dd4-837e-3438b7c3548c
-X-Runtime: 0.011180
+X-Request-Id: 618d8f0e-99f4-4f0d-9bb1-6114d0543ee3
+X-Runtime: 0.032041
 Vary: Origin
 204 No Content
 ```
@@ -2480,7 +2480,7 @@ Vary: Origin
 
 # Return Authorizations
 
-Get a single user return authorziation
+Get user return authorizations
 
 ## Can get another user&#39;s return authorization
 
@@ -2490,8 +2490,8 @@ Get a single user return authorziation
 #### Endpoint
 
 ```plaintext
-GET /api/returns/RA512381058
-Authorizat IO N: Bearer cc9b184ac40b652a68fdeb8c50a34583769c396bd37e2c64
+GET /api/returns/RA124875882
+Authorizat IO N: Bearer 6c0e8accf1b55312518f195cd17a69f7ef0c0a3d7875c88c
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -2515,10 +2515,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;8d5ef7dee01da5dcf8ce4c1e26330ebf&quot;
+ETag: W/&quot;7f6016e6a269bb77d21ecad2cf88cfc7&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4be309f2-25ab-41ee-a20b-7757ca083023
-X-Runtime: 0.053706
+X-Request-Id: e3a19f13-6ad1-45a1-b1dd-49e1933b520d
+X-Runtime: 0.043604
 Vary: Origin
 Content-Length: 2970
 200 OK
@@ -2540,7 +2540,7 @@ Content-Length: 2970
 
 ```plaintext
 GET /api/returns/mine
-Authorizat IO N: Bearer 61df50ca2de5c866f0f8909d21c8cf93be1a89b82f3d410d
+Authorizat IO N: Bearer cb440e6ab2db5537d50ec8ec3ac4145f0e51b2bbda12d1e6
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -2564,10 +2564,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6fe221aeb98be8f0dd20692b3cede4b8&quot;
+ETag: W/&quot;61f2c99eb86603fbf25f947bf0766687&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e9aa576c-bcb6-446c-aa64-68a930e44432
-X-Runtime: 0.008228
+X-Request-Id: e238c6ef-c6fa-4442-a24b-a0908baaddd8
+X-Runtime: 0.016523
 Vary: Origin
 Content-Length: 169
 200 OK
@@ -2588,8 +2588,8 @@ Content-Length: 169
 #### Endpoint
 
 ```plaintext
-GET /api/returns/RA822583826
-Authorizat IO N: Bearer 2fc8ed34656d80bb3c6b394288265316281df7120ddc1e77
+GET /api/returns/RA346087430
+Authorizat IO N: Bearer 48e27e6f7efffff54c68abc95a28e727280b6fc96ba1080e
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -2613,12 +2613,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;04666c5ae1b32c0cc91d79d07d60d10a&quot;
+ETag: W/&quot;400cb43f9f6eb13aae07aec9d4726187&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4db289a8-c910-4535-9e49-b381c310010e
-X-Runtime: 0.078519
+X-Request-Id: c81fda4a-b6eb-4cf8-acfc-8a7e6574c8a8
+X-Runtime: 0.053566
 Vary: Origin
-Content-Length: 2893
+Content-Length: 2892
 200 OK
 ```
 
@@ -2637,8 +2637,8 @@ Content-Length: 2893
 #### Endpoint
 
 ```plaintext
-GET /api/returns/RA376720140
-Authorizat IO N: Bearer c51ac32ecfd4324d636d5dbd172445200869ec814748b7f5
+GET /api/returns/RA407020284
+Authorizat IO N: Bearer f20902b78a0ea6126f259f90aa02c2a1ec7b9efaf110af79
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -2663,8 +2663,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 3a6db59f-44d7-4f2e-a31c-6e9aa7246ff8
-X-Runtime: 0.013633
+X-Request-Id: fe0d6f6f-d004-4668-ba3b-3989df3bf208
+X-Runtime: 0.011867
 Vary: Origin
 Content-Length: 65
 404 Not Found
@@ -2702,7 +2702,7 @@ Cookie:
 
 
 ```json
-stock_request[email]=paris%40kertzmann.ca&stock_request[variant_id]=144
+stock_request[email]=dwight_rutherford%40feil.info&stock_request[variant_id]=18
 ```
 
 
@@ -2724,8 +2724,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json
 Cache-Control: no-cache
-X-Request-Id: 1cd5d387-0ff5-4438-92ab-1fa1668abef0
-X-Runtime: 0.032880
+X-Request-Id: 303b9c5e-32bd-4f0c-b018-fd509885014f
+X-Runtime: 0.065479
 Vary: Origin
 Content-Length: 0
 201 Created
@@ -2755,7 +2755,7 @@ Cookie:
 
 
 ```json
-stock_request[email]=foo&stock_request[variant_id]=146
+stock_request[email]=foo&stock_request[variant_id]=20
 ```
 
 
@@ -2777,8 +2777,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 25d6f0ed-d025-43f0-86f0-6fabb808a29b
-X-Runtime: 0.006472
+X-Request-Id: fe56755f-4047-4cb8-ae10-e09caaa3efcf
+X-Runtime: 0.006406
 Vary: Origin
 Content-Length: 48
 422 Unprocessable Entity
@@ -2812,7 +2812,7 @@ Cookie:
 
 
 ```json
-stock_request[email]=deedee_kris%40thompson.info&stock_request[variant_id]=148
+stock_request[email]=joshua%40morar.com&stock_request[variant_id]=22
 ```
 
 
@@ -2834,8 +2834,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: b53b1722-64ba-4024-96d9-d9f96f664ebf
-X-Runtime: 0.006426
+X-Request-Id: d66fcaa7-7d44-40ff-982b-5e9efd50a3ac
+X-Runtime: 0.007986
 Vary: Origin
 Content-Length: 93
 422 Unprocessable Entity
@@ -2861,7 +2861,7 @@ Get user store_credits and current account balance for the current user
 
 ```plaintext
 GET api/store_credits/mine
-Authorizat IO N: Bearer 7b02bfd4215400de724e814c1caceee71b7a267bbb6b6095
+Authorizat IO N: Bearer 8379657ba7ebb5407ce70616079d247f7704186971ecfb16
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -2885,10 +2885,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;4b90479f2d517683d1ac430a83edef88&quot;
+ETag: W/&quot;a8a6ae46d6f2d213f7f298d86da2917a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4800cf77-4fba-489f-b3dc-3f2c0a4565d3
-X-Runtime: 0.041668
+X-Request-Id: 8c7e969f-c969-4ee4-8fc9-dce0290d45ef
+X-Runtime: 0.035231
 Vary: Origin
 Content-Length: 218
 200 OK
@@ -2903,7 +2903,7 @@ Content-Length: 218
 
 # Subscribers
 
-Unsubscribe a subscriber by email, this does not destroy the record.
+Get all subscribers, only accessible to admin users
 
 ## Create a subscriber
 
@@ -2927,7 +2927,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=yael_schuppe%40emmerichhomenick.biz&subscriber[first_name]=Lynetta&subscriber[last_name]=Kling&subscriber[source]=Nam+nemo+quam+et+magni+tempora+voluptas+esse+molestiae.
+subscriber[email]=blanch.schuppe%40moen.biz&subscriber[first_name]=Danyel&subscriber[last_name]=Gulgowski&subscriber[source]=Incidunt+numquam+qui+minus+ad+eligendi+officia.
 ```
 
 
@@ -2950,12 +2950,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6c4b370df94e17f9e30ba02b49ec1bb7&quot;
+ETag: W/&quot;ea68a0f17aab3b081362d04cdb78bf86&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: f764fc56-ef9e-467c-861d-104ff2d58f1a
-X-Runtime: 0.009780
+X-Request-Id: cad9833b-beca-47b9-8152-d3d47408d2ef
+X-Runtime: 0.009467
 Vary: Origin
-Content-Length: 257
+Content-Length: 242
 201 Created
 ```
 
@@ -2976,7 +2976,7 @@ Content-Length: 257
 ```plaintext
 POST /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer ed030a2106d90e08cf4581804d2a76539c2d73eae21b1717
+Authorizat IO N: Bearer 0569e33e79b6f723681f39baee1b4176451b8cb19ecdeeb3
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -2988,7 +2988,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=delpha_luettgen%40fadel.biz&subscriber[first_name]=Jeannetta&subscriber[last_name]=Effertz&subscriber[source]=Facilis+exercitationem+itaque+qui+consequuntur+rerum+consequatur+hic+facere.
+subscriber[email]=walton.conroy%40collins.ca&subscriber[first_name]=Zachery&subscriber[last_name]=Spinka&subscriber[source]=Ut+dolor+architecto+cum+dicta+vel.
 ```
 
 
@@ -3011,12 +3011,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;53cd12f0d63e37cd70bc354470b6d9ff&quot;
+ETag: W/&quot;63c3fdcf4c8a8af1fe7376dbf417ed0e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 78aa22f5-82d6-4cec-9934-ab071a18a033
-X-Runtime: 0.010795
+X-Request-Id: 74d1faa4-d3bb-4adc-915c-d492761e4632
+X-Runtime: 0.008908
 Vary: Origin
-Content-Length: 272
+Content-Length: 226
 201 Created
 ```
 
@@ -3037,7 +3037,7 @@ Content-Length: 272
 ```plaintext
 GET /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer 7db2ba91539dec76059482cd47917106435e0334cb11ad36
+Authorizat IO N: Bearer 91df3c9b7c0db3bb769b45676b232e8ce90887832319ed83
 Host: example.org
 Cookie: 
 ```
@@ -3064,12 +3064,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;643b458c53dc392f963e22c887d6ca74&quot;
+ETag: W/&quot;e7fae5742c58953cd218bec307ccabed&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b7c12b19-adae-4097-bd1e-c1e075527684
-X-Runtime: 0.013327
+X-Request-Id: c004bb0a-cc56-41d5-8252-9f3d53ed8063
+X-Runtime: 0.034058
 Vary: Origin
-Content-Length: 670
+Content-Length: 690
 200 OK
 ```
 
@@ -3088,9 +3088,9 @@ Content-Length: 670
 #### Endpoint
 
 ```plaintext
-PATCH /api/subscribers/2
+PATCH /api/subscribers/8
 Accept: application/json
-Authorizat IO N: Bearer 4b40e4fdee13be02d5411c702600f4abb1f01db2bc741ff6
+Authorizat IO N: Bearer 3929c3744841820206384aab14711f5131e5dc1db8b099a1
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3102,7 +3102,7 @@ Cookie:
 
 
 ```json
-subscriber[source]=Porro+temporibus+officia+distinctio+cumque.
+subscriber[source]=Aut+necessitatibus+fuga+numquam+et+qui+quibusdam.
 ```
 
 
@@ -3125,12 +3125,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;622b3e15d5a4f205438d75bc040e9891&quot;
+ETag: W/&quot;c4c9bd38b847a75245d1b2c6e344624d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a76e3794-3ab8-4b5c-8960-657a55b739f2
-X-Runtime: 0.023502
+X-Request-Id: 3a6de6bd-5949-4cc8-ab00-016f2454c09c
+X-Runtime: 0.009978
 Vary: Origin
-Content-Length: 241
+Content-Length: 246
 200 OK
 ```
 
@@ -3151,7 +3151,7 @@ Content-Length: 241
 ```plaintext
 DELETE /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer 60c0c458f8dad95fd7e807c758c290926a2c1834868b9dce
+Authorizat IO N: Bearer 8265b665704fc8f86a25128946bd954418f1e9442baf67e9
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3163,7 +3163,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=email48%40example.com
+subscriber[email]=email55%40example.com
 ```
 
 
@@ -3184,8 +3184,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json
 Cache-Control: no-cache
-X-Request-Id: 728df2bc-8b2b-4c78-976c-b2af1dca842a
-X-Runtime: 0.036527
+X-Request-Id: 0dd8b20f-e15f-4e5c-8bcd-a34f38ea7943
+X-Runtime: 0.007030
 Vary: Origin
 Content-Length: 0
 200 OK
@@ -3204,7 +3204,7 @@ Content-Length: 0
 ```plaintext
 DELETE /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer 417419a9614603746e6bdedbe88085cd053fcd0b7b0a818c
+Authorizat IO N: Bearer be94cd7cf7e8be3eab23702d696d441c8a28ce363961c267
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3216,7 +3216,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=magan%40hackettdamore.co.uk
+subscriber[email]=loris.green%40hahn.ca
 ```
 
 
@@ -3236,8 +3236,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 068a0a95-0524-4efb-9b04-35472d431c84
-X-Runtime: 0.006515
+X-Request-Id: 1dc0e93e-5b98-49f6-9843-fd49ced60aac
+X-Runtime: 0.004485
 Vary: Origin
 204 No Content
 ```
@@ -3259,7 +3259,7 @@ Get taxons info
 ```plaintext
 GET /api/sitemap/taxons
 Accept: application/json
-Authorizat IO N: Bearer ac707b0f0e2253a5232ea4aafaa8087f5481bc94f61c04f5
+Authorizat IO N: Bearer 3d5e3a2b0111f80d0ca1b7e484e8e247ffea54b545c134e2
 Host: example.org
 Cookie: 
 ```
@@ -3284,8 +3284,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: bb689ba6-4df8-4960-ba9b-25116fe87c1f
-X-Runtime: 0.036104
+X-Request-Id: a7a84450-e93e-4765-b71c-3981b2b9bdff
+X-Runtime: 0.032467
 Vary: Origin
 Content-Length: 2
 200 OK
@@ -3345,8 +3345,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;ce9eeb42b8c459e2e1550d813c16a33e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e513c13c-0e5c-4a97-852e-d24bdd90db29
-X-Runtime: 0.057055
+X-Request-Id: a7f85438-0ea4-48c4-966c-fc3714363c50
+X-Runtime: 0.041397
 Vary: Origin
 Content-Length: 4404
 200 OK
@@ -3407,8 +3407,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4cb51799abd192334fe923c7a5574c69&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2ca85baf-f14e-4177-b0e1-6eb49e6f7b6c
-X-Runtime: 0.016132
+X-Request-Id: eec0dd5e-e33d-4dd7-8630-8acb68f489c5
+X-Runtime: 0.012988
 Vary: Origin
 Content-Length: 739
 200 OK
@@ -3468,8 +3468,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;1139c9d7431421ce7bdc73cbc5f7d8ea&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: eeaf8e7f-be70-48ea-87a0-d1940c8cf61d
-X-Runtime: 0.039372
+X-Request-Id: a7a27c9d-7495-45f5-8c08-0d09f239d80d
+X-Runtime: 0.026823
 Vary: Origin
 Content-Length: 2659
 200 OK
@@ -3514,12 +3514,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;055d941efbfd926df991240909354fe3&quot;
+ETag: W/&quot;5952209b0b099a7801f599e686ed609e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e95d98dd-0cef-4009-b02f-c5d25bf0c5ed
-X-Runtime: 0.005683
+X-Request-Id: 257f83fb-2053-4d64-aac3-8823c1c7392a
+X-Runtime: 0.003645
 Vary: Origin
-Content-Length: 144
+Content-Length: 146
 200 OK
 ```
 
@@ -3532,7 +3532,7 @@ Content-Length: 144
 
 # Users
 
-Unsubscribe a user. If the user is already in an unsubscribed state no records will be changed
+
 
 ## Login
 
@@ -3556,7 +3556,7 @@ Cookie:
 
 
 ```json
-user[email]=email98%40example.com&user[password]=secret
+user[email]=email50%40example.com&user[password]=secret
 ```
 
 
@@ -3578,13 +3578,13 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 8740fd6e584306b908271e147d1dce01392009e29d272536
-ETag: W/&quot;07797f1977a892ff163eef4ba385ba7a&quot;
+Authorization: Bearer a780b4d0bf072bee27b11c9059fab6fbd2fbe5bb12626ce2
+ETag: W/&quot;405ddff611d3466a195d28986cd67775&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 0484ef17-a7fc-44a0-a695-fd72be89871e
-X-Runtime: 0.038761
+X-Request-Id: 66dd09f1-ab3c-45e1-b312-1f88fb1c73e7
+X-Runtime: 0.010258
 Vary: Origin
-Content-Length: 563
+Content-Length: 562
 200 OK
 ```
 
@@ -3606,7 +3606,7 @@ Log in and merge an existing guest cart with any existing carts associated with 
 ```plaintext
 POST /api/users/login
 Accept: application/json
-X-Spree-Order-Token: pkyrl1U2srOPHNKlc9ZCTQ
+X-Spree-Order-Token: ZueCLouJsPezAmYcKYu4gg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3618,7 +3618,7 @@ Cookie:
 
 
 ```json
-user[email]=email99%40example.com&user[password]=secret&order_number=M070572822
+user[email]=email51%40example.com&user[password]=secret&order_number=M089030299
 ```
 
 
@@ -3640,13 +3640,13 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 050b986c45fbd89cb9ae04bd0c8c650a7a89d4f2ac4eaab9
-ETag: W/&quot;9cfc9f9d4d455a7eebf3d4c35296d2a6&quot;
+Authorization: Bearer d0643bbb32b8983f7583d5c874c6097dce07185d52fc2865
+ETag: W/&quot;027183ec7725278e871d2bb45ae7d9ad&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b8a0e246-06f9-4301-b8cc-4eb17cf3bf4a
-X-Runtime: 0.015780
+X-Request-Id: 0642bdce-adcc-4dd3-8219-1611612f5900
+X-Runtime: 0.014625
 Vary: Origin
-Content-Length: 563
+Content-Length: 562
 200 OK
 ```
 
@@ -3668,7 +3668,7 @@ Get user account details, stored addresses, and stored credit cards
 ```plaintext
 GET /api/users/mine
 Accept: application/json
-Authorizat IO N: Bearer cd12cd1bd47b02a121c82fe691e057688f26983a157c6403
+Authorizat IO N: Bearer 419b109baaafca683075b4e28f44231db8deb8c6aa19b9de
 Host: example.org
 Cookie: 
 ```
@@ -3691,13 +3691,13 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer cd12cd1bd47b02a121c82fe691e057688f26983a157c6403
-ETag: W/&quot;79e00dc68b59a87d08d2a4abfcd9ba80&quot;
+Authorization: Bearer 419b109baaafca683075b4e28f44231db8deb8c6aa19b9de
+ETag: W/&quot;aabead88a6d02c72c13809440bb79a1e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2739e99a-3769-495a-ae31-6be98929f46f
-X-Runtime: 0.032730
+X-Request-Id: 1654b707-b342-4404-a868-e2f94bc0666b
+X-Runtime: 0.063247
 Vary: Origin
-Content-Length: 1522
+Content-Length: 1521
 200 OK
 ```
 
@@ -3756,11 +3756,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 7d9f74be077f92db1c55de5c63e6369ffc6de7e017039c25
-ETag: W/&quot;d7ddf235cc9d85d40c6edb8e2959b2c0&quot;
+Authorization: Bearer c68324348081177e52ff9c11e13dc252343f2a17c0fc0fb0
+ETag: W/&quot;7c0acdd4651921137dc0de59e83f4ec9&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 04bcec98-a9ab-4683-a45c-989576e04e04
-X-Runtime: 0.027431
+X-Request-Id: fa8b01b5-bdfa-414c-b9e0-c20d8d1f06c0
+X-Runtime: 0.020428
 Vary: Origin
 Content-Length: 185
 201 Created
@@ -3784,7 +3784,7 @@ Create a user and merge an existing guest cart with any existing carts associate
 ```plaintext
 POST /api/users
 Accept: application/json
-X-Spree-Order-Token: UFetuaZYjTtjnbEgkDzUWQ
+X-Spree-Order-Token: bpVa2SeUufwCUqCmXAhzDA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3796,7 +3796,7 @@ Cookie:
 
 
 ```json
-user[email]=test%40example.com&user[password]=test123&user[password_confirmation]=test123&order_number=M584990931
+user[email]=test%40example.com&user[password]=test123&user[password_confirmation]=test123&order_number=M467916692
 ```
 
 
@@ -3822,11 +3822,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 87c1828f0470c469087e931f571668f8ec795271a2992cc4
-ETag: W/&quot;809e0c0e43ddd5ea185325645c658a10&quot;
+Authorization: Bearer f78acb558bf1a20add2fa6f2ac90ee71dd983d95e8fd8419
+ETag: W/&quot;e4808b25eb88644bcc1aabb80d6f9a32&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 32f9dc96-c3b4-41a3-9449-1b1f831bab0d
-X-Runtime: 0.026362
+X-Request-Id: 2ffab09d-e94c-4f80-8a73-ca3a7258f5b3
+X-Runtime: 0.023062
 Vary: Origin
 Content-Length: 185
 201 Created
@@ -3847,9 +3847,9 @@ Content-Length: 185
 #### Endpoint
 
 ```plaintext
-PUT /api/users/96/subscribe
+PUT /api/users/48/subscribe
 Accept: application/json
-Authorizat IO N: Bearer 16094ee47c0b171793a75fedddf60dd13c244526a4c9c8b5
+Authorizat IO N: Bearer 98bf73a4fba2a43acab6af4210481b8e3fdcb04b337454e7
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3873,11 +3873,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 16094ee47c0b171793a75fedddf60dd13c244526a4c9c8b5
-ETag: W/&quot;4192cc873d3ae0821d2afc1b3d3c4d3c&quot;
+Authorization: Bearer 98bf73a4fba2a43acab6af4210481b8e3fdcb04b337454e7
+ETag: W/&quot;906d653d7ae5b3026e3f5a70b358c16e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 36e32589-d284-4f89-8a32-3d3539f6939d
-X-Runtime: 0.019883
+X-Request-Id: 44632a6e-c2af-4052-a511-1dae79e91f1b
+X-Runtime: 0.034212
 Vary: Origin
 Content-Length: 187
 200 OK
@@ -3898,9 +3898,9 @@ Content-Length: 187
 #### Endpoint
 
 ```plaintext
-PUT /api/users/95/unsubscribe
+PUT /api/users/49/unsubscribe
 Accept: application/json
-Authorizat IO N: Bearer 5cae0b76d10599ff3a3f15fdf221a0251bca9263c097e5c9
+Authorizat IO N: Bearer 55c19d6cb7029e0a3556d29af1c1b3c4bc0280c0cd872c0d
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3924,11 +3924,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 5cae0b76d10599ff3a3f15fdf221a0251bca9263c097e5c9
-ETag: W/&quot;f56e2eb78fc7ced234f6cc248819b42b&quot;
+Authorization: Bearer 55c19d6cb7029e0a3556d29af1c1b3c4bc0280c0cd872c0d
+ETag: W/&quot;ed35d2bedda4e6e4e6fa128d05abd1b0&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 3bbfff2e-347f-47e0-a34b-c15cc918034f
-X-Runtime: 0.034175
+X-Request-Id: 541234f8-4be1-4508-b74c-2f9c2ff6ff7c
+X-Runtime: 0.016895
 Vary: Origin
 Content-Length: 188
 200 OK
@@ -3953,7 +3953,7 @@ Content-Length: 188
 #### Endpoint
 
 ```plaintext
-GET /api/variants/40
+GET /api/variants/85
 Host: example.org
 Cookie: 
 ```
@@ -3976,12 +3976,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;5b4873ee782b04439fae25d37f5f8e61&quot;
+ETag: W/&quot;9f91218c766bf94b1dbf34af75d52ca3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 93486097-19eb-4b85-973c-82a3a1899b6b
-X-Runtime: 0.123404
+X-Request-Id: 4addcc24-ca48-4c55-9e26-fdeef945ae3c
+X-Runtime: 0.105384
 Vary: Origin
-Content-Length: 2013
+Content-Length: 2015
 200 OK
 ```
 
@@ -4006,7 +4006,7 @@ Content-Length: 2013
 ```plaintext
 GET /api/wallet_payment_sources
 Accept: application/json
-Authorizat IO N: Bearer b56cb914639d6f17afd1185e7760bec5989b9751f5ecb338
+Authorizat IO N: Bearer a2932a8fbd84d91fa42cacb54cc8d1e0a5c36147dd88ce2a
 Host: example.org
 Cookie: 
 ```
@@ -4029,10 +4029,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c438fd5ad01109ca0813e06ca97713ce&quot;
+ETag: W/&quot;f9dac6648b1641408fefd61fc03d76c2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 5b1b00e2-5b50-49a7-9ae7-a3d8f4682611
-X-Runtime: 0.020899
+X-Request-Id: f0c05812-3c03-4d7c-b9ff-f7053df7247e
+X-Runtime: 0.015401
 Vary: Origin
 Content-Length: 206
 200 OK
@@ -4053,9 +4053,9 @@ Content-Length: 206
 #### Endpoint
 
 ```plaintext
-DELETE /api/wallet_payment_sources/1
+DELETE /api/wallet_payment_sources/3
 Accept: application/json
-Authorizat IO N: Bearer 310fee30fac693bbc7f8a9c38a597a7ee58d407d66221067
+Authorizat IO N: Bearer a32afb4c27bd6651c34a707fc18148b5401c26d1147dc158
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4079,8 +4079,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: db80ceab-50e5-4f5b-bbe6-fadd5c271df3
-X-Runtime: 0.044906
+X-Request-Id: 99259d8b-576c-4e33-95bc-85220a082b5d
+X-Runtime: 0.035644
 Vary: Origin
 204 No Content
 ```
@@ -4096,9 +4096,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-POST /api/wallet_payment_sources/3/default
+POST /api/wallet_payment_sources/4/default
 Accept: application/json
-Authorizat IO N: Bearer 16299db9208245054fbae8aca91295d27ec5bda70369a69e
+Authorizat IO N: Bearer a0b73fac6057b73d9fad14db4bf772f37a66a66aac99b8df
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4122,8 +4122,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: bae5ab50-a7b7-4256-b009-4bb2bd6259e0
-X-Runtime: 0.015821
+X-Request-Id: 1d00ea85-a391-41ad-8558-c786dfc1bf4d
+X-Runtime: 0.012434
 Vary: Origin
 204 No Content
 ```
@@ -4133,7 +4133,7 @@ Vary: Origin
 
 # Wished Products
 
-Destroy a wished product. Users can destroy their own wished_products, admins can destroy any.
+Get a single wished product, accessible by owner of the wished product
 
 ## Create a wished product
 
@@ -4145,7 +4145,7 @@ Destroy a wished product. Users can destroy their own wished_products, admins ca
 ```plaintext
 POST /api/wished_products
 Accept: application/json
-Authorizat IO N: Bearer d18db1db63774cbf353bd5aefa7be0f1cc4c537a70a710e9
+Authorizat IO N: Bearer 28330ac3ccaa1d65f3d05c2ec63086fbfffed215ab47685b
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4157,7 +4157,7 @@ Cookie:
 
 
 ```json
-wished_product[wishlist_id]=40&wished_product[variant_id]=134&wished_product[quantity]=2&wished_product[remark]=Foo+bar
+wished_product[wishlist_id]=38&wished_product[variant_id]=117&wished_product[quantity]=2&wished_product[remark]=Foo+bar
 ```
 
 
@@ -4180,10 +4180,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;865ab4dc82f635d891cbbac0d621e1b4&quot;
+ETag: W/&quot;a51d9aec053650290204f77a080460c3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9cd023a6-02d4-4c42-af8f-bd4ac67ea3ca
-X-Runtime: 0.014328
+X-Request-Id: fb366f3a-7ad0-4618-93ef-165f6dca7ba8
+X-Runtime: 0.015593
 Vary: Origin
 Content-Length: 75
 201 Created
@@ -4204,9 +4204,9 @@ Content-Length: 75
 #### Endpoint
 
 ```plaintext
-DELETE /api/wished_products/10
+DELETE /api/wished_products/29
 Accept: application/json
-Authorizat IO N: Bearer b6cc48ee510ca03c7c2b89bc4c74aa827a02a36a00bc530d
+Authorizat IO N: Bearer 636df6ead50780b334f0e7f3e65410460e49a3bde0a18f1d
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4230,8 +4230,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: ab7445ec-4024-458c-9efc-7696eb80eb00
-X-Runtime: 0.035424
+X-Request-Id: 158fbd0a-fa10-4f80-9c4e-1c679630be5f
+X-Runtime: 0.012688
 Vary: Origin
 204 No Content
 ```
@@ -4247,9 +4247,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-GET /api/wished_products/25
+GET /api/wished_products/10
 Accept: application/json
-Authorizat IO N: Bearer ad92d317b7b9fb691500d3ee3aa5f4843aa0fd1dab8f8e9e
+Authorizat IO N: Bearer 6586ccf881fe045abf8f940efc989ce6de69a3c994dfe6d7
 Host: example.org
 Cookie: 
 ```
@@ -4272,12 +4272,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;64c670fef9b8cd7aebc7a36908b0b0ce&quot;
+ETag: W/&quot;a862d306ed83f711fd6e71bc06d7d2ff&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 41dc4b59-c8c7-46bd-b571-bd0588688a32
-X-Runtime: 0.013084
+X-Request-Id: 7961230d-4b44-452d-8d81-d1f9da85e30e
+X-Runtime: 0.036549
 Vary: Origin
-Content-Length: 70
+Content-Length: 69
 200 OK
 ```
 
@@ -4298,7 +4298,7 @@ Content-Length: 70
 ```plaintext
 GET /api/wished_products
 Accept: application/json
-Authorizat IO N: Bearer b572c90548079063d748367ef4dad67346eff71b9f85a15f
+Authorizat IO N: Bearer 4006636c60a792283b52e5af9191cfa9b8a1b8f0168a4a2c
 Host: example.org
 Cookie: 
 ```
@@ -4327,10 +4327,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0e6a4ff921bcc579496f4bc27dcee14c&quot;
+ETag: W/&quot;56045a754682a06b3ac68fe53594f5c2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 07968942-aa82-4804-a461-81596563c807
-X-Runtime: 0.011943
+X-Request-Id: de5d6337-e435-4c49-8a6c-2374f9c101e0
+X-Runtime: 0.012813
 Vary: Origin
 Content-Length: 301
 200 OK
@@ -4353,7 +4353,7 @@ Content-Length: 301
 ```plaintext
 GET /api/wished_products/mine?with_variant=true
 Accept: application/json
-Authorizat IO N: Bearer c366be271174f0fd16ec0c897c3b5c2bafcdaaf0ae62541c
+Authorizat IO N: Bearer 0afa56c3907810e94d13a2cce82e37b4f485d3765c848094
 Host: example.org
 Cookie: 
 ```
@@ -4385,12 +4385,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;2cebdeaa60ef77cb1b361b23dabe0765&quot;
+ETag: W/&quot;7c0ee5b97b28289a719d414abde9a314&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 3d367511-29f9-477d-9160-5a56bb165228
-X-Runtime: 0.104618
+X-Request-Id: 4846c94a-9562-4ead-93ca-f58a9d288b08
+X-Runtime: 0.099630
 Vary: Origin
-Content-Length: 2218
+Content-Length: 2213
 200 OK
 ```
 
@@ -4411,7 +4411,7 @@ Content-Length: 2218
 ```plaintext
 GET /api/wished_products?with_variant=true
 Accept: application/json
-Authorizat IO N: Bearer c7c7f86419fc69102612bea8a76c5d4472e51ca54eeb1247
+Authorizat IO N: Bearer 5c5eea52922070cdaf34a9d143c8c437449b07a9c900c2c3
 Host: example.org
 Cookie: 
 ```
@@ -4444,12 +4444,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6e86b10509db8a2939f0b2d7fc8a74df&quot;
+ETag: W/&quot;45c9c02e89a60a68ad970d5eb8646cb2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 931e23be-1145-4028-966e-55788036bd99
-X-Runtime: 0.099841
+X-Request-Id: 50e95f6e-ab63-4323-bbd6-9459b84c6b6b
+X-Runtime: 0.104510
 Vary: Origin
-Content-Length: 2278
+Content-Length: 2276
 200 OK
 ```
 
@@ -4470,7 +4470,7 @@ Content-Length: 2278
 ```plaintext
 GET /api/wished_products/mine
 Accept: application/json
-Authorizat IO N: Bearer 4a011a35122dfd358833728d3ac73a44cda46b0bcd7c4d33
+Authorizat IO N: Bearer 6d9ec88813921bbd0b1a83d79b3412c35c50800db5770980
 Host: example.org
 Cookie: 
 ```
@@ -4498,12 +4498,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;9f9f850a405fd91d21183d528e55db3d&quot;
+ETag: W/&quot;9683965ceca3f8037aa251ee26b2d50a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 42a88fbe-2dc3-41e7-a0ee-f77d72206123
-X-Runtime: 0.015873
+X-Request-Id: 025024f3-5848-4a5b-80f8-de52c3561a53
+X-Runtime: 0.026552
 Vary: Origin
-Content-Length: 299
+Content-Length: 298
 200 OK
 ```
 
@@ -4522,9 +4522,9 @@ Content-Length: 299
 #### Endpoint
 
 ```plaintext
-PATCH /api/wished_products/28
+PATCH /api/wished_products/26
 Accept: application/json
-Authorizat IO N: Bearer 64cb67c3c138b5d0440bdba74b234647cfee5c4bf3a4c425
+Authorizat IO N: Bearer 27e41808bb50452345bb4151215d7f2dc137714aacbb2df7
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4536,7 +4536,7 @@ Cookie:
 
 
 ```json
-wished_product[wishlist_id]=39&wished_product[variant_id]=132&wished_product[quantity]=2&wished_product[remark]=Foo+bar
+wished_product[wishlist_id]=39&wished_product[variant_id]=125&wished_product[quantity]=2&wished_product[remark]=Foo+bar
 ```
 
 
@@ -4559,10 +4559,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;156c6945222a97791be5150dda4d58cc&quot;
+ETag: W/&quot;6e362d5bdf536a51952ac7e612024962&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8742ecbb-ffc9-4b30-8e72-385efccd052a
-X-Runtime: 0.015354
+X-Request-Id: 7cc2bf4c-2265-41de-95f4-e415e4bbf337
+X-Runtime: 0.017996
 Vary: Origin
 Content-Length: 75
 200 OK
@@ -4577,7 +4577,7 @@ Content-Length: 75
 
 # Wishlists
 
-Create a wishlist. Any user can create their own wishlist, admins can create wishlists for others.
+Get a users wishlists
 
 ## Create a wishlist
 
@@ -4589,7 +4589,7 @@ Create a wishlist. Any user can create their own wishlist, admins can create wis
 ```plaintext
 POST /api/wishlists
 Accept: application/json
-Authorizat IO N: Bearer a49cb9e35fbce00f71b340df46261b371f1bb756a935ce18
+Authorizat IO N: Bearer 3b151b14a634620a9c99df9c78496f46880f0fdd7dd70bc4
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4601,7 +4601,7 @@ Cookie:
 
 
 ```json
-wishlist[name]&wishlist[user_id]=30&wishlist[is_default]=true&wishlist[is_public]=false
+wishlist[name]&wishlist[user_id]=14&wishlist[is_default]=true&wishlist[is_public]=false
 ```
 
 
@@ -4628,12 +4628,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;a60e7bd11fe0048ee17a40b25ae3c723&quot;
+ETag: W/&quot;f04814a8c84b24df10eceb047a16d5f2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 3b343814-d551-4f7a-8dad-0c7adf5f04e0
-X-Runtime: 0.063697
+X-Request-Id: 5af0da96-147a-4f45-9354-b7bc560fb1c3
+X-Runtime: 0.015840
 Vary: Origin
-Content-Length: 99
+Content-Length: 100
 201 Created
 ```
 
@@ -4652,9 +4652,9 @@ Content-Length: 99
 #### Endpoint
 
 ```plaintext
-DELETE /api/wishlists/14
+DELETE /api/wishlists/17
 Accept: application/json
-Authorizat IO N: Bearer 45fc184415f90f0854cf9e846a4f71c4016e5bd241522b32
+Authorizat IO N: Bearer 2051070d96c263383f861cdf4b6ea4874d0f6347b9e97a1a
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4678,8 +4678,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: ec8ee313-884c-4cdf-a501-207d1eafd3e8
-X-Runtime: 0.016489
+X-Request-Id: 7e09949f-bf73-48e0-9e0c-3f0429ab64a0
+X-Runtime: 0.044702
 Vary: Origin
 204 No Content
 ```
@@ -4695,9 +4695,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-GET /api/wishlists/13
+GET /api/wishlists/15
 Accept: application/json
-Authorizat IO N: Bearer cc176a046ccb939ee8b54fda749f04b30ab27471ad7f2244
+Authorizat IO N: Bearer e21ac5d174bb194b23067c71f7b6a89ee31ee051b2e33f57
 Host: example.org
 Cookie: 
 ```
@@ -4720,10 +4720,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;d44d9d47f12aea2bc77eadecb9309c90&quot;
+ETag: W/&quot;9d6391e9e964a636834f8c27ba9725bf&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a4f86413-4bbb-454a-beb6-c80812a010aa
-X-Runtime: 0.013800
+X-Request-Id: ec6d9d7a-55f7-46f5-a2f9-33fa17bc5edc
+X-Runtime: 0.013203
 Vary: Origin
 Content-Length: 307
 200 OK
@@ -4746,7 +4746,7 @@ Content-Length: 307
 ```plaintext
 GET /api/wishlists
 Accept: application/json
-Authorizat IO N: Bearer 8e7ac138878d49114090d591da80d22d51d24a4cf1901a8e
+Authorizat IO N: Bearer 5c222f1cff3b2db7f52b17e1bd1a7a093cc30be32a0e3b54
 Host: example.org
 Cookie: 
 ```
@@ -4773,12 +4773,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;2b00d4e4f444d305773c214f12959f0f&quot;
+ETag: W/&quot;102b8f317a1a114e7063848bb815851e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2a2e67a2-d610-4674-88dc-c71af0dcaf34
-X-Runtime: 0.016327
+X-Request-Id: 1b553cd1-9053-417f-b4ad-196a84dcff0a
+X-Runtime: 0.015019
 Vary: Origin
-Content-Length: 879
+Content-Length: 894
 200 OK
 ```
 
@@ -4799,7 +4799,7 @@ Content-Length: 879
 ```plaintext
 GET /api/wishlist
 Accept: application/json
-Authorizat IO N: Bearer 9587c5985df0e0c950c5c38ea87c92220ed9c76ac4582488
+Authorizat IO N: Bearer e0d11207bce91fc93c5bc706295dfb97bfffee7e28eae418
 Host: example.org
 Cookie: 
 ```
@@ -4822,12 +4822,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;93d199daffb49837940f73cbf4f18c7d&quot;
+ETag: W/&quot;92a33fe5bd6a3fde80a64a72bb9ef08c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 0be19c33-fdd3-4860-a074-cb6e607a63eb
-X-Runtime: 0.012492
+X-Request-Id: d7c44a85-02ca-4fae-a071-9617315941cc
+X-Runtime: 0.009746
 Vary: Origin
-Content-Length: 302
+Content-Length: 307
 200 OK
 ```
 
@@ -4848,7 +4848,7 @@ Content-Length: 302
 ```plaintext
 GET /api/wishlists/mine
 Accept: application/json
-Authorizat IO N: Bearer 86eb7e3fbc98ef755d89b2a5d1555f9faf45bfa0d0ea4c17
+Authorizat IO N: Bearer 919e998e99156ea10cb05adad947e23bdf63a422d8c4d9e3
 Host: example.org
 Cookie: 
 ```
@@ -4871,12 +4871,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;516686acba10115aaf0b685485350d2c&quot;
+ETag: W/&quot;7ddc370225ab4ea683791abec0817932&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: bfe4212a-9c57-41e2-b5d6-d2ed627b6206
-X-Runtime: 0.013645
+X-Request-Id: 305b36d4-2e69-4e2a-b9bf-f75735244570
+X-Runtime: 0.042834
 Vary: Origin
-Content-Length: 903
+Content-Length: 891
 200 OK
 ```
 
@@ -4895,9 +4895,9 @@ Content-Length: 903
 #### Endpoint
 
 ```plaintext
-PATCH /api/wishlists/28
+PATCH /api/wishlists/14
 Accept: application/json
-Authorizat IO N: Bearer 03cb934e54092635989932e91da6446e3d9a85b29ff31ff4
+Authorizat IO N: Bearer c6739ca6b1080c8428658e49a12db110026863544bf1e39f
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4909,7 +4909,7 @@ Cookie:
 
 
 ```json
-wishlist[name]=Another+Wishlist&wishlist[user_id]=47&wishlist[is_default]=true&wishlist[is_public]=false
+wishlist[name]=Another+Wishlist&wishlist[user_id]=12&wishlist[is_default]=true&wishlist[is_public]=false
 ```
 
 
@@ -4932,10 +4932,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;f505e1404598dae6f6b046444a66bae3&quot;
+ETag: W/&quot;624b4ea96de0c2dc4121e1001dae669f&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a323100d-6087-4eeb-b5bb-c7ce2d07ef4d
-X-Runtime: 0.018524
+X-Request-Id: 3be0ca8a-c343-4b0f-b365-74f22c288b13
+X-Runtime: 0.021840
 Vary: Origin
 Content-Length: 311
 200 OK
