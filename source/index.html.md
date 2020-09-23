@@ -18,9 +18,9 @@ As a guest user
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/M166166940/addresses/43
+PUT /api/orders/M186567334/addresses/27
 Accept: application/json
-X-Spree-Order-Token: Fk0iDaoKe0nUCvsHdyGkug
+X-Spree-Order-Token: r1p66QOxRGgkbJuMvBD6bQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -68,10 +68,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;a52f8a9370f01790f43489aa95ed7ee9&quot;
+ETag: W/&quot;faa6f29447b2783a79ae86437ac6aa9c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 0e0c6cbf-78e2-4eaf-b69a-88ad71dd73cc
-X-Runtime: 0.070487
+X-Request-Id: 4f4b3ca4-354a-47c4-974e-af2562086ea2
+X-Runtime: 0.050637
 Vary: Origin
 Content-Length: 516
 200 OK
@@ -80,24 +80,24 @@ Content-Length: 516
 
 ```json
 {
-  "id": 44,
+  "id": 28,
   "firstname": "John the Tester",
   "lastname": "Smith",
   "full_name": "John the Tester Smith",
   "address1": "A Different Road",
   "address2": "Northwest",
   "city": "Herndon",
-  "zipcode": "10039",
+  "zipcode": "10027",
   "phone": "555-555-0199",
   "company": "Company",
   "alternative_phone": "555-555-0199",
-  "country_id": 48,
+  "country_id": 36,
   "country_iso": "US",
-  "state_id": 48,
+  "state_id": 36,
   "state_name": null,
   "state_text": "AL",
   "country": {
-    "id": 48,
+    "id": 36,
     "iso_name": "UNITED STATES",
     "iso": "US",
     "iso3": "USA",
@@ -105,10 +105,10 @@ Content-Length: 516
     "numcode": 840
   },
   "state": {
-    "id": 48,
+    "id": 36,
     "name": "Alabama",
     "abbr": "AL",
-    "country_id": 48
+    "country_id": 36
   }
 }
 ```
@@ -130,7 +130,7 @@ Please do not send billing address attributes at all if there is no billing addr
 ```plaintext
 POST /api/braintree/transactions
 Accept: application/json
-X-Spree-Order-Token: YUvB6bOkrZXaHdr3KEPFiQ
+X-Spree-Order-Token: ZtQRZ5AolfR6COe6rnyQyQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -142,7 +142,7 @@ Cookie:
 
 
 ```json
-order_id=M456076004&payment_method_id=10&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-paypal-billing-agreement-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10034&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=PayPalAccount&transaction[billing_address_attributes][first_name]=John&transaction[billing_address_attributes][last_name]=Stamm&transaction[billing_address_attributes][address_line_1]=A+Different+Road&transaction[billing_address_attributes][city]=Herndon&transaction[billing_address_attributes][state_code]=AL&transaction[billing_address_attributes][zip]=10034&transaction[billing_address_attributes][country_code]=US
+order_id=M981262853&payment_method_id=22&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-paypal-billing-agreement-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10052&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=PayPalAccount&transaction[billing_address_attributes][first_name]=John&transaction[billing_address_attributes][last_name]=Stamm&transaction[billing_address_attributes][address_line_1]=A+Different+Road&transaction[billing_address_attributes][city]=Herndon&transaction[billing_address_attributes][state_code]=AL&transaction[billing_address_attributes][zip]=10052&transaction[billing_address_attributes][country_code]=US
 ```
 
 
@@ -182,28 +182,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;da139245563c32882f3f2e030d8e4a41&quot;
+ETag: W/&quot;1a8af279e4c8f14a61a7b92331bdd1ad&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 69b8c3e9-8594-4f73-845b-7da4543d6980
-X-Runtime: 0.369702
+X-Request-Id: 8957ed49-143a-4cc5-8ea4-666a888c9c2b
+X-Runtime: 0.389390
 Vary: Origin
-Content-Length: 5217
+Content-Length: 5219
 200 OK
 ```
 
 
 ```json
 {
-  "id": 23,
-  "number": "M456076004",
+  "id": 31,
+  "number": "M981262853",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "confirm",
   "adjustment_total": "0.0",
   "user_id": null,
-  "created_at": "2020-09-22T11:40:10.686-04:00",
-  "updated_at": "2020-09-22T11:40:11.042-04:00",
+  "created_at": "2020-09-23T07:16:35.646-04:00",
+  "updated_at": "2020-09-23T07:16:36.008-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
@@ -235,7 +235,7 @@ Content-Length: 5217
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "YUvB6bOkrZXaHdr3KEPFiQ",
+  "token": "ZtQRZ5AolfR6COe6rnyQyQ",
   "checkout_steps": [
     "address",
     "delivery",
@@ -244,33 +244,33 @@ Content-Length: 5217
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M456076004&bzip=10034&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M981262853&bzip=10052&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
-      "id": 10,
+      "id": 22,
       "name": "Braintree"
     }
   ],
   "bill_address": {
-    "id": 36,
+    "id": 57,
     "firstname": "John",
     "lastname": "Stamm",
     "full_name": "John Stamm",
     "address1": "A Different Road",
     "address2": null,
     "city": "Herndon",
-    "zipcode": "10034",
+    "zipcode": "10052",
     "phone": "555-555-0199",
     "company": null,
     "alternative_phone": null,
-    "country_id": 38,
+    "country_id": 52,
     "country_iso": "US",
-    "state_id": 38,
+    "state_id": 52,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 38,
+      "id": 52,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -278,31 +278,31 @@ Content-Length: 5217
       "numcode": 840
     },
     "state": {
-      "id": 38,
+      "id": 52,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 38
+      "country_id": 52
     }
   },
   "ship_address": {
-    "id": 37,
+    "id": 58,
     "firstname": "John",
     "lastname": "Stamm",
     "full_name": "John Stamm",
     "address1": "A Different Road",
     "address2": null,
     "city": "Herndon",
-    "zipcode": "10034",
+    "zipcode": "10052",
     "phone": "555-555-0199",
     "company": null,
     "alternative_phone": null,
-    "country_id": 38,
+    "country_id": 52,
     "country_iso": "US",
-    "state_id": 38,
+    "state_id": 52,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 38,
+      "id": 52,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -310,19 +310,19 @@ Content-Length: 5217
       "numcode": 840
     },
     "state": {
-      "id": 38,
+      "id": 52,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 38
+      "country_id": 52
     }
   },
   "line_items": [
     {
-      "id": 28,
+      "id": 35,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 115,
-      "vendor_id": 242,
+      "variant_id": 169,
+      "vendor_id": 326,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -331,15 +331,15 @@ Content-Length: 5217
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 115,
-        "name": "Product #63 - 5735",
-        "sku": "SKU-114",
+        "id": 169,
+        "name": "Product #90 - 4708",
+        "sku": "SKU-168",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-63-5735",
+        "slug": "product-90-4708",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -351,11 +351,11 @@ Content-Length: 5217
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 52,
-            "name": "Size-52",
+            "id": 79,
+            "name": "Size-79",
             "presentation": "S",
-            "option_type_name": "foo-size-52",
-            "option_type_id": 52,
+            "option_type_name": "foo-size-79",
+            "option_type_id": 79,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -363,7 +363,7 @@ Content-Length: 5217
         "images": [
 
         ],
-        "product_id": 63,
+        "product_id": 90,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -373,7 +373,7 @@ Content-Length: 5217
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #242",
+      "vendor_name": "Vendor #326",
       "country_iso": "US",
       "adjustments": [
 
@@ -382,89 +382,89 @@ Content-Length: 5217
   ],
   "payments": [
     {
-      "id": 2,
+      "id": 7,
       "source_type": "SolidusPaypalBraintree::Source",
-      "source_id": 6,
+      "source_id": 10,
       "amount": "110.0",
       "display_amount": "$110.00",
-      "payment_method_id": 10,
+      "payment_method_id": 22,
       "state": "checkout",
       "avs_response": null,
-      "created_at": "2020-09-22T11:40:10.848-04:00",
-      "updated_at": "2020-09-22T11:40:10.848-04:00",
+      "created_at": "2020-09-23T07:16:35.785-04:00",
+      "updated_at": "2020-09-23T07:16:35.785-04:00",
       "payment_method": {
-        "id": 10,
+        "id": 22,
         "name": "Braintree"
       },
       "source": {
-        "id": 6,
+        "id": 10,
         "payment_type": "PayPalAccount",
         "token": "bgx899",
-        "created_at": "2020-09-22T11:40:10.847-04:00",
+        "created_at": "2020-09-23T07:16:35.784-04:00",
         "email": "jane.doe@paypal.com"
       }
     }
   ],
   "shipments": [
     {
-      "id": 28,
+      "id": 36,
       "tracking": null,
       "tracking_url": null,
-      "number": "H12751245587",
+      "number": "H14440114850",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M456076004",
-      "stock_location_name": "NY Warehouse 47",
+      "order_id": "M981262853",
+      "stock_location_name": "NY Warehouse 63",
       "giftwrappable": false,
-      "stock_location_id": 47,
+      "stock_location_id": 63,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 28,
+          "id": 36,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 19,
+          "shipping_method_id": 26,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 28,
+        "id": 36,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 19,
+        "shipping_method_id": 26,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 19,
+          "id": 26,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 21,
+              "id": 28,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 38,
-              "name": "ShippingCategory #36"
+              "id": 50,
+              "name": "ShippingCategory #48"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 115,
+          "variant_id": 169,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -474,10 +474,10 @@ Content-Length: 5217
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 47, Washington, AL",
+      "stock_location_address": "NY Warehouse 63, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -520,7 +520,7 @@ Content-Length: 5217
 ```plaintext
 POST /api/braintree/transactions
 Accept: application/json
-X-Spree-Order-Token: Y0GPID-iPHqxUFbMLIHo9w
+X-Spree-Order-Token: iCrtgJqQVJv9HdnYpEwX0g
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -532,7 +532,7 @@ Cookie:
 
 
 ```json
-order_id=M111188496&payment_method_id=11&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-apple-pay-visa-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10036&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=ApplePayCard
+order_id=M603528771&payment_method_id=21&options[restart_checkout]=true&transaction[email]=maryellen.oga%40mckenziemcglynn.com&transaction[nonce]=fake-apple-pay-visa-nonce&transaction[phone]=555-555-0199&transaction[shipping_address_attributes][first_name]=John&transaction[shipping_address_attributes][last_name]=Stamm&transaction[shipping_address_attributes][address_line_1]=A+Different+Road&transaction[shipping_address_attributes][city]=Herndon&transaction[shipping_address_attributes][state_code]=AL&transaction[shipping_address_attributes][zip]=10050&transaction[shipping_address_attributes][country_code]=US&transaction[payment_type]=ApplePayCard
 ```
 
 
@@ -565,10 +565,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;f656b55bf03d5abc90325dcf5a04a5dc&quot;
+ETag: W/&quot;63f8a7a1e63a35a744e5387b12a8a34f&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 97d90f85-1d6e-44fb-ac99-caea54eee142
-X-Runtime: 0.340425
+X-Request-Id: 4e8ae7bd-e6e3-4fdc-bab2-4025603d3cf2
+X-Runtime: 0.379453
 Vary: Origin
 Content-Length: 5263
 200 OK
@@ -577,16 +577,16 @@ Content-Length: 5263
 
 ```json
 {
-  "id": 24,
-  "number": "M111188496",
+  "id": 30,
+  "number": "M603528771",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "confirm",
   "adjustment_total": "0.0",
   "user_id": null,
-  "created_at": "2020-09-22T11:40:11.448-04:00",
-  "updated_at": "2020-09-22T11:40:11.796-04:00",
+  "created_at": "2020-09-23T07:16:34.861-04:00",
+  "updated_at": "2020-09-23T07:16:35.209-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
@@ -618,7 +618,7 @@ Content-Length: 5263
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "Y0GPID-iPHqxUFbMLIHo9w",
+  "token": "iCrtgJqQVJv9HdnYpEwX0g",
   "checkout_steps": [
     "address",
     "delivery",
@@ -627,33 +627,33 @@ Content-Length: 5263
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M111188496&bzip=10036&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M603528771&bzip=10050&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
-      "id": 11,
+      "id": 21,
       "name": "Braintree"
     }
   ],
   "bill_address": {
-    "id": 40,
+    "id": 53,
     "firstname": "John",
     "lastname": "Stamm",
     "full_name": "John Stamm",
     "address1": "A Different Road",
     "address2": null,
     "city": "Herndon",
-    "zipcode": "10036",
+    "zipcode": "10050",
     "phone": "555-555-0199",
     "company": null,
     "alternative_phone": null,
-    "country_id": 39,
+    "country_id": 51,
     "country_iso": "US",
-    "state_id": 39,
+    "state_id": 51,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 39,
+      "id": 51,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -661,31 +661,31 @@ Content-Length: 5263
       "numcode": 840
     },
     "state": {
-      "id": 39,
+      "id": 51,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 39
+      "country_id": 51
     }
   },
   "ship_address": {
-    "id": 41,
+    "id": 54,
     "firstname": "John",
     "lastname": "Stamm",
     "full_name": "John Stamm",
     "address1": "A Different Road",
     "address2": null,
     "city": "Herndon",
-    "zipcode": "10036",
+    "zipcode": "10050",
     "phone": "555-555-0199",
     "company": null,
     "alternative_phone": null,
-    "country_id": 39,
+    "country_id": 51,
     "country_iso": "US",
-    "state_id": 39,
+    "state_id": 51,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 39,
+      "id": 51,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -693,19 +693,19 @@ Content-Length: 5263
       "numcode": 840
     },
     "state": {
-      "id": 39,
+      "id": 51,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 39
+      "country_id": 51
     }
   },
   "line_items": [
     {
-      "id": 29,
+      "id": 34,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 117,
-      "vendor_id": 247,
+      "variant_id": 167,
+      "vendor_id": 321,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -714,15 +714,15 @@ Content-Length: 5263
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 117,
-        "name": "Product #64 - 1135",
-        "sku": "SKU-116",
+        "id": 167,
+        "name": "Product #89 - 7226",
+        "sku": "SKU-166",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-64-1135",
+        "slug": "product-89-7226",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -734,11 +734,11 @@ Content-Length: 5263
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 53,
-            "name": "Size-53",
+            "id": 78,
+            "name": "Size-78",
             "presentation": "S",
-            "option_type_name": "foo-size-53",
-            "option_type_id": 53,
+            "option_type_name": "foo-size-78",
+            "option_type_id": 78,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -746,7 +746,7 @@ Content-Length: 5263
         "images": [
 
         ],
-        "product_id": 64,
+        "product_id": 89,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -756,7 +756,7 @@ Content-Length: 5263
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #247",
+      "vendor_name": "Vendor #321",
       "country_iso": "US",
       "adjustments": [
 
@@ -765,25 +765,25 @@ Content-Length: 5263
   ],
   "payments": [
     {
-      "id": 3,
+      "id": 6,
       "source_type": "SolidusPaypalBraintree::Source",
-      "source_id": 7,
+      "source_id": 9,
       "amount": "110.0",
       "display_amount": "$110.00",
-      "payment_method_id": 11,
+      "payment_method_id": 21,
       "state": "checkout",
       "avs_response": null,
-      "created_at": "2020-09-22T11:40:11.599-04:00",
-      "updated_at": "2020-09-22T11:40:11.599-04:00",
+      "created_at": "2020-09-23T07:16:35.007-04:00",
+      "updated_at": "2020-09-23T07:16:35.007-04:00",
       "payment_method": {
-        "id": 11,
+        "id": 21,
         "name": "Braintree"
       },
       "source": {
-        "id": 7,
+        "id": 9,
         "payment_type": "ApplePayCard",
         "token": "cg7hsk",
-        "created_at": "2020-09-22T11:40:11.598-04:00",
+        "created_at": "2020-09-23T07:16:35.006-04:00",
         "cc_type": "Apple Pay - Visa",
         "last_digits": "1881",
         "month": "12",
@@ -793,64 +793,64 @@ Content-Length: 5263
   ],
   "shipments": [
     {
-      "id": 30,
+      "id": 34,
       "tracking": null,
       "tracking_url": null,
-      "number": "H23855385727",
+      "number": "H81114687400",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M111188496",
-      "stock_location_name": "NY Warehouse 48",
+      "order_id": "M603528771",
+      "stock_location_name": "NY Warehouse 62",
       "giftwrappable": false,
-      "stock_location_id": 48,
+      "stock_location_id": 62,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 30,
+          "id": 34,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 20,
+          "shipping_method_id": 25,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 30,
+        "id": 34,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 20,
+        "shipping_method_id": 25,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 20,
+          "id": 25,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 22,
+              "id": 27,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 39,
-              "name": "ShippingCategory #37"
+              "id": 49,
+              "name": "ShippingCategory #47"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 117,
+          "variant_id": 167,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -860,10 +860,10 @@ Content-Length: 5263
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 48, Washington, AL",
+      "stock_location_address": "NY Warehouse 62, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -908,9 +908,9 @@ Content-Length: 5263
 #### Endpoint
 
 ```plaintext
-PUT /api/checkouts/M727622010/complete
+PUT /api/checkouts/M490113741/complete
 Accept: application/json
-X-Spree-Order-Token: t1RdGlhUvXDcM5D72skCBA
+X-Spree-Order-Token: HKxN30Cqds2Cvcc7BSAA2w
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -944,33 +944,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;13fc9c958da64d57e8bf28f53e521e03&quot;
+ETag: W/&quot;5eaa8fe50c4c23de1c6e1abf4aaae9a3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 816fedcf-3312-40f4-9fdc-0e0c3cd315aa
-X-Runtime: 0.539970
+X-Request-Id: fa87b9e3-4e8b-423f-aae1-3727e16cf7db
+X-Runtime: 0.469200
 Vary: Origin
-Content-Length: 5319
+Content-Length: 5315
 200 OK
 ```
 
 
 ```json
 {
-  "id": 6,
-  "number": "M727622010",
+  "id": 2,
+  "number": "M490113741",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "complete",
   "adjustment_total": "0.0",
-  "user_id": 17,
-  "created_at": "2020-09-22T11:39:55.482-04:00",
-  "updated_at": "2020-09-22T11:39:56.188-04:00",
-  "completed_at": "2020-09-22T11:39:56.188-04:00",
+  "user_id": 32,
+  "created_at": "2020-09-23T07:16:08.889-04:00",
+  "updated_at": "2020-09-23T07:16:09.375-04:00",
+  "completed_at": "2020-09-23T07:16:09.375-04:00",
   "payment_total": "110.0",
   "shipment_state": "ready",
   "payment_state": "paid",
-  "email": "email17@example.com",
+  "email": "email32@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -997,7 +997,7 @@ Content-Length: 5319
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "t1RdGlhUvXDcM5D72skCBA",
+  "token": "HKxN30Cqds2Cvcc7BSAA2w",
   "checkout_steps": [
     "address",
     "delivery",
@@ -1006,7 +1006,7 @@ Content-Length: 5319
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M727622010&bzip=10010&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M490113741&bzip=10002&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
@@ -1019,24 +1019,24 @@ Content-Length: 5319
     }
   ],
   "bill_address": {
-    "id": 10,
+    "id": 2,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10010",
+    "zipcode": "10002",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 17,
+    "country_id": 11,
     "country_iso": "US",
-    "state_id": 17,
+    "state_id": 11,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 17,
+      "id": 11,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -1044,31 +1044,31 @@ Content-Length: 5319
       "numcode": 840
     },
     "state": {
-      "id": 17,
+      "id": 11,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 17
+      "country_id": 11
     }
   },
   "ship_address": {
-    "id": 11,
+    "id": 3,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10011",
+    "zipcode": "10003",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 17,
+    "country_id": 11,
     "country_iso": "US",
-    "state_id": 17,
+    "state_id": 11,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 17,
+      "id": 11,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -1076,19 +1076,19 @@ Content-Length: 5319
       "numcode": 840
     },
     "state": {
-      "id": 17,
+      "id": 11,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 17
+      "country_id": 11
     }
   },
   "line_items": [
     {
-      "id": 8,
+      "id": 2,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 41,
-      "vendor_id": 104,
+      "variant_id": 33,
+      "vendor_id": 56,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -1097,15 +1097,15 @@ Content-Length: 5319
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 41,
-        "name": "Product #26 - 9462",
-        "sku": "SKU-40",
+        "id": 33,
+        "name": "Product #22 - 5629",
+        "sku": "SKU-32",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-26-9462",
+        "slug": "product-22-5629",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -1117,11 +1117,11 @@ Content-Length: 5319
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 15,
-            "name": "Size-15",
+            "id": 11,
+            "name": "Size-11",
             "presentation": "S",
-            "option_type_name": "foo-size-15",
-            "option_type_id": 15,
+            "option_type_name": "foo-size-11",
+            "option_type_id": 11,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -1129,7 +1129,7 @@ Content-Length: 5319
         "images": [
 
         ],
-        "product_id": 26,
+        "product_id": 22,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -1139,7 +1139,7 @@ Content-Length: 5319
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #104",
+      "vendor_name": "Vendor #56",
       "country_iso": "US",
       "adjustments": [
 
@@ -1156,8 +1156,8 @@ Content-Length: 5319
       "payment_method_id": 4,
       "state": "completed",
       "avs_response": "M",
-      "created_at": "2020-09-22T11:39:55.702-04:00",
-      "updated_at": "2020-09-22T11:39:55.997-04:00",
+      "created_at": "2020-09-23T07:16:09.010-04:00",
+      "updated_at": "2020-09-23T07:16:09.174-04:00",
       "payment_method": {
         "id": 4,
         "name": "Braintree"
@@ -1166,7 +1166,7 @@ Content-Length: 5319
         "id": 4,
         "payment_type": "CreditCard",
         "token": "4rptfz",
-        "created_at": "2020-09-22T11:39:55.700-04:00",
+        "created_at": "2020-09-23T07:16:09.009-04:00",
         "cc_type": "Visa",
         "last_digits": "1881",
         "month": "12",
@@ -1176,64 +1176,64 @@ Content-Length: 5319
   ],
   "shipments": [
     {
-      "id": 6,
+      "id": 2,
       "tracking": "U10000",
       "tracking_url": null,
-      "number": "H71453721178",
+      "number": "H28115418856",
       "cost": "100.0",
       "shipped_at": null,
       "state": "ready",
-      "order_id": "M727622010",
-      "stock_location_name": "NY Warehouse 19",
+      "order_id": "M490113741",
+      "stock_location_name": "NY Warehouse 11",
       "giftwrappable": false,
-      "stock_location_id": 19,
+      "stock_location_id": 11,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 6,
+          "id": 2,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 6,
+          "shipping_method_id": 2,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 6,
+        "id": 2,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 6,
+        "shipping_method_id": 2,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 6,
+          "id": 2,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 6,
+              "id": 2,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 17,
-              "name": "ShippingCategory #16"
+              "id": 11,
+              "name": "ShippingCategory #11"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 41,
+          "variant_id": 33,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -1243,10 +1243,10 @@ Content-Length: 5319
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 19, Washington, AL",
+      "stock_location_address": "NY Warehouse 11, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -1287,9 +1287,9 @@ Content-Length: 5319
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M743291930
+PATCH /api/checkouts/M890173564
 Accept: application/json
-X-Spree-Order-Token: Nbp_l7LTdKBwwQermvFQpQ
+X-Spree-Order-Token: 0qPOZyrTC8yGgDzRZ2z1fA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -1325,33 +1325,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;aa0407c09eb235901505d34e4071f803&quot;
+ETag: W/&quot;3c71615536b80f3d022b2dd1f8f749d5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6add924e-a2db-4037-ac2e-c3abf9c9ce25
-X-Runtime: 0.130915
+X-Request-Id: d975a521-a5c1-4061-841e-6cf21126a3d3
+X-Runtime: 0.158986
 Vary: Origin
-Content-Length: 4778
+Content-Length: 4770
 200 OK
 ```
 
 
 ```json
 {
-  "id": 9,
-  "number": "M743291930",
+  "id": 5,
+  "number": "M890173564",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "confirm",
   "adjustment_total": "0.0",
-  "user_id": 20,
-  "created_at": "2020-09-22T11:39:58.226-04:00",
-  "updated_at": "2020-09-22T11:39:58.580-04:00",
+  "user_id": 35,
+  "created_at": "2020-09-23T07:16:11.361-04:00",
+  "updated_at": "2020-09-23T07:16:11.729-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email20@example.com",
+  "email": "email35@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -1378,7 +1378,7 @@ Content-Length: 4778
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "Nbp_l7LTdKBwwQermvFQpQ",
+  "token": "0qPOZyrTC8yGgDzRZ2z1fA",
   "checkout_steps": [
     "address",
     "delivery",
@@ -1387,7 +1387,7 @@ Content-Length: 4778
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M743291930&bzip=10016&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M890173564&bzip=10008&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
@@ -1396,24 +1396,24 @@ Content-Length: 4778
     }
   ],
   "bill_address": {
-    "id": 16,
+    "id": 8,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10016",
+    "zipcode": "10008",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 20,
+    "country_id": 14,
     "country_iso": "US",
-    "state_id": 20,
+    "state_id": 14,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 20,
+      "id": 14,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -1421,31 +1421,31 @@ Content-Length: 4778
       "numcode": 840
     },
     "state": {
-      "id": 20,
+      "id": 14,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 20
+      "country_id": 14
     }
   },
   "ship_address": {
-    "id": 17,
+    "id": 9,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10017",
+    "zipcode": "10009",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 20,
+    "country_id": 14,
     "country_iso": "US",
-    "state_id": 20,
+    "state_id": 14,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 20,
+      "id": 14,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -1453,19 +1453,19 @@ Content-Length: 4778
       "numcode": 840
     },
     "state": {
-      "id": 20,
+      "id": 14,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 20
+      "country_id": 14
     }
   },
   "line_items": [
     {
-      "id": 11,
+      "id": 5,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 47,
-      "vendor_id": 119,
+      "variant_id": 39,
+      "vendor_id": 71,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -1474,15 +1474,15 @@ Content-Length: 4778
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 47,
-        "name": "Product #29 - 5595",
-        "sku": "SKU-46",
+        "id": 39,
+        "name": "Product #25 - 4699",
+        "sku": "SKU-38",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-29-5595",
+        "slug": "product-25-4699",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -1494,11 +1494,11 @@ Content-Length: 4778
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 18,
-            "name": "Size-18",
+            "id": 14,
+            "name": "Size-14",
             "presentation": "S",
-            "option_type_name": "foo-size-18",
-            "option_type_id": 18,
+            "option_type_name": "foo-size-14",
+            "option_type_id": 14,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -1506,7 +1506,7 @@ Content-Length: 4778
         "images": [
 
         ],
-        "product_id": 29,
+        "product_id": 25,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -1516,7 +1516,7 @@ Content-Length: 4778
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #119",
+      "vendor_name": "Vendor #71",
       "country_iso": "US",
       "adjustments": [
 
@@ -1528,64 +1528,64 @@ Content-Length: 4778
   ],
   "shipments": [
     {
-      "id": 12,
+      "id": 8,
       "tracking": null,
       "tracking_url": null,
-      "number": "H34338063671",
+      "number": "H12871256175",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M743291930",
-      "stock_location_name": "NY Warehouse 22",
+      "order_id": "M890173564",
+      "stock_location_name": "NY Warehouse 14",
       "giftwrappable": false,
-      "stock_location_id": 22,
+      "stock_location_id": 14,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 12,
+          "id": 8,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 9,
+          "shipping_method_id": 5,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 12,
+        "id": 8,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 9,
+        "shipping_method_id": 5,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 9,
+          "id": 5,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 9,
+              "id": 5,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 20,
-              "name": "ShippingCategory #19"
+              "id": 14,
+              "name": "ShippingCategory #14"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 47,
+          "variant_id": 39,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -1595,10 +1595,10 @@ Content-Length: 4778
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 22, Washington, AL",
+      "stock_location_address": "NY Warehouse 14, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -1639,9 +1639,9 @@ Content-Length: 4778
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M477437995
+PATCH /api/checkouts/M002076236
 Accept: application/json
-X-Spree-Order-Token: v8b0ZmmuWdgwFH_w_VIKjw
+X-Spree-Order-Token: 4ijCkps-9DPDYYk-kuG1Aw
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -1653,7 +1653,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=7&order[payment_attributes][][source_attributes][nonce]=fake-paypal-billing-agreement-nonce&order[payment_attributes][][source_attributes][payment_type]=PayPalAccount&order[payment_attributes][][source_attributes][reusable]=true
+order[payment_attributes][][payment_method_id]=6&order[payment_attributes][][source_attributes][nonce]=fake-paypal-billing-agreement-nonce&order[payment_attributes][][source_attributes][payment_type]=PayPalAccount&order[payment_attributes][][source_attributes][reusable]=true
 ```
 
 
@@ -1677,33 +1677,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;ab825bc937a36d9643ddd94e74244cae&quot;
+ETag: W/&quot;a4cbf9b9fcb09b18e5c6752a00f9b3a5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9ddbd1e8-95b4-4133-84a3-9da3581b2ff5
-X-Runtime: 0.133681
+X-Request-Id: 754afbae-8e1d-43d2-8123-77f4560ff4e4
+X-Runtime: 0.119254
 Vary: Origin
-Content-Length: 4778
+Content-Length: 4770
 200 OK
 ```
 
 
 ```json
 {
-  "id": 8,
-  "number": "M477437995",
+  "id": 3,
+  "number": "M002076236",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "confirm",
   "adjustment_total": "0.0",
-  "user_id": 19,
-  "created_at": "2020-09-22T11:39:57.455-04:00",
-  "updated_at": "2020-09-22T11:39:57.818-04:00",
+  "user_id": 33,
+  "created_at": "2020-09-23T07:16:09.836-04:00",
+  "updated_at": "2020-09-23T07:16:10.252-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email19@example.com",
+  "email": "email33@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -1730,7 +1730,7 @@ Content-Length: 4778
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "v8b0ZmmuWdgwFH_w_VIKjw",
+  "token": "4ijCkps-9DPDYYk-kuG1Aw",
   "checkout_steps": [
     "address",
     "delivery",
@@ -1739,33 +1739,33 @@ Content-Length: 4778
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M477437995&bzip=10014&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M002076236&bzip=10004&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
-      "id": 7,
+      "id": 6,
       "name": "Braintree"
     }
   ],
   "bill_address": {
-    "id": 14,
+    "id": 4,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10014",
+    "zipcode": "10004",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 19,
+    "country_id": 12,
     "country_iso": "US",
-    "state_id": 19,
+    "state_id": 12,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 19,
+      "id": 12,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -1773,31 +1773,31 @@ Content-Length: 4778
       "numcode": 840
     },
     "state": {
-      "id": 19,
+      "id": 12,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 19
+      "country_id": 12
     }
   },
   "ship_address": {
-    "id": 15,
+    "id": 5,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10015",
+    "zipcode": "10005",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 19,
+    "country_id": 12,
     "country_iso": "US",
-    "state_id": 19,
+    "state_id": 12,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 19,
+      "id": 12,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -1805,19 +1805,19 @@ Content-Length: 4778
       "numcode": 840
     },
     "state": {
-      "id": 19,
+      "id": 12,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 19
+      "country_id": 12
     }
   },
   "line_items": [
     {
-      "id": 10,
+      "id": 3,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 45,
-      "vendor_id": 114,
+      "variant_id": 35,
+      "vendor_id": 61,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -1826,15 +1826,15 @@ Content-Length: 4778
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 45,
-        "name": "Product #28 - 9360",
-        "sku": "SKU-44",
+        "id": 35,
+        "name": "Product #23 - 1098",
+        "sku": "SKU-34",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-28-9360",
+        "slug": "product-23-1098",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -1846,11 +1846,11 @@ Content-Length: 4778
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 17,
-            "name": "Size-17",
+            "id": 12,
+            "name": "Size-12",
             "presentation": "S",
-            "option_type_name": "foo-size-17",
-            "option_type_id": 17,
+            "option_type_name": "foo-size-12",
+            "option_type_id": 12,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -1858,7 +1858,7 @@ Content-Length: 4778
         "images": [
 
         ],
-        "product_id": 28,
+        "product_id": 23,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -1868,7 +1868,7 @@ Content-Length: 4778
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #114",
+      "vendor_name": "Vendor #61",
       "country_iso": "US",
       "adjustments": [
 
@@ -1880,64 +1880,64 @@ Content-Length: 4778
   ],
   "shipments": [
     {
-      "id": 10,
+      "id": 4,
       "tracking": null,
       "tracking_url": null,
-      "number": "H16641616725",
+      "number": "H34537642531",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M477437995",
-      "stock_location_name": "NY Warehouse 21",
+      "order_id": "M002076236",
+      "stock_location_name": "NY Warehouse 12",
       "giftwrappable": false,
-      "stock_location_id": 21,
+      "stock_location_id": 12,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 10,
+          "id": 4,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 8,
+          "shipping_method_id": 3,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 10,
+        "id": 4,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 8,
+        "shipping_method_id": 3,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 8,
+          "id": 3,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 8,
+              "id": 3,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 19,
-              "name": "ShippingCategory #18"
+              "id": 12,
+              "name": "ShippingCategory #12"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 45,
+          "variant_id": 35,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -1947,10 +1947,10 @@ Content-Length: 4778
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 21, Washington, AL",
+      "stock_location_address": "NY Warehouse 12, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -1991,9 +1991,9 @@ Content-Length: 4778
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M178710753
+PATCH /api/checkouts/M973580439
 Accept: application/json
-X-Spree-Order-Token: hCCHrbQJUla6raUjsCybSw
+X-Spree-Order-Token: W2HMTIdB8AW0BUkUSRxcvA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -2005,7 +2005,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=9&order[payment_attributes][][source_attributes][nonce]=fake-valid-visa-nonce&order[payment_attributes][][source_attributes][payment_type]=CreditCard&order[payment_attributes][][source_attributes][reusable]=true
+order[payment_attributes][][payment_method_id]=7&order[payment_attributes][][source_attributes][nonce]=fake-valid-visa-nonce&order[payment_attributes][][source_attributes][payment_type]=CreditCard&order[payment_attributes][][source_attributes][reusable]=true
 ```
 
 
@@ -2029,33 +2029,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;959d1688f133ea540c6c1a154be92b34&quot;
+ETag: W/&quot;38ad7663c63322af39cb9405752178df&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: cb7a06f4-80e0-40af-bbb4-44807d159c9f
-X-Runtime: 0.212896
+X-Request-Id: 731dcdf0-9dca-401e-9325-131228bf0235
+X-Runtime: 0.125651
 Vary: Origin
-Content-Length: 4783
+Content-Length: 4768
 200 OK
 ```
 
 
 ```json
 {
-  "id": 10,
-  "number": "M178710753",
+  "id": 4,
+  "number": "M973580439",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "confirm",
   "adjustment_total": "0.0",
-  "user_id": 21,
-  "created_at": "2020-09-22T11:39:59.025-04:00",
-  "updated_at": "2020-09-22T11:39:59.484-04:00",
+  "user_id": 34,
+  "created_at": "2020-09-23T07:16:10.593-04:00",
+  "updated_at": "2020-09-23T07:16:10.964-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email21@example.com",
+  "email": "email34@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -2082,7 +2082,7 @@ Content-Length: 4783
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "hCCHrbQJUla6raUjsCybSw",
+  "token": "W2HMTIdB8AW0BUkUSRxcvA",
   "checkout_steps": [
     "address",
     "delivery",
@@ -2091,33 +2091,33 @@ Content-Length: 4783
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M178710753&bzip=10018&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M973580439&bzip=10006&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
-      "id": 9,
+      "id": 7,
       "name": "Braintree"
     }
   ],
   "bill_address": {
-    "id": 18,
+    "id": 6,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10018",
+    "zipcode": "10006",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 21,
+    "country_id": 13,
     "country_iso": "US",
-    "state_id": 21,
+    "state_id": 13,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 21,
+      "id": 13,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -2125,31 +2125,31 @@ Content-Length: 4783
       "numcode": 840
     },
     "state": {
-      "id": 21,
+      "id": 13,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 21
+      "country_id": 13
     }
   },
   "ship_address": {
-    "id": 19,
+    "id": 7,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10019",
+    "zipcode": "10007",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 21,
+    "country_id": 13,
     "country_iso": "US",
-    "state_id": 21,
+    "state_id": 13,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 21,
+      "id": 13,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -2157,19 +2157,19 @@ Content-Length: 4783
       "numcode": 840
     },
     "state": {
-      "id": 21,
+      "id": 13,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 21
+      "country_id": 13
     }
   },
   "line_items": [
     {
-      "id": 12,
+      "id": 4,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 49,
-      "vendor_id": 124,
+      "variant_id": 37,
+      "vendor_id": 66,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -2178,15 +2178,15 @@ Content-Length: 4783
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 49,
-        "name": "Product #30 - 5666",
-        "sku": "SKU-48",
+        "id": 37,
+        "name": "Product #24 - 363",
+        "sku": "SKU-36",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-30-5666",
+        "slug": "product-24-363",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -2198,11 +2198,11 @@ Content-Length: 4783
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 19,
-            "name": "Size-19",
+            "id": 13,
+            "name": "Size-13",
             "presentation": "S",
-            "option_type_name": "foo-size-19",
-            "option_type_id": 19,
+            "option_type_name": "foo-size-13",
+            "option_type_id": 13,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -2210,7 +2210,7 @@ Content-Length: 4783
         "images": [
 
         ],
-        "product_id": 30,
+        "product_id": 24,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -2220,7 +2220,7 @@ Content-Length: 4783
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #124",
+      "vendor_name": "Vendor #66",
       "country_iso": "US",
       "adjustments": [
 
@@ -2232,64 +2232,64 @@ Content-Length: 4783
   ],
   "shipments": [
     {
-      "id": 14,
+      "id": 6,
       "tracking": null,
       "tracking_url": null,
-      "number": "H30834821304",
+      "number": "H43256364118",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M178710753",
-      "stock_location_name": "NY Warehouse 23",
+      "order_id": "M973580439",
+      "stock_location_name": "NY Warehouse 13",
       "giftwrappable": false,
-      "stock_location_id": 23,
+      "stock_location_id": 13,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 14,
+          "id": 6,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 10,
+          "shipping_method_id": 4,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 14,
+        "id": 6,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 10,
+        "shipping_method_id": 4,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 10,
+          "id": 4,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 10,
+              "id": 4,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 21,
-              "name": "ShippingCategory #20"
+              "id": 13,
+              "name": "ShippingCategory #13"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 49,
+          "variant_id": 37,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -2299,10 +2299,10 @@ Content-Length: 4783
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 23, Washington, AL",
+      "stock_location_address": "NY Warehouse 13, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -2343,9 +2343,9 @@ Content-Length: 4783
 #### Endpoint
 
 ```plaintext
-PATCH /api/checkouts/M657142135
+PATCH /api/checkouts/M617813570
 Accept: application/json
-X-Spree-Order-Token: MkTkQa6FAcTQTimewd8zFg
+X-Spree-Order-Token: XockAsJ_wxv6MV0r9j4blg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -2357,7 +2357,7 @@ Cookie:
 
 
 ```json
-order[payment_attributes][][payment_method_id]=6&order[payment_attributes][][source_attributes][wallet_payment_source_id]=5
+order[payment_attributes][][payment_method_id]=9&order[payment_attributes][][source_attributes][wallet_payment_source_id]=5
 ```
 
 
@@ -2380,33 +2380,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0860756b969997dbcc861c2b59a2e1a1&quot;
+ETag: W/&quot;37ee553586f07be938fe52fa5659bc4d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 61cf8b5d-feb2-42c0-8ae3-580420897b63
-X-Runtime: 0.138872
+X-Request-Id: 9544aa4c-f297-4d5a-b973-040c0e986067
+X-Runtime: 0.172043
 Vary: Origin
-Content-Length: 4774
+Content-Length: 4775
 200 OK
 ```
 
 
 ```json
 {
-  "id": 7,
-  "number": "M657142135",
+  "id": 6,
+  "number": "M617813570",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "confirm",
   "adjustment_total": "0.0",
-  "user_id": 18,
-  "created_at": "2020-09-22T11:39:56.610-04:00",
-  "updated_at": "2020-09-22T11:39:57.062-04:00",
+  "user_id": 36,
+  "created_at": "2020-09-23T07:16:12.089-04:00",
+  "updated_at": "2020-09-23T07:16:12.457-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email18@example.com",
+  "email": "email36@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -2433,7 +2433,7 @@ Content-Length: 4774
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "MkTkQa6FAcTQTimewd8zFg",
+  "token": "XockAsJ_wxv6MV0r9j4blg",
   "checkout_steps": [
     "address",
     "delivery",
@@ -2442,33 +2442,33 @@ Content-Length: 4774
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M657142135&bzip=10012&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M617813570&bzip=10010&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
     {
-      "id": 6,
+      "id": 9,
       "name": "Braintree"
     }
   ],
   "bill_address": {
-    "id": 12,
+    "id": 10,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10012",
+    "zipcode": "10010",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 18,
+    "country_id": 15,
     "country_iso": "US",
-    "state_id": 18,
+    "state_id": 15,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 18,
+      "id": 15,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -2476,31 +2476,31 @@ Content-Length: 4774
       "numcode": 840
     },
     "state": {
-      "id": 18,
+      "id": 15,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 18
+      "country_id": 15
     }
   },
   "ship_address": {
-    "id": 13,
+    "id": 11,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10013",
+    "zipcode": "10011",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 18,
+    "country_id": 15,
     "country_iso": "US",
-    "state_id": 18,
+    "state_id": 15,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 18,
+      "id": 15,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -2508,19 +2508,19 @@ Content-Length: 4774
       "numcode": 840
     },
     "state": {
-      "id": 18,
+      "id": 15,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 18
+      "country_id": 15
     }
   },
   "line_items": [
     {
-      "id": 9,
+      "id": 6,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 43,
-      "vendor_id": 109,
+      "variant_id": 41,
+      "vendor_id": 76,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -2529,15 +2529,15 @@ Content-Length: 4774
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 43,
-        "name": "Product #27 - 5249",
-        "sku": "SKU-42",
+        "id": 41,
+        "name": "Product #26 - 7982",
+        "sku": "SKU-40",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-27-5249",
+        "slug": "product-26-7982",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -2549,11 +2549,11 @@ Content-Length: 4774
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 16,
-            "name": "Size-16",
+            "id": 15,
+            "name": "Size-15",
             "presentation": "S",
-            "option_type_name": "foo-size-16",
-            "option_type_id": 16,
+            "option_type_name": "foo-size-15",
+            "option_type_id": 15,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -2561,7 +2561,7 @@ Content-Length: 4774
         "images": [
 
         ],
-        "product_id": 27,
+        "product_id": 26,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -2571,7 +2571,7 @@ Content-Length: 4774
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #109",
+      "vendor_name": "Vendor #76",
       "country_iso": "US",
       "adjustments": [
 
@@ -2583,64 +2583,64 @@ Content-Length: 4774
   ],
   "shipments": [
     {
-      "id": 8,
+      "id": 10,
       "tracking": null,
       "tracking_url": null,
-      "number": "H73800763026",
+      "number": "H01446547606",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M657142135",
-      "stock_location_name": "NY Warehouse 20",
+      "order_id": "M617813570",
+      "stock_location_name": "NY Warehouse 15",
       "giftwrappable": false,
-      "stock_location_id": 20,
+      "stock_location_id": 15,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 8,
+          "id": 10,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 7,
+          "shipping_method_id": 6,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 8,
+        "id": 10,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 7,
+        "shipping_method_id": 6,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 7,
+          "id": 6,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 7,
+              "id": 6,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 18,
-              "name": "ShippingCategory #17"
+              "id": 15,
+              "name": "ShippingCategory #15"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 43,
+          "variant_id": 41,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -2650,10 +2650,10 @@ Content-Length: 4774
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 20, Washington, AL",
+      "stock_location_address": "NY Warehouse 15, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -2694,9 +2694,9 @@ Content-Length: 4774
 #### Endpoint
 
 ```plaintext
-PUT /api/checkouts/M491975278
+PUT /api/checkouts/M578219207
 Accept: application/json
-X-Spree-Order-Token: e0_3uwv1V_q43KULFEM_pg
+X-Spree-Order-Token: iLWNKT4zPHK4SrLZmxzJHg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -2708,7 +2708,7 @@ Cookie:
 
 
 ```json
-order[ship_address_attributes][id]&order[ship_address_attributes][firstname]=John&order[ship_address_attributes][lastname]=Smith&order[ship_address_attributes][address1]=10+Lovely+Street&order[ship_address_attributes][address2]=Northwest&order[ship_address_attributes][city]=Herndon&order[ship_address_attributes][zipcode]=10009&order[ship_address_attributes][phone]=555-555-0199&order[ship_address_attributes][state_name]&order[ship_address_attributes][alternative_phone]=555-555-0199&order[ship_address_attributes][company]=Company&order[ship_address_attributes][state_id]=16&order[ship_address_attributes][country_id]=16&order[ship_address_attributes][created_at]&order[ship_address_attributes][updated_at]&order[use_billing]=true&hold_state=true
+order[ship_address_attributes][id]&order[ship_address_attributes][firstname]=John&order[ship_address_attributes][lastname]=Smith&order[ship_address_attributes][address1]=10+Lovely+Street&order[ship_address_attributes][address2]=Northwest&order[ship_address_attributes][city]=Herndon&order[ship_address_attributes][zipcode]=10001&order[ship_address_attributes][phone]=555-555-0199&order[ship_address_attributes][state_name]&order[ship_address_attributes][alternative_phone]=555-555-0199&order[ship_address_attributes][company]=Company&order[ship_address_attributes][state_id]=10&order[ship_address_attributes][country_id]=10&order[ship_address_attributes][created_at]&order[ship_address_attributes][updated_at]&order[use_billing]=true&hold_state=true
 ```
 
 
@@ -2732,10 +2732,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;8cb61fc0dc574f435b61cec160065a69&quot;
+ETag: W/&quot;8d5e80f8e41b979c626534003e33a2de&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b9cb1dd8-c112-4e4b-894e-1f102869e657
-X-Runtime: 0.222693
+X-Request-Id: 56ecd42a-eae6-4e8f-afad-e2ac080a6fdc
+X-Runtime: 0.239264
 Vary: Origin
 Content-Length: 4745
 200 OK
@@ -2744,21 +2744,21 @@ Content-Length: 4745
 
 ```json
 {
-  "id": 5,
-  "number": "M491975278",
+  "id": 1,
+  "number": "M578219207",
   "item_total": "10.0",
   "total": "110.0",
   "ship_total": "100.0",
   "state": "cart",
   "adjustment_total": "0.0",
-  "user_id": 16,
-  "created_at": "2020-09-22T11:39:54.814-04:00",
-  "updated_at": "2020-09-22T11:39:54.972-04:00",
+  "user_id": 31,
+  "created_at": "2020-09-23T07:16:07.995-04:00",
+  "updated_at": "2020-09-23T07:16:08.285-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email16@example.com",
+  "email": "email31@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -2785,7 +2785,7 @@ Content-Length: 4745
   "display_total": "$110.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "e0_3uwv1V_q43KULFEM_pg",
+  "token": "iLWNKT4zPHK4SrLZmxzJHg",
   "checkout_steps": [
     "address",
     "delivery",
@@ -2794,30 +2794,30 @@ Content-Length: 4745
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M491975278&bzip=10009&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M578219207&bzip=10001&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
 
   ],
   "bill_address": {
-    "id": 9,
+    "id": 1,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "10 Lovely Street",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10009",
+    "zipcode": "10001",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 16,
+    "country_id": 10,
     "country_iso": "US",
-    "state_id": 16,
+    "state_id": 10,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 16,
+      "id": 10,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -2825,31 +2825,31 @@ Content-Length: 4745
       "numcode": 840
     },
     "state": {
-      "id": 16,
+      "id": 10,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 16
+      "country_id": 10
     }
   },
   "ship_address": {
-    "id": 9,
+    "id": 1,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "10 Lovely Street",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10009",
+    "zipcode": "10001",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 16,
+    "country_id": 10,
     "country_iso": "US",
-    "state_id": 16,
+    "state_id": 10,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 16,
+      "id": 10,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -2857,19 +2857,19 @@ Content-Length: 4745
       "numcode": 840
     },
     "state": {
-      "id": 16,
+      "id": 10,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 16
+      "country_id": 10
     }
   },
   "line_items": [
     {
-      "id": 7,
+      "id": 1,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 39,
-      "vendor_id": 99,
+      "variant_id": 31,
+      "vendor_id": 51,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "10.0",
@@ -2878,15 +2878,15 @@ Content-Length: 4745
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 39,
-        "name": "Product #25 - 1399",
-        "sku": "SKU-38",
+        "id": 31,
+        "name": "Product #21 - 2395",
+        "sku": "SKU-30",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-25-1399",
+        "slug": "product-21-2395",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -2898,11 +2898,11 @@ Content-Length: 4745
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 14,
-            "name": "Size-14",
+            "id": 10,
+            "name": "Size-10",
             "presentation": "S",
-            "option_type_name": "foo-size-14",
-            "option_type_id": 14,
+            "option_type_name": "foo-size-10",
+            "option_type_id": 10,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -2910,7 +2910,7 @@ Content-Length: 4745
         "images": [
 
         ],
-        "product_id": 25,
+        "product_id": 21,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -2920,7 +2920,7 @@ Content-Length: 4745
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #99",
+      "vendor_name": "Vendor #51",
       "country_iso": "US",
       "adjustments": [
 
@@ -2932,64 +2932,64 @@ Content-Length: 4745
   ],
   "shipments": [
     {
-      "id": 5,
+      "id": 1,
       "tracking": "U10000",
       "tracking_url": null,
-      "number": "H63437065306",
+      "number": "H31226762355",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M491975278",
-      "stock_location_name": "NY Warehouse 18",
+      "order_id": "M578219207",
+      "stock_location_name": "NY Warehouse 10",
       "giftwrappable": false,
-      "stock_location_id": 18,
+      "stock_location_id": 10,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 5,
+          "id": 1,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 5,
+          "shipping_method_id": 1,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 5,
+        "id": 1,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 5,
+        "shipping_method_id": 1,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 5,
+          "id": 1,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 5,
+              "id": 1,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 16,
-              "name": "ShippingCategory #15"
+              "id": 10,
+              "name": "ShippingCategory #10"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 39,
+          "variant_id": 31,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -2999,10 +2999,10 @@ Content-Length: 4745
       "adjustments": [
 
       ],
-      "stock_location_address": "NY Warehouse 18, Washington, AL",
+      "stock_location_address": "NY Warehouse 10, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
@@ -3037,7 +3037,7 @@ Content-Length: 4745
 
 # Giftwrap
 
-Create giftwrap related to shipment
+Delete giftwrap related to shipment
 
 ## Create Giftwrap
 
@@ -3047,9 +3047,9 @@ Create giftwrap related to shipment
 #### Endpoint
 
 ```plaintext
-POST /api/shipments/H17855114406/giftwrap
+POST /api/shipments/H14525080543/giftwrap
 Accept: application/json
-X-Spree-Order-Token: 5DB4A1Eh7NhBNkaMV0wWBA
+X-Spree-Order-Token: jPopOH892M1YbQEVWyaDeA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3061,7 +3061,7 @@ Cookie:
 
 
 ```json
-order_number=M105967605
+order_number=M095407693
 ```
 
 
@@ -3081,10 +3081,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;8899de3b4666d0585858e447929a27f9&quot;
+ETag: W/&quot;11d45af477139e8881a13a1750caf383&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 932e661e-aefb-4a34-90f1-023a49925890
-X-Runtime: 0.095344
+X-Request-Id: e025ecc1-e4db-448b-83a1-2e4eec8dbe70
+X-Runtime: 0.045924
 Vary: Origin
 Content-Length: 74
 201 Created
@@ -3093,7 +3093,7 @@ Content-Length: 74
 
 ```json
 {
-  "id": 1,
+  "id": 2,
   "giftwrap_cost": 2.5,
   "giftwrap_price": 4.0,
   "giftwrap_money": "$4.00"
@@ -3110,9 +3110,9 @@ Content-Length: 74
 #### Endpoint
 
 ```plaintext
-DELETE /api/shipments/H35071186024/giftwrap
+DELETE /api/shipments/H71500082808/giftwrap
 Accept: application/json
-X-Spree-Order-Token: I7ghGWJmnoLvOAODOHOsTQ
+X-Spree-Order-Token: j90mKR8QfGy-zSOSPqq-2A
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3124,7 +3124,7 @@ Cookie:
 
 
 ```json
-order_number=M956725198
+order_number=M500631972
 ```
 
 
@@ -3144,8 +3144,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 0a238090-22ca-48d2-87cb-a6bbea56262a
-X-Runtime: 0.026071
+X-Request-Id: 4f3430f4-3967-4c49-bce5-1741ce4b99cc
+X-Runtime: 0.073252
 Vary: Origin
 204 No Content
 ```
@@ -3165,9 +3165,9 @@ Representation of a single cart item for a specific variant with price of vendor
 #### Endpoint
 
 ```plaintext
-POST /api/orders/M185816755/line_items
+POST /api/orders/M655023917/line_items
 Accept: application/json
-X-Spree-Order-Token: 35j7r4d3NEyS_O4lop_I2g
+X-Spree-Order-Token: ivDSnHx0FCZ85S5xB4vkSQ
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3179,7 +3179,7 @@ Cookie:
 
 
 ```json
-line_item[variant_id]=6&line_item[options][vendor_id]=8
+line_item[variant_id]=109&line_item[options][vendor_id]=183
 ```
 
 
@@ -3201,23 +3201,23 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;bb8c93e89387c16bca9a5af546468495&quot;
+ETag: W/&quot;23aee6813eb0386d35d5ebceafac49c6&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 40f6b3e5-3cfd-42ae-ad32-8c2997830c54
-X-Runtime: 0.255322
+X-Request-Id: 830faea6-d010-4f01-87c6-f23281a64919
+X-Runtime: 0.118386
 Vary: Origin
-Content-Length: 924
+Content-Length: 942
 201 Created
 ```
 
 
 ```json
 {
-  "id": 2,
+  "id": 13,
   "quantity": 1,
   "price": "19.99",
-  "variant_id": 6,
-  "vendor_id": 8,
+  "variant_id": 109,
+  "vendor_id": 183,
   "single_display_amount": "$19.99",
   "display_amount": "$19.99",
   "total": "19.99",
@@ -3226,15 +3226,15 @@ Content-Length: 924
   "backordered": null,
   "promotionable": true,
   "variant": {
-    "id": 6,
-    "name": "Product #3 - 7317",
-    "sku": "SKU-5",
+    "id": 109,
+    "name": "Product #60 - 7513",
+    "sku": "SKU-108",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": false,
-    "slug": "product-3-7317",
+    "slug": "product-60-7513",
     "description": "As seen on TV!",
     "track_inventory": true,
     "price": "19.99",
@@ -3246,11 +3246,11 @@ Content-Length: 924
     "is_destroyed": false,
     "option_values": [
       {
-        "id": 3,
-        "name": "Size-3",
+        "id": 49,
+        "name": "Size-49",
         "presentation": "S",
-        "option_type_name": "foo-size-3",
-        "option_type_id": 3,
+        "option_type_name": "foo-size-49",
+        "option_type_id": 49,
         "option_type_presentation": "Size",
         "position": 1
       }
@@ -3258,7 +3258,7 @@ Content-Length: 924
     "images": [
 
     ],
-    "product_id": 3,
+    "product_id": 60,
     "lead_time": 2,
     "brand": null,
     "brand_slug": null,
@@ -3268,7 +3268,7 @@ Content-Length: 924
   "gift_cards": [
 
   ],
-  "vendor_name": "Vendor #8",
+  "vendor_name": "Vendor #183",
   "country_iso": null,
   "adjustments": [
 
@@ -3286,9 +3286,9 @@ Content-Length: 924
 #### Endpoint
 
 ```plaintext
-POST /api/orders/M374970057/line_items
+POST /api/orders/M830348571/line_items
 Accept: application/json
-X-Spree-Order-Token: GteBdZ1psse2hdm-OOFD-w
+X-Spree-Order-Token: iXbEAbdbGLP3m0XBAhe03Q
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3300,7 +3300,7 @@ Cookie:
 
 
 ```json
-line_item[variant_id]=12&line_item[options][vendor_id]=21&line_item[options][gift_card_details][recipient_name]=Recipient+John&line_item[options][gift_card_details][recipient_email]=recipient%40email.com&line_item[options][gift_card_details][purchaser_name]=Purchaser+Bob&line_item[options][gift_card_details][gift_message]=Surprise&line_item[options][gift_card_details][send_email_at]=2020-09-22+11%3A39%3A46+-0400
+line_item[variant_id]=103&line_item[options][vendor_id]=174&line_item[options][gift_card_details][recipient_name]=Recipient+John&line_item[options][gift_card_details][recipient_email]=recipient%40email.com&line_item[options][gift_card_details][purchaser_name]=Purchaser+Bob&line_item[options][gift_card_details][gift_message]=Surprise&line_item[options][gift_card_details][send_email_at]=2020-09-23+07%3A16%3A20+-0400
 ```
 
 
@@ -3323,23 +3323,23 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;1e1e30e4809fa144869985c85f9aed87&quot;
+ETag: W/&quot;a045c993f3e22e93a7d86bcab52f850b&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6d2a80eb-3668-4a87-b5a5-f1b989d4fb5f
-X-Runtime: 0.244068
+X-Request-Id: f8d84c43-e9ea-4200-bebc-4a397fa055d3
+X-Runtime: 0.366445
 Vary: Origin
-Content-Length: 1065
+Content-Length: 1078
 201 Created
 ```
 
 
 ```json
 {
-  "id": 4,
+  "id": 11,
   "quantity": 1,
   "price": "19.99",
-  "variant_id": 12,
-  "vendor_id": 21,
+  "variant_id": 103,
+  "vendor_id": 174,
   "single_display_amount": "$19.99",
   "display_amount": "$19.99",
   "total": "19.99",
@@ -3348,15 +3348,15 @@ Content-Length: 1065
   "backordered": null,
   "promotionable": true,
   "variant": {
-    "id": 12,
-    "name": "Product #5 - 4596",
-    "sku": "SKU-12",
+    "id": 103,
+    "name": "Product #56 - 8517",
+    "sku": "SKU-103",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": false,
-    "slug": "product-5-4596",
+    "slug": "product-56-8517",
     "description": "As seen on TV!",
     "track_inventory": true,
     "price": "19.99",
@@ -3368,11 +3368,11 @@ Content-Length: 1065
     "is_destroyed": false,
     "option_values": [
       {
-        "id": 6,
-        "name": "Size-6",
+        "id": 46,
+        "name": "Size-46",
         "presentation": "S",
-        "option_type_name": "foo-size-6",
-        "option_type_id": 6,
+        "option_type_name": "foo-size-46",
+        "option_type_id": 46,
         "option_type_presentation": "Size",
         "position": 1
       }
@@ -3380,7 +3380,7 @@ Content-Length: 1065
     "images": [
 
     ],
-    "product_id": 5,
+    "product_id": 56,
     "lead_time": 2,
     "brand": null,
     "brand_slug": null,
@@ -3393,10 +3393,10 @@ Content-Length: 1065
       "recipient_email": null,
       "purchaser_name": null,
       "gift_message": null,
-      "send_email_at": "2020-09-22T00:00:00.000-04:00"
+      "send_email_at": "2020-09-23T00:00:00.000-04:00"
     }
   ],
-  "vendor_name": "Vendor #21",
+  "vendor_name": "Vendor #174",
   "country_iso": null,
   "adjustments": [
 
@@ -3414,9 +3414,9 @@ Content-Length: 1065
 #### Endpoint
 
 ```plaintext
-DELETE /api/orders/M524894937/line_items/6
+DELETE /api/orders/M575678598/line_items/14
 Accept: application/json
-X-Spree-Order-Token: JTmCwwtkVzd_ZEnbU3iSmQ
+X-Spree-Order-Token: dvfLRPy1DiNJoe5cod-mfg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3440,8 +3440,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 0cd85fa4-5527-4b7d-9c4b-4b22a57d92c3
-X-Runtime: 0.102121
+X-Request-Id: bd5b9240-10c8-47b3-92db-f5a40bf97f88
+X-Runtime: 0.081078
 Vary: Origin
 204 No Content
 ```
@@ -3457,9 +3457,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-PUT /api/orders/M407838442/line_items/5
+PUT /api/orders/M864411935/line_items/9
 Accept: application/json
-X-Spree-Order-Token: edyUk243COxBJ2P2px0xEQ
+X-Spree-Order-Token: qRBRGe5JNTMGTCG1JhcZ3w
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3492,23 +3492,23 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;d0e0217f7e29b980e41322d0e7c5b48f&quot;
+ETag: W/&quot;d0480195ce36db9da14bd56ae0b6f086&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4ab2b219-4f66-4e5b-a236-72cc1baccc04
-X-Runtime: 0.134363
+X-Request-Id: 597934db-a253-4582-9bf9-8b0fc4fe5f86
+X-Runtime: 0.147513
 Vary: Origin
-Content-Length: 926
+Content-Length: 935
 200 OK
 ```
 
 
 ```json
 {
-  "id": 5,
+  "id": 9,
   "quantity": 2,
   "price": "10.0",
-  "variant_id": 14,
-  "vendor_id": 24,
+  "variant_id": 97,
+  "vendor_id": 161,
   "single_display_amount": "$10.00",
   "display_amount": "$20.00",
   "total": "20.0",
@@ -3517,15 +3517,15 @@ Content-Length: 926
   "backordered": null,
   "promotionable": true,
   "variant": {
-    "id": 14,
-    "name": "Product #7 - 2833",
-    "sku": "SKU-13",
+    "id": 97,
+    "name": "Product #54 - 8760",
+    "sku": "SKU-96",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": false,
-    "slug": "product-7-2833",
+    "slug": "product-54-8760",
     "description": "As seen on TV!",
     "track_inventory": true,
     "price": "10.0",
@@ -3537,11 +3537,11 @@ Content-Length: 926
     "is_destroyed": false,
     "option_values": [
       {
-        "id": 7,
-        "name": "Size-7",
+        "id": 43,
+        "name": "Size-43",
         "presentation": "S",
-        "option_type_name": "foo-size-7",
-        "option_type_id": 7,
+        "option_type_name": "foo-size-43",
+        "option_type_id": 43,
         "option_type_presentation": "Size",
         "position": 1
       }
@@ -3549,7 +3549,7 @@ Content-Length: 926
     "images": [
 
     ],
-    "product_id": 7,
+    "product_id": 54,
     "lead_time": 2,
     "brand": null,
     "brand_slug": null,
@@ -3559,7 +3559,7 @@ Content-Length: 926
   "gift_cards": [
 
   ],
-  "vendor_name": "Vendor #24",
+  "vendor_name": "Vendor #161",
   "country_iso": "US",
   "adjustments": [
 
@@ -3571,7 +3571,7 @@ Content-Length: 926
 
 # Minis
 
-Get a single mini, accessible by owner of the mini or admin
+Update a mini. Users can update their own minis, admins can update minis for others.
 
 ## Create a mini
 
@@ -3583,7 +3583,7 @@ Get a single mini, accessible by owner of the mini or admin
 ```plaintext
 POST /api/minis
 Accept: application/json
-Authorizat IO N: Bearer 869322dad3cd33034d4e2746e3475cd3676f1148140273f2
+Authorizat IO N: Bearer 5a638b1f7d4f1f1fb50eaa797262a6dd7977b6c6260acbb8
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3595,7 +3595,7 @@ Cookie:
 
 
 ```json
-mini[name]=Winny&mini[user_id]=90&mini[birth_year]=2019&mini[birth_month]=1&mini[birth_day]=1
+mini[name]=Winny&mini[user_id]=52&mini[birth_year]=2019&mini[birth_month]=1&mini[birth_day]=1
 ```
 
 
@@ -3621,10 +3621,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;9aadfec03766bb8fcec0cc87a5f3ddff&quot;
+ETag: W/&quot;a7009b30d54246581de520ecffdd0ba9&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 738d2ff7-5902-405e-8c1c-0521c20b3479
-X-Runtime: 0.014214
+X-Request-Id: eaec6ac9-5aef-4104-b8a1-e7f779b0ef7b
+X-Runtime: 0.017797
 Vary: Origin
 Content-Length: 163
 201 Created
@@ -3634,7 +3634,7 @@ Content-Length: 163
 ```json
 {
   "id": 13,
-  "user_id": 90,
+  "user_id": 52,
   "name": "Winny",
   "birth_year": 2019,
   "birth_month": 1,
@@ -3660,9 +3660,9 @@ Content-Length: 163
 #### Endpoint
 
 ```plaintext
-DELETE /api/minis/19
+DELETE /api/minis/2
 Accept: application/json
-Authorizat IO N: Bearer ed0aee365d8b4ac34c56837e03d7b2285b13918957f766bd
+Authorizat IO N: Bearer fffc5a22f45ba835f78fd4e2164fafebc5b1eb6549962753
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -3686,8 +3686,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 1533a16d-2077-420b-a1cb-de86f5ca80bf
-X-Runtime: 0.022609
+X-Request-Id: 3adec8b7-b5bd-49ab-a5de-d1c93ba1917b
+X-Runtime: 0.008989
 Vary: Origin
 204 No Content
 ```
@@ -3703,9 +3703,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-GET /api/minis/1
+GET /api/minis/14
 Accept: application/json
-Authorizat IO N: Bearer d835efb28962a356b96e2f7d5b8eb21490f0b6009f4b6b36
+Authorizat IO N: Bearer c2f630e2fae062977baac017e176fa4303dce31f0e16dd00
 Host: example.org
 Cookie: 
 ```
@@ -3728,24 +3728,24 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;3f283366118059632fbe656c9a5151cb&quot;
+ETag: W/&quot;9c236d27101b60187fb043a002cbaf9d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c9a72df3-3b58-4f98-a3ec-566668209311
-X-Runtime: 0.066229
+X-Request-Id: daec393d-a488-4b34-a4fc-510f7bc07c20
+X-Runtime: 0.013014
 Vary: Origin
-Content-Length: 162
+Content-Length: 163
 200 OK
 ```
 
 
 ```json
 {
-  "id": 1,
-  "user_id": 77,
+  "id": 14,
+  "user_id": 53,
   "name": "Mini",
   "birth_year": 2020,
   "birth_month": 9,
-  "birth_day": 21,
+  "birth_day": 22,
   "gender_boy": true,
   "gender_girl": true,
   "gender_taxons": [
@@ -3769,7 +3769,7 @@ Content-Length: 162
 ```plaintext
 GET /api/minis
 Accept: application/json
-Authorizat IO N: Bearer 5553320bd273cffd82435db0f05c63d08ee122f601825a77
+Authorizat IO N: Bearer 89b3fcc438f0806d5c6934c08d6bdeddb013591c5ef4b619
 Host: example.org
 Cookie: 
 ```
@@ -3796,10 +3796,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;756e610bea20580c81645dabfcd07e34&quot;
+ETag: W/&quot;9b908f546bf80d910d2c7e1b763a2e9c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9ea1672c-3441-4de4-86a6-23d972da777f
-X-Runtime: 0.042339
+X-Request-Id: c810b075-a577-49ac-8084-7cf2924f9a48
+X-Runtime: 0.067208
 Vary: Origin
 Content-Length: 1713
 200 OK
@@ -3811,11 +3811,11 @@ Content-Length: 1713
   "minis": [
     {
       "id": 12,
-      "user_id": 88,
+      "user_id": 50,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3827,11 +3827,11 @@ Content-Length: 1713
     },
     {
       "id": 11,
-      "user_id": 87,
+      "user_id": 49,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3843,11 +3843,11 @@ Content-Length: 1713
     },
     {
       "id": 10,
-      "user_id": 86,
+      "user_id": 48,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3859,11 +3859,11 @@ Content-Length: 1713
     },
     {
       "id": 9,
-      "user_id": 85,
+      "user_id": 47,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3875,11 +3875,11 @@ Content-Length: 1713
     },
     {
       "id": 8,
-      "user_id": 84,
+      "user_id": 46,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3891,11 +3891,11 @@ Content-Length: 1713
     },
     {
       "id": 7,
-      "user_id": 83,
+      "user_id": 45,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3907,11 +3907,11 @@ Content-Length: 1713
     },
     {
       "id": 6,
-      "user_id": 82,
+      "user_id": 44,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3923,11 +3923,11 @@ Content-Length: 1713
     },
     {
       "id": 5,
-      "user_id": 81,
+      "user_id": 43,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3939,11 +3939,11 @@ Content-Length: 1713
     },
     {
       "id": 4,
-      "user_id": 80,
+      "user_id": 42,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3955,11 +3955,11 @@ Content-Length: 1713
     },
     {
       "id": 3,
-      "user_id": 79,
+      "user_id": 41,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -3990,7 +3990,7 @@ Content-Length: 1713
 ```plaintext
 GET /api/minis/mine
 Accept: application/json
-Authorizat IO N: Bearer 5e3d05e6842cb7ee29cf31a48e160d2acb6db770f97936ba
+Authorizat IO N: Bearer 10979f971dc2bcaf3faedeaaf6665941bfe55e46f8b2bc7e
 Host: example.org
 Cookie: 
 ```
@@ -4017,10 +4017,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;7a98fef6833d20ba6ac4e4a6e9c7e2e7&quot;
+ETag: W/&quot;43008b595c38881968dfc2243cb744ce&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a9caa374-879e-4728-8968-fc5190dc6e7a
-X-Runtime: 0.017397
+X-Request-Id: 5be01ab0-5940-4d3f-981a-84357a91151c
+X-Runtime: 0.017665
 Vary: Origin
 Content-Length: 406
 200 OK
@@ -4031,12 +4031,12 @@ Content-Length: 406
 {
   "minis": [
     {
-      "id": 18,
-      "user_id": 92,
+      "id": 19,
+      "user_id": 55,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -4047,12 +4047,12 @@ Content-Length: 406
       ]
     },
     {
-      "id": 17,
-      "user_id": 92,
+      "id": 18,
+      "user_id": 55,
       "name": "Mini",
       "birth_year": 2020,
       "birth_month": 9,
-      "birth_day": 21,
+      "birth_day": 22,
       "gender_boy": true,
       "gender_girl": true,
       "gender_taxons": [
@@ -4081,9 +4081,9 @@ Content-Length: 406
 #### Endpoint
 
 ```plaintext
-PATCH /api/minis/2
+PATCH /api/minis/1
 Accept: application/json
-Authorizat IO N: Bearer 622b00af992c0375b0492ae904a46842282fa1954a55d781
+Authorizat IO N: Bearer 1482a17c25253cb2481a4982c9701d89ef5bb388c64a4cda
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -4121,10 +4121,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;216e09c397b0aa0c1b5146a659ee6b87&quot;
+ETag: W/&quot;5be5279b125f91dc78c53eb66e72b4a3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 02ccd5a6-caf0-4002-ad61-5f592278065b
-X-Runtime: 0.015838
+X-Request-Id: be35e936-5065-4173-8941-db78530df5bf
+X-Runtime: 0.043688
 Vary: Origin
 Content-Length: 163
 200 OK
@@ -4133,12 +4133,12 @@ Content-Length: 163
 
 ```json
 {
-  "id": 2,
-  "user_id": 78,
+  "id": 1,
+  "user_id": 39,
   "name": "Marge",
   "birth_year": 2020,
   "birth_month": 9,
-  "birth_day": 21,
+  "birth_day": 22,
   "gender_boy": true,
   "gender_girl": true,
   "gender_taxons": [
@@ -4154,7 +4154,7 @@ Content-Length: 163
 
 # Orders
 
-Return an order, scoped to the current user
+
 
 ## Add a gift card item to a cart
 
@@ -4179,7 +4179,7 @@ Cookie:
 
 
 ```json
-user_id&order_token&line_item[variant_id]=107&line_item[quantity]=1&line_item[vendor_id]=227&line_item[gift_card_details_attributes][recipient_name]=Recipient+John&line_item[gift_card_details_attributes][recipient_email]=recipient%40email.com&line_item[gift_card_details_attributes][purchaser_name]=Purchaser+Bob&line_item[gift_card_details_attributes][gift_message]=Surprise&line_item[gift_card_details_attributes][send_email_at]=2020-09-22
+user_id&order_token&line_item[variant_id]=129&line_item[quantity]=1&line_item[vendor_id]=237&line_item[gift_card_details_attributes][recipient_name]=Recipient+John&line_item[gift_card_details_attributes][recipient_email]=recipient%40email.com&line_item[gift_card_details_attributes][purchaser_name]=Purchaser+Bob&line_item[gift_card_details_attributes][gift_message]=Surprise&line_item[gift_card_details_attributes][send_email_at]=2020-09-23
 ```
 
 
@@ -4204,28 +4204,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;331766921000ca389d5b0cfdfdba89d4&quot;
+ETag: W/&quot;c7df16c4228c91b6be75aa10c666f120&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ce910b35-a5a4-4d14-8d56-cc94611187eb
-X-Runtime: 0.228288
+X-Request-Id: 8657c6d2-e668-44bd-9821-739aac9edf22
+X-Runtime: 0.160124
 Vary: Origin
-Content-Length: 2878
+Content-Length: 2874
 200 OK
 ```
 
 
 ```json
 {
-  "id": 22,
-  "number": "M549210167",
+  "id": 18,
+  "number": "M007993788",
   "item_total": "19.99",
   "total": "19.99",
   "ship_total": "0.0",
   "state": "cart",
   "adjustment_total": "0.0",
   "user_id": null,
-  "created_at": "2020-09-22T11:40:09.543-04:00",
-  "updated_at": "2020-09-22T11:40:09.623-04:00",
+  "created_at": "2020-09-23T07:16:26.861-04:00",
+  "updated_at": "2020-09-23T07:16:26.924-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
@@ -4257,7 +4257,7 @@ Content-Length: 2878
   "display_total": "$19.99",
   "display_ship_total": "$0.00",
   "display_tax_total": "$0.00",
-  "token": "9pXUNS7uhe4RlqzyfWogGA",
+  "token": "Q0dGvJt9yeOQeOqQPbmJDQ",
   "checkout_steps": [
     "address",
     "delivery",
@@ -4266,7 +4266,7 @@ Content-Length: 2878
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M549210167&bzip=&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M007993788&bzip=&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
 
@@ -4275,11 +4275,11 @@ Content-Length: 2878
   "ship_address": null,
   "line_items": [
     {
-      "id": 27,
+      "id": 19,
       "quantity": 1,
       "price": "19.99",
-      "variant_id": 107,
-      "vendor_id": 227,
+      "variant_id": 129,
+      "vendor_id": 237,
       "single_display_amount": "$19.99",
       "display_amount": "$19.99",
       "total": "19.99",
@@ -4288,15 +4288,15 @@ Content-Length: 2878
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 107,
-        "name": "Product #58 - 1301",
-        "sku": "SKU-107",
+        "id": 129,
+        "name": "Product #69 - 72",
+        "sku": "SKU-129",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-58-1301",
+        "slug": "product-69-72",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -4308,11 +4308,11 @@ Content-Length: 2878
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 48,
-            "name": "Size-48",
+            "id": 59,
+            "name": "Size-59",
             "presentation": "S",
-            "option_type_name": "foo-size-48",
-            "option_type_id": 48,
+            "option_type_name": "foo-size-59",
+            "option_type_id": 59,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -4320,7 +4320,7 @@ Content-Length: 2878
         "images": [
 
         ],
-        "product_id": 58,
+        "product_id": 69,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -4333,10 +4333,10 @@ Content-Length: 2878
           "recipient_email": "recipient@email.com",
           "purchaser_name": "Purchaser Bob",
           "gift_message": "Surprise",
-          "send_email_at": "2020-09-22T00:00:00.000-04:00"
+          "send_email_at": "2020-09-23T00:00:00.000-04:00"
         }
       ],
-      "vendor_name": "Vendor #227",
+      "vendor_name": "Vendor #237",
       "country_iso": null,
       "adjustments": [
 
@@ -4402,7 +4402,7 @@ Cookie:
 
 
 ```json
-user_id&order_token&line_item[variant_id]=83&line_item[quantity]=2&line_item[vendor_id]=178
+user_id&order_token&line_item[variant_id]=133&line_item[quantity]=2&line_item[vendor_id]=242
 ```
 
 
@@ -4426,28 +4426,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;5fde941c9397126bc5b59686d13b9466&quot;
+ETag: W/&quot;3897a42dfb95e0bae098d572162fc1bd&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 278a94a8-9a5b-4b82-8196-afc55ae69fdd
-X-Runtime: 0.136439
+X-Request-Id: b89396ee-1020-432a-89d4-33c608b5d356
+X-Runtime: 0.108664
 Vary: Origin
-Content-Length: 2693
+Content-Length: 2696
 200 OK
 ```
 
 
 ```json
 {
-  "id": 16,
-  "number": "M132579232",
+  "id": 19,
+  "number": "M639790304",
   "item_total": "39.98",
   "total": "39.98",
   "ship_total": "0.0",
   "state": "cart",
   "adjustment_total": "0.0",
   "user_id": null,
-  "created_at": "2020-09-22T11:40:05.549-04:00",
-  "updated_at": "2020-09-22T11:40:05.599-04:00",
+  "created_at": "2020-09-23T07:16:27.391-04:00",
+  "updated_at": "2020-09-23T07:16:27.434-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
@@ -4479,7 +4479,7 @@ Content-Length: 2693
   "display_total": "$39.98",
   "display_ship_total": "$0.00",
   "display_tax_total": "$0.00",
-  "token": "a6pukZDIOb_b9ihTl_HLyg",
+  "token": "hFiolZ2n5c8VoiKZh_f4gA",
   "checkout_steps": [
     "address",
     "delivery",
@@ -4488,7 +4488,7 @@ Content-Length: 2693
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M132579232&bzip=&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M639790304&bzip=&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
 
@@ -4497,11 +4497,11 @@ Content-Length: 2693
   "ship_address": null,
   "line_items": [
     {
-      "id": 19,
+      "id": 20,
       "quantity": 2,
       "price": "19.99",
-      "variant_id": 83,
-      "vendor_id": 178,
+      "variant_id": 133,
+      "vendor_id": 242,
       "single_display_amount": "$19.99",
       "display_amount": "$39.98",
       "total": "39.98",
@@ -4510,15 +4510,15 @@ Content-Length: 2693
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 83,
-        "name": "Product #47 - 9756",
-        "sku": "SKU-82",
+        "id": 133,
+        "name": "Product #72 - 6279",
+        "sku": "SKU-132",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-47-9756",
+        "slug": "product-72-6279",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -4530,11 +4530,11 @@ Content-Length: 2693
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 36,
-            "name": "Size-36",
+            "id": 61,
+            "name": "Size-61",
             "presentation": "S",
-            "option_type_name": "foo-size-36",
-            "option_type_id": 36,
+            "option_type_name": "foo-size-61",
+            "option_type_id": 61,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -4542,7 +4542,7 @@ Content-Length: 2693
         "images": [
 
         ],
-        "product_id": 47,
+        "product_id": 72,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -4552,7 +4552,7 @@ Content-Length: 2693
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #178",
+      "vendor_name": "Vendor #242",
       "country_iso": null,
       "adjustments": [
 
@@ -4605,7 +4605,7 @@ Content-Length: 2693
 ```plaintext
 POST /api/orders/cart
 Accept: application/json
-Authorizat IO N: Bearer 10312fd0b9059215d55d0fd708be767499ee4a5a644634f3
+Authorizat IO N: 
 X-Spree-Order-Token: 
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
@@ -4618,7 +4618,225 @@ Cookie:
 
 
 ```json
-user_id&order_token&line_item[variant_id]=87&line_item[quantity]=2&line_item[vendor_id]=186&user_token=Bearer+10312fd0b9059215d55d0fd708be767499ee4a5a644634f3
+user_id&order_token&line_item[variant_id]=137&line_item[quantity]=2&line_item[vendor_id]=250
+```
+
+
+| Name | Description |
+|:-----|:------------|
+| user_id  | Specify the user_id here if there is one. Calls to this endpoint without a user_id will                          create an order with a nil user |
+| order_token  | Spree will look for an order with the order token if it is provided. If an order with                              the specified token is not found, Spree will create a new order with an autogenerated                              guest token that should be stored in cookies and returned with subsequent calls. The                              order token can be passed as a parameter or a header. If passed as both a header and                              parameter, the header will take precedence. |
+| line_item[variant_id] *required* | Specify the variant id |
+| line_item[quantity] *required* | Specify the quantity requested, must be greater than 0 |
+| line_item[vendor_id] *required* | Specify the vendor id, from the price chosen |
+| token  | Specify the spree_api_key here if there is one. Calls to this endpoint without a it will \
+                         create an order with a nil user |
+
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;3875dea5300f6384a5b094e9f637e795&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: ff965871-c465-48e7-8d8f-2c172b1c1d04
+X-Runtime: 0.156893
+Vary: Origin
+Content-Length: 2696
+200 OK
+```
+
+
+```json
+{
+  "id": 20,
+  "number": "M231798697",
+  "item_total": "39.98",
+  "total": "39.98",
+  "ship_total": "0.0",
+  "state": "cart",
+  "adjustment_total": "0.0",
+  "user_id": null,
+  "created_at": "2020-09-23T07:16:28.068-04:00",
+  "updated_at": "2020-09-23T07:16:28.160-04:00",
+  "completed_at": null,
+  "payment_total": "0.0",
+  "shipment_state": null,
+  "payment_state": null,
+  "email": null,
+  "special_instructions": null,
+  "channel": "spree",
+  "included_tax_total": "0.0",
+  "additional_tax_total": "0.0",
+  "display_included_tax_total": "$0.00",
+  "display_additional_tax_total": "$0.00",
+  "tax_total": "0.0",
+  "currency": "USD",
+  "covered_by_store_credit": false,
+  "display_total_applicable_store_credit": "$0.00",
+  "order_total_after_store_credit": "39.98",
+  "display_order_total_after_store_credit": "$39.98",
+  "total_applicable_store_credit": 0.0,
+  "display_total_available_store_credit": "$0.00",
+  "display_store_credit_remaining_after_capture": "$0.00",
+  "canceler_id": null,
+  "gift_email": null,
+  "gift_message": null,
+  "is_gift": false,
+  "use_store_credits": false,
+  "first_order": false,
+  "display_item_total": "$39.98",
+  "total_quantity": 2,
+  "display_total": "$39.98",
+  "display_ship_total": "$0.00",
+  "display_tax_total": "$0.00",
+  "token": "MnesLGn2mUhyBtmXQBjqGg",
+  "checkout_steps": [
+    "address",
+    "delivery",
+    "payment",
+    "confirm",
+    "complete"
+  ],
+  "eligible_for_return": null,
+  "narvar_return_url": "http://localhost:4000/order?order=M231798697&bzip=&init=true",
+  "free_shipping_threshold": null,
+  "payment_methods": [
+
+  ],
+  "bill_address": null,
+  "ship_address": null,
+  "line_items": [
+    {
+      "id": 21,
+      "quantity": 2,
+      "price": "19.99",
+      "variant_id": 137,
+      "vendor_id": 250,
+      "single_display_amount": "$19.99",
+      "display_amount": "$39.98",
+      "total": "39.98",
+      "on_sale": false,
+      "final_sale": false,
+      "backordered": null,
+      "promotionable": true,
+      "variant": {
+        "id": 137,
+        "name": "Product #74 - 8512",
+        "sku": "SKU-136",
+        "weight": "0.0",
+        "height": null,
+        "width": null,
+        "depth": null,
+        "is_master": false,
+        "slug": "product-74-8512",
+        "description": "As seen on TV!",
+        "track_inventory": true,
+        "price": "19.99",
+        "display_price": "$19.99",
+        "options_text": "Size: S",
+        "in_stock": true,
+        "is_backorderable": false,
+        "total_on_hand": 10,
+        "is_destroyed": false,
+        "option_values": [
+          {
+            "id": 63,
+            "name": "Size-63",
+            "presentation": "S",
+            "option_type_name": "foo-size-63",
+            "option_type_id": 63,
+            "option_type_presentation": "Size",
+            "position": 1
+          }
+        ],
+        "images": [
+
+        ],
+        "product_id": 74,
+        "lead_time": 2,
+        "brand": null,
+        "brand_slug": null,
+        "brand_description": null
+      },
+      "monogram": null,
+      "gift_cards": [
+
+      ],
+      "vendor_name": "Vendor #250",
+      "country_iso": null,
+      "adjustments": [
+
+      ]
+    }
+  ],
+  "payments": [
+
+  ],
+  "shipments": [
+
+  ],
+  "adjustments": [
+
+  ],
+  "permissions": {
+    "can_update": false
+  },
+  "gift_card_total": "0.0",
+  "applied_promotion_codes": [
+
+  ],
+  "subtotals": {
+    "order_total": "39.98",
+    "item_total": "39.98",
+    "shipments_total": "0.0",
+    "line_item_promotion_totals": [
+
+    ],
+    "tax_adjustments": [
+
+    ],
+    "miscellaneous_adjustments": [
+
+    ],
+    "giftwrap_amount": 0
+  }
+}
+```
+
+
+
+## Add an item to a cart related to the user
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+POST /api/orders/cart
+Accept: application/json
+Authorizat IO N: Bearer 8c52b9c4d0900374c283d3d531fa8fd192e304731ac15f63
+X-Spree-Order-Token: 
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: 
+```
+
+`POST /api/orders/cart`
+
+#### Parameters
+
+
+```json
+user_id&order_token&line_item[variant_id]=141&line_item[quantity]=2&line_item[vendor_id]=258&user_token=Bearer+8c52b9c4d0900374c283d3d531fa8fd192e304731ac15f63
 ```
 
 
@@ -4644,33 +4862,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;212dbb8e8746c977e35337a2042d6138&quot;
+ETag: W/&quot;cf714067793f9d71c3681dfdeea710a3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d452014e-3c78-45fc-92ad-686f458e7f81
-X-Runtime: 0.127785
+X-Request-Id: e7cf6748-c216-4bc8-89b1-56ebe047e60d
+X-Runtime: 0.117241
 Vary: Origin
-Content-Length: 2705
+Content-Length: 2708
 200 OK
 ```
 
 
 ```json
 {
-  "id": 17,
-  "number": "M971477856",
+  "id": 21,
+  "number": "M826483728",
   "item_total": "39.98",
   "total": "39.98",
   "ship_total": "0.0",
   "state": "cart",
   "adjustment_total": "0.0",
-  "user_id": 46,
-  "created_at": "2020-09-22T11:40:06.068-04:00",
-  "updated_at": "2020-09-22T11:40:06.114-04:00",
+  "user_id": 89,
+  "created_at": "2020-09-23T07:16:28.614-04:00",
+  "updated_at": "2020-09-23T07:16:28.657-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email46@example.com",
+  "email": "email87@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -4697,7 +4915,7 @@ Content-Length: 2705
   "display_total": "$39.98",
   "display_ship_total": "$0.00",
   "display_tax_total": "$0.00",
-  "token": "X9eMH97mff65zFcoXuS-AA",
+  "token": "y7CmtJSKSATSpVMQe4prNA",
   "checkout_steps": [
     "address",
     "delivery",
@@ -4706,7 +4924,7 @@ Content-Length: 2705
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M971477856&bzip=&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M826483728&bzip=&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
 
@@ -4715,11 +4933,11 @@ Content-Length: 2705
   "ship_address": null,
   "line_items": [
     {
-      "id": 20,
+      "id": 22,
       "quantity": 2,
       "price": "19.99",
-      "variant_id": 87,
-      "vendor_id": 186,
+      "variant_id": 141,
+      "vendor_id": 258,
       "single_display_amount": "$19.99",
       "display_amount": "$39.98",
       "total": "39.98",
@@ -4728,15 +4946,15 @@ Content-Length: 2705
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 87,
-        "name": "Product #49 - 8873",
-        "sku": "SKU-86",
+        "id": 141,
+        "name": "Product #76 - 5243",
+        "sku": "SKU-140",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-49-8873",
+        "slug": "product-76-5243",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -4748,11 +4966,11 @@ Content-Length: 2705
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 38,
-            "name": "Size-38",
+            "id": 65,
+            "name": "Size-65",
             "presentation": "S",
-            "option_type_name": "foo-size-38",
-            "option_type_id": 38,
+            "option_type_name": "foo-size-65",
+            "option_type_id": 65,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -4760,7 +4978,7 @@ Content-Length: 2705
         "images": [
 
         ],
-        "product_id": 49,
+        "product_id": 76,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -4770,7 +4988,7 @@ Content-Length: 2705
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #186",
+      "vendor_name": "Vendor #258",
       "country_iso": null,
       "adjustments": [
 
@@ -4813,224 +5031,6 @@ Content-Length: 2705
 
 
 
-## Add an item to a cart related to the user
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-POST /api/orders/cart
-Accept: application/json
-Authorizat IO N: 
-X-Spree-Order-Token: 
-Host: example.org
-Content-Type: application/x-www-form-urlencoded
-Cookie: 
-```
-
-`POST /api/orders/cart`
-
-#### Parameters
-
-
-```json
-user_id&order_token&line_item[variant_id]=99&line_item[quantity]=2&line_item[vendor_id]=208
-```
-
-
-| Name | Description |
-|:-----|:------------|
-| user_id  | Specify the user_id here if there is one. Calls to this endpoint without a user_id will                          create an order with a nil user |
-| order_token  | Spree will look for an order with the order token if it is provided. If an order with                              the specified token is not found, Spree will create a new order with an autogenerated                              guest token that should be stored in cookies and returned with subsequent calls. The                              order token can be passed as a parameter or a header. If passed as both a header and                              parameter, the header will take precedence. |
-| line_item[variant_id] *required* | Specify the variant id |
-| line_item[quantity] *required* | Specify the quantity requested, must be greater than 0 |
-| line_item[vendor_id] *required* | Specify the vendor id, from the price chosen |
-| token  | Specify the spree_api_key here if there is one. Calls to this endpoint without a it will \
-                         create an order with a nil user |
-
-
-
-### Response
-
-```plaintext
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Type: application/json; charset=utf-8
-ETag: W/&quot;b8dc77c40a41dc78ffef302b6dfeb418&quot;
-Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 68aefafb-1d3c-47d6-af8f-4cae0a34deeb
-X-Runtime: 0.115607
-Vary: Origin
-Content-Length: 2693
-200 OK
-```
-
-
-```json
-{
-  "id": 20,
-  "number": "M763243131",
-  "item_total": "39.98",
-  "total": "39.98",
-  "ship_total": "0.0",
-  "state": "cart",
-  "adjustment_total": "0.0",
-  "user_id": null,
-  "created_at": "2020-09-22T11:40:08.134-04:00",
-  "updated_at": "2020-09-22T11:40:08.181-04:00",
-  "completed_at": null,
-  "payment_total": "0.0",
-  "shipment_state": null,
-  "payment_state": null,
-  "email": null,
-  "special_instructions": null,
-  "channel": "spree",
-  "included_tax_total": "0.0",
-  "additional_tax_total": "0.0",
-  "display_included_tax_total": "$0.00",
-  "display_additional_tax_total": "$0.00",
-  "tax_total": "0.0",
-  "currency": "USD",
-  "covered_by_store_credit": false,
-  "display_total_applicable_store_credit": "$0.00",
-  "order_total_after_store_credit": "39.98",
-  "display_order_total_after_store_credit": "$39.98",
-  "total_applicable_store_credit": 0.0,
-  "display_total_available_store_credit": "$0.00",
-  "display_store_credit_remaining_after_capture": "$0.00",
-  "canceler_id": null,
-  "gift_email": null,
-  "gift_message": null,
-  "is_gift": false,
-  "use_store_credits": false,
-  "first_order": false,
-  "display_item_total": "$39.98",
-  "total_quantity": 2,
-  "display_total": "$39.98",
-  "display_ship_total": "$0.00",
-  "display_tax_total": "$0.00",
-  "token": "tUin-E7rrK3mjbuBUErR2A",
-  "checkout_steps": [
-    "address",
-    "delivery",
-    "payment",
-    "confirm",
-    "complete"
-  ],
-  "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M763243131&bzip=&init=true",
-  "free_shipping_threshold": null,
-  "payment_methods": [
-
-  ],
-  "bill_address": null,
-  "ship_address": null,
-  "line_items": [
-    {
-      "id": 24,
-      "quantity": 2,
-      "price": "19.99",
-      "variant_id": 99,
-      "vendor_id": 208,
-      "single_display_amount": "$19.99",
-      "display_amount": "$39.98",
-      "total": "39.98",
-      "on_sale": false,
-      "final_sale": false,
-      "backordered": null,
-      "promotionable": true,
-      "variant": {
-        "id": 99,
-        "name": "Product #55 - 3910",
-        "sku": "SKU-98",
-        "weight": "0.0",
-        "height": null,
-        "width": null,
-        "depth": null,
-        "is_master": false,
-        "slug": "product-55-3910",
-        "description": "As seen on TV!",
-        "track_inventory": true,
-        "price": "19.99",
-        "display_price": "$19.99",
-        "options_text": "Size: S",
-        "in_stock": true,
-        "is_backorderable": false,
-        "total_on_hand": 10,
-        "is_destroyed": false,
-        "option_values": [
-          {
-            "id": 44,
-            "name": "Size-44",
-            "presentation": "S",
-            "option_type_name": "foo-size-44",
-            "option_type_id": 44,
-            "option_type_presentation": "Size",
-            "position": 1
-          }
-        ],
-        "images": [
-
-        ],
-        "product_id": 55,
-        "lead_time": 2,
-        "brand": null,
-        "brand_slug": null,
-        "brand_description": null
-      },
-      "monogram": null,
-      "gift_cards": [
-
-      ],
-      "vendor_name": "Vendor #208",
-      "country_iso": null,
-      "adjustments": [
-
-      ]
-    }
-  ],
-  "payments": [
-
-  ],
-  "shipments": [
-
-  ],
-  "adjustments": [
-
-  ],
-  "permissions": {
-    "can_update": false
-  },
-  "gift_card_total": "0.0",
-  "applied_promotion_codes": [
-
-  ],
-  "subtotals": {
-    "order_total": "39.98",
-    "item_total": "39.98",
-    "shipments_total": "0.0",
-    "line_item_promotion_totals": [
-
-    ],
-    "tax_adjustments": [
-
-    ],
-    "miscellaneous_adjustments": [
-
-    ],
-    "giftwrap_amount": 0
-  }
-}
-```
-
-
-
 ## Add an item to a order
 
 
@@ -5042,7 +5042,7 @@ Content-Length: 2693
 POST /api/orders/cart
 Accept: application/json
 Authorizat IO N: 
-X-Spree-Order-Token: Oo9uZ_XXlk43jakckvTcWg
+X-Spree-Order-Token: sQdOE4EJFxyhV72SbQ5KMA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -5054,7 +5054,7 @@ Cookie:
 
 
 ```json
-user_id&order_token=Oo9uZ_XXlk43jakckvTcWg&line_item[variant_id]=95&line_item[quantity]=2&line_item[vendor_id]=202
+user_id&order_token=sQdOE4EJFxyhV72SbQ5KMA&line_item[variant_id]=149&line_item[quantity]=2&line_item[vendor_id]=274
 ```
 
 
@@ -5078,28 +5078,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;be020a60375da68e42ca3d6bf250c2ab&quot;
+ETag: W/&quot;917195d83d25dbcd10409e4855fa9570&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2e337ab8-1a81-435e-8508-94a2ae8ad03f
-X-Runtime: 0.114308
+X-Request-Id: fc9ed235-965e-4a57-adb8-d6c81c640aea
+X-Runtime: 0.107775
 Vary: Origin
-Content-Length: 2692
+Content-Length: 2695
 200 OK
 ```
 
 
 ```json
 {
-  "id": 19,
-  "number": "M838447752",
+  "id": 23,
+  "number": "M168172153",
   "item_total": "39.98",
   "total": "39.98",
   "ship_total": "0.0",
   "state": "cart",
   "adjustment_total": "0.0",
   "user_id": null,
-  "created_at": "2020-09-22T11:40:07.650-04:00",
-  "updated_at": "2020-09-22T11:40:07.695-04:00",
+  "created_at": "2020-09-23T07:16:29.874-04:00",
+  "updated_at": "2020-09-23T07:16:29.916-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
@@ -5131,7 +5131,7 @@ Content-Length: 2692
   "display_total": "$39.98",
   "display_ship_total": "$0.00",
   "display_tax_total": "$0.00",
-  "token": "LATReTRDFlfWeMgKNUvEzg",
+  "token": "xvyOaMfj2lZa_ul8RRUhBA",
   "checkout_steps": [
     "address",
     "delivery",
@@ -5140,7 +5140,7 @@ Content-Length: 2692
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M838447752&bzip=&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M168172153&bzip=&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
 
@@ -5149,11 +5149,11 @@ Content-Length: 2692
   "ship_address": null,
   "line_items": [
     {
-      "id": 23,
+      "id": 25,
       "quantity": 2,
       "price": "19.99",
-      "variant_id": 95,
-      "vendor_id": 202,
+      "variant_id": 149,
+      "vendor_id": 274,
       "single_display_amount": "$19.99",
       "display_amount": "$39.98",
       "total": "39.98",
@@ -5162,15 +5162,15 @@ Content-Length: 2692
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 95,
-        "name": "Product #53 - 2670",
-        "sku": "SKU-94",
+        "id": 149,
+        "name": "Product #80 - 3730",
+        "sku": "SKU-148",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-53-2670",
+        "slug": "product-80-3730",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -5182,11 +5182,11 @@ Content-Length: 2692
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 42,
-            "name": "Size-42",
+            "id": 69,
+            "name": "Size-69",
             "presentation": "S",
-            "option_type_name": "foo-size-42",
-            "option_type_id": 42,
+            "option_type_name": "foo-size-69",
+            "option_type_id": 69,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -5194,7 +5194,7 @@ Content-Length: 2692
         "images": [
 
         ],
-        "product_id": 53,
+        "product_id": 80,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -5204,7 +5204,7 @@ Content-Length: 2692
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #202",
+      "vendor_name": "Vendor #274",
       "country_iso": null,
       "adjustments": [
 
@@ -5257,7 +5257,7 @@ Content-Length: 2692
 ```plaintext
 GET /api/orders/mine
 Accept: application/json
-Authorizat IO N: Bearer 96315948a6529e01c1284e7fc66d56c8fb26ae2cca37d82b
+Authorizat IO N: Bearer 22359894d8828bd87b2e58d225e38c5defa1ca047def0f5e
 Host: example.org
 Cookie: 
 ```
@@ -5287,8 +5287,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;bfd93c467923e2902c20109270f7395a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 61f33662-08f9-4677-ae12-05a27017d1df
-X-Runtime: 0.011433
+X-Request-Id: 7c88744e-477e-417e-b1d6-64613e0cf037
+X-Runtime: 0.017661
 Vary: Origin
 Content-Length: 80
 200 OK
@@ -5318,9 +5318,9 @@ Content-Length: 80
 #### Endpoint
 
 ```plaintext
-GET /api/orders/M290653262
+GET /api/orders/M675460066
 Accept: application/json
-Authorizat IO N: Bearer f367028dddd9fab317d7cfa43ac2e2aac7ad2c2991cea77a
+Authorizat IO N: Bearer 3fac8e011ba49c6e18dd14a3783825e9bf6f96ca7a85ab78
 Host: example.org
 Cookie: 
 ```
@@ -5347,33 +5347,33 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;f9eccc074e17842f91270ab1289e23c7&quot;
+ETag: W/&quot;fb0935b58459b453624fccd2e2aa3fe6&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6b5c51ee-81d5-4248-bb55-bb265e109e11
-X-Runtime: 0.153529
+X-Request-Id: 00f39338-6548-4faf-987c-3dc6306bc373
+X-Runtime: 0.136028
 Vary: Origin
-Content-Length: 7909
+Content-Length: 7915
 200 OK
 ```
 
 
 ```json
 {
-  "id": 14,
-  "number": "M290653262",
+  "id": 24,
+  "number": "M675460066",
   "item_total": "20.0",
   "total": "118.0",
   "ship_total": "100.0",
   "state": "payment",
   "adjustment_total": "-2.0",
-  "user_id": 43,
-  "created_at": "2020-09-22T11:40:03.051-04:00",
-  "updated_at": "2020-09-22T11:40:03.895-04:00",
+  "user_id": 91,
+  "created_at": "2020-09-23T07:16:30.586-04:00",
+  "updated_at": "2020-09-23T07:16:31.348-04:00",
   "completed_at": null,
   "payment_total": "0.0",
   "shipment_state": null,
   "payment_state": null,
-  "email": "email43@example.com",
+  "email": "email89@example.com",
   "special_instructions": null,
   "channel": "spree",
   "included_tax_total": "0.0",
@@ -5400,7 +5400,7 @@ Content-Length: 7909
   "display_total": "$118.00",
   "display_ship_total": "$100.00",
   "display_tax_total": "$0.00",
-  "token": "sH0MqmUGC9EJu7dbkXQVVA",
+  "token": "D1nGsZ8LwYF8eBZkvVEakQ",
   "checkout_steps": [
     "address",
     "delivery",
@@ -5409,30 +5409,30 @@ Content-Length: 7909
     "complete"
   ],
   "eligible_for_return": null,
-  "narvar_return_url": "http://localhost:4000/order?order=M290653262&bzip=10026&init=true",
+  "narvar_return_url": "http://localhost:4000/order?order=M675460066&bzip=10038&init=true",
   "free_shipping_threshold": null,
   "payment_methods": [
 
   ],
   "bill_address": {
-    "id": 26,
+    "id": 39,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10026",
+    "zipcode": "10038",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 27,
+    "country_id": 45,
     "country_iso": "US",
-    "state_id": 27,
+    "state_id": 45,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 27,
+      "id": 45,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -5440,31 +5440,31 @@ Content-Length: 7909
       "numcode": 840
     },
     "state": {
-      "id": 27,
+      "id": 45,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 27
+      "country_id": 45
     }
   },
   "ship_address": {
-    "id": 27,
+    "id": 40,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10027",
+    "zipcode": "10039",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 27,
+    "country_id": 45,
     "country_iso": "US",
-    "state_id": 27,
+    "state_id": 45,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 27,
+      "id": 45,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -5472,19 +5472,19 @@ Content-Length: 7909
       "numcode": 840
     },
     "state": {
-      "id": 27,
+      "id": 45,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 27
+      "country_id": 45
     }
   },
   "line_items": [
     {
-      "id": 15,
+      "id": 26,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 73,
-      "vendor_id": 163,
+      "variant_id": 151,
+      "vendor_id": 281,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "9.0",
@@ -5493,15 +5493,15 @@ Content-Length: 7909
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 73,
-        "name": "Product #42 - 7366",
-        "sku": "SKU-72",
+        "id": 151,
+        "name": "Product #81 - 9277",
+        "sku": "SKU-150",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-42-7366",
+        "slug": "product-81-9277",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -5513,11 +5513,11 @@ Content-Length: 7909
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 31,
-            "name": "Size-31",
+            "id": 70,
+            "name": "Size-70",
             "presentation": "S",
-            "option_type_name": "foo-size-31",
-            "option_type_id": 31,
+            "option_type_name": "foo-size-70",
+            "option_type_id": 70,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -5525,7 +5525,7 @@ Content-Length: 7909
         "images": [
 
         ],
-        "product_id": 42,
+        "product_id": 81,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -5535,32 +5535,32 @@ Content-Length: 7909
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #163",
+      "vendor_name": "Vendor #281",
       "country_iso": "US",
       "adjustments": [
         {
           "id": 3,
           "source_type": "Spree::PromotionAction",
-          "source_id": 2,
+          "source_id": 3,
           "adjustable_type": "Spree::LineItem",
-          "adjustable_id": 15,
+          "adjustable_id": 26,
           "amount": "-1.0",
           "label": "Promotion (10% off)",
-          "promotion_code_id": 2,
+          "promotion_code_id": 3,
           "finalized": false,
           "eligible": true,
-          "created_at": "2020-09-22T11:40:03.714-04:00",
-          "updated_at": "2020-09-22T11:40:03.714-04:00",
+          "created_at": "2020-09-23T07:16:31.151-04:00",
+          "updated_at": "2020-09-23T07:16:31.151-04:00",
           "display_amount": "-$1.00"
         }
       ]
     },
     {
-      "id": 16,
+      "id": 27,
       "quantity": 1,
       "price": "10.0",
-      "variant_id": 75,
-      "vendor_id": 163,
+      "variant_id": 153,
+      "vendor_id": 281,
       "single_display_amount": "$10.00",
       "display_amount": "$10.00",
       "total": "9.0",
@@ -5569,15 +5569,15 @@ Content-Length: 7909
       "backordered": null,
       "promotionable": true,
       "variant": {
-        "id": 75,
-        "name": "Product #43 - 9475",
-        "sku": "SKU-74",
+        "id": 153,
+        "name": "Product #82 - 833",
+        "sku": "SKU-152",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-43-9475",
+        "slug": "product-82-833",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "10.0",
@@ -5589,11 +5589,11 @@ Content-Length: 7909
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 32,
-            "name": "Size-32",
+            "id": 71,
+            "name": "Size-71",
             "presentation": "S",
-            "option_type_name": "foo-size-32",
-            "option_type_id": 32,
+            "option_type_name": "foo-size-71",
+            "option_type_id": 71,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -5601,7 +5601,7 @@ Content-Length: 7909
         "images": [
 
         ],
-        "product_id": 43,
+        "product_id": 82,
         "lead_time": 2,
         "brand": null,
         "brand_slug": null,
@@ -5611,22 +5611,22 @@ Content-Length: 7909
       "gift_cards": [
 
       ],
-      "vendor_name": "Vendor #163",
+      "vendor_name": "Vendor #281",
       "country_iso": "US",
       "adjustments": [
         {
           "id": 4,
           "source_type": "Spree::PromotionAction",
-          "source_id": 2,
+          "source_id": 3,
           "adjustable_type": "Spree::LineItem",
-          "adjustable_id": 16,
+          "adjustable_id": 27,
           "amount": "-1.0",
           "label": "Promotion (10% off)",
-          "promotion_code_id": 2,
+          "promotion_code_id": 3,
           "finalized": false,
           "eligible": true,
-          "created_at": "2020-09-22T11:40:03.725-04:00",
-          "updated_at": "2020-09-22T11:40:03.725-04:00",
+          "created_at": "2020-09-23T07:16:31.162-04:00",
+          "updated_at": "2020-09-23T07:16:31.162-04:00",
           "display_amount": "-$1.00"
         }
       ]
@@ -5637,71 +5637,71 @@ Content-Length: 7909
   ],
   "shipments": [
     {
-      "id": 20,
+      "id": 26,
       "tracking": null,
       "tracking_url": null,
-      "number": "H54037813748",
+      "number": "H08160685510",
       "cost": "100.0",
       "shipped_at": null,
       "state": "pending",
-      "order_id": "M290653262",
-      "stock_location_name": "NY Warehouse 32",
+      "order_id": "M675460066",
+      "stock_location_name": "NY Warehouse 52",
       "giftwrappable": false,
-      "stock_location_id": 32,
+      "stock_location_id": 52,
       "giftwrap": null,
       "shipping_rates": [
         {
-          "id": 20,
+          "id": 26,
           "name": "UPS Ground",
           "admin_name": null,
           "cost": "100.0",
           "selected": true,
-          "shipping_method_id": 15,
+          "shipping_method_id": 19,
           "shipping_method_code": "UPS_GROUND",
           "extra_cost": "+$100.00"
         }
       ],
       "selected_shipping_rate": {
-        "id": 20,
+        "id": 26,
         "name": "UPS Ground",
         "admin_name": null,
         "cost": "100.0",
         "selected": true,
-        "shipping_method_id": 15,
+        "shipping_method_id": 19,
         "shipping_method_code": "UPS_GROUND",
         "extra_cost": "+$100.00",
         "base_flat_rate_amount": 0.0
       },
       "shipping_methods": [
         {
-          "id": 15,
+          "id": 19,
           "code": "UPS_GROUND",
           "name": "UPS Ground",
           "zones": [
             {
-              "id": 13,
+              "id": 17,
               "name": "GlobalZone",
               "description": null
             }
           ],
           "shipping_categories": [
             {
-              "id": 27,
-              "name": "ShippingCategory #26"
+              "id": 43,
+              "name": "ShippingCategory #41"
             }
           ]
         }
       ],
       "manifest": [
         {
-          "variant_id": 73,
+          "variant_id": 151,
           "quantity": 1,
           "states": {
             "on_hand": 1
           }
         },
         {
-          "variant_id": 75,
+          "variant_id": 153,
           "quantity": 1,
           "states": {
             "on_hand": 1
@@ -5712,69 +5712,69 @@ Content-Length: 7909
         {
           "id": 6,
           "source_type": "Spree::PromotionAction",
-          "source_id": 3,
+          "source_id": 4,
           "adjustable_type": "Spree::Shipment",
-          "adjustable_id": 20,
+          "adjustable_id": 26,
           "amount": "-10.0",
           "label": "Shipping",
           "promotion_code_id": null,
           "finalized": false,
           "eligible": true,
-          "created_at": "2020-09-22T11:40:03.809-04:00",
-          "updated_at": "2020-09-22T11:40:03.809-04:00",
+          "created_at": "2020-09-23T07:16:31.240-04:00",
+          "updated_at": "2020-09-23T07:16:31.240-04:00",
           "display_amount": "-$10.00"
         },
         {
           "id": 5,
           "source_type": "Spree::PromotionAction",
-          "source_id": 3,
+          "source_id": 4,
           "adjustable_type": "Spree::Shipment",
-          "adjustable_id": 20,
+          "adjustable_id": 26,
           "amount": "-9.99",
           "label": "Shipping",
           "promotion_code_id": null,
           "finalized": false,
           "eligible": true,
-          "created_at": "2020-09-22T11:40:03.800-04:00",
-          "updated_at": "2020-09-22T11:40:03.800-04:00",
+          "created_at": "2020-09-23T07:16:31.232-04:00",
+          "updated_at": "2020-09-23T07:16:31.232-04:00",
           "display_amount": "-$9.99"
         }
       ],
-      "stock_location_address": "NY Warehouse 32, Washington, AL",
+      "stock_location_address": "NY Warehouse 52, Washington, AL",
       "country_iso": "US",
       "international_shipping": false,
-      "delivery_estimation": "Sep 24"
+      "delivery_estimation": "Sep 25"
     }
   ],
   "adjustments": [
     {
       "id": 7,
       "source_type": "Spree::Promotion",
-      "source_id": 3,
+      "source_id": 4,
       "adjustable_type": "Spree::Order",
-      "adjustable_id": 14,
+      "adjustable_id": 24,
       "amount": "20.0",
       "label": "adj1",
       "promotion_code_id": null,
       "finalized": false,
       "eligible": true,
-      "created_at": "2020-09-22T11:40:03.816-04:00",
-      "updated_at": "2020-09-22T11:40:03.816-04:00",
+      "created_at": "2020-09-23T07:16:31.247-04:00",
+      "updated_at": "2020-09-23T07:16:31.247-04:00",
       "display_amount": "$20.00"
     },
     {
       "id": 8,
       "source_type": "Spree::Promotion",
-      "source_id": 3,
+      "source_id": 4,
       "adjustable_type": "Spree::Order",
-      "adjustable_id": 14,
+      "adjustable_id": 24,
       "amount": "30.0",
       "label": "adj2",
       "promotion_code_id": null,
       "finalized": false,
       "eligible": true,
-      "created_at": "2020-09-22T11:40:03.821-04:00",
-      "updated_at": "2020-09-22T11:40:03.821-04:00",
+      "created_at": "2020-09-23T07:16:31.252-04:00",
+      "updated_at": "2020-09-23T07:16:31.252-04:00",
       "display_amount": "$30.00"
     }
   ],
@@ -5784,8 +5784,8 @@ Content-Length: 7909
   "gift_card_total": "0.0",
   "applied_promotion_codes": [
     {
-      "id": 2,
-      "promotion_id": 2,
+      "id": 3,
+      "promotion_id": 3,
       "value": "code1",
       "expires_at": null
     }
@@ -5796,7 +5796,7 @@ Content-Length: 7909
     "shipments_total": "80.01",
     "line_item_promotion_totals": [
       {
-        "source_id": 2,
+        "source_id": 3,
         "label": "Promotion (10% off)",
         "total": "-2.0"
       }
@@ -5832,9 +5832,9 @@ Content-Length: 7909
 #### Endpoint
 
 ```plaintext
-GET /api/orders/M655468438
+GET /api/orders/M457264684
 Accept: application/json
-Authorizat IO N: 395c66c1c8a8414bad3c2a262e7856d9c8883a097803f670
+Authorizat IO N: 29eaa66b59283634b5cc10c16da01fcf1d123d511fb7f440
 Host: example.org
 Cookie: 
 ```
@@ -5862,8 +5862,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 573f8e2e-324d-4245-880e-da72e4fdfed9
-X-Runtime: 0.012324
+X-Request-Id: b8be3bd2-fa51-43c3-af43-89f8099d0f87
+X-Runtime: 0.011830
 Vary: Origin
 Content-Length: 58
 401 Unauthorized
@@ -5880,7 +5880,7 @@ Content-Length: 58
 
 # Passwords
 
-Validate user email and password. Does not handle any session and only return the user
+Send an email with password reset instructions
 
 ## Forgot Password
 
@@ -5903,7 +5903,7 @@ Cookie:
 
 
 ```json
-user[email]=email4%40example.com
+user[email]=email1%40example.com
 ```
 
 
@@ -5924,8 +5924,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json
 Cache-Control: no-cache
-X-Request-Id: 480fe60e-8dfb-4a39-a10d-b6974fdd9abc
-X-Runtime: 0.025428
+X-Request-Id: c4d397f4-4e59-413a-a295-b8aa6037cb5d
+X-Runtime: 0.120548
 Vary: Origin
 Content-Length: 0
 200 OK
@@ -5955,7 +5955,7 @@ Cookie:
 
 
 ```json
-user[email]=email3%40example.com&user[password]=secret
+user[email]=email2%40example.com&user[password]=secret
 ```
 
 
@@ -5976,11 +5976,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer a48d3765eea25f595828d5909cd7526333ce69b6d69614c8
-ETag: W/&quot;467ccc3bf660ee63ca2e8dcd5d0b5a7f&quot;
+Authorization: Bearer 1cb9091e74551202ef4c6944a38e0eacdce5b6cbbfe71382
+ETag: W/&quot;040509cb307f738473e2a4a0a2f19296&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e34b3e1f-ba85-402b-98db-d81c6a27b5cb
-X-Runtime: 0.038554
+X-Request-Id: 36c4a14e-1cc4-4e0b-b961-90ec9b5e3850
+X-Runtime: 0.045488
 Vary: Origin
 Content-Length: 559
 200 OK
@@ -5989,17 +5989,17 @@ Content-Length: 559
 
 ```json
 {
-  "id": 3,
-  "email": "email3@example.com",
+  "id": 2,
+  "email": "email2@example.com",
   "persistence_token": null,
   "perishable_token": null,
   "last_request_at": null,
-  "login": "email3@example.com",
+  "login": "email2@example.com",
   "ship_address_id": null,
   "bill_address_id": null,
-  "created_at": "2020-09-22T11:39:44.204-04:00",
-  "updated_at": "2020-09-22T11:39:44.206-04:00",
-  "spree_api_key": "a48d3765eea25f595828d5909cd7526333ce69b6d69614c8",
+  "created_at": "2020-09-23T07:16:03.171-04:00",
+  "updated_at": "2020-09-23T07:16:03.174-04:00",
+  "spree_api_key": "1cb9091e74551202ef4c6944a38e0eacdce5b6cbbfe71382",
   "authentication_token": null,
   "deleted_at": null,
   "first_name": null,
@@ -6057,8 +6057,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: fdb749ed-9297-4a2c-aee7-6d77959ccf00
-X-Runtime: 0.003675
+X-Request-Id: 41cc462d-b365-4f04-ace7-7583f70cc226
+X-Runtime: 0.003621
 Vary: Origin
 204 No Content
 ```
@@ -6068,7 +6068,7 @@ Vary: Origin
 
 # Products
 
-get products by taxon
+Get all products, queryable by ransack
 
 ## Fetch a single product by id
 
@@ -6078,7 +6078,7 @@ get products by taxon
 #### Endpoint
 
 ```plaintext
-GET /api/products/product-13-6484
+GET /api/products/product-16-5321
 Host: example.org
 Cookie: 
 ```
@@ -6100,14 +6100,14 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Tue, 22 Sep 2020 15:39:49 GMT
+Date: Wed, 23 Sep 2020 11:16:06 GMT
 Surrogate-Control: max-age=900
 Surrogate-Key: product_id=1
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;6f7594c18862cc30a09d9888ad37315a&quot;
-X-Request-Id: 2fdedfc4-58f3-4664-a518-4dba619ba52e
-X-Runtime: 0.078054
+ETag: W/&quot;ac01dd60e73c6746cbbc7c24e662f46e&quot;
+X-Request-Id: 9ff59861-d496-4da3-9b27-9d8379530b46
+X-Runtime: 0.080267
 Vary: Origin
 Content-Length: 1613
 200 OK
@@ -6116,11 +6116,11 @@ Content-Length: 1613
 
 ```json
 {
-  "id": 13,
-  "name": "Product #13 - 6484",
+  "id": 16,
+  "name": "Product #16 - 5321",
   "description": "As seen on TV!",
-  "available_on": "2019-09-22T11:39:49.125-04:00",
-  "slug": "product-13-6484",
+  "available_on": "2019-09-23T07:16:06.381-04:00",
+  "slug": "product-16-5321",
   "meta_description": null,
   "meta_keywords": null,
   "taxon_ids": [
@@ -6144,39 +6144,39 @@ Content-Length: 1613
     {
       "id": 8,
       "name": "Clothing",
-      "taxonomy_id": 3,
-      "created_at": "2020-09-22T11:39:49.065-04:00",
+      "taxonomy_id": 4,
+      "created_at": "2020-09-23T07:16:06.328-04:00",
       "url": "/category/clothing",
       "position": 1
     },
     {
       "id": 9,
       "name": "Girl",
-      "taxonomy_id": 3,
-      "created_at": "2020-09-22T11:39:49.087-04:00",
+      "taxonomy_id": 4,
+      "created_at": "2020-09-23T07:16:06.346-04:00",
       "url": "/category/clothing/girl",
       "position": 2
     },
     {
       "id": 10,
       "name": "Dresses",
-      "taxonomy_id": 3,
-      "created_at": "2020-09-22T11:39:49.106-04:00",
+      "taxonomy_id": 4,
+      "created_at": "2020-09-23T07:16:06.364-04:00",
       "url": "/category/clothing/girl/dresses",
       "position": 3
     }
   ],
   "has_variants": false,
   "master": {
-    "id": 21,
-    "name": "Product #13 - 6484",
-    "sku": "SKU-21",
+    "id": 25,
+    "name": "Product #16 - 5321",
+    "sku": "SKU-25",
     "weight": "0.0",
     "height": null,
     "width": null,
     "depth": null,
     "is_master": true,
-    "slug": "product-13-6484",
+    "slug": "product-16-5321",
     "description": "As seen on TV!",
     "track_inventory": true,
     "price": "19.99",
@@ -6212,7 +6212,7 @@ Content-Length: 1613
         "pretty_name": "Category -> Clothing -> Girl -> Dresses",
         "permalink": "category/clothing/girl/dresses",
         "parent_id": 9,
-        "taxonomy_id": 3,
+        "taxonomy_id": 4,
         "url_override": null,
         "description": "Dresses",
         "icon": "/assets/default_taxon.png"
@@ -6260,15 +6260,15 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Tue, 22 Sep 2020 15:39:49 GMT
+Date: Wed, 23 Sep 2020 11:16:05 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;6a95081d00d28ea078392aa81a981a7e&quot;
-X-Request-Id: 5015f285-a4b0-49e4-be97-5803269724d3
-X-Runtime: 0.059282
+ETag: W/&quot;0600a521df40ec45866d20c858f1c8cf&quot;
+X-Request-Id: 50936b2a-8d11-4e5a-9614-cce301526fac
+X-Runtime: 0.084786
 Vary: Origin
-Content-Length: 1300
+Content-Length: 1296
 200 OK
 ```
 
@@ -6282,15 +6282,15 @@ Content-Length: 1300
   "per_page": 25,
   "products": [
     {
-      "id": 14,
-      "name": "Product #14 - 4486",
+      "id": 10,
+      "name": "Product #10 - 5028",
       "description": "As seen on TV!",
-      "available_on": "2019-09-22T11:39:49.376-04:00",
-      "slug": "product-14-4486",
+      "available_on": "2019-09-23T07:16:05.409-04:00",
+      "slug": "product-10-5028",
       "meta_description": null,
       "meta_keywords": null,
       "taxon_ids": [
-        12
+        2
       ],
       "total_on_hand": 0,
       "meta_title": null,
@@ -6311,15 +6311,15 @@ Content-Length: 1300
       ],
       "has_variants": false,
       "master": {
-        "id": 22,
-        "name": "Product #14 - 4486",
-        "sku": "SKU-22",
+        "id": 19,
+        "name": "Product #10 - 5028",
+        "sku": "SKU-19",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-14-4486",
+        "slug": "product-10-5028",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -6347,15 +6347,15 @@ Content-Length: 1300
       ],
       "classifications": [
         {
-          "taxon_id": 12,
+          "taxon_id": 2,
           "position": 1,
           "taxon": {
-            "id": 12,
+            "id": 2,
             "name": "Maison You",
             "pretty_name": "Brand -> Maison You",
             "permalink": "brand/maison-you",
-            "parent_id": 11,
-            "taxonomy_id": 4,
+            "parent_id": 1,
+            "taxonomy_id": 1,
             "url_override": null,
             "description": "Maison You",
             "icon": "/assets/default_taxon.png"
@@ -6409,13 +6409,13 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Tue, 22 Sep 2020 15:39:49 GMT
+Date: Wed, 23 Sep 2020 11:16:06 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;4b968a464071ea1822b6ec103a2d75ef&quot;
-X-Request-Id: c7fd317d-3749-45f9-9ead-6867c13ec25a
-X-Runtime: 0.045324
+ETag: W/&quot;c1ba839b0a03ee8e78c17308ec80c17b&quot;
+X-Request-Id: 313792ca-0272-4230-abaa-78ad011fc4e8
+X-Runtime: 0.030503
 Vary: Origin
 Content-Length: 383
 200 OK
@@ -6432,9 +6432,9 @@ Content-Length: 383
   "products": [
     {
       "id": 15,
-      "name": "Product #15 - 9590",
-      "slug": "product-15-9590",
-      "master_id": 23,
+      "name": "Product #15 - 5332",
+      "slug": "product-15-5332",
+      "master_id": 24,
       "display_price": "$0.00",
       "brand": "Maison You",
       "brand_slug": "maison-you",
@@ -6462,7 +6462,7 @@ Content-Length: 383
 #### Endpoint
 
 ```plaintext
-GET /api/products?ids=17%2C18%2C19
+GET /api/products?ids=12%2C13%2C14
 Host: example.org
 Cookie: 
 ```
@@ -6473,7 +6473,7 @@ Cookie:
 
 
 ```json
-ids: 17,18,19
+ids: 12,13,14
 ```
 
 
@@ -6494,13 +6494,13 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Date: Tue, 22 Sep 2020 15:39:50 GMT
+Date: Wed, 23 Sep 2020 11:16:06 GMT
 Surrogate-Control: max-age=900
 Content-Type: application/json; charset=utf-8
 Cache-Control: max-age=900, public
-ETag: W/&quot;c32d865563a44b5e9668273c604f85fc&quot;
-X-Request-Id: a98061fd-389d-4658-8ea1-af04ec462296
-X-Runtime: 0.115776
+ETag: W/&quot;25d692494ca5dc4d388e83faeab72e89&quot;
+X-Request-Id: 959a6893-e73a-4935-adfc-9056f0cd1990
+X-Runtime: 0.097475
 Vary: Origin
 Content-Length: 2862
 200 OK
@@ -6516,11 +6516,11 @@ Content-Length: 2862
   "per_page": 25,
   "products": [
     {
-      "id": 17,
-      "name": "Product #17 - 1802",
+      "id": 12,
+      "name": "Product #12 - 5526",
       "description": "As seen on TV!",
-      "available_on": "2019-09-22T11:39:50.202-04:00",
-      "slug": "product-17-1802",
+      "available_on": "2019-09-23T07:16:05.812-04:00",
+      "slug": "product-12-5526",
       "meta_description": null,
       "meta_keywords": null,
       "taxon_ids": [
@@ -6545,15 +6545,15 @@ Content-Length: 2862
       ],
       "has_variants": false,
       "master": {
-        "id": 25,
-        "name": "Product #17 - 1802",
-        "sku": "SKU-25",
+        "id": 21,
+        "name": "Product #12 - 5526",
+        "sku": "SKU-21",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-17-1802",
+        "slug": "product-12-5526",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -6584,11 +6584,11 @@ Content-Length: 2862
       ]
     },
     {
-      "id": 18,
-      "name": "Product #18 - 7741",
+      "id": 13,
+      "name": "Product #13 - 1473",
       "description": "As seen on TV!",
-      "available_on": "2019-09-22T11:39:50.282-04:00",
-      "slug": "product-18-7741",
+      "available_on": "2019-09-23T07:16:05.879-04:00",
+      "slug": "product-13-1473",
       "meta_description": null,
       "meta_keywords": null,
       "taxon_ids": [
@@ -6613,15 +6613,15 @@ Content-Length: 2862
       ],
       "has_variants": false,
       "master": {
-        "id": 26,
-        "name": "Product #18 - 7741",
-        "sku": "SKU-26",
+        "id": 22,
+        "name": "Product #13 - 1473",
+        "sku": "SKU-22",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-18-7741",
+        "slug": "product-13-1473",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -6652,11 +6652,11 @@ Content-Length: 2862
       ]
     },
     {
-      "id": 19,
-      "name": "Product #19 - 6611",
+      "id": 14,
+      "name": "Product #14 - 7794",
       "description": "As seen on TV!",
-      "available_on": "2019-09-22T11:39:50.359-04:00",
-      "slug": "product-19-6611",
+      "available_on": "2019-09-23T07:16:05.947-04:00",
+      "slug": "product-14-7794",
       "meta_description": null,
       "meta_keywords": null,
       "taxon_ids": [
@@ -6681,15 +6681,15 @@ Content-Length: 2862
       ],
       "has_variants": false,
       "master": {
-        "id": 27,
-        "name": "Product #19 - 6611",
-        "sku": "SKU-27",
+        "id": 23,
+        "name": "Product #14 - 7794",
+        "sku": "SKU-23",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-19-6611",
+        "slug": "product-14-7794",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -6733,7 +6733,7 @@ Content-Length: 2862
 #### Endpoint
 
 ```plaintext
-GET /api/taxons/products?id=6
+GET /api/taxons/products?id=13
 Host: example.org
 Cookie: 
 ```
@@ -6744,7 +6744,7 @@ Cookie:
 
 
 ```json
-id: 6
+id: 13
 ```
 
 
@@ -6765,12 +6765,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;07127213d73e97bdef0fd72e50db4e9f&quot;
+ETag: W/&quot;a54d306f0f04418ff2d2d3af3c0d72ba&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a1426b83-990f-4047-a99d-1077a149102b
-X-Runtime: 0.075997
+X-Request-Id: 128470fd-0d21-45e5-b01e-525cd407d7ae
+X-Runtime: 0.058325
 Vary: Origin
-Content-Length: 1324
+Content-Length: 1327
 200 OK
 ```
 
@@ -6784,161 +6784,15 @@ Content-Length: 1324
   "per_page": 500,
   "products": [
     {
-      "id": 12,
-      "name": "Product #12 - 5328",
+      "id": 18,
+      "name": "Product #18 - 4948",
       "description": "As seen on TV!",
-      "available_on": "2019-09-22T11:39:48.773-04:00",
-      "slug": "product-12-5328",
+      "available_on": "2019-09-23T07:16:06.737-04:00",
+      "slug": "product-18-4948",
       "meta_description": null,
       "meta_keywords": null,
       "taxon_ids": [
-        6
-      ],
-      "total_on_hand": 0,
-      "meta_title": null,
-      "display_price": "$0.00",
-      "brand": "Ruby on Rails - 2",
-      "brand_slug": "ruby-on-rails-2",
-      "brand_url": "/ruby-on-rails-2",
-      "brand_description": "Ruby on Rails - 2",
-      "gift_card": false,
-      "is_registry": false,
-      "discontinued": false,
-      "available": true,
-      "trends": [
-
-      ],
-      "breadcrumb_taxons": [
-
-      ],
-      "has_variants": false,
-      "master": {
-        "id": 20,
-        "name": "Product #12 - 5328",
-        "sku": "SKU-20",
-        "weight": "0.0",
-        "height": null,
-        "width": null,
-        "depth": null,
-        "is_master": true,
-        "slug": "product-12-5328",
-        "description": "As seen on TV!",
-        "track_inventory": true,
-        "price": "19.99",
-        "display_price": "$19.99",
-        "options_text": "",
-        "in_stock": false,
-        "is_backorderable": false,
-        "total_on_hand": 0,
-        "is_destroyed": false,
-        "option_values": [
-
-        ],
-        "images": [
-
-        ]
-      },
-      "variants": [
-
-      ],
-      "option_types": [
-
-      ],
-      "product_properties": [
-
-      ],
-      "classifications": [
-        {
-          "taxon_id": 6,
-          "position": 1,
-          "taxon": {
-            "id": 6,
-            "name": "Ruby on Rails - 2",
-            "pretty_name": "Ruby on Rails - 2",
-            "permalink": "ruby-on-rails-2",
-            "parent_id": null,
-            "taxonomy_id": 2,
-            "url_override": null,
-            "description": "Ruby on Rails - 2",
-            "icon": "/assets/default_taxon.png"
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-
-
-## Fetch products by taxon permalink
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-GET /api/taxons/products?permalink=ruby-on-rails-1
-Host: example.org
-Cookie: 
-```
-
-`GET /api/taxons/products`
-
-#### Parameters
-
-
-```json
-permalink: ruby-on-rails-1
-```
-
-
-| Name | Description |
-|:-----|:------------|
-| permalink  |  permalink |
-| id  |  id |
-
-
-
-### Response
-
-```plaintext
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Type: application/json; charset=utf-8
-ETag: W/&quot;540b07fb0443fdce1fbb57c6286cbc77&quot;
-Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 63ad0eea-b03a-4cba-a36c-b899ded15b09
-X-Runtime: 0.104538
-Vary: Origin
-Content-Length: 1320
-200 OK
-```
-
-
-```json
-{
-  "count": 1,
-  "total_count": 1,
-  "current_page": 1,
-  "pages": 1,
-  "per_page": 500,
-  "products": [
-    {
-      "id": 10,
-      "name": "Product #10 - 605",
-      "description": "As seen on TV!",
-      "available_on": "2019-09-22T11:39:48.270-04:00",
-      "slug": "product-10-605",
-      "meta_description": null,
-      "meta_keywords": null,
-      "taxon_ids": [
-        3
+        13
       ],
       "total_on_hand": 0,
       "meta_title": null,
@@ -6959,15 +6813,15 @@ Content-Length: 1320
       ],
       "has_variants": false,
       "master": {
-        "id": 18,
-        "name": "Product #10 - 605",
-        "sku": "SKU-18",
+        "id": 27,
+        "name": "Product #18 - 4948",
+        "sku": "SKU-27",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": true,
-        "slug": "product-10-605",
+        "slug": "product-18-4948",
         "description": "As seen on TV!",
         "track_inventory": true,
         "price": "19.99",
@@ -6995,17 +6849,163 @@ Content-Length: 1320
       ],
       "classifications": [
         {
-          "taxon_id": 3,
+          "taxon_id": 13,
           "position": 1,
           "taxon": {
-            "id": 3,
+            "id": 13,
             "name": "Ruby on Rails - 1",
             "pretty_name": "Ruby on Rails - 1",
             "permalink": "ruby-on-rails-1",
             "parent_id": null,
-            "taxonomy_id": 1,
+            "taxonomy_id": 5,
             "url_override": null,
             "description": "Ruby on Rails - 1",
+            "icon": "/assets/default_taxon.png"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+## Fetch products by taxon permalink
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/taxons/products?permalink=ruby-on-rails-2
+Host: example.org
+Cookie: 
+```
+
+`GET /api/taxons/products`
+
+#### Parameters
+
+
+```json
+permalink: ruby-on-rails-2
+```
+
+
+| Name | Description |
+|:-----|:------------|
+| permalink  |  permalink |
+| id  |  id |
+
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;299e61428b7cee35627cda9e93b297b9&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: e3899ed6-9904-4002-a15e-8dcd98c63283
+X-Runtime: 0.051954
+Vary: Origin
+Content-Length: 1327
+200 OK
+```
+
+
+```json
+{
+  "count": 1,
+  "total_count": 1,
+  "current_page": 1,
+  "pages": 1,
+  "per_page": 500,
+  "products": [
+    {
+      "id": 20,
+      "name": "Product #20 - 8805",
+      "description": "As seen on TV!",
+      "available_on": "2019-09-23T07:16:07.055-04:00",
+      "slug": "product-20-8805",
+      "meta_description": null,
+      "meta_keywords": null,
+      "taxon_ids": [
+        16
+      ],
+      "total_on_hand": 0,
+      "meta_title": null,
+      "display_price": "$0.00",
+      "brand": "Ruby on Rails - 2",
+      "brand_slug": "ruby-on-rails-2",
+      "brand_url": "/ruby-on-rails-2",
+      "brand_description": "Ruby on Rails - 2",
+      "gift_card": false,
+      "is_registry": false,
+      "discontinued": false,
+      "available": true,
+      "trends": [
+
+      ],
+      "breadcrumb_taxons": [
+
+      ],
+      "has_variants": false,
+      "master": {
+        "id": 29,
+        "name": "Product #20 - 8805",
+        "sku": "SKU-29",
+        "weight": "0.0",
+        "height": null,
+        "width": null,
+        "depth": null,
+        "is_master": true,
+        "slug": "product-20-8805",
+        "description": "As seen on TV!",
+        "track_inventory": true,
+        "price": "19.99",
+        "display_price": "$19.99",
+        "options_text": "",
+        "in_stock": false,
+        "is_backorderable": false,
+        "total_on_hand": 0,
+        "is_destroyed": false,
+        "option_values": [
+
+        ],
+        "images": [
+
+        ]
+      },
+      "variants": [
+
+      ],
+      "option_types": [
+
+      ],
+      "product_properties": [
+
+      ],
+      "classifications": [
+        {
+          "taxon_id": 16,
+          "position": 1,
+          "taxon": {
+            "id": 16,
+            "name": "Ruby on Rails - 2",
+            "pretty_name": "Ruby on Rails - 2",
+            "permalink": "ruby-on-rails-2",
+            "parent_id": null,
+            "taxonomy_id": 6,
+            "url_override": null,
+            "description": "Ruby on Rails - 2",
             "icon": "/assets/default_taxon.png"
           }
         }
@@ -7027,7 +7027,7 @@ Content-Length: 1320
 ```plaintext
 GET /api/sitemap/products
 Accept: application/json
-Authorizat IO N: Bearer 45e40cab8d09a2fb36b7f4cd51452265232f0c0a4b01cc6c
+Authorizat IO N: Bearer 667806251aa14f1cf825014baea9155657169f75c6854896
 Host: example.org
 Cookie: 
 ```
@@ -7052,8 +7052,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4e365a8b-a081-4e1a-86cc-4afe0c379db6
-X-Runtime: 0.035010
+X-Request-Id: 3a84c665-1d0c-4971-ba03-0986a6b0d9ff
+X-Runtime: 0.034617
 Vary: Origin
 Content-Length: 2
 200 OK
@@ -7100,8 +7100,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 858a0283-ee45-4450-8f7c-458088ac564f
-X-Runtime: 0.017836
+X-Request-Id: cb38a76f-beb3-4f95-955d-b18281777aa5
+X-Runtime: 0.014889
 Vary: Origin
 Content-Length: 65
 404 Not Found
@@ -7128,9 +7128,9 @@ Get all recently viewed products using a session_id
 #### Endpoint
 
 ```plaintext
-GET /api/recently_viewed?recently_viewed[session_id]=toc8utvejpaobbk4we5p2w9plbmklxpioijeby4hxwlpo0gzamxoa7he9745l688moxjzlw7wqx01eo219tn82sag47xnww8r44kk8nmr1hij43iwldk9ydeqjgs9hih9gucn7umwzca41tr9ztwsf8zh2qe395g94xl87fwccyayrn04oks4o9d4v141l59amb6kamxdmtuie4jrr1dd7r4sp3b2wawmt0zfebehuy263rm09xhhyugnxig5i7
+GET /api/recently_viewed?recently_viewed[session_id]=l2wxgcf5scscdmqm8o9baehfbvgcohc2h1ednqszs061493ss07bd5jyy5a1lg2afodcfijtuuzfp8iyjb9hqmny37qauvvhml4qkggzhqm7p6pd5g7koq0erqh4f3vuyxlgseru9cr6cu4lqjsaexoio8zrcxud5i8mszktkjmxlusxeaie0f4gqqm0hpk7yap447aubrc2jthvq5peqxmamcuyl17uf77odc6rpm4da4fooqg33s6kd7yzszq
 Accept: application/json
-Authorizat IO N: Bearer 9dc4be2edb95d68a9e6ef215924086596a982ec007242ac9
+Authorizat IO N: Bearer d22b9e569a36f0f30d65e402fa5e2f9fd72889c5fd0e5a36
 Host: example.org
 Cookie: 
 ```
@@ -7141,7 +7141,7 @@ Cookie:
 
 
 ```json
-recently_viewed: {&quot;session_id&quot;=&gt;&quot;toc8utvejpaobbk4we5p2w9plbmklxpioijeby4hxwlpo0gzamxoa7he9745l688moxjzlw7wqx01eo219tn82sag47xnww8r44kk8nmr1hij43iwldk9ydeqjgs9hih9gucn7umwzca41tr9ztwsf8zh2qe395g94xl87fwccyayrn04oks4o9d4v141l59amb6kamxdmtuie4jrr1dd7r4sp3b2wawmt0zfebehuy263rm09xhhyugnxig5i7&quot;}
+recently_viewed: {&quot;session_id&quot;=&gt;&quot;l2wxgcf5scscdmqm8o9baehfbvgcohc2h1ednqszs061493ss07bd5jyy5a1lg2afodcfijtuuzfp8iyjb9hqmny37qauvvhml4qkggzhqm7p6pd5g7koq0erqh4f3vuyxlgseru9cr6cu4lqjsaexoio8zrcxud5i8mszktkjmxlusxeaie0f4gqqm0hpk7yap447aubrc2jthvq5peqxmamcuyl17uf77odc6rpm4da4fooqg33s6kd7yzszq&quot;}
 ```
 
 
@@ -7161,10 +7161,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;642faf1c22dbea552cbb8598d14fae9d&quot;
+ETag: W/&quot;7dc1a8b05cd3ff0e430fddd74091198c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 878d003e-4829-4077-987a-b98d898ade24
-X-Runtime: 0.138963
+X-Request-Id: 17f7353d-60ce-4e24-87f3-cb3fef53872d
+X-Runtime: 0.028329
 Vary: Origin
 Content-Length: 119
 200 OK
@@ -7174,11 +7174,11 @@ Content-Length: 119
 ```json
 [
   {
-    "at": "2020-09-22T11:39:44.018-04:00",
+    "at": "2020-09-23T07:16:25.551-04:00",
     "variant_id": "var1"
   },
   {
-    "at": "2020-09-22T11:44:44.018-04:00",
+    "at": "2020-09-23T07:21:25.551-04:00",
     "variant_id": "var2"
   }
 ]
@@ -7196,7 +7196,7 @@ Content-Length: 119
 ```plaintext
 POST /api/recently_viewed
 Accept: application/json
-Authorizat IO N: Bearer e54baf5e6b5f6e0f3e96c38175e4cc0550b4a908dd19e010
+Authorizat IO N: Bearer db441b09a77d4805c4fdfc8edbbb9c92f82ecc627c6fc94d
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -7208,7 +7208,7 @@ Cookie:
 
 
 ```json
-recently_viewed[session_id]=57telc8bnk2og9a9lcwq6sbqjrhcpqds4skj78yg1nuilks2qehfhq60bz93rv5kezth5ut258we3o5zqkdq0qd1vrom2oeztuqq3mbzfpdko8xto8bru14uitvl2zef24zz628d74kb7p1pdu9pil1fh9siwf312x1msxqvgjneuqxwutzvjq6hwukixmce82078s4yr80ctkcd3ran0zdblhbmwivh7n5w82dgzzcby638bg3ih3ojohwgv45&recently_viewed[variant_id]=foo
+recently_viewed[session_id]=7maoamtggixk4tujvxba1tyffqox21bgpw8p3t8vabqgqhxamtrz4dpap3of2qr6s98g2p991wrd9a2adqwjfg6nvi16773pxa6lve21krikau8mliwdjzhztq9jsgf7vka2rur79joguk72f510s94utrgyhsslb26j2lbtkdudh8idleap8v1518z5ag4fwd3l89fv1y79lv2swjo4yzhxtz6oh2fjnqfasbmqb7pir9gagcatotrysyqt808&recently_viewed[variant_id]=foo
 ```
 
 
@@ -7229,8 +7229,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: b99f074d-e636-428e-b14f-153bcfc10b13
-X-Runtime: 0.009007
+X-Request-Id: 4bf68f50-4f5d-43cd-8841-feb79031a5af
+X-Runtime: 0.005248
 Vary: Origin
 204 No Content
 ```
@@ -7250,8 +7250,8 @@ Get a single user return authorziation
 #### Endpoint
 
 ```plaintext
-GET /api/returns/RA860003100
-Authorizat IO N: Bearer 926faf27033663d9cd9c73c33ae6d3f133e32e90d781127a
+GET /api/returns/RA886585411
+Authorizat IO N: Bearer d0e82df38500b3aa8c5009041cad9bc3764d328f949ad792
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -7275,10 +7275,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c6df141fc4f42097a4b2f561858eb35b&quot;
+ETag: W/&quot;8adc8708b12f22d6739e312fe6c5097d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e1493f30-4ba7-44bd-93f6-acc500361a0d
-X-Runtime: 0.073247
+X-Request-Id: b33dab59-d8de-4f0a-9d7f-33709de3f258
+X-Runtime: 0.039991
 Vary: Origin
 Content-Length: 3051
 200 OK
@@ -7287,41 +7287,41 @@ Content-Length: 3051
 
 ```json
 {
-  "id": 2,
-  "number": "RA860003100",
+  "id": 3,
+  "number": "RA886585411",
   "state": "authorized",
-  "order_id": 27,
+  "order_id": 28,
   "memo": "Items were broken",
-  "created_at": "2020-09-22T11:40:17.547-04:00",
-  "updated_at": "2020-09-22T11:40:17.547-04:00",
+  "created_at": "2020-09-23T07:16:34.048-04:00",
+  "updated_at": "2020-09-23T07:16:34.048-04:00",
   "amount": "10.0",
   "reason": {
-    "id": 3,
-    "name": "Defect #3",
+    "id": 5,
+    "name": "Defect #5",
     "active": true,
     "mutable": true,
-    "created_at": "2020-09-22T11:40:17.543-04:00",
-    "updated_at": "2020-09-22T11:40:17.543-04:00",
+    "created_at": "2020-09-23T07:16:34.044-04:00",
+    "updated_at": "2020-09-23T07:16:34.044-04:00",
     "mirakl_code": null
   },
   "order": {
-    "id": 27,
-    "number": "M789186526",
+    "id": 28,
+    "number": "M238455739",
     "item_total": "10.0",
     "total": "110.0",
     "state": "complete",
     "adjustment_total": "0.0",
-    "user_id": 72,
-    "completed_at": "2020-09-22T11:40:17.440-04:00",
+    "user_id": 97,
+    "completed_at": "2020-09-23T07:16:33.961-04:00",
     "bill_address_id": 47,
     "ship_address_id": 48,
     "payment_total": "110.0",
     "shipment_state": "shipped",
     "payment_state": "paid",
-    "email": "email72@example.com",
+    "email": "email95@example.com",
     "special_instructions": null,
-    "created_at": "2020-09-22T11:40:17.334-04:00",
-    "updated_at": "2020-09-22T11:40:17.522-04:00",
+    "created_at": "2020-09-23T07:16:33.881-04:00",
+    "updated_at": "2020-09-23T07:16:34.027-04:00",
     "currency": "USD",
     "last_ip_address": null,
     "created_by_id": null,
@@ -7334,10 +7334,10 @@ Content-Length: 3051
     "approver_id": null,
     "approved_at": null,
     "confirmation_delivered": false,
-    "guest_token": "jUXv3EzGjw0yGokpjheR6g",
+    "guest_token": "IsX6zy7NwuunhMBUYKWR5w",
     "canceled_at": null,
     "canceler_id": null,
-    "store_id": 26,
+    "store_id": 27,
     "approver_name": null,
     "frontend_viewable": true,
     "migrated": false,
@@ -7357,17 +7357,17 @@ Content-Length: 3051
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10043",
+    "zipcode": "10047",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 50,
+    "country_id": 49,
     "country_iso": "US",
-    "state_id": 50,
+    "state_id": 49,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 50,
+      "id": 49,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -7375,10 +7375,10 @@ Content-Length: 3051
       "numcode": 840
     },
     "state": {
-      "id": 50,
+      "id": 49,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 50
+      "country_id": 49
     }
   },
   "bill_address": {
@@ -7389,17 +7389,17 @@ Content-Length: 3051
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10042",
+    "zipcode": "10046",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 50,
+    "country_id": 49,
     "country_iso": "US",
-    "state_id": 50,
+    "state_id": 49,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 50,
+      "id": 49,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -7407,19 +7407,19 @@ Content-Length: 3051
       "numcode": 840
     },
     "state": {
-      "id": 50,
+      "id": 49,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 50
+      "country_id": 49
     }
   },
   "return_items": [
     {
-      "name": "Product #89 - 5861",
+      "name": "Product #87 - 5632",
       "brand": null,
       "brand_slug": null,
       "image": null,
-      "product_slug": "product-89-5861",
+      "product_slug": "product-87-5632",
       "cost": "10.0",
       "option_values": [
         {
@@ -7432,17 +7432,17 @@ Content-Length: 3051
   "payments": [
     {
       "payment_method": {
-        "id": 14,
+        "id": 17,
         "name": "Credit Card"
       },
       "source": {
-        "id": 2,
+        "id": 3,
         "month": "12",
         "year": "2021",
         "cc_type": null,
         "last_digits": "1111",
         "name": "Spree Commerce",
-        "gateway_customer_profile_id": "BGS-435452",
+        "gateway_customer_profile_id": "BGS-015554",
         "gateway_payment_profile_id": null
       }
     }
@@ -7477,7 +7477,7 @@ Content-Length: 3051
 
 ```plaintext
 GET /api/returns/mine
-Authorizat IO N: Bearer 0e0019a4a61ea9a98042a6d0bc452a292d2e79c1db5f5430
+Authorizat IO N: Bearer 49b045c57b4935e2a8fa55e06de413ec17f80710eb1373f6
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -7501,10 +7501,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;84a05130c3dc76ff882e9473e094f143&quot;
+ETag: W/&quot;d442c7ca3a4e2a7fcee7b40aead3c016&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c91a6d7a-712a-4c50-9a73-4a17a1c792f7
-X-Runtime: 0.008478
+X-Request-Id: 5f529dbc-fc2b-4809-bdf8-1610497913f1
+X-Runtime: 0.007643
 Vary: Origin
 Content-Length: 169
 200 OK
@@ -7515,10 +7515,10 @@ Content-Length: 169
 {
   "return_authorizations": [
     {
-      "number": "RA803011442",
-      "created_at": "2020-09-22T11:40:18.588-04:00",
+      "number": "RA578625267",
+      "created_at": "2020-09-23T07:16:34.551-04:00",
       "return_amount": "10.0",
-      "order_number": "M146514287",
+      "order_number": "M985226027",
       "state": "authorized"
     }
   ]
@@ -7535,8 +7535,8 @@ Content-Length: 169
 #### Endpoint
 
 ```plaintext
-GET /api/returns/RA000466700
-Authorizat IO N: Bearer 67d9774d6213a9cfc4962172986b91b3d7f86a727d1ac6a9
+GET /api/returns/RA566823436
+Authorizat IO N: Bearer 0e467114a20fbdff474c788908acc3db2409357ee2018764
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -7560,10 +7560,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;fd74666cf3b97d8f0b86c311a22d1441&quot;
+ETag: W/&quot;d6fcecb88748f5ce17ff237ea6b64664&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 78836487-867e-4aa6-9a48-a77da74f71da
-X-Runtime: 0.082845
+X-Request-Id: 9ada8457-bea5-4e37-a94a-8499bb516a98
+X-Runtime: 0.062731
 Vary: Origin
 Content-Length: 2974
 200 OK
@@ -7573,40 +7573,40 @@ Content-Length: 2974
 ```json
 {
   "id": 1,
-  "number": "RA000466700",
+  "number": "RA566823436",
   "state": "authorized",
   "order_id": 26,
   "memo": "Items were broken",
-  "created_at": "2020-09-22T11:40:16.939-04:00",
-  "updated_at": "2020-09-22T11:40:16.939-04:00",
+  "created_at": "2020-09-23T07:16:33.035-04:00",
+  "updated_at": "2020-09-23T07:16:33.035-04:00",
   "amount": "10.0",
   "reason": {
     "id": 1,
     "name": "Defect #1",
     "active": true,
     "mutable": true,
-    "created_at": "2020-09-22T11:40:16.929-04:00",
-    "updated_at": "2020-09-22T11:40:16.929-04:00",
+    "created_at": "2020-09-23T07:16:33.025-04:00",
+    "updated_at": "2020-09-23T07:16:33.025-04:00",
     "mirakl_code": null
   },
   "order": {
     "id": 26,
-    "number": "M231747425",
+    "number": "M537500899",
     "item_total": "10.0",
     "total": "110.0",
     "state": "complete",
     "adjustment_total": "0.0",
-    "user_id": 71,
-    "completed_at": "2020-09-22T11:40:16.761-04:00",
-    "bill_address_id": 45,
-    "ship_address_id": 46,
+    "user_id": 94,
+    "completed_at": "2020-09-23T07:16:32.869-04:00",
+    "bill_address_id": 43,
+    "ship_address_id": 44,
     "payment_total": "110.0",
     "shipment_state": "shipped",
     "payment_state": "paid",
-    "email": "email71@example.com",
+    "email": "email92@example.com",
     "special_instructions": null,
-    "created_at": "2020-09-22T11:40:16.669-04:00",
-    "updated_at": "2020-09-22T11:40:16.882-04:00",
+    "created_at": "2020-09-23T07:16:32.771-04:00",
+    "updated_at": "2020-09-23T07:16:32.982-04:00",
     "currency": "USD",
     "last_ip_address": null,
     "created_by_id": null,
@@ -7619,7 +7619,7 @@ Content-Length: 2974
     "approver_id": null,
     "approved_at": null,
     "confirmation_delivered": false,
-    "guest_token": "4vAIZzuo9L-RuXeIHj0vtQ",
+    "guest_token": "pt64mDIVsiB3SIKe7a5puw",
     "canceled_at": null,
     "canceler_id": null,
     "store_id": 25,
@@ -7635,24 +7635,24 @@ Content-Length: 2974
     "first_order": false
   },
   "ship_address": {
-    "id": 46,
+    "id": 44,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "A Different Road",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10041",
+    "zipcode": "10043",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 49,
+    "country_id": 47,
     "country_iso": "US",
-    "state_id": 49,
+    "state_id": 47,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 49,
+      "id": 47,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -7660,31 +7660,31 @@ Content-Length: 2974
       "numcode": 840
     },
     "state": {
-      "id": 49,
+      "id": 47,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 49
+      "country_id": 47
     }
   },
   "bill_address": {
-    "id": 45,
+    "id": 43,
     "firstname": "John",
     "lastname": "Smith",
     "full_name": "John Smith",
     "address1": "PO Box 1337",
     "address2": "Northwest",
     "city": "Herndon",
-    "zipcode": "10040",
+    "zipcode": "10042",
     "phone": "555-555-0199",
     "company": "Company",
     "alternative_phone": "555-555-0199",
-    "country_id": 49,
+    "country_id": 47,
     "country_iso": "US",
-    "state_id": 49,
+    "state_id": 47,
     "state_name": null,
     "state_text": "AL",
     "country": {
-      "id": 49,
+      "id": 47,
       "iso_name": "UNITED STATES",
       "iso": "US",
       "iso3": "USA",
@@ -7692,19 +7692,19 @@ Content-Length: 2974
       "numcode": 840
     },
     "state": {
-      "id": 49,
+      "id": 47,
       "name": "Alabama",
       "abbr": "AL",
-      "country_id": 49
+      "country_id": 47
     }
   },
   "return_items": [
     {
-      "name": "Product #88 - 7440",
+      "name": "Product #85 - 8776",
       "brand": null,
       "brand_slug": null,
       "image": null,
-      "product_slug": "product-88-7440",
+      "product_slug": "product-85-8776",
       "cost": "10.0",
       "option_values": [
         {
@@ -7717,7 +7717,7 @@ Content-Length: 2974
   "payments": [
     {
       "payment_method": {
-        "id": 12,
+        "id": 13,
         "name": "Credit Card"
       },
       "source": {
@@ -7759,8 +7759,8 @@ Content-Length: 2974
 #### Endpoint
 
 ```plaintext
-GET /api/returns/RA857107355
-Authorizat IO N: Bearer cdef994ea0ebcdfa40ef2d3a577306d21a11cf78601af747
+GET /api/returns/RA427485406
+Authorizat IO N: Bearer 67c8b4038662825e906132487d290ab8d2e123222ea0a55b
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -7785,8 +7785,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: c28182ae-6ab9-4a0f-a9be-ca6f7a9cc7f7
-X-Runtime: 0.007623
+X-Request-Id: 0d7a55fd-7a74-43a0-ace4-67e6881a5e03
+X-Runtime: 0.007216
 Vary: Origin
 Content-Length: 65
 404 Not Found
@@ -7826,7 +7826,7 @@ Cookie:
 
 
 ```json
-stock_request[email]=isabelle%40brown.info&stock_request[variant_id]=113
+stock_request[email]=isobel_nikolaus%40stark.co.uk&stock_request[variant_id]=171
 ```
 
 
@@ -7848,8 +7848,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json
 Cache-Control: no-cache
-X-Request-Id: de0a3444-d873-47f7-94ff-5e8ccd16f6d1
-X-Runtime: 0.007263
+X-Request-Id: b545fac6-7174-46cd-a88e-830f7ea9d001
+X-Runtime: 0.038600
 Vary: Origin
 Content-Length: 0
 201 Created
@@ -7879,7 +7879,7 @@ Cookie:
 
 
 ```json
-stock_request[email]=foo&stock_request[variant_id]=109
+stock_request[email]=foo&stock_request[variant_id]=173
 ```
 
 
@@ -7901,8 +7901,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 0c8876e4-0287-4255-b83b-e37b281b2102
-X-Runtime: 0.075512
+X-Request-Id: c37dff99-b622-451a-a1a7-e60af0ed2a07
+X-Runtime: 0.006168
 Vary: Origin
 Content-Length: 48
 422 Unprocessable Entity
@@ -7941,7 +7941,7 @@ Cookie:
 
 
 ```json
-stock_request[email]=mariana%40wintheiserroob.us&stock_request[variant_id]=111
+stock_request[email]=telma.collier%40ankunding.info&stock_request[variant_id]=175
 ```
 
 
@@ -7963,8 +7963,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 533f0df9-19c0-4563-bbb3-2ff7ceb1ec72
-X-Runtime: 0.008883
+X-Request-Id: 1e68288a-55a0-4572-bf33-29b20e34c05d
+X-Runtime: 0.005762
 Vary: Origin
 Content-Length: 30
 422 Unprocessable Entity
@@ -7995,7 +7995,7 @@ Get user store_credits and current account balance for the current user
 
 ```plaintext
 GET api/store_credits/mine
-Authorizat IO N: Bearer f414106fdf7dbb3c93b44cbe50694523e2fbac6e983309e3
+Authorizat IO N: Bearer e110385ca637a741ef19aba57d83d219d73c4b611406f3db
 Accept: application/json
 Host: example.org
 Cookie: 
@@ -8019,10 +8019,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;f842e00f7458d1376e1a9494153f7a35&quot;
+ETag: W/&quot;1df1dfb433fccb2a73c60e075057f000&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d8307df9-7114-493d-9151-2720ab9a040e
-X-Runtime: 0.040379
+X-Request-Id: 6df6a890-0e16-4e33-b122-5b4a4b3c39de
+X-Runtime: 0.054579
 Vary: Origin
 Content-Length: 218
 200 OK
@@ -8036,7 +8036,7 @@ Content-Length: 218
       "amount": "150.0",
       "amount_used": "0.0",
       "category": "Exchange",
-      "created_at": "2020-09-22T11:39:50.626-04:00"
+      "created_at": "2020-09-23T07:16:12.702-04:00"
     }
   ],
   "current_balance": "150.0",
@@ -8052,7 +8052,7 @@ Content-Length: 218
 
 # Subscribers
 
-Update a subscriber. Users can update their own subscriber, admins can update minis for others.
+Unsubscribe a subscriber by email, this does not destroy the record.
 
 ## Create a subscriber
 
@@ -8076,7 +8076,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=sheri.nolan%40walsh.name&subscriber[first_name]=Luanna&subscriber[last_name]=Goodwin&subscriber[source]=Odio+vel+temporibus+rem+recusandae+assumenda.&subscriber[list_id]=th9xzd
+subscriber[email]=augustina.oreilly%40shields.com&subscriber[first_name]=Kallie&subscriber[last_name]=Wilkinson&subscriber[source]=Illum+ut+et+nostrum+nihil+sunt.&subscriber[list_id]=gvv8qb
 ```
 
 
@@ -8100,28 +8100,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6043eb42434c9ef88cc4cae8ef3095eb&quot;
+ETag: W/&quot;188af3d9556bb6c12619c113652710e9&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: dce03687-5e40-4453-b956-b8ef00bf10e9
-X-Runtime: 0.017369
+X-Request-Id: 37017fd8-7904-4947-818a-7f9413c5867a
+X-Runtime: 0.013369
 Vary: Origin
-Content-Length: 256
+Content-Length: 251
 201 Created
 ```
 
 
 ```json
 {
-  "id": 2,
+  "id": 6,
   "user_id": null,
-  "list_id": "th9xzd",
-  "email": "sheri.nolan@walsh.name",
-  "first_name": "Luanna",
-  "last_name": "Goodwin",
-  "source": "Odio vel temporibus rem recusandae assumenda.",
+  "list_id": "gvv8qb",
+  "email": "augustina.oreilly@shields.com",
+  "first_name": "Kallie",
+  "last_name": "Wilkinson",
+  "source": "Illum ut et nostrum nihil sunt.",
   "phone": null,
   "status": "subscribed",
-  "created_at": "2020-09-22T11:40:16.000-04:00"
+  "created_at": "2020-09-23T07:16:07.462-04:00"
 }
 ```
 
@@ -8137,7 +8137,7 @@ Content-Length: 256
 ```plaintext
 POST /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer 308747b9824e1103a9f7d067c79559e10902b6f2038db586
+Authorizat IO N: Bearer 92cd31130ebeb42918dbed892e04f3858dafbc21a74c559f
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -8149,7 +8149,7 @@ Cookie:
 
 
 ```json
-subscriber[email]&subscriber[first_name]=Bernardo&subscriber[last_name]=Fisher&subscriber[source]=Voluptas+qui+adipisci+est+consequatur+iste+sed.&subscriber[list_id]=lwnn72
+subscriber[email]&subscriber[first_name]=Elaina&subscriber[last_name]=Heaney&subscriber[source]=Qui+sunt+placeat+sed+consequuntur+ducimus+blanditiis.&subscriber[list_id]=md6z7b
 ```
 
 
@@ -8173,28 +8173,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;51fa5da05b26a9e2c27c3ae05f97e857&quot;
+ETag: W/&quot;b4a4a9a8d30c4737c611a6004347fc82&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 511d4222-f049-47a0-a35a-db286c767ccd
-X-Runtime: 0.020620
+X-Request-Id: c14e7568-cef1-468c-8527-2d856172ab3b
+X-Runtime: 0.015330
 Vary: Origin
-Content-Length: 254
+Content-Length: 258
 201 Created
 ```
 
 
 ```json
 {
-  "id": 3,
-  "user_id": 66,
-  "list_id": "lwnn72",
-  "email": "email66@example.com",
-  "first_name": "Bernardo",
-  "last_name": "Fisher",
-  "source": "Voluptas qui adipisci est consequatur iste sed.",
+  "id": 7,
+  "user_id": 30,
+  "list_id": "md6z7b",
+  "email": "email30@example.com",
+  "first_name": "Elaina",
+  "last_name": "Heaney",
+  "source": "Qui sunt placeat sed consequuntur ducimus blanditiis.",
   "phone": null,
   "status": "subscribed",
-  "created_at": "2020-09-22T11:40:16.043-04:00"
+  "created_at": "2020-09-23T07:16:07.495-04:00"
 }
 ```
 
@@ -8210,7 +8210,7 @@ Content-Length: 254
 ```plaintext
 GET /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer f165e1ee7530d47271d8d32dfd7e7e7de15612b277077f92
+Authorizat IO N: Bearer 9062fc0c0c0e12f6d0e13257148c7952d298a0fcc352ebd0
 Host: example.org
 Cookie: 
 ```
@@ -8237,12 +8237,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0f77b6b27f2c96732c3f5b66433f1299&quot;
+ETag: W/&quot;eca744539c5e50e802a040b600fc74a5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 51002ad1-1eff-43b8-89af-1d7de8038766
-X-Runtime: 0.025098
+X-Request-Id: 35c40a8b-eb3c-4304-8e51-ba9a32d3f832
+X-Runtime: 0.024271
 Vary: Origin
-Content-Length: 726
+Content-Length: 727
 200 OK
 ```
 
@@ -8251,40 +8251,40 @@ Content-Length: 726
 {
   "subscribers": [
     {
-      "id": 5,
+      "id": 2,
       "user_id": null,
-      "list_id": "nmjhpu",
-      "email": "levi_ohara@homenick.com",
-      "first_name": "Megan",
-      "last_name": "Cummings",
+      "list_id": "f4emmu",
+      "email": "deloise_stoltenberg@hegmann.us",
+      "first_name": "Augustine",
+      "last_name": "Spencer",
       "source": null,
       "phone": null,
       "status": "subscribed",
-      "created_at": "2020-09-22T11:40:16.139-04:00"
+      "created_at": "2020-09-23T07:16:07.350-04:00"
     },
     {
-      "id": 6,
+      "id": 3,
       "user_id": null,
-      "list_id": "0zs0pt",
-      "email": "tomiko_kunze@heathcote.us",
-      "first_name": "Cary",
-      "last_name": "Mann",
+      "list_id": "kaeego",
+      "email": "millie_weber@mayert.ca",
+      "first_name": "Audry",
+      "last_name": "Beer",
       "source": null,
       "phone": null,
       "status": "subscribed",
-      "created_at": "2020-09-22T11:40:16.145-04:00"
+      "created_at": "2020-09-23T07:16:07.354-04:00"
     },
     {
-      "id": 7,
+      "id": 4,
       "user_id": null,
-      "list_id": "zqv40f",
-      "email": "anh.bartoletti@weber.us",
-      "first_name": "Elliot",
-      "last_name": "Kuvalis",
+      "list_id": "cq61ii",
+      "email": "suzi@stanton.us",
+      "first_name": "Scotty",
+      "last_name": "O'Conner",
       "source": null,
       "phone": null,
       "status": "subscribed",
-      "created_at": "2020-09-22T11:40:16.152-04:00"
+      "created_at": "2020-09-23T07:16:07.358-04:00"
     }
   ],
   "count": 3,
@@ -8305,9 +8305,9 @@ Content-Length: 726
 #### Endpoint
 
 ```plaintext
-PATCH /api/subscribers/1
+PATCH /api/subscribers/5
 Accept: application/json
-Authorizat IO N: Bearer 951d929e42a9600e236b2dcf1dbe98444dd3bc78317fc666
+Authorizat IO N: Bearer bc97cca02b663d3ec00a6e0e4adcb82300bc8f903d4d39e8
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -8319,7 +8319,7 @@ Cookie:
 
 
 ```json
-subscriber[source]=Ipsum+quaerat+ipsa+vel+corporis+accusantium.
+subscriber[source]=Aperiam+voluptatem+magni+soluta+aut+nesciunt.
 ```
 
 
@@ -8342,28 +8342,28 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;0c532c32b5b8de2cb2d0f251346f4e01&quot;
+ETag: W/&quot;5a5316054f76ffe1e3a0946d012d9029&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9fb6e0db-6cb4-420e-a520-2cc815721b3b
-X-Runtime: 0.065421
+X-Request-Id: fb8448b9-78a8-4be0-86ff-1f28eb3b189b
+X-Runtime: 0.019366
 Vary: Origin
-Content-Length: 262
+Content-Length: 260
 200 OK
 ```
 
 
 ```json
 {
-  "id": 1,
-  "user_id": 65,
-  "list_id": "xlku3w",
-  "email": "email65@example.com",
-  "first_name": "Birgit",
-  "last_name": "Schiller",
-  "source": "Ipsum quaerat ipsa vel corporis accusantium.",
+  "id": 5,
+  "user_id": 29,
+  "list_id": "twfhx1",
+  "email": "email29@example.com",
+  "first_name": "Kori",
+  "last_name": "Collins",
+  "source": "Aperiam voluptatem magni soluta aut nesciunt.",
   "phone": null,
   "status": "subscribed_and_synced",
-  "created_at": "2020-09-22T11:40:15.907-04:00"
+  "created_at": "2020-09-23T07:16:07.424-04:00"
 }
 ```
 
@@ -8379,7 +8379,7 @@ Content-Length: 262
 ```plaintext
 DELETE /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer 3744245ca8b7c3170730afd96540dc6a10c732d9568ef7f1
+Authorizat IO N: Bearer 41cc1c131d5550e41121df45fc8a67ee5558add274587bf1
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -8391,7 +8391,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=email67%40example.com&subscriber[list_id]=4foi6g
+subscriber[email]=email26%40example.com&subscriber[list_id]=tqjhkt
 ```
 
 
@@ -8413,8 +8413,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json
 Cache-Control: no-cache
-X-Request-Id: 90bf3824-0716-4857-a33d-a87eef9b21cd
-X-Runtime: 0.017487
+X-Request-Id: b34554a4-f102-4092-ae57-a961b92d26a0
+X-Runtime: 0.032239
 Vary: Origin
 Content-Length: 0
 200 OK
@@ -8433,7 +8433,7 @@ Content-Length: 0
 ```plaintext
 DELETE /api/subscribers
 Accept: application/json
-Authorizat IO N: Bearer 02e07e592bc068fe36855d6e4a87ff3f92c3fb699d20f266
+Authorizat IO N: Bearer b47d0de519f20f459153c82efc80f9d4055d3d0c7ec791d5
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -8445,7 +8445,7 @@ Cookie:
 
 
 ```json
-subscriber[email]=martine%40wehnerking.com&subscriber[list_id]=6s3gdj
+subscriber[email]=royce%40gaylord.co.uk&subscriber[list_id]=lvy0rj
 ```
 
 
@@ -8466,8 +8466,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 41bf4c23-b8fb-4f8a-bd94-cc7236933f90
-X-Runtime: 0.006893
+X-Request-Id: 6e0a1f2d-7861-4c73-8623-4de65fda6cee
+X-Runtime: 0.005414
 Vary: Origin
 204 No Content
 ```
@@ -8489,7 +8489,7 @@ Get taxons info
 ```plaintext
 GET /api/sitemap/taxons
 Accept: application/json
-Authorizat IO N: Bearer 714e517276cb1f4d158b65a8521c76b410f4a05419b34a93
+Authorizat IO N: Bearer b54d08a402b748ee99cd8a2e5533c088d25cd4a47290398b
 Host: example.org
 Cookie: 
 ```
@@ -8514,8 +8514,8 @@ Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 91465803-d7c7-461d-a24e-b2af08fb3394
-X-Runtime: 0.043029
+X-Request-Id: 1274840c-a310-479c-b1e6-cf0b78861d81
+X-Runtime: 0.035335
 Vary: Origin
 Content-Length: 2
 200 OK
@@ -8532,7 +8532,7 @@ Content-Length: 2
 
 # Taxons API
 
-Return all brand taxons that have products in stock
+Return all taxons
 
 ## Get all taxons
 
@@ -8574,12 +8574,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;59dc875423b229c0ae6a4ff6053ed8b3&quot;
+ETag: W/&quot;148a85ed32d768fe93d985f00b8fa45e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7de95853-0146-4d67-8c46-ea89e342b678
-X-Runtime: 0.038811
+X-Request-Id: dd382c11-c268-44a3-9bf6-2eb17e491776
+X-Runtime: 0.037730
 Vary: Origin
-Content-Length: 4443
+Content-Length: 4438
 200 OK
 ```
 
@@ -8593,109 +8593,109 @@ Content-Length: 4443
   "per_page": 500,
   "taxons": [
     {
-      "id": 21,
+      "id": 17,
       "name": "Category",
       "pretty_name": "Category",
       "permalink": "category",
       "parent_id": null,
-      "taxonomy_id": 9,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Category",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 22,
+          "id": 18,
           "name": "Kids",
           "pretty_name": "Category -> Kids",
           "permalink": "category/kids",
-          "parent_id": 21,
-          "taxonomy_id": 9,
+          "parent_id": 17,
+          "taxonomy_id": 7,
           "url_override": null
         }
       ]
     },
     {
-      "id": 22,
+      "id": 18,
       "name": "Kids",
       "pretty_name": "Category -> Kids",
       "permalink": "category/kids",
-      "parent_id": 21,
-      "taxonomy_id": 9,
+      "parent_id": 17,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Kids",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 23,
+          "id": 19,
           "name": "Boys",
           "pretty_name": "Category -> Kids -> Boys",
           "permalink": "category/kids/boys",
-          "parent_id": 22,
-          "taxonomy_id": 9,
+          "parent_id": 18,
+          "taxonomy_id": 7,
           "url_override": null
         },
         {
-          "id": 26,
+          "id": 22,
           "name": "Girls",
           "pretty_name": "Category -> Kids -> Girls",
           "permalink": "category/kids/girls",
-          "parent_id": 22,
-          "taxonomy_id": 9,
+          "parent_id": 18,
+          "taxonomy_id": 7,
           "url_override": null
         }
       ]
     },
     {
-      "id": 23,
+      "id": 19,
       "name": "Boys",
       "pretty_name": "Category -> Kids -> Boys",
       "permalink": "category/kids/boys",
-      "parent_id": 22,
-      "taxonomy_id": 9,
+      "parent_id": 18,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Boys",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 24,
+          "id": 20,
           "name": "Boys Tops",
           "pretty_name": "Category -> Kids -> Boys -> Boys Tops",
           "permalink": "category/kids/boys/boys-tops",
-          "parent_id": 23,
-          "taxonomy_id": 9,
+          "parent_id": 19,
+          "taxonomy_id": 7,
           "url_override": null
         }
       ]
     },
     {
-      "id": 24,
+      "id": 20,
       "name": "Boys Tops",
       "pretty_name": "Category -> Kids -> Boys -> Boys Tops",
       "permalink": "category/kids/boys/boys-tops",
-      "parent_id": 23,
-      "taxonomy_id": 9,
+      "parent_id": 19,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Boys Tops",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 25,
+          "id": 21,
           "name": "Boys Shirts",
           "pretty_name": "Category -> Kids -> Boys -> Boys Tops -> Boys Shirts",
           "permalink": "category/kids/boys/boys-tops/boys-shirts",
-          "parent_id": 24,
-          "taxonomy_id": 9,
+          "parent_id": 20,
+          "taxonomy_id": 7,
           "url_override": null
         }
       ]
     },
     {
-      "id": 25,
+      "id": 21,
       "name": "Boys Shirts",
       "pretty_name": "Category -> Kids -> Boys -> Boys Tops -> Boys Shirts",
       "permalink": "category/kids/boys/boys-tops/boys-shirts",
-      "parent_id": 24,
-      "taxonomy_id": 9,
+      "parent_id": 20,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Boys Shirts",
       "icon": "/assets/default_taxon.png",
@@ -8704,56 +8704,56 @@ Content-Length: 4443
       ]
     },
     {
-      "id": 26,
+      "id": 22,
       "name": "Girls",
       "pretty_name": "Category -> Kids -> Girls",
       "permalink": "category/kids/girls",
-      "parent_id": 22,
-      "taxonomy_id": 9,
+      "parent_id": 18,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Girls",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 27,
+          "id": 23,
           "name": "Girls Tops",
           "pretty_name": "Category -> Kids -> Girls -> Girls Tops",
           "permalink": "category/kids/girls/girls-tops",
-          "parent_id": 26,
-          "taxonomy_id": 9,
+          "parent_id": 22,
+          "taxonomy_id": 7,
           "url_override": null
         }
       ]
     },
     {
-      "id": 27,
+      "id": 23,
       "name": "Girls Tops",
       "pretty_name": "Category -> Kids -> Girls -> Girls Tops",
       "permalink": "category/kids/girls/girls-tops",
-      "parent_id": 26,
-      "taxonomy_id": 9,
+      "parent_id": 22,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Girls Tops",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 28,
+          "id": 24,
           "name": "Girls Shirts",
           "pretty_name": "Category -> Kids -> Girls -> Girls Tops -> Girls Shirts",
           "permalink": "category/kids/girls/girls-tops/girls-shirts",
-          "parent_id": 27,
-          "taxonomy_id": 9,
+          "parent_id": 23,
+          "taxonomy_id": 7,
           "url_override": null
         }
       ]
     },
     {
-      "id": 28,
+      "id": 24,
       "name": "Girls Shirts",
       "pretty_name": "Category -> Kids -> Girls -> Girls Tops -> Girls Shirts",
       "permalink": "category/kids/girls/girls-tops/girls-shirts",
-      "parent_id": 27,
-      "taxonomy_id": 9,
+      "parent_id": 23,
+      "taxonomy_id": 7,
       "url_override": null,
       "description": "Girls Shirts",
       "icon": "/assets/default_taxon.png",
@@ -8762,43 +8762,43 @@ Content-Length: 4443
       ]
     },
     {
-      "id": 29,
+      "id": 25,
       "name": "Brand",
       "pretty_name": "Brand",
       "permalink": "brand",
       "parent_id": null,
-      "taxonomy_id": 10,
+      "taxonomy_id": 8,
       "url_override": null,
       "description": "Brand",
       "icon": "/assets/default_taxon.png",
       "taxons": [
         {
-          "id": 30,
+          "id": 26,
           "name": "Ruby on Rails - 3",
           "pretty_name": "Brand -> Ruby on Rails - 3",
           "permalink": "brand/ruby-on-rails-3",
-          "parent_id": 29,
-          "taxonomy_id": 10,
+          "parent_id": 25,
+          "taxonomy_id": 8,
           "url_override": null
         },
         {
-          "id": 31,
+          "id": 27,
           "name": "Ruby on Rails - 4",
           "pretty_name": "Brand -> Ruby on Rails - 4",
           "permalink": "brand/ruby-on-rails-4",
-          "parent_id": 29,
-          "taxonomy_id": 10,
+          "parent_id": 25,
+          "taxonomy_id": 8,
           "url_override": null
         }
       ]
     },
     {
-      "id": 30,
+      "id": 26,
       "name": "Ruby on Rails - 3",
       "pretty_name": "Brand -> Ruby on Rails - 3",
       "permalink": "brand/ruby-on-rails-3",
-      "parent_id": 29,
-      "taxonomy_id": 10,
+      "parent_id": 25,
+      "taxonomy_id": 8,
       "url_override": null,
       "description": "Ruby on Rails - 3",
       "icon": "/assets/default_taxon.png",
@@ -8807,12 +8807,12 @@ Content-Length: 4443
       ]
     },
     {
-      "id": 31,
+      "id": 27,
       "name": "Ruby on Rails - 4",
       "pretty_name": "Brand -> Ruby on Rails - 4",
       "permalink": "brand/ruby-on-rails-4",
-      "parent_id": 29,
-      "taxonomy_id": 10,
+      "parent_id": 25,
+      "taxonomy_id": 8,
       "url_override": null,
       "description": "Ruby on Rails - 4",
       "icon": "/assets/default_taxon.png",
@@ -8871,10 +8871,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;26cf2d79920aeebfc6a70eab9cdf2a5d&quot;
+ETag: W/&quot;c904677c905dd885a0c7131da65fea97&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 93792b00-405d-4800-9bd0-a8a2b6e6a584
-X-Runtime: 0.015658
+X-Request-Id: ccb84f79-42bf-4191-8e55-aaced76fa72d
+X-Runtime: 0.014244
 Vary: Origin
 Content-Length: 742
 200 OK
@@ -8890,34 +8890,34 @@ Content-Length: 742
   "per_page": 500,
   "taxons": [
     {
-      "id": 40,
+      "id": 36,
       "name": "Brand",
       "pretty_name": "Brand",
       "permalink": "brand",
       "parent_id": null,
-      "taxonomy_id": 12,
+      "taxonomy_id": 10,
       "url_override": null,
       "description": "Brand",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 41,
+      "id": 37,
       "name": "Ruby on Rails - 5",
       "pretty_name": "Brand -> Ruby on Rails - 5",
       "permalink": "brand/ruby-on-rails-5",
-      "parent_id": 40,
-      "taxonomy_id": 12,
+      "parent_id": 36,
+      "taxonomy_id": 10,
       "url_override": null,
       "description": "Ruby on Rails - 5",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 42,
+      "id": 38,
       "name": "Ruby on Rails - 6",
       "pretty_name": "Brand -> Ruby on Rails - 6",
       "permalink": "brand/ruby-on-rails-6",
-      "parent_id": 40,
-      "taxonomy_id": 12,
+      "parent_id": 36,
+      "taxonomy_id": 10,
       "url_override": null,
       "description": "Ruby on Rails - 6",
       "icon": "/assets/default_taxon.png"
@@ -8972,10 +8972,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;ec8eef17afdfb2e98a5a66b0840c413b&quot;
+ETag: W/&quot;9e4879e9d636d6b0bb6a06fdcfe43526&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 99ed86b3-a9b6-4aa6-a09f-1c3a9bb2cc0a
-X-Runtime: 0.031025
+X-Request-Id: 1dd52bab-419f-45da-804d-a60fddb84f35
+X-Runtime: 0.029798
 Vary: Origin
 Content-Length: 2670
 200 OK
@@ -8991,122 +8991,122 @@ Content-Length: 2670
   "per_page": 500,
   "taxons": [
     {
-      "id": 43,
+      "id": 39,
       "name": "Category",
       "pretty_name": "Category",
       "permalink": "category",
       "parent_id": null,
-      "taxonomy_id": 13,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Category",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 44,
+      "id": 40,
       "name": "Kids",
       "pretty_name": "Category -> Kids",
       "permalink": "category/kids",
-      "parent_id": 43,
-      "taxonomy_id": 13,
+      "parent_id": 39,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Kids",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 45,
+      "id": 41,
       "name": "Boys",
       "pretty_name": "Category -> Kids -> Boys",
       "permalink": "category/kids/boys",
-      "parent_id": 44,
-      "taxonomy_id": 13,
+      "parent_id": 40,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Boys",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 46,
+      "id": 42,
       "name": "Boys Tops",
       "pretty_name": "Category -> Kids -> Boys -> Boys Tops",
       "permalink": "category/kids/boys/boys-tops",
-      "parent_id": 45,
-      "taxonomy_id": 13,
+      "parent_id": 41,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Boys Tops",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 47,
+      "id": 43,
       "name": "Boys Shirts",
       "pretty_name": "Category -> Kids -> Boys -> Boys Tops -> Boys Shirts",
       "permalink": "category/kids/boys/boys-tops/boys-shirts",
-      "parent_id": 46,
-      "taxonomy_id": 13,
+      "parent_id": 42,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Boys Shirts",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 48,
+      "id": 44,
       "name": "Girls",
       "pretty_name": "Category -> Kids -> Girls",
       "permalink": "category/kids/girls",
-      "parent_id": 44,
-      "taxonomy_id": 13,
+      "parent_id": 40,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Girls",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 49,
+      "id": 45,
       "name": "Girls Tops",
       "pretty_name": "Category -> Kids -> Girls -> Girls Tops",
       "permalink": "category/kids/girls/girls-tops",
-      "parent_id": 48,
-      "taxonomy_id": 13,
+      "parent_id": 44,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Girls Tops",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 50,
+      "id": 46,
       "name": "Girls Shirts",
       "pretty_name": "Category -> Kids -> Girls -> Girls Tops -> Girls Shirts",
       "permalink": "category/kids/girls/girls-tops/girls-shirts",
-      "parent_id": 49,
-      "taxonomy_id": 13,
+      "parent_id": 45,
+      "taxonomy_id": 11,
       "url_override": null,
       "description": "Girls Shirts",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 51,
+      "id": 47,
       "name": "Brand",
       "pretty_name": "Brand",
       "permalink": "brand",
       "parent_id": null,
-      "taxonomy_id": 14,
+      "taxonomy_id": 12,
       "url_override": null,
       "description": "Brand",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 52,
+      "id": 48,
       "name": "Ruby on Rails - 7",
       "pretty_name": "Brand -> Ruby on Rails - 7",
       "permalink": "brand/ruby-on-rails-7",
-      "parent_id": 51,
-      "taxonomy_id": 14,
+      "parent_id": 47,
+      "taxonomy_id": 12,
       "url_override": null,
       "description": "Ruby on Rails - 7",
       "icon": "/assets/default_taxon.png"
     },
     {
-      "id": 53,
+      "id": 49,
       "name": "Ruby on Rails - 8",
       "pretty_name": "Brand -> Ruby on Rails - 8",
       "permalink": "brand/ruby-on-rails-8",
-      "parent_id": 51,
-      "taxonomy_id": 14,
+      "parent_id": 47,
+      "taxonomy_id": 12,
       "url_override": null,
       "description": "Ruby on Rails - 8",
       "icon": "/assets/default_taxon.png"
@@ -9149,10 +9149,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;7093590c2d1d907c98a91e8edaf15899&quot;
+ETag: W/&quot;1570725e2664c5d18e02643cb66318a2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7bd21736-89e0-4031-9f7b-e5c83168953e
-X-Runtime: 0.017905
+X-Request-Id: d5f25081-5f29-4ad5-a871-6bcdcb31a71c
+X-Runtime: 0.021240
 Vary: Origin
 Content-Length: 561
 200 OK
@@ -9162,12 +9162,12 @@ Content-Length: 561
 ```json
 [
   {
-    "id": 59,
-    "parent_id": 58,
+    "id": 57,
+    "parent_id": 56,
     "position": 0,
     "name": "brand_x",
     "permalink": "brand/brand_x",
-    "taxonomy_id": 17,
+    "taxonomy_id": 16,
     "lft": 6,
     "rgt": 7,
     "icon_file_name": null,
@@ -9175,8 +9175,8 @@ Content-Length: 561
     "icon_file_size": null,
     "icon_updated_at": null,
     "description": null,
-    "created_at": "2020-09-22T11:39:54.110-04:00",
-    "updated_at": "2020-09-22T11:39:54.172-04:00",
+    "created_at": "2020-09-23T07:16:14.394-04:00",
+    "updated_at": "2020-09-23T07:16:14.454-04:00",
     "meta_title": null,
     "meta_description": null,
     "meta_keywords": null,
@@ -9227,10 +9227,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;8c7f174e5bb61657911b8df4b4644e28&quot;
+ETag: W/&quot;e54796c9d918ab3de8b9a2fe1d3770e9&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8d66f98d-720f-4b43-97d3-18130b7f8cc7
-X-Runtime: 0.010837
+X-Request-Id: 56c7c454-eb19-4e27-945a-3e8da6ba8fde
+X-Runtime: 0.008488
 Vary: Origin
 Content-Length: 144
 200 OK
@@ -9240,10 +9240,10 @@ Content-Length: 144
 ```json
 [
   {
-    "id": 55,
+    "id": 59,
     "name": "Kids",
     "navigation_url": "/shop/kids",
-    "parent_id": 54,
+    "parent_id": 58,
     "lft": 2,
     "depth": 1,
     "highlight": false,
@@ -9287,12 +9287,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c8602b1a18ed1beaca91ff8a4e7c9e86&quot;
+ETag: W/&quot;a0459852a4025c125678d048ba0d1713&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d2c9c5ef-fe75-44ce-acd2-2c258e85a670
-X-Runtime: 0.014606
+X-Request-Id: a0bf9335-cee5-4427-aa75-f78d8d225d3d
+X-Runtime: 0.013386
 Vary: Origin
-Content-Length: 560
+Content-Length: 561
 200 OK
 ```
 
@@ -9300,12 +9300,12 @@ Content-Length: 560
 ```json
 [
   {
-    "id": 20,
-    "parent_id": 19,
+    "id": 53,
+    "parent_id": 52,
     "position": 0,
     "name": "brand_x",
     "permalink": "brand/brand_x",
-    "taxonomy_id": 8,
+    "taxonomy_id": 14,
     "lft": 6,
     "rgt": 7,
     "icon_file_name": null,
@@ -9313,8 +9313,8 @@ Content-Length: 560
     "icon_file_size": null,
     "icon_updated_at": null,
     "description": null,
-    "created_at": "2020-09-22T11:39:52.776-04:00",
-    "updated_at": "2020-09-22T11:39:52.835-04:00",
+    "created_at": "2020-09-23T07:16:13.964-04:00",
+    "updated_at": "2020-09-23T07:16:14.024-04:00",
     "meta_title": null,
     "meta_description": null,
     "meta_keywords": null,
@@ -9359,7 +9359,7 @@ Cookie:
 
 
 ```json
-user[email]=email94%40example.com&user[password]=secret
+user[email]=email70%40example.com&user[password]=secret
 ```
 
 
@@ -9381,11 +9381,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer d237a5adddcd6d7f6a4d3d8dc26fca5217457dcd2ad0af0a
-ETag: W/&quot;715f128e97b43c06e68e687345883877&quot;
+Authorization: Bearer ec50249276a3d6dabab7a700650269ab41b578ac82d7d189
+ETag: W/&quot;a78dc2fdcae61509ce4e8d0edb3b2c39&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7228da4b-72cf-4d72-9f40-dbfdea067c61
-X-Runtime: 0.012451
+X-Request-Id: cfa71fbf-04f9-4a4f-8ea8-1a9fe552831f
+X-Runtime: 0.015670
 Vary: Origin
 Content-Length: 562
 200 OK
@@ -9394,17 +9394,17 @@ Content-Length: 562
 
 ```json
 {
-  "id": 94,
-  "email": "email94@example.com",
+  "id": 70,
+  "email": "email70@example.com",
   "persistence_token": null,
   "perishable_token": null,
   "last_request_at": null,
-  "login": "email94@example.com",
+  "login": "email70@example.com",
   "ship_address_id": null,
   "bill_address_id": null,
-  "created_at": "2020-09-22T11:40:19.037-04:00",
-  "updated_at": "2020-09-22T11:40:19.039-04:00",
-  "spree_api_key": "d237a5adddcd6d7f6a4d3d8dc26fca5217457dcd2ad0af0a",
+  "created_at": "2020-09-23T07:16:18.750-04:00",
+  "updated_at": "2020-09-23T07:16:18.753-04:00",
+  "spree_api_key": "ec50249276a3d6dabab7a700650269ab41b578ac82d7d189",
   "authentication_token": null,
   "deleted_at": null,
   "first_name": null,
@@ -9430,7 +9430,7 @@ Log in and merge an existing guest cart with any existing carts associated with 
 ```plaintext
 POST /api/users/login
 Accept: application/json
-X-Spree-Order-Token: 2P0-IEDS7YloNouaPboD_Q
+X-Spree-Order-Token: 5OXND77hLwUN8yXA2d7bpg
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -9442,7 +9442,7 @@ Cookie:
 
 
 ```json
-user[email]=email95%40example.com&user[password]=secret&order_number=M533050112
+user[email]=email71%40example.com&user[password]=secret&order_number=M731181249
 ```
 
 
@@ -9464,11 +9464,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 6569146a827aad8bbb9884bc0e3679d62f83b62b83c0f77e
-ETag: W/&quot;88e4369d5a2ffd29eb9d397826f00c17&quot;
+Authorization: Bearer 7de751d1cbf8cb61db766de726b4261806ea2a9941d3decd
+ETag: W/&quot;5f611b35d9233ef8830622b70d773fb5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: eebde9c8-8d4f-4fe2-9ba3-bb5f64d6b410
-X-Runtime: 0.016540
+X-Request-Id: 401abe72-ea48-4048-81d8-076fc8b73b18
+X-Runtime: 0.018057
 Vary: Origin
 Content-Length: 562
 200 OK
@@ -9477,17 +9477,17 @@ Content-Length: 562
 
 ```json
 {
-  "id": 95,
-  "email": "email95@example.com",
+  "id": 71,
+  "email": "email71@example.com",
   "persistence_token": null,
   "perishable_token": null,
   "last_request_at": null,
-  "login": "email95@example.com",
+  "login": "email71@example.com",
   "ship_address_id": null,
   "bill_address_id": null,
-  "created_at": "2020-09-22T11:40:19.062-04:00",
-  "updated_at": "2020-09-22T11:40:19.064-04:00",
-  "spree_api_key": "6569146a827aad8bbb9884bc0e3679d62f83b62b83c0f77e",
+  "created_at": "2020-09-23T07:16:18.782-04:00",
+  "updated_at": "2020-09-23T07:16:18.784-04:00",
+  "spree_api_key": "7de751d1cbf8cb61db766de726b4261806ea2a9941d3decd",
   "authentication_token": null,
   "deleted_at": null,
   "first_name": null,
@@ -9513,7 +9513,7 @@ Get user account details, stored addresses, and stored credit cards
 ```plaintext
 GET /api/users/mine
 Accept: application/json
-Authorizat IO N: Bearer dab9ce099597925890922009f4de10b0348dcacfe9de13e5
+Authorizat IO N: Bearer e4237f071ab1a95ac60cafd61b4a5b13f6abb6bec9c7a817
 Host: example.org
 Cookie: 
 ```
@@ -9536,44 +9536,44 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer dab9ce099597925890922009f4de10b0348dcacfe9de13e5
-ETag: W/&quot;b2912558d4553557d8a8194116fc668b&quot;
+Authorization: Bearer e4237f071ab1a95ac60cafd61b4a5b13f6abb6bec9c7a817
+ETag: W/&quot;7c43ea469447dc3e20285ae556127c59&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 90721d4e-643b-4c4e-a0c7-32cf6a68f0c1
-X-Runtime: 0.028252
+X-Request-Id: 7eaac9a2-f221-4dd2-8125-75076b2be7d3
+X-Runtime: 0.031365
 Vary: Origin
-Content-Length: 1541
+Content-Length: 1539
 200 OK
 ```
 
 
 ```json
 {
-  "email": "email98@example.com",
+  "email": "email74@example.com",
   "first_name": null,
   "last_name": null,
-  "id": 100,
+  "id": 74,
   "subscribed": false,
   "addresses": [
     {
-      "id": 58,
+      "id": 15,
       "firstname": "John",
       "lastname": "Smith",
       "full_name": "John Smith",
       "address1": "A Different Road",
       "address2": "Northwest",
       "city": "Herndon",
-      "zipcode": "10053",
+      "zipcode": "10015",
       "phone": "555-555-0199",
       "company": "Company",
       "alternative_phone": "555-555-0199",
-      "country_id": 55,
+      "country_id": 27,
       "country_iso": "US",
-      "state_id": 55,
+      "state_id": 27,
       "state_name": null,
       "state_text": "AL",
       "country": {
-        "id": 55,
+        "id": 27,
         "iso_name": "UNITED STATES",
         "iso": "US",
         "iso3": "USA",
@@ -9583,24 +9583,24 @@ Content-Length: 1541
       "default": true
     },
     {
-      "id": 57,
+      "id": 14,
       "firstname": "John",
       "lastname": "Smith",
       "full_name": "John Smith",
       "address1": "PO Box 1337",
       "address2": "Northwest",
       "city": "Herndon",
-      "zipcode": "10052",
+      "zipcode": "10014",
       "phone": "555-555-0199",
       "company": "Company",
       "alternative_phone": "555-555-0199",
-      "country_id": 55,
+      "country_id": 27,
       "country_iso": "US",
-      "state_id": 55,
+      "state_id": 27,
       "state_name": null,
       "state_text": "AL",
       "country": {
-        "id": 55,
+        "id": 27,
         "iso_name": "UNITED STATES",
         "iso": "US",
         "iso3": "USA",
@@ -9615,10 +9615,10 @@ Content-Length: 1541
       "id": 6,
       "default": true,
       "source": {
-        "id": 8,
+        "id": 6,
         "payment_type": "CreditCard",
         "token": null,
-        "created_at": "2020-09-22T11:40:19.989-04:00",
+        "created_at": "2020-09-23T07:16:19.311-04:00",
         "cc_type": null,
         "last_digits": null,
         "month": null,
@@ -9629,10 +9629,10 @@ Content-Length: 1541
       "id": 7,
       "default": false,
       "source": {
-        "id": 9,
+        "id": 7,
         "payment_type": "ApplePayCard",
         "token": null,
-        "created_at": "2020-09-22T11:40:20.000-04:00",
+        "created_at": "2020-09-23T07:16:19.333-04:00",
         "cc_type": null,
         "last_digits": null,
         "month": null,
@@ -9643,10 +9643,10 @@ Content-Length: 1541
       "id": 8,
       "default": false,
       "source": {
-        "id": 10,
+        "id": 8,
         "payment_type": "PayPalAccount",
         "token": null,
-        "created_at": "2020-09-22T11:40:20.011-04:00",
+        "created_at": "2020-09-23T07:16:19.346-04:00",
         "email": null
       }
     }
@@ -9704,11 +9704,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 393bb44a7f01454a99a272a9427232463bab1930276941cc
-ETag: W/&quot;0a64a238c203e1bda10c494ad3f68906&quot;
+Authorization: Bearer b006c6420a253a8ed6f308587f934c71da8820722fed5e0d
+ETag: W/&quot;3462d369b1e6b7d07ad04e6208d3eee3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2e59e3cf-6d8b-44fc-bc8c-f71553fc49c1
-X-Runtime: 0.023238
+X-Request-Id: d0f0cf92-1039-4c67-909a-c6a2ce065481
+X-Runtime: 0.023804
 Vary: Origin
 Content-Length: 185
 201 Created
@@ -9717,10 +9717,10 @@ Content-Length: 185
 
 ```json
 {
-  "id": 98,
+  "id": 75,
   "email": "test@example.com",
-  "created_at": "2020-09-22T11:40:19.534-04:00",
-  "updated_at": "2020-09-22T11:40:19.536-04:00",
+  "created_at": "2020-09-23T07:16:19.395-04:00",
+  "updated_at": "2020-09-23T07:16:19.397-04:00",
   "subscribed": false,
   "bill_address": null,
   "ship_address": null
@@ -9740,7 +9740,7 @@ Create a user and merge an existing guest cart with any existing carts associate
 ```plaintext
 POST /api/users
 Accept: application/json
-X-Spree-Order-Token: 4vj_CX2h-B0GnWqhc5xLeQ
+X-Spree-Order-Token: w9Y7Bvblf6DCYq2qA6o8XA
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -9752,7 +9752,7 @@ Cookie:
 
 
 ```json
-user[email]=test%40example.com&user[password]=test123&user[password_confirmation]=test123&order_number=M833082120
+user[email]=test%40example.com&user[password]=test123&user[password_confirmation]=test123&order_number=M971685358
 ```
 
 
@@ -9778,11 +9778,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 702d744b80a92bb79aea27cf7f9cc6a58ce70103ce5957c5
-ETag: W/&quot;16544ee427774b8c16713e0e4fe14469&quot;
+Authorization: Bearer 8b083222678c76dbecc7e501feaad0e6b0863e2e26c47c0e
+ETag: W/&quot;940365a6b66ffa95ead436233d0cd461&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 0f4d1c76-1288-4c45-a496-4b785e63544d
-X-Runtime: 0.025850
+X-Request-Id: 66364c21-d389-4c6c-a61b-95bee5bc40a0
+X-Runtime: 0.026483
 Vary: Origin
 Content-Length: 185
 201 Created
@@ -9791,10 +9791,10 @@ Content-Length: 185
 
 ```json
 {
-  "id": 99,
+  "id": 76,
   "email": "test@example.com",
-  "created_at": "2020-09-22T11:40:19.920-04:00",
-  "updated_at": "2020-09-22T11:40:19.922-04:00",
+  "created_at": "2020-09-23T07:16:19.735-04:00",
+  "updated_at": "2020-09-23T07:16:19.736-04:00",
   "subscribed": false,
   "bill_address": null,
   "ship_address": null
@@ -9811,9 +9811,9 @@ Content-Length: 185
 #### Endpoint
 
 ```plaintext
-PUT /api/users/97/subscribe
+PUT /api/users/72/subscribe
 Accept: application/json
-Authorizat IO N: Bearer 52ea8fcde5bcd25e91aa11a455ef4563dc353c96f08c9d18
+Authorizat IO N: Bearer c8eb34367cf9670ce1458d8e588ea13a93d3831b95078ca4
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -9837,11 +9837,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 52ea8fcde5bcd25e91aa11a455ef4563dc353c96f08c9d18
-ETag: W/&quot;e5f2d5af09a4e2ed77783f5466427780&quot;
+Authorization: Bearer c8eb34367cf9670ce1458d8e588ea13a93d3831b95078ca4
+ETag: W/&quot;96ebc868240d29928d2750c92e425e42&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b70c09bc-e527-4c5a-a8b7-8c309a4abb9c
-X-Runtime: 0.018857
+X-Request-Id: 6a285f52-9da8-4e21-9b00-b60920897f01
+X-Runtime: 0.034386
 Vary: Origin
 Content-Length: 187
 200 OK
@@ -9850,10 +9850,10 @@ Content-Length: 187
 
 ```json
 {
-  "id": 97,
-  "email": "email97@example.com",
-  "created_at": "2020-09-22T11:40:19.495-04:00",
-  "updated_at": "2020-09-22T11:40:19.497-04:00",
+  "id": 72,
+  "email": "email72@example.com",
+  "created_at": "2020-09-23T07:16:19.173-04:00",
+  "updated_at": "2020-09-23T07:16:19.175-04:00",
   "subscribed": true,
   "bill_address": null,
   "ship_address": null
@@ -9870,9 +9870,9 @@ Content-Length: 187
 #### Endpoint
 
 ```plaintext
-PUT /api/users/96/unsubscribe
+PUT /api/users/73/unsubscribe
 Accept: application/json
-Authorizat IO N: Bearer 49faea0fb109f5257428f5e9d9851e82e892f7786510bce2
+Authorizat IO N: Bearer 87d1e0a25abff4cee0c7954cac89cbb611d93e19bcd3ecb6
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -9896,11 +9896,11 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-Authorization: Bearer 49faea0fb109f5257428f5e9d9851e82e892f7786510bce2
-ETag: W/&quot;9c43e3d1c208bf2ae962b30c8a0ba407&quot;
+Authorization: Bearer 87d1e0a25abff4cee0c7954cac89cbb611d93e19bcd3ecb6
+ETag: W/&quot;bf94bf287a4580385d25a787a67642fe&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9236bdeb-a318-4cd5-b64b-68b2b4eae837
-X-Runtime: 0.033290
+X-Request-Id: b7feebca-0bca-455b-96ac-2d1646fdbb8e
+X-Runtime: 0.019795
 Vary: Origin
 Content-Length: 188
 200 OK
@@ -9909,10 +9909,10 @@ Content-Length: 188
 
 ```json
 {
-  "id": 96,
-  "email": "email96@example.com",
-  "created_at": "2020-09-22T11:40:19.444-04:00",
-  "updated_at": "2020-09-22T11:40:19.446-04:00",
+  "id": 73,
+  "email": "email73@example.com",
+  "created_at": "2020-09-23T07:16:19.228-04:00",
+  "updated_at": "2020-09-23T07:16:19.230-04:00",
   "subscribed": false,
   "bill_address": null,
   "ship_address": null
@@ -9933,7 +9933,7 @@ Content-Length: 188
 #### Endpoint
 
 ```plaintext
-GET /api/variants/29
+GET /api/variants/113
 Host: example.org
 Cookie: 
 ```
@@ -9956,27 +9956,27 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;d5d1872731559940b372c206d701ac3f&quot;
+ETag: W/&quot;9e50be92868c79dda427aac332890325&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 86e73063-16f0-4f39-a4fe-a0868f77054a
-X-Runtime: 0.131058
+X-Request-Id: e6437a28-fe11-4d57-a41d-9a1e5614f9ee
+X-Runtime: 0.084228
 Vary: Origin
-Content-Length: 2087
+Content-Length: 2096
 200 OK
 ```
 
 
 ```json
 {
-  "id": 29,
-  "name": "Product #20 - 1104",
-  "sku": "SKU-28",
+  "id": 113,
+  "name": "Product #62 - 9372",
+  "sku": "SKU-112",
   "weight": "0.0",
   "height": null,
   "width": null,
   "depth": null,
   "is_master": false,
-  "slug": "product-20-1104",
+  "slug": "product-62-9372",
   "description": "As seen on TV!",
   "track_inventory": true,
   "lead_time": 2,
@@ -9991,11 +9991,11 @@ Content-Length: 2087
   "is_destroyed": false,
   "option_values": [
     {
-      "id": 9,
-      "name": "Size-9",
+      "id": 51,
+      "name": "Size-51",
       "presentation": "S",
-      "option_type_name": "foo-size-9",
-      "option_type_id": 9,
+      "option_type_name": "foo-size-51",
+      "option_type_id": 51,
       "option_type_presentation": "Size",
       "position": 1
     }
@@ -10007,16 +10007,16 @@ Content-Length: 2087
       "attachment_content_type": "image/jpeg",
       "attachment_file_name": "thinking-cat.jpg",
       "type": "Spree::Image",
-      "attachment_updated_at": "2020-09-22T11:39:50.990-04:00",
+      "attachment_updated_at": "2020-09-23T07:16:22.913-04:00",
       "attachment_width": 489,
       "attachment_height": 490,
       "alt": null,
       "viewable_type": "Spree::Variant",
-      "viewable_id": 29,
-      "mini_url": "/spree/products/1/mini/thinking-cat.jpg?1600789190",
-      "small_url": "/spree/products/1/small/thinking-cat.jpg?1600789190",
-      "product_url": "/spree/products/1/product/thinking-cat.jpg?1600789190",
-      "large_url": "/spree/products/1/large/thinking-cat.jpg?1600789190"
+      "viewable_id": 113,
+      "mini_url": "/spree/products/1/mini/thinking-cat.jpg?1600859782",
+      "small_url": "/spree/products/1/small/thinking-cat.jpg?1600859782",
+      "product_url": "/spree/products/1/product/thinking-cat.jpg?1600859782",
+      "large_url": "/spree/products/1/large/thinking-cat.jpg?1600859782"
     }
   ],
   "variant_properties": [
@@ -10027,8 +10027,8 @@ Content-Length: 2087
   ],
   "prices": [
     {
-      "id": 27,
-      "vendor_id": 64,
+      "id": 81,
+      "vendor_id": 195,
       "price": "10.0",
       "original_price": "10.0",
       "discount_percent": 0.0,
@@ -10052,8 +10052,8 @@ Content-Length: 2087
       }
     },
     {
-      "id": 28,
-      "vendor_id": 65,
+      "id": 82,
+      "vendor_id": 196,
       "price": "20.0",
       "original_price": "20.0",
       "discount_percent": 0.0,
@@ -10090,7 +10090,7 @@ Content-Length: 2087
 #### Endpoint
 
 ```plaintext
-GET /api/variants/31
+GET /api/variants/115
 Host: example.org
 Cookie: 
 ```
@@ -10113,27 +10113,27 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c28734c34e35b36c0a6a17daf037ed0c&quot;
+ETag: W/&quot;c229b31659a2a17388973c5a62da9b64&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ff6e4e7d-9d29-415b-874c-b086e5cb6912
-X-Runtime: 0.083980
+X-Request-Id: b7c22c49-ed52-4ac6-b335-456197f183fd
+X-Runtime: 0.071390
 Vary: Origin
-Content-Length: 2728
+Content-Length: 2733
 200 OK
 ```
 
 
 ```json
 {
-  "id": 31,
-  "name": "Product #21 - 9851",
-  "sku": "SKU-30",
+  "id": 115,
+  "name": "Product #63 - 9235",
+  "sku": "SKU-114",
   "weight": "0.0",
   "height": null,
   "width": null,
   "depth": null,
   "is_master": false,
-  "slug": "product-21-9851",
+  "slug": "product-63-9235",
   "description": "As seen on TV!",
   "track_inventory": true,
   "lead_time": 2,
@@ -10148,11 +10148,11 @@ Content-Length: 2728
   "is_destroyed": false,
   "option_values": [
     {
-      "id": 10,
-      "name": "Size-10",
+      "id": 52,
+      "name": "Size-52",
       "presentation": "S",
-      "option_type_name": "foo-size-10",
-      "option_type_id": 10,
+      "option_type_name": "foo-size-52",
+      "option_type_id": 52,
       "option_type_presentation": "Size",
       "position": 1
     }
@@ -10164,16 +10164,16 @@ Content-Length: 2728
       "attachment_content_type": "image/jpeg",
       "attachment_file_name": "thinking-cat.jpg",
       "type": "Spree::Image",
-      "attachment_updated_at": "2020-09-22T11:39:51.571-04:00",
+      "attachment_updated_at": "2020-09-23T07:16:23.416-04:00",
       "attachment_width": 489,
       "attachment_height": 490,
       "alt": null,
       "viewable_type": "Spree::Variant",
-      "viewable_id": 31,
-      "mini_url": "/spree/products/2/mini/thinking-cat.jpg?1600789191",
-      "small_url": "/spree/products/2/small/thinking-cat.jpg?1600789191",
-      "product_url": "/spree/products/2/product/thinking-cat.jpg?1600789191",
-      "large_url": "/spree/products/2/large/thinking-cat.jpg?1600789191"
+      "viewable_id": 115,
+      "mini_url": "/spree/products/2/mini/thinking-cat.jpg?1600859783",
+      "small_url": "/spree/products/2/small/thinking-cat.jpg?1600859783",
+      "product_url": "/spree/products/2/product/thinking-cat.jpg?1600859783",
+      "large_url": "/spree/products/2/large/thinking-cat.jpg?1600859783"
     }
   ],
   "variant_properties": [
@@ -10184,8 +10184,8 @@ Content-Length: 2728
   ],
   "prices": [
     {
-      "id": 30,
-      "vendor_id": 71,
+      "id": 84,
+      "vendor_id": 202,
       "price": "10.0",
       "original_price": "10.0",
       "discount_percent": 0.0,
@@ -10209,8 +10209,8 @@ Content-Length: 2728
       }
     },
     {
-      "id": 31,
-      "vendor_id": 72,
+      "id": 85,
+      "vendor_id": 203,
       "price": "20.0",
       "original_price": "20.0",
       "discount_percent": 0.0,
@@ -10305,7 +10305,7 @@ Content-Length: 2728
 #### Endpoint
 
 ```plaintext
-GET /api/variants/33
+GET /api/variants/117
 Host: example.org
 Cookie: 
 ```
@@ -10328,27 +10328,27 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;fc412ea0082f9b3be307cb724a5d9dd2&quot;
+ETag: W/&quot;54a632bc38ec771857d695e8b865129d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ee9a6c2a-3b3f-4b7d-b765-d57010e4ea8f
-X-Runtime: 0.055940
+X-Request-Id: 8911cab0-d189-4059-ad96-d6be4b8f7ffa
+X-Runtime: 0.058259
 Vary: Origin
-Content-Length: 2434
+Content-Length: 2437
 200 OK
 ```
 
 
 ```json
 {
-  "id": 33,
-  "name": "Product #22 - 2000",
-  "sku": "SKU-32",
+  "id": 117,
+  "name": "Product #64 - 643",
+  "sku": "SKU-116",
   "weight": "0.0",
   "height": null,
   "width": null,
   "depth": null,
   "is_master": false,
-  "slug": "product-22-2000",
+  "slug": "product-64-643",
   "description": "As seen on TV!",
   "track_inventory": true,
   "lead_time": 2,
@@ -10363,11 +10363,11 @@ Content-Length: 2434
   "is_destroyed": false,
   "option_values": [
     {
-      "id": 11,
-      "name": "Size-11",
+      "id": 53,
+      "name": "Size-53",
       "presentation": "S",
-      "option_type_name": "foo-size-11",
-      "option_type_id": 11,
+      "option_type_name": "foo-size-53",
+      "option_type_id": 53,
       "option_type_presentation": "Size",
       "position": 1
     }
@@ -10379,16 +10379,16 @@ Content-Length: 2434
       "attachment_content_type": "image/jpeg",
       "attachment_file_name": "thinking-cat.jpg",
       "type": "Spree::Image",
-      "attachment_updated_at": "2020-09-22T11:39:52.144-04:00",
+      "attachment_updated_at": "2020-09-23T07:16:23.917-04:00",
       "attachment_width": 489,
       "attachment_height": 490,
       "alt": null,
       "viewable_type": "Spree::Variant",
-      "viewable_id": 33,
-      "mini_url": "/spree/products/3/mini/thinking-cat.jpg?1600789192",
-      "small_url": "/spree/products/3/small/thinking-cat.jpg?1600789192",
-      "product_url": "/spree/products/3/product/thinking-cat.jpg?1600789192",
-      "large_url": "/spree/products/3/large/thinking-cat.jpg?1600789192"
+      "viewable_id": 117,
+      "mini_url": "/spree/products/3/mini/thinking-cat.jpg?1600859783",
+      "small_url": "/spree/products/3/small/thinking-cat.jpg?1600859783",
+      "product_url": "/spree/products/3/product/thinking-cat.jpg?1600859783",
+      "large_url": "/spree/products/3/large/thinking-cat.jpg?1600859783"
     }
   ],
   "variant_properties": [
@@ -10399,8 +10399,8 @@ Content-Length: 2434
   ],
   "prices": [
     {
-      "id": 33,
-      "vendor_id": 78,
+      "id": 87,
+      "vendor_id": 209,
       "price": "10.0",
       "original_price": "10.0",
       "discount_percent": 0.0,
@@ -10424,8 +10424,8 @@ Content-Length: 2434
       }
     },
     {
-      "id": 34,
-      "vendor_id": 79,
+      "id": 88,
+      "vendor_id": 210,
       "price": "20.0",
       "original_price": "20.0",
       "discount_percent": 0.0,
@@ -10503,7 +10503,7 @@ Content-Length: 2434
 ```plaintext
 GET /api/wallet_payment_sources
 Accept: application/json
-Authorizat IO N: Bearer 1ab33dabf0850181dfa8a1c2841812b60ab2b06bd1367c97
+Authorizat IO N: Bearer 6c560a557048564fb8dafa6db5bdbcc435820c4c8dc5db4b
 Host: example.org
 Cookie: 
 ```
@@ -10526,12 +10526,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;a127cda0a75239c39efd6bae6323c72e&quot;
+ETag: W/&quot;bb65f63694d137cdd96ce3b2468b00aa&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7f0fe427-bd61-4862-8f98-43ca6457d3d6
-X-Runtime: 0.016108
+X-Request-Id: e5a67d68-5628-4b32-a832-7c0f6f49fc51
+X-Runtime: 0.017451
 Vary: Origin
-Content-Length: 206
+Content-Length: 205
 200 OK
 ```
 
@@ -10540,12 +10540,12 @@ Content-Length: 206
 [
   {
     "id": 2,
-    "user_id": 14,
+    "user_id": 5,
     "payment_source_type": "SolidusPaypalBraintree::Source",
     "payment_source_id": 2,
     "default": false,
-    "created_at": "2020-09-22T11:39:54.469-04:00",
-    "updated_at": "2020-09-22T11:39:54.469-04:00"
+    "created_at": "2020-09-23T07:16:03.376-04:00",
+    "updated_at": "2020-09-23T07:16:03.376-04:00"
   }
 ]
 ```
@@ -10560,9 +10560,9 @@ Content-Length: 206
 #### Endpoint
 
 ```plaintext
-DELETE /api/wallet_payment_sources/1
+DELETE /api/wallet_payment_sources/3
 Accept: application/json
-Authorizat IO N: Bearer d8f6be427e7f51ca3556d1793566f5cc72f5df4ce41175e6
+Authorizat IO N: Bearer a0b837a5221634120043cdc79cdd9826981fb6eec7642efc
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -10586,8 +10586,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: b6e66bc8-973e-4a91-a71b-79c0d97d7135
-X-Runtime: 0.055680
+X-Request-Id: e48179f8-7542-4d93-b492-27e6401473f5
+X-Runtime: 0.019800
 Vary: Origin
 204 No Content
 ```
@@ -10603,9 +10603,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-POST /api/wallet_payment_sources/3/default
+POST /api/wallet_payment_sources/1/default
 Accept: application/json
-Authorizat IO N: Bearer c2c85b0807643d644f121d2b2bdedc06d18677a6922fc9d6
+Authorizat IO N: Bearer 941b4725d900bcbca30e2f53a6918492f131be092d142c67
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -10629,8 +10629,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 77ead3ed-a510-4089-ae6f-ffe497d9fc12
-X-Runtime: 0.013045
+X-Request-Id: 7e975d10-ed30-4ddd-b869-6acfdb1e5568
+X-Runtime: 0.047198
 Vary: Origin
 204 No Content
 ```
@@ -10640,7 +10640,7 @@ Vary: Origin
 
 # Wished Products
 
-Destroy a wished product. Users can destroy their own wished_products, admins can destroy any.
+Get all wishlists associated with the current api user
 
 ## Create a wished product
 
@@ -10652,7 +10652,7 @@ Destroy a wished product. Users can destroy their own wished_products, admins ca
 ```plaintext
 POST /api/wished_products
 Accept: application/json
-Authorizat IO N: Bearer 2a0e4b2c7c1ca77de69406fc15b6cc661028f50176823a9a
+Authorizat IO N: Bearer 930f4f7e612e2cf9704be3377b2323558c4ebfa1cf516041
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -10664,7 +10664,7 @@ Cookie:
 
 
 ```json
-wished_product[wishlist_id]=40&wished_product[variant_id]=163&wished_product[quantity]=2&wished_product[remark]=Foo+bar
+wished_product[wishlist_id]=39&wished_product[variant_id]=85&wished_product[quantity]=2&wished_product[remark]=Foo+bar
 ```
 
 
@@ -10687,24 +10687,24 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;1d45e649803f7271cd8d790e07b74055&quot;
+ETag: W/&quot;b8c220d8d89b1e131eca511fc3d83c04&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 1b1fd014-c641-45ac-abd7-e8047284b356
-X-Runtime: 0.016460
+X-Request-Id: c1fd71a5-8398-4ce5-9844-c8c467821156
+X-Runtime: 0.014918
 Vary: Origin
-Content-Length: 120
+Content-Length: 119
 201 Created
 ```
 
 
 ```json
 {
-  "id": 31,
-  "wishlist_id": 40,
-  "variant_id": 163,
+  "id": 28,
+  "wishlist_id": 39,
+  "variant_id": 85,
   "quantity": 2,
   "remark": "Foo bar",
-  "created_at": "2020-09-22T11:40:15.863-04:00"
+  "created_at": "2020-09-23T07:16:18.322-04:00"
 }
 ```
 
@@ -10718,9 +10718,9 @@ Content-Length: 120
 #### Endpoint
 
 ```plaintext
-DELETE /api/wished_products/10
+DELETE /api/wished_products/16
 Accept: application/json
-Authorizat IO N: Bearer 0e153fae0b971efa55654750f668979b7fb6c2a7cfa90bca
+Authorizat IO N: Bearer ae86c42a075613c8ce725b614eade09ac7450a988c87306e
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -10744,8 +10744,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: 9c1ce158-3e11-45c9-ac44-63d6b01ee659
-X-Runtime: 0.041145
+X-Request-Id: 99ef6c36-0c6f-42c1-b404-03fa3a9691f0
+X-Runtime: 0.014438
 Vary: Origin
 204 No Content
 ```
@@ -10761,9 +10761,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-GET /api/wished_products/28
+GET /api/wished_products/29
 Accept: application/json
-Authorizat IO N: Bearer 177f6f9220e1a113f42e83773d78c2cae4ec29a9042b6319
+Authorizat IO N: Bearer dba5678b01ada9e8771731269f57b0e33bf7a5cc6f0cce63
 Host: example.org
 Cookie: 
 ```
@@ -10786,24 +10786,24 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;3318fb5ff50e69b293ba0b5c8ef18803&quot;
+ETag: W/&quot;a40744e663b90bfaaea254c892ec441a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 839a9d52-59dc-4339-8ff0-4a4683d4403f
-X-Runtime: 0.012349
+X-Request-Id: 1b6ab3df-729a-4fee-a277-ee71555ceaef
+X-Runtime: 0.015047
 Vary: Origin
-Content-Length: 115
+Content-Length: 114
 200 OK
 ```
 
 
 ```json
 {
-  "id": 28,
-  "wishlist_id": 39,
-  "variant_id": 157,
+  "id": 29,
+  "wishlist_id": 40,
+  "variant_id": 87,
   "quantity": 1,
   "remark": null,
-  "created_at": "2020-09-22T11:40:15.378-04:00"
+  "created_at": "2020-09-23T07:16:18.484-04:00"
 }
 ```
 
@@ -10819,7 +10819,7 @@ Content-Length: 115
 ```plaintext
 GET /api/wished_products
 Accept: application/json
-Authorizat IO N: Bearer e58b87b7ae9f4d25c8808b728f576988bd9053a6158ddeb7
+Authorizat IO N: Bearer c48177b5393feafced7a6916940a76fa0954d4e635615f3c
 Host: example.org
 Cookie: 
 ```
@@ -10848,103 +10848,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;87559960b86b44da667169a08ec5d56a&quot;
+ETag: W/&quot;0df3b33f4ddfe31c1d1818c859a9df43&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 1c183ccb-31d6-43ca-9ac4-8089ff49194a
-X-Runtime: 0.013110
+X-Request-Id: fb114582-3535-4655-8601-31835dd65d35
+X-Runtime: 0.011316
 Vary: Origin
-Content-Length: 436
-200 OK
-```
-
-
-```json
-{
-  "wished_products": [
-    {
-      "id": 18,
-      "wishlist_id": 33,
-      "variant_id": 137,
-      "quantity": 1,
-      "remark": null,
-      "created_at": "2020-09-22T11:40:13.604-04:00"
-    },
-    {
-      "id": 17,
-      "wishlist_id": 32,
-      "variant_id": 135,
-      "quantity": 1,
-      "remark": null,
-      "created_at": "2020-09-22T11:40:13.424-04:00"
-    },
-    {
-      "id": 16,
-      "wishlist_id": 31,
-      "variant_id": 133,
-      "quantity": 1,
-      "remark": null,
-      "created_at": "2020-09-22T11:40:13.291-04:00"
-    }
-  ],
-  "count": 3,
-  "total_count": 3,
-  "current_page": 1,
-  "pages": 1,
-  "per_page": 25
-}
-```
-
-
-
-## Get all wished products with variants
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-GET /api/wished_products?with_variant=true
-Accept: application/json
-Authorizat IO N: Bearer 654c5e668ea2c3ecc6656128614c48925c93d458fe5505d9
-Host: example.org
-Cookie: 
-```
-
-`GET /api/wished_products`
-
-#### Parameters
-
-
-```json
-with_variant: true
-```
-
-
-| Name | Description |
-|:-----|:------------|
-| q[wishlist_user_id_eq]  | Anything accessible by ransack can be passed in as query params |
-| q[wishlist_id_eq]  | Anything accessible by ransack can be passed in as query params |
-| with_variant  | Include this parameter if you would like the variant to be returned in the                              response with the wished product |
-
-
-
-### Response
-
-```plaintext
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Type: application/json; charset=utf-8
-ETag: W/&quot;afeba6b10192bcdae373a09d3b1271a3&quot;
-Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c0fdf417-f5d7-4193-a0ca-1e448092b584
-X-Runtime: 0.105534
-Vary: Origin
-Content-Length: 2413
+Content-Length: 433
 200 OK
 ```
 
@@ -10954,168 +10863,27 @@ Content-Length: 2413
   "wished_products": [
     {
       "id": 21,
-      "wishlist_id": 36,
-      "variant_id": 143,
+      "wishlist_id": 34,
+      "variant_id": 69,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:14.090-04:00",
-      "variant": {
-        "id": 143,
-        "name": "Product #77 - 9525",
-        "sku": "SKU-142",
-        "weight": "0.0",
-        "height": null,
-        "width": null,
-        "depth": null,
-        "is_master": false,
-        "slug": "product-77-9525",
-        "description": "As seen on TV!",
-        "track_inventory": true,
-        "cost_price": "17.0",
-        "lead_time": 2,
-        "is_registry": false,
-        "discontinued": false,
-        "price": null,
-        "display_price": "",
-        "options_text": "Size: S",
-        "in_stock": false,
-        "is_backorderable": false,
-        "total_on_hand": 0,
-        "is_destroyed": false,
-        "option_values": [
-          {
-            "id": 66,
-            "name": "Size-66",
-            "presentation": "S",
-            "option_type_name": "foo-size-66",
-            "option_type_id": 66,
-            "option_type_presentation": "Size",
-            "position": 1
-          }
-        ],
-        "images": [
-
-        ],
-        "variant_properties": [
-
-        ],
-        "stock_items": [
-
-        ],
-        "prices": [
-
-        ]
-      }
+      "created_at": "2020-09-23T07:16:16.816-04:00"
     },
     {
       "id": 20,
-      "wishlist_id": 35,
-      "variant_id": 141,
+      "wishlist_id": 33,
+      "variant_id": 67,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:13.950-04:00",
-      "variant": {
-        "id": 141,
-        "name": "Product #76 - 9177",
-        "sku": "SKU-140",
-        "weight": "0.0",
-        "height": null,
-        "width": null,
-        "depth": null,
-        "is_master": false,
-        "slug": "product-76-9177",
-        "description": "As seen on TV!",
-        "track_inventory": true,
-        "cost_price": "17.0",
-        "lead_time": 2,
-        "is_registry": false,
-        "discontinued": false,
-        "price": null,
-        "display_price": "",
-        "options_text": "Size: S",
-        "in_stock": false,
-        "is_backorderable": false,
-        "total_on_hand": 0,
-        "is_destroyed": false,
-        "option_values": [
-          {
-            "id": 65,
-            "name": "Size-65",
-            "presentation": "S",
-            "option_type_name": "foo-size-65",
-            "option_type_id": 65,
-            "option_type_presentation": "Size",
-            "position": 1
-          }
-        ],
-        "images": [
-
-        ],
-        "variant_properties": [
-
-        ],
-        "stock_items": [
-
-        ],
-        "prices": [
-
-        ]
-      }
+      "created_at": "2020-09-23T07:16:16.691-04:00"
     },
     {
       "id": 19,
-      "wishlist_id": 34,
-      "variant_id": 139,
+      "wishlist_id": 32,
+      "variant_id": 65,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:13.800-04:00",
-      "variant": {
-        "id": 139,
-        "name": "Product #75 - 7499",
-        "sku": "SKU-138",
-        "weight": "0.0",
-        "height": null,
-        "width": null,
-        "depth": null,
-        "is_master": false,
-        "slug": "product-75-7499",
-        "description": "As seen on TV!",
-        "track_inventory": true,
-        "cost_price": "17.0",
-        "lead_time": 2,
-        "is_registry": false,
-        "discontinued": false,
-        "price": null,
-        "display_price": "",
-        "options_text": "Size: S",
-        "in_stock": false,
-        "is_backorderable": false,
-        "total_on_hand": 0,
-        "is_destroyed": false,
-        "option_values": [
-          {
-            "id": 64,
-            "name": "Size-64",
-            "presentation": "S",
-            "option_type_name": "foo-size-64",
-            "option_type_id": 64,
-            "option_type_presentation": "Size",
-            "position": 1
-          }
-        ],
-        "images": [
-
-        ],
-        "variant_properties": [
-
-        ],
-        "stock_items": [
-
-        ],
-        "prices": [
-
-        ]
-      }
+      "created_at": "2020-09-23T07:16:16.567-04:00"
     }
   ],
   "count": 3,
@@ -11138,7 +10906,7 @@ Content-Length: 2413
 ```plaintext
 GET /api/wished_products/mine?with_variant=true
 Accept: application/json
-Authorizat IO N: Bearer b98bb3838358572703bb809b83c63f8b429686a453b13dab
+Authorizat IO N: Bearer dcbbc5d1d0cd8ac6d46a261b2ed4552cad0d69db0dc95bc1
 Host: example.org
 Cookie: 
 ```
@@ -11170,12 +10938,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6829ac54a53a96cd14e40774e269e1b7&quot;
+ETag: W/&quot;d89ac9ed963a6470fe65930496293c72&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c14a0d63-1dfd-452b-9e31-fdf320edf8c2
-X-Runtime: 0.105457
+X-Request-Id: 481bac55-03bf-4ff2-bd34-cd9fcaa834e8
+X-Runtime: 0.125723
 Vary: Origin
-Content-Length: 2353
+Content-Length: 2344
 200 OK
 ```
 
@@ -11184,22 +10952,22 @@ Content-Length: 2353
 {
   "wished_products": [
     {
-      "id": 25,
-      "wishlist_id": 38,
-      "variant_id": 151,
+      "id": 13,
+      "wishlist_id": 30,
+      "variant_id": 53,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:14.840-04:00",
+      "created_at": "2020-09-23T07:16:15.620-04:00",
       "variant": {
-        "id": 151,
-        "name": "Product #81 - 8989",
-        "sku": "SKU-150",
+        "id": 53,
+        "name": "Product #32 - 6447",
+        "sku": "SKU-52",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-81-8989",
+        "slug": "product-32-6447",
         "description": "As seen on TV!",
         "track_inventory": true,
         "lead_time": 2,
@@ -11214,11 +10982,11 @@ Content-Length: 2353
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 70,
-            "name": "Size-70",
+            "id": 21,
+            "name": "Size-21",
             "presentation": "S",
-            "option_type_name": "foo-size-70",
-            "option_type_id": 70,
+            "option_type_name": "foo-size-21",
+            "option_type_id": 21,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -11238,22 +11006,22 @@ Content-Length: 2353
       }
     },
     {
-      "id": 26,
-      "wishlist_id": 38,
-      "variant_id": 153,
+      "id": 14,
+      "wishlist_id": 30,
+      "variant_id": 55,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:14.973-04:00",
+      "created_at": "2020-09-23T07:16:15.736-04:00",
       "variant": {
-        "id": 153,
-        "name": "Product #82 - 9834",
-        "sku": "SKU-152",
+        "id": 55,
+        "name": "Product #33 - 5049",
+        "sku": "SKU-54",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-82-9834",
+        "slug": "product-33-5049",
         "description": "As seen on TV!",
         "track_inventory": true,
         "lead_time": 2,
@@ -11268,11 +11036,11 @@ Content-Length: 2353
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 71,
-            "name": "Size-71",
+            "id": 22,
+            "name": "Size-22",
             "presentation": "S",
-            "option_type_name": "foo-size-71",
-            "option_type_id": 71,
+            "option_type_name": "foo-size-22",
+            "option_type_id": 22,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -11292,22 +11060,22 @@ Content-Length: 2353
       }
     },
     {
-      "id": 27,
-      "wishlist_id": 38,
-      "variant_id": 155,
+      "id": 15,
+      "wishlist_id": 30,
+      "variant_id": 57,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:15.091-04:00",
+      "created_at": "2020-09-23T07:16:15.875-04:00",
       "variant": {
-        "id": 155,
-        "name": "Product #83 - 2937",
-        "sku": "SKU-154",
+        "id": 57,
+        "name": "Product #34 - 9093",
+        "sku": "SKU-56",
         "weight": "0.0",
         "height": null,
         "width": null,
         "depth": null,
         "is_master": false,
-        "slug": "product-83-2937",
+        "slug": "product-34-9093",
         "description": "As seen on TV!",
         "track_inventory": true,
         "lead_time": 2,
@@ -11322,11 +11090,243 @@ Content-Length: 2353
         "is_destroyed": false,
         "option_values": [
           {
-            "id": 72,
-            "name": "Size-72",
+            "id": 23,
+            "name": "Size-23",
             "presentation": "S",
-            "option_type_name": "foo-size-72",
-            "option_type_id": 72,
+            "option_type_name": "foo-size-23",
+            "option_type_id": 23,
+            "option_type_presentation": "Size",
+            "position": 1
+          }
+        ],
+        "images": [
+
+        ],
+        "variant_properties": [
+
+        ],
+        "stock_items": [
+
+        ],
+        "prices": [
+
+        ]
+      }
+    }
+  ],
+  "count": 3,
+  "total_count": 3,
+  "current_page": 1,
+  "pages": 1,
+  "per_page": 25
+}
+```
+
+
+
+## Get all wished products with variants
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/wished_products?with_variant=true
+Accept: application/json
+Authorizat IO N: Bearer 7872acc64fd9ff43041e42d156e43a943249ca6edd97cba0
+Host: example.org
+Cookie: 
+```
+
+`GET /api/wished_products`
+
+#### Parameters
+
+
+```json
+with_variant: true
+```
+
+
+| Name | Description |
+|:-----|:------------|
+| q[wishlist_user_id_eq]  | Anything accessible by ransack can be passed in as query params |
+| q[wishlist_id_eq]  | Anything accessible by ransack can be passed in as query params |
+| with_variant  | Include this parameter if you would like the variant to be returned in the                              response with the wished product |
+
+
+
+### Response
+
+```plaintext
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;40e45676b60ab68a646237ac3f314c13&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 284bee62-3604-4472-8cdb-a236acb14873
+X-Runtime: 0.114090
+Vary: Origin
+Content-Length: 2404
+200 OK
+```
+
+
+```json
+{
+  "wished_products": [
+    {
+      "id": 24,
+      "wishlist_id": 37,
+      "variant_id": 75,
+      "quantity": 1,
+      "remark": null,
+      "created_at": "2020-09-23T07:16:17.291-04:00",
+      "variant": {
+        "id": 75,
+        "name": "Product #43 - 7434",
+        "sku": "SKU-74",
+        "weight": "0.0",
+        "height": null,
+        "width": null,
+        "depth": null,
+        "is_master": false,
+        "slug": "product-43-7434",
+        "description": "As seen on TV!",
+        "track_inventory": true,
+        "cost_price": "17.0",
+        "lead_time": 2,
+        "is_registry": false,
+        "discontinued": false,
+        "price": null,
+        "display_price": "",
+        "options_text": "Size: S",
+        "in_stock": false,
+        "is_backorderable": false,
+        "total_on_hand": 0,
+        "is_destroyed": false,
+        "option_values": [
+          {
+            "id": 32,
+            "name": "Size-32",
+            "presentation": "S",
+            "option_type_name": "foo-size-32",
+            "option_type_id": 32,
+            "option_type_presentation": "Size",
+            "position": 1
+          }
+        ],
+        "images": [
+
+        ],
+        "variant_properties": [
+
+        ],
+        "stock_items": [
+
+        ],
+        "prices": [
+
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "wishlist_id": 36,
+      "variant_id": 73,
+      "quantity": 1,
+      "remark": null,
+      "created_at": "2020-09-23T07:16:17.158-04:00",
+      "variant": {
+        "id": 73,
+        "name": "Product #42 - 2391",
+        "sku": "SKU-72",
+        "weight": "0.0",
+        "height": null,
+        "width": null,
+        "depth": null,
+        "is_master": false,
+        "slug": "product-42-2391",
+        "description": "As seen on TV!",
+        "track_inventory": true,
+        "cost_price": "17.0",
+        "lead_time": 2,
+        "is_registry": false,
+        "discontinued": false,
+        "price": null,
+        "display_price": "",
+        "options_text": "Size: S",
+        "in_stock": false,
+        "is_backorderable": false,
+        "total_on_hand": 0,
+        "is_destroyed": false,
+        "option_values": [
+          {
+            "id": 31,
+            "name": "Size-31",
+            "presentation": "S",
+            "option_type_name": "foo-size-31",
+            "option_type_id": 31,
+            "option_type_presentation": "Size",
+            "position": 1
+          }
+        ],
+        "images": [
+
+        ],
+        "variant_properties": [
+
+        ],
+        "stock_items": [
+
+        ],
+        "prices": [
+
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "wishlist_id": 35,
+      "variant_id": 71,
+      "quantity": 1,
+      "remark": null,
+      "created_at": "2020-09-23T07:16:17.016-04:00",
+      "variant": {
+        "id": 71,
+        "name": "Product #41 - 1389",
+        "sku": "SKU-70",
+        "weight": "0.0",
+        "height": null,
+        "width": null,
+        "depth": null,
+        "is_master": false,
+        "slug": "product-41-1389",
+        "description": "As seen on TV!",
+        "track_inventory": true,
+        "cost_price": "17.0",
+        "lead_time": 2,
+        "is_registry": false,
+        "discontinued": false,
+        "price": null,
+        "display_price": "",
+        "options_text": "Size: S",
+        "in_stock": false,
+        "is_backorderable": false,
+        "total_on_hand": 0,
+        "is_destroyed": false,
+        "option_values": [
+          {
+            "id": 30,
+            "name": "Size-30",
+            "presentation": "S",
+            "option_type_name": "foo-size-30",
+            "option_type_id": 30,
             "option_type_presentation": "Size",
             "position": 1
           }
@@ -11366,7 +11366,7 @@ Content-Length: 2353
 ```plaintext
 GET /api/wished_products/mine
 Accept: application/json
-Authorizat IO N: Bearer a926975a8913321a247bba240212e22d26a1362d53716db7
+Authorizat IO N: Bearer 5f5d35c25f5482d03ac2d2cf78f935615e9c1277ce9cd25c
 Host: example.org
 Cookie: 
 ```
@@ -11394,12 +11394,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;cbee39966b70c733be025cb2ccdeb4f2&quot;
+ETag: W/&quot;7ad487e3a55dcdd5e7964b791eec9041&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8e5b382e-b28c-4335-9937-4cd60268f88f
-X-Runtime: 0.012378
+X-Request-Id: 49a7634e-944e-428d-8b3c-eae0ba14a1bd
+X-Runtime: 0.037900
 Vary: Origin
-Content-Length: 436
+Content-Length: 433
 200 OK
 ```
 
@@ -11408,28 +11408,28 @@ Content-Length: 436
 {
   "wished_products": [
     {
-      "id": 22,
-      "wishlist_id": 37,
-      "variant_id": 145,
+      "id": 10,
+      "wishlist_id": 29,
+      "variant_id": 47,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:14.397-04:00"
+      "created_at": "2020-09-23T07:16:15.156-04:00"
     },
     {
-      "id": 23,
-      "wishlist_id": 37,
-      "variant_id": 147,
+      "id": 11,
+      "wishlist_id": 29,
+      "variant_id": 49,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:14.519-04:00"
+      "created_at": "2020-09-23T07:16:15.291-04:00"
     },
     {
-      "id": 24,
-      "wishlist_id": 37,
-      "variant_id": 149,
+      "id": 12,
+      "wishlist_id": 29,
+      "variant_id": 51,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:14.661-04:00"
+      "created_at": "2020-09-23T07:16:15.401-04:00"
     }
   ],
   "count": 3,
@@ -11450,9 +11450,9 @@ Content-Length: 436
 #### Endpoint
 
 ```plaintext
-PATCH /api/wished_products/13
+PATCH /api/wished_products/25
 Accept: application/json
-Authorizat IO N: Bearer 70b5b5d547833e113d95c10e3eda1d34c5f53a25390e129f
+Authorizat IO N: Bearer abe480999149d201c04d5c11c00361fddeb7aa86f794aa88
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -11464,7 +11464,7 @@ Cookie:
 
 
 ```json
-wished_product[wishlist_id]=30&wished_product[variant_id]=131&wished_product[quantity]=2&wished_product[remark]=Foo+bar
+wished_product[wishlist_id]=38&wished_product[variant_id]=83&wished_product[quantity]=2&wished_product[remark]=Foo+bar
 ```
 
 
@@ -11487,24 +11487,24 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;356e7e40fa5991d102d13437860a38b6&quot;
+ETag: W/&quot;bffa04598b3b13732b01090bfbc3473e&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 5e7b5388-e549-4fdb-a742-057b88e719ae
-X-Runtime: 0.020981
+X-Request-Id: fd01c256-00ff-4d6a-8d82-7587dfe752e1
+X-Runtime: 0.015128
 Vary: Origin
-Content-Length: 120
+Content-Length: 119
 200 OK
 ```
 
 
 ```json
 {
-  "id": 13,
-  "wishlist_id": 30,
-  "variant_id": 131,
+  "id": 25,
+  "wishlist_id": 38,
+  "variant_id": 83,
   "quantity": 2,
   "remark": "Foo bar",
-  "created_at": "2020-09-22T11:40:12.671-04:00"
+  "created_at": "2020-09-23T07:16:17.675-04:00"
 }
 ```
 
@@ -11512,7 +11512,7 @@ Content-Length: 120
 
 # Wishlists
 
-Get a user's default wishlist. This will create a default wishlist if one does not exist.
+Get a users wishlists
 
 ## Create a wishlist
 
@@ -11524,7 +11524,7 @@ Get a user's default wishlist. This will create a default wishlist if one does n
 ```plaintext
 POST /api/wishlists
 Accept: application/json
-Authorizat IO N: Bearer ebd4de762225e19265659afb8d8bd579656ffff10b692531
+Authorizat IO N: Bearer c7579dc3d9ffb17ca982e5d134fe6ad75afa87632e06a003
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -11536,7 +11536,7 @@ Cookie:
 
 
 ```json
-wishlist[name]&wishlist[user_id]=38&wishlist[is_default]=true&wishlist[is_public]=false
+wishlist[name]&wishlist[user_id]=9&wishlist[is_default]=true&wishlist[is_public]=false
 ```
 
 
@@ -11563,20 +11563,20 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;9529ff072aef0804927bb62ae972af99&quot;
+ETag: W/&quot;8830525278069d07ff1fbb8bebaa23a5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 46dca8ad-1718-45c9-94d2-8abaf72792fd
-X-Runtime: 0.016390
+X-Request-Id: 6b9db60c-bc5a-4087-8380-35966d30de94
+X-Runtime: 0.046750
 Vary: Origin
-Content-Length: 100
+Content-Length: 99
 201 Created
 ```
 
 
 ```json
 {
-  "id": 13,
-  "user_id": 38,
+  "id": 14,
+  "user_id": 9,
   "name": "My Wishlist",
   "is_public": false,
   "is_default": true,
@@ -11596,9 +11596,9 @@ Content-Length: 100
 #### Endpoint
 
 ```plaintext
-DELETE /api/wishlists/2
+DELETE /api/wishlists/15
 Accept: application/json
-Authorizat IO N: Bearer 6dc7d8d2904baaa5ed305884c5079e456a286e0989da720d
+Authorizat IO N: Bearer a4dea3cff4fc7fbd2e8d496a1b6eb9fdcfa008c27e716ccd
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -11622,8 +11622,8 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Cache-Control: no-cache
-X-Request-Id: e0b72bc1-362c-47f2-8827-6bb48061bb39
-X-Runtime: 0.014641
+X-Request-Id: d70e147a-662e-495b-85a4-6ea0e9238ad2
+X-Runtime: 0.013676
 Vary: Origin
 204 No Content
 ```
@@ -11639,9 +11639,9 @@ Vary: Origin
 #### Endpoint
 
 ```plaintext
-GET /api/wishlists/14
+GET /api/wishlists/17
 Accept: application/json
-Authorizat IO N: Bearer 261389a11d2b3cacf97e556a5949ecc2e0041eeff1f2c067
+Authorizat IO N: Bearer 15bbd039cba763e015c030c34eb4b32026d0b0e3c498b2c4
 Host: example.org
 Cookie: 
 ```
@@ -11664,47 +11664,47 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;7aae1150a0bd9265a29ec4d8c5c6c477&quot;
+ETag: W/&quot;b10c3f5d95644d6ef2537a2af14153ea&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: bdbf9bc3-2137-406e-b49e-42b27cdb1e69
-X-Runtime: 0.015227
+X-Request-Id: 89755833-929f-4cdb-8139-5738f0da928b
+X-Runtime: 0.011201
 Vary: Origin
-Content-Length: 442
+Content-Length: 441
 200 OK
 ```
 
 
 ```json
 {
-  "id": 14,
-  "user_id": 39,
-  "name": "Wishlist #12",
+  "id": 17,
+  "user_id": 12,
+  "name": "Wishlist #15",
   "is_public": false,
   "is_default": true,
   "wished_products": [
     {
       "id": 4,
-      "wishlist_id": 14,
-      "variant_id": 61,
+      "wishlist_id": 17,
+      "variant_id": 8,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:01.704-04:00"
+      "created_at": "2020-09-23T07:16:04.604-04:00"
     },
     {
       "id": 5,
-      "wishlist_id": 14,
-      "variant_id": 63,
+      "wishlist_id": 17,
+      "variant_id": 10,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:01.840-04:00"
+      "created_at": "2020-09-23T07:16:04.738-04:00"
     },
     {
       "id": 6,
-      "wishlist_id": 14,
-      "variant_id": 65,
+      "wishlist_id": 17,
+      "variant_id": 12,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:01.966-04:00"
+      "created_at": "2020-09-23T07:16:04.844-04:00"
     }
   ]
 }
@@ -11722,7 +11722,7 @@ Content-Length: 442
 ```plaintext
 GET /api/wishlists
 Accept: application/json
-Authorizat IO N: Bearer 61aca9569ef9ca13bf5051479fef732d56231c95d1363130
+Authorizat IO N: Bearer 80d509f7e37389b08f4925a72784e96bdfada492d93726e3
 Host: example.org
 Cookie: 
 ```
@@ -11749,12 +11749,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;db1ef85976ee58f06e8b0b291d4520de&quot;
+ETag: W/&quot;9dc1098366e1e04648e96865d8435731&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 38174dce-875c-4879-af06-cc47925394fc
-X-Runtime: 0.014793
+X-Request-Id: 621b0018-be38-4247-a1c5-085c1a1dd84b
+X-Runtime: 0.011895
 Vary: Origin
-Content-Length: 879
+Content-Length: 894
 200 OK
 ```
 
@@ -11763,72 +11763,72 @@ Content-Length: 879
 {
   "wishlists": [
     {
-      "id": 3,
-      "user_id": 27,
-      "name": "Wishlist #2",
+      "id": 18,
+      "user_id": 13,
+      "name": "Wishlist #16",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 4,
-      "user_id": 28,
-      "name": "Wishlist #3",
+      "id": 19,
+      "user_id": 14,
+      "name": "Wishlist #17",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 5,
-      "user_id": 29,
-      "name": "Wishlist #4",
+      "id": 20,
+      "user_id": 15,
+      "name": "Wishlist #18",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 6,
-      "user_id": 30,
-      "name": "Wishlist #5",
+      "id": 21,
+      "user_id": 16,
+      "name": "Wishlist #19",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 7,
-      "user_id": 31,
-      "name": "Wishlist #6",
+      "id": 22,
+      "user_id": 17,
+      "name": "Wishlist #20",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 8,
-      "user_id": 32,
-      "name": "Wishlist #7",
+      "id": 23,
+      "user_id": 18,
+      "name": "Wishlist #21",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 9,
-      "user_id": 33,
-      "name": "Wishlist #8",
+      "id": 24,
+      "user_id": 19,
+      "name": "Wishlist #22",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 10,
-      "user_id": 34,
-      "name": "Wishlist #9",
+      "id": 25,
+      "user_id": 20,
+      "name": "Wishlist #23",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 11,
-      "user_id": 35,
-      "name": "Wishlist #10",
+      "id": 26,
+      "user_id": 21,
+      "name": "Wishlist #24",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 12,
-      "user_id": 36,
-      "name": "Wishlist #11",
+      "id": 27,
+      "user_id": 22,
+      "name": "Wishlist #25",
       "is_public": false,
       "is_default": true
     }
@@ -11853,7 +11853,7 @@ Content-Length: 879
 ```plaintext
 GET /api/wishlist
 Accept: application/json
-Authorizat IO N: Bearer b0db867215d6045763322796d54062a80870b3ff9662e09f
+Authorizat IO N: Bearer ec90ae288b83cb1c55416df5e6e8b036546a69cf455877f4
 Host: example.org
 Cookie: 
 ```
@@ -11876,47 +11876,47 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;7dead909c0f55862da3e16f47e64fc61&quot;
+ETag: W/&quot;50033719cfa9af09495a92fd900b0355&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c29da109-262e-4e71-8aca-de3144c2e032
-X-Runtime: 0.043181
+X-Request-Id: 9e2cc4b9-8887-4e94-b932-d798817b58ef
+X-Runtime: 0.008742
 Vary: Origin
-Content-Length: 437
+Content-Length: 442
 200 OK
 ```
 
 
 ```json
 {
-  "id": 1,
-  "user_id": 25,
-  "name": "Wishlist #1",
+  "id": 28,
+  "user_id": 24,
+  "name": "Wishlist #26",
   "is_public": false,
   "is_default": true,
   "wished_products": [
     {
-      "id": 1,
-      "wishlist_id": 1,
-      "variant_id": 55,
+      "id": 7,
+      "wishlist_id": 28,
+      "variant_id": 14,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:00.944-04:00"
+      "created_at": "2020-09-23T07:16:05.143-04:00"
     },
     {
-      "id": 2,
-      "wishlist_id": 1,
-      "variant_id": 57,
+      "id": 8,
+      "wishlist_id": 28,
+      "variant_id": 16,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:01.065-04:00"
+      "created_at": "2020-09-23T07:16:05.244-04:00"
     },
     {
-      "id": 3,
-      "wishlist_id": 1,
-      "variant_id": 59,
+      "id": 9,
+      "wishlist_id": 28,
+      "variant_id": 18,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:01.209-04:00"
+      "created_at": "2020-09-23T07:16:05.348-04:00"
     }
   ]
 }
@@ -11934,7 +11934,7 @@ Content-Length: 437
 ```plaintext
 GET /api/wishlists/mine
 Accept: application/json
-Authorizat IO N: Bearer 08732b95d847390f83b9270043cfabfc487d94025a297e37
+Authorizat IO N: Bearer 3f4d80cc02a53f3628b40e879ad7acc608debea3911f708c
 Host: example.org
 Cookie: 
 ```
@@ -11957,12 +11957,12 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;d4518828f2b23513afd23c36d919de03&quot;
+ETag: W/&quot;1bd8480c0c9c623a28b2fa65978a623c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9db0a193-14e6-4160-8081-51015cbd842a
-X-Runtime: 0.014876
+X-Request-Id: e3d6236b-6312-4b5a-b235-af0ae67afb3d
+X-Runtime: 0.066289
 Vary: Origin
-Content-Length: 903
+Content-Length: 881
 200 OK
 ```
 
@@ -11971,72 +11971,72 @@ Content-Length: 903
 {
   "wishlists": [
     {
-      "id": 18,
-      "user_id": 41,
-      "name": "Wishlist #16",
+      "id": 4,
+      "user_id": 8,
+      "name": "Wishlist #4",
       "is_public": false,
       "is_default": true
     },
     {
-      "id": 19,
-      "user_id": 41,
-      "name": "Wishlist #17",
+      "id": 5,
+      "user_id": 8,
+      "name": "Wishlist #5",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 20,
-      "user_id": 41,
-      "name": "Wishlist #18",
+      "id": 6,
+      "user_id": 8,
+      "name": "Wishlist #6",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 21,
-      "user_id": 41,
-      "name": "Wishlist #19",
+      "id": 7,
+      "user_id": 8,
+      "name": "Wishlist #7",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 22,
-      "user_id": 41,
-      "name": "Wishlist #20",
+      "id": 8,
+      "user_id": 8,
+      "name": "Wishlist #8",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 23,
-      "user_id": 41,
-      "name": "Wishlist #21",
+      "id": 9,
+      "user_id": 8,
+      "name": "Wishlist #9",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 24,
-      "user_id": 41,
-      "name": "Wishlist #22",
+      "id": 10,
+      "user_id": 8,
+      "name": "Wishlist #10",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 25,
-      "user_id": 41,
-      "name": "Wishlist #23",
+      "id": 11,
+      "user_id": 8,
+      "name": "Wishlist #11",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 26,
-      "user_id": 41,
-      "name": "Wishlist #24",
+      "id": 12,
+      "user_id": 8,
+      "name": "Wishlist #12",
       "is_public": false,
       "is_default": false
     },
     {
-      "id": 27,
-      "user_id": 41,
-      "name": "Wishlist #25",
+      "id": 13,
+      "user_id": 8,
+      "name": "Wishlist #13",
       "is_public": false,
       "is_default": false
     }
@@ -12059,9 +12059,9 @@ Content-Length: 903
 #### Endpoint
 
 ```plaintext
-PATCH /api/wishlists/28
+PATCH /api/wishlists/16
 Accept: application/json
-Authorizat IO N: Bearer 29f6d5c42c9385e5bcfdf200aaa04ab3a1e157ada58b00a2
+Authorizat IO N: Bearer e7b721bf1bbd55d95ce6ca0ff2500323119ffe868eb8347d
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -12073,7 +12073,7 @@ Cookie:
 
 
 ```json
-wishlist[name]=Another+Wishlist&wishlist[user_id]=42&wishlist[is_default]=true&wishlist[is_public]=false
+wishlist[name]=Another+Wishlist&wishlist[user_id]=11&wishlist[is_default]=true&wishlist[is_public]=false
 ```
 
 
@@ -12096,47 +12096,47 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;73cfbda39040ef20182ab74c291090ac&quot;
+ETag: W/&quot;60161cc9d4cda8de7d3fcc132a24b460&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 361ac8cc-1a1a-4456-840f-edd59a1b3504
-X-Runtime: 0.017422
+X-Request-Id: 4a17764d-27f5-4337-9a33-fe6c38b20e0c
+X-Runtime: 0.015505
 Vary: Origin
-Content-Length: 446
+Content-Length: 443
 200 OK
 ```
 
 
 ```json
 {
-  "id": 28,
-  "user_id": 42,
+  "id": 16,
+  "user_id": 11,
   "name": "Another Wishlist",
   "is_public": false,
   "is_default": true,
   "wished_products": [
     {
-      "id": 7,
-      "wishlist_id": 28,
-      "variant_id": 67,
+      "id": 1,
+      "wishlist_id": 16,
+      "variant_id": 2,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:02.278-04:00"
+      "created_at": "2020-09-23T07:16:04.220-04:00"
     },
     {
-      "id": 8,
-      "wishlist_id": 28,
-      "variant_id": 69,
+      "id": 2,
+      "wishlist_id": 16,
+      "variant_id": 4,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:02.399-04:00"
+      "created_at": "2020-09-23T07:16:04.325-04:00"
     },
     {
-      "id": 9,
-      "wishlist_id": 28,
-      "variant_id": 71,
+      "id": 3,
+      "wishlist_id": 16,
+      "variant_id": 6,
       "quantity": 1,
       "remark": null,
-      "created_at": "2020-09-22T11:40:02.518-04:00"
+      "created_at": "2020-09-23T07:16:04.427-04:00"
     }
   ]
 }
